@@ -1,0 +1,120 @@
+<!ENTITY options.title "&sessionManager; Indstillinger">
+<!ENTITY general.caption "Generelt">
+<!ENTITY startNend.caption "Opstart &amp; nedlukning">
+<!ENTITY resume_sess.label "Hent altid følgende session ved opstart:">
+<!ENTITY resume_sess.accesskey "h">
+<!ENTITY backup_sess.label "Ved nedlukning">
+<!ENTITY backup_sess.accesskey "l">
+<!ENTITY backup_session.label0 "kassér den nuværende session">
+<!ENTITY backup_session.label1 "gem den nuværende session">
+<!ENTITY backup_session.label2 "spørg om den nuværende session skal gemmes eller kasseres">
+<!ENTITY crashrecovery.label "Aktivér Nedbrudsretablering">
+<!ENTITY crashrecovery.accesskey "N">
+<!ENTITY autosave_session.label "Gem automatisk erstattet session">
+<!ENTITY restoring.caption "Sessionsgenskabelse">
+<!ENTITY sessionList.caption "Sessionsliste">
+<!ENTITY orderList.label "Sortér sessionslisten">
+<!ENTITY orderList.accesskey "t">
+<!ENTITY orderList.label1 "alfabetisk">
+<!ENTITY orderList.label2 "ældste til nyeste">
+<!ENTITY orderList.label_2 "nyeste til ældste">
+<!ENTITY max_backup.label "Antal gamle (nedbrudte) sessioner der skal gemmes:">
+<!ENTITY max_backup.accesskey "A">
+<!ENTITY undoClose.caption "Fortryd lukning">
+<!ENTITY windowsNtabs.caption "Lukkede vinduer &amp; faneblade">
+<!ENTITY max_closed.label "Maksimalt antal huskede vinduer:">
+<!ENTITY max_closed.accesskey "v">
+<!ENTITY max_tabs.label "Maksimalt antal huskede lukkede faneblade (per vindue):">
+<!ENTITY max_tabs.accesskey "b">
+<!ENTITY submenu.label "Vis alle lukkede vinduer og faneblade i undermenu">
+<!ENTITY submenu.accesskey "u">
+<!ENTITY persistence.caption "Fastholdelse">
+<!ENTITY closed_tabs.label "Genskab listen med vinduer og faneblade der kan genskabes for alle vinduer:">
+<!ENTITY closed_tabs.accesskey "G">
+<!ENTITY closed_tabs.label0 "aldrig">
+<!ENTITY closed_tabs.label1 "ved opstart">
+<!ENTITY closed_tabs.label2 "altid">
+<!ENTITY window_list.label "Slet ikke listen med lukkede vinduer ved nedlukning">
+<!ENTITY window_list.accesskey "n">
+<!ENTITY clear_list.label "Slet liste">
+<!ENTITY clear_list.accesskey "S">
+<!ENTITY advanced.caption "Avanceret">
+<!ENTITY name_format.caption "Sessionsnavne">
+<!ENTITY name_format.label "Format for foreslåede sessionsnavne:">
+<!ENTITY name_format.desc "Brug &#37;t for det aktive faneblads overskrift, &#37;d for dags dato og &#37;m for tidspunkt; overskriftens kan begrænses til # tegn: &#37;#t.">
+<!ENTITY sessionstore.caption "SessionsArkiv">
+<!ENTITY service.caption "&quot;SessionsArkiv&quot; Indstillinger">
+<!ENTITY service.description "Ændr kun på disse hvis du ved hvad du laver!">
+<!ENTITY interval.label "Minimalt tidsinterval imellem at to tilstande gemmes (i sekunder):">
+<!ENTITY postdata.label "Maksimal mængde POSTDATA der kan gemmes (i bytes; -1 for alt):">
+<!ENTITY postdata.accesskey "P">
+<!ENTITY privacy.label "Gem følsomme data (formulardata, POSTDATA og cookies) for">
+<!ENTITY privacy.accesskey "d">
+<!ENTITY privacy.level0 "alle websteder">
+<!ENTITY privacy.level1 "kun ukrypterede websteder">
+<!ENTITY privacy.level2 "ingen websteder">
+<!ENTITY sessiondir.caption "Placering af gemte sessioner">
+<!ENTITY sessiondir.desc "Standard placeringen af gemte sessioner kan overskrives her.">
+<!ENTITY encrypt.caption "Kryptering">
+<!ENTITY encrypt.desc "Advarsel: Krypterede sessionsdata kan kun åbnes i profiler med identiske key3.db filer. Her ud over kan sessioner ikke krypteres eller dekrypteres hvis der er påkrævet master-kodeord og master-kodeordet ikke er indtastet.">
+<!ENTITY encrypt.label "Kryptér gemte session og data for lukket vindue">
+<!ENTITY change_dir.label "Ændr">
+<!ENTITY change_dir.accesskey "Æ">
+<!ENTITY default_dir.label "Genskab standard">
+<!ENTITY default_dir.accesskey "k">
+<!ENTITY sanitizer.label "Session Manager Gemte Sessioner">
+<!ENTITY sanitizer.accesskey "G">
+<!ENTITY saving.caption "Gem session">
+<!ENTITY lastpage.label "Vis min sidst indlæste side">
+<!ENTITY noSession.label "Ingen">
+<!ENTITY noSession.accesskey "n">
+<!ENTITY promptSession.label "Spørg efter session">
+<!ENTITY promptSession.accesskey "p">
+<!ENTITY selectSession.label "Vælg session">
+<!ENTITY selectSession.accesskey "s">
+<!ENTITY cookies.label "Gem session cookies">
+<!ENTITY cookies.accesskey "c">
+<!ENTITY sessionImport.caption "Importer sessioner fra...">
+<!ENTITY importSS.label "SessionsArkiv">
+<!ENTITY importSS.accesskey "i">
+<!ENTITY importTMP.accesskey "b">
+<!ENTITY apply.label "Anvend">
+<!ENTITY save_and_restore.caption "Gem &amp; genetablering">
+<!ENTITY display.caption "Visning">
+<!ENTITY middleclick.label "Midterklik genåbner senest lukkede faneblad">
+<!ENTITY max_display.label "Maksimalt antal sessioner der skal vises i menu (-1 for alle)">
+<!ENTITY hide_tools_menu.label "Vis ikke Session Manager menu i Funktioner-menuen">
+<!ENTITY hide_tools_menu.accesskey "V">
+<!ENTITY disable_cache_fixer.label "Deaktiver cache-fikser muligheden">
+<!ENTITY encrypted_only.label "Hvis kryptering slår fejl, gem IKKE data ukrypteret.">
+<!ENTITY encrypted_only.accesskey "n">
+<!ENTITY encrypt2.desc "Advarsel: Hvis dette felt er markeret og sessionen eller vindue-data ikke kan krypteres, går dataene tabt uden mulighed for genetablering. Kryptering vil slå fejl hvis hovedkodeordet ikke indtastes, så overvej det nøje før markering af denne boks.">
+<!ENTITY closed_window_list.label "Brug browserens indbyggede lukkede vinduer-liste">
+<!ENTITY closed_window_list.accesskey "u">
+<!ENTITY closed_windows.label "Genetabler listen over lukkede vinduer der kan åbnes igen:">
+<!ENTITY open_as_tabs.label "Åbn som faneblade i nuværende vindue">
+<!ENTITY open_as_tabs.accesskey "Å">
+<!ENTITY last_window_shutdown.label "Behandle lukning af sidste åbne browser-vindue som nedlukning">
+<!ENTITY last_window_shutdown.accesskey "t">
+<!ENTITY preselect_previous_session.label "For-vælg foregående session">
+<!ENTITY preselect_previous_session.accesskey "r">
+<!ENTITY logging.caption "Logning">
+<!ENTITY enable_logging.label "Aktiver logning">
+<!ENTITY open_log.label "Åbn logfil">
+<!ENTITY delete_log.label "Slet logfil">
+<!ENTITY delete_log.accesskey "g">
+<!ENTITY log_level_state.label "Log nedlukningstilstand">
+<!ENTITY log_level_trace.label "Log sporingsdata">
+<!ENTITY log_level_data.label "Log variabeldata">
+<!ENTITY log_level_info.label "Log informationsmeddelelser">
+<!ENTITY log_level_extra.label "Log ekstra debugging-data">
+<!ENTITY reload.label "Genindlæs alle genetablerede vinduer">
+<!ENTITY overwrite.label "Erstat eksisterende vinduer">
+<!ENTITY overwrite.accesskey "r">
+<!ENTITY allow_saving_during_pbm.label "Tillad gem under Privat browsing-tilstand">
+<!ENTITY allow_saving_during_pbm.label2 "Kræver at kryptering er slået til">
+<!ENTITY allow_saving_during_pbm.accesskey "s">
+<!ENTITY session_name_in_titlebar.label "navnet på aktive sessioner i titellinjen">
+<!ENTITY prepend.label "Foranstil">
+<!ENTITY append.label "Bagvedstil">
+<!ENTITY donotadd.label "Tilføj ikke">

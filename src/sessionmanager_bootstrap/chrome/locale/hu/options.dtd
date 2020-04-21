@@ -1,0 +1,202 @@
+<!ENTITY options.title "&sessionManager; - beállítások">
+<!ENTITY general.caption "Általános">
+<!ENTITY startNend.caption "Indítás és bezárás">
+<!ENTITY resume_sess.label "Indításkor mindig a következő munkamenet betöltése:">
+<!ENTITY resume_sess.accesskey "I">
+<!ENTITY backup_sess.label "Bezáráskor">
+<!ENTITY backup_sess.accesskey "B">
+<!ENTITY backup_session.label0 "jelenlegi munkamenet eldobása">
+<!ENTITY backup_session.label1 "jelenlegi munkamenet biztonsági mentése">
+<!ENTITY backup_session.label2 "biztonsági mentésre rákérdez">
+<!ENTITY crashrecovery.label "Helyreállítás engedélyezése összeomlás után">
+<!ENTITY crashrecovery.accesskey "H">
+<!ENTITY autosave_session.label "Lecserélt munkamenet automatikus mentése">
+<!ENTITY autosave_session.accesskey "e">
+<!ENTITY restoring.caption "Munkamenet visszaállítása">
+<!ENTITY sessionList.caption "Elérhető munkamenetek">
+<!ENTITY orderList.label "Munkamenetek rendezése">
+<!ENTITY orderList.accesskey "r">
+<!ENTITY orderList.label1 "ABC szerint">
+<!ENTITY orderList.label2 "régebbi --&gt; újabb">
+<!ENTITY orderList.label_2 "újabb --&gt; régebbi">
+<!ENTITY max_backup.label "Régebbi munkamenetek megtartott biztonsági mentéseinek száma:">
+<!ENTITY max_backup.accesskey "z">
+<!ENTITY undoClose.caption "Bezárás visszavonása">
+<!ENTITY windowsNtabs.caption "Bezárt ablakok és lapok">
+<!ENTITY max_closed.label "Megjegyzett bezárt ablakok maximális száma:">
+<!ENTITY max_closed.accesskey "k">
+<!ENTITY max_tabs.label "Megjegyzett bezárt lapok maximális száma (minden ablakban):">
+<!ENTITY max_tabs.accesskey "p">
+<!ENTITY submenu.label "Megjegyzett bezárt ablakok és lapok megjelenítése almenüben">
+<!ENTITY submenu.accesskey "j">
+<!ENTITY persistence.caption "Megtartás">
+<!ENTITY closed_tabs.label "Minden bezárt, megnyitható lap újranyitása (összes ablak):">
+<!ENTITY closed_tabs.accesskey "n">
+<!ENTITY closed_tabs.label0 "soha">
+<!ENTITY closed_tabs.label1 "indításkor">
+<!ENTITY closed_tabs.label2 "mindig">
+<!ENTITY window_list.label "Bezáráskor a bezárt ablakok listájának megtartása">
+<!ENTITY window_list.accesskey "z">
+<!ENTITY clear_list.label "Lista törlése">
+<!ENTITY clear_list.accesskey "t">
+<!ENTITY advanced.caption "Haladó">
+<!ENTITY name_format.caption "Munkamenetek nevei">
+<!ENTITY name_format.label "Munkamenetek neveinek formátuma:">
+<!ENTITY name_format.accesskey "o">
+<!ENTITY name_format.desc "Használhatók az alábbi kapcsolók: &#37;t az aktív lap neve, &#37;d mai dátum, &#37;m az idő. A név hossza korlátozva lehet # karakterre: &#37;#t.">
+<!ENTITY sessionstore.caption "Munkamenet helyreállítása">
+<!ENTITY service.caption "A munkamenetek helyreállításának beállításai">
+<!ENTITY service.description "Ne változtassa meg ezeket a beállításokat, ha nem biztos a következményekben.">
+<!ENTITY interval.label "Az aktuális állapot mentése (másodpercekben):">
+<!ENTITY interval.accesskey "m">
+<!ENTITY postdata.label "Az elmenthető POSTDATA adatok maximális mérete (bájtokban; -1 mindegyiknek):">
+<!ENTITY postdata.accesskey "x">
+<!ENTITY privacy.label "Személyes adatok mentése (űrlapadatok, POSTDATA és sütik)">
+<!ENTITY privacy.accesskey "a">
+<!ENTITY privacy.level0 "mindegyik oldal">
+<!ENTITY privacy.level1 "nem titkosított oldal">
+<!ENTITY privacy.level2 "nincs mentés">
+<!ENTITY sessiondir.caption "Mentett munkamenetek mappája">
+<!ENTITY sessiondir.desc "Mentett munkamenetek alapértelmezett mappáját változtathatja meg itt.">
+<!ENTITY encrypt.caption "Titkosítás">
+<!ENTITY encrypt.desc "Figyelmeztetés: A titkosított munkamenet adatai csak azonos key3.db és cert8.db fájlokat tartalamazó profilokban nyithatóak meg. Amennyiben adott a mesterjelszó, a munkamenetek nem titkosíthatók/dekódolhatók a megfelelő mesterjelszó megadásáig.">
+<!ENTITY encrypt.label "Mentett munkamenetek és bezárt ablakok adatainak titkosítása">
+<!ENTITY encrypt.accesskey "e">
+<!ENTITY change_dir.label "Módosítás">
+<!ENTITY change_dir.accesskey "M">
+<!ENTITY default_dir.label "Alapértelmezések visszaállítása">
+<!ENTITY default_dir.accesskey "A">
+<!ENTITY sanitizer.label "Mentett munkamenetek (Session Manager)">
+<!ENTITY sanitizer.accesskey "e">
+<!ENTITY saving.caption "Munkamenet mentése">
+<!ENTITY lastpage.label "Az utolsó betöltött oldal megjelenítése">
+<!ENTITY noSession.label "Nincs">
+<!ENTITY noSession.accesskey "N">
+<!ENTITY promptSession.label "Rákérdezés a munkamenetre">
+<!ENTITY promptSession.accesskey "R">
+<!ENTITY selectSession.label "Munkamenet kiválasztása">
+<!ENTITY selectSession.accesskey "k">
+<!ENTITY cookies.label "Munkamenetekhez tartozó sütik mentése">
+<!ENTITY cookies.accesskey "M">
+<!ENTITY sessionImport.caption "Munkamenetek importálása...">
+<!ENTITY importSS.label "Session Saver">
+<!ENTITY importSS.accesskey "v">
+<!ENTITY importTMP.label "Tab Mix Plus">
+<!ENTITY importTMP.accesskey "T">
+<!ENTITY apply.label "Alkalmaz">
+<!ENTITY save_and_restore.caption "Mentés és visszaállítás">
+<!ENTITY display.caption "Megjelenítés">
+<!ENTITY middleclick.label "Kattintás a középsővel újra megnyitja az utolsóként bezárt lapot">
+<!ENTITY middleclick.accesskey "u">
+<!ENTITY max_display.label "A menüben megjelenített munkamenetek maximális száma (mind: -1)">
+<!ENTITY max_display.accesskey "j">
+<!ENTITY hide_tools_menu.label "Ne jelenjen meg a Session Manager menüje az eszközök menüben">
+<!ENTITY hide_tools_menu.accesskey "e">
+<!ENTITY disable_cache_fixer.label "A háttértár-hibák javításának letiltása">
+<!ENTITY disable_cache_fixer.accesskey "l">
+<!ENTITY encrypted_only.label "Ha a titkosítás nem sikeres, NE mentse az adatokat titkosítás nélkül.">
+<!ENTITY encrypted_only.accesskey "N">
+<!ENTITY encrypt2.desc "Figyelmeztetés: Ha bekapcsolva és a munkamenet/ablak adatait nem lehet titkosítani, az adatok elvesznek (nem lehet őket visszaállítani). A titkosítás nem lesz sikeres, ha a kért mesterjelszó nincs megadva. Legyen tehát körültekintő az opció bekapcsolásakor.">
+<!ENTITY closed_window_list.label "Használja a böngésző beépített bezárt ablakok listáját">
+<!ENTITY closed_window_list.accesskey "b">
+<!ENTITY closed_windows.label "Újranyitható bezárt ablakok listájának visszaállítása:">
+<!ENTITY closed_windows.accesskey "v">
+<!ENTITY open_as_tabs.label "Megnyitás a jelenlegi ablakban lapokként">
+<!ENTITY open_as_tabs.accesskey "l">
+<!ENTITY last_window_shutdown.label "Az utoljára megnyitott böngésző ablak bezárása bezárja a böngészőt">
+<!ENTITY last_window_shutdown.accesskey "u">
+<!ENTITY preselect_previous_session.label "Előző munkamenet automatikus kiválasztása">
+<!ENTITY preselect_previous_session.accesskey "a">
+<!ENTITY logging.caption "Naplózás">
+<!ENTITY enable_logging.label "Naplózás engedélyezése">
+<!ENTITY enable_logging.accesskey "z">
+<!ENTITY open_log.label "Naplófájl megnyitása">
+<!ENTITY open_log.accesskey "m">
+<!ENTITY delete_log.label "Naplófájl törlése">
+<!ENTITY delete_log.accesskey "t">
+<!ENTITY log_level_state.label "Bezárás állapotának naplózása">
+<!ENTITY log_level_state.accesskey "B">
+<!ENTITY log_level_trace.label "Nyomkövetés adatok naplózása">
+<!ENTITY log_level_trace.accesskey "N">
+<!ENTITY log_level_data.label "Változót tartalmazó adatok naplózása">
+<!ENTITY log_level_data.accesskey "V">
+<!ENTITY log_level_info.label "Információs üzenetek naplózása">
+<!ENTITY log_level_info.accesskey "I">
+<!ENTITY log_level_extra.label "Extra nyomkövetést tartalmazó adatok naplózása">
+<!ENTITY log_level_extra.accesskey "E">
+<!ENTITY reload.label "Minden ablak újratöltése">
+<!ENTITY reload.accesskey "d">
+<!ENTITY overwrite.label "Létező ablakok lecserélése">
+<!ENTITY overwrite.accesskey "a">
+<!ENTITY allow_saving_during_pbm.label "Mentés engedélyezése a privát böngészés során">
+<!ENTITY allow_saving_during_pbm.label2 "Az engedélyezéshez titkosítás szükséges">
+<!ENTITY allow_saving_during_pbm.accesskey "p">
+<!ENTITY session_name_in_titlebar.label "az aktív munkamenet nevét">
+<!ENTITY session_name_in_titlebar.accesskey "k">
+<!ENTITY prepend.label "A címsáv elejére adja hozzá">
+<!ENTITY append.label "A címsáv végére adja hozzá">
+<!ENTITY donotadd.label "Ne adja hozzá a címsávhoz">
+<!ENTITY use_browser_crash_prompt.label "A beépített összeomlás-vezérlő hibajelentéseinek használata">
+<!ENTITY use_browser_crash_prompt.accesskey "h">
+<!ENTITY reset_warnings.label "Figyelmeztető üzenetek visszaállítása">
+<!ENTITY reset_warnings.accesskey "v">
+<!ENTITY export_settings.label "Beállítások exportálása">
+<!ENTITY export_settings.accesskey "x">
+<!ENTITY import_settings.label "Beállítások importálása">
+<!ENTITY import_settings.accesskey "i">
+<!ENTITY settingsImportExport.caption "Beállítások importálása/exportálása">
+<!ENTITY keyboard.caption "Billentyűkombinációk">
+<!ENTITY keyboard.desc "Egy művelethez billentyűkombinációt itt adhat meg. Hagyja üresen, ha nem kíván hozzárendelni billentyűkombinációt a művelethez. Csak új ablakban lesz a változtatás érvényes.">
+<!ENTITY clear.label "Törlés">
+<!ENTITY clear.accesskey "r">
+<!ENTITY clear_tab_list.label "Bezárt lapok listájának törlése">
+<!ENTITY clear_tab_list.accesskey "l">
+<!ENTITY clear_window_list.label "Bezárt ablakok listájának törlése">
+<!ENTITY clear_window_list.accesskey "a">
+<!ENTITY backup_on_restart.label "Biztonsági mentés újraindításkor">
+<!ENTITY backup_on_restart.accesskey "i">
+<!ENTITY keep_deleted_sessions.label "Az ideiglenesen tárolt törölt munkamenetek időtartama (nap):">
+<!ENTITY keep_deleted_sessions.accesskey "p">
+<!ENTITY concurrent.label "Az egyidejűleg visszaállított lapok száma">
+<!ENTITY concurrent.accesskey "j">
+<!ENTITY do_not_color_toolbar_button.label "Munkamenetek betöltésekor ne az eszköztár gomb ne legyen színnel kiemelve">
+<!ENTITY do_not_color_toolbar_button.accesskey "z">
+<!ENTITY preserve_app_tabs.label "Ne írja felül a tűzött lapokat">
+<!ENTITY preserve_app_tabs.accesskey "t">
+<!ENTITY logging_to_console.label "Naplózás a hibakonzolba egyaránt">
+<!ENTITY logging_to_console.accesskey "h">
+<!ENTITY update_message.label "A weboldal frissítésének megjelenítése a weblap frissítése után">
+<!ENTITY update_message.accesskey "f">
+<!ENTITY double_click_session.label "Dupla kattintás egy meglévő munkameneten felülírja a munkamenetet és">
+<!ENTITY double_click_session.accesskey "D">
+<!ENTITY replace_with_name_replace.label "felülírja a jelenlegi munkamenet nevét a szövegmező tartalmával">
+<!ENTITY replace_with_name_keep.label "megtartja a jelenlegi munkamenet nevét">
+<!ENTITY show_icon_in_menu.label "Ikon megjelenítése az eszközök menüben">
+<!ENTITY show_icon_in_menu.accesskey "I">
+<!ENTITY set_encryption_password.label "Adja meg a jelszót, hogy megvédje a munkamenet titkosítási kulcsot">
+<!ENTITY set_encryption_password.accesskey "j">
+<!ENTITY change_encryption_key_password.label "Titkosítási kulcs jelszavának megváltoztatása">
+<!ENTITY change_encryption_key_password.accesskey "m">
+<!ENTITY save_encryption_key.label "Titkosítási kulcs jelszavának mentése a böngésző jelszókezelőjében">
+<!ENTITY save_encryption_key.accesskey "b">
+<!ENTITY restore_hidden_tabs.label "Rejtett lapok visszaállítása">
+<!ENTITY restore_hidden_tabs.accesskey "R">
+<!ENTITY display_menus_in_submenu.label "Session Manager menüelemek megjelenítése almenüben">
+<!ENTITY display_menus_in_submenu.accesskey "a">
+<!ENTITY use_sql_cache.label "Alapvető munkamenet adatok tárolása lemezen. Lehetővé teszi a keresést munkameneten belül">
+<!ENTITY use_sql_cache.accesskey "b">
+<!ENTITY rebuild_cache.label "Tárolt adatok kialakítása újra">
+<!ENTITY rebuild_cache.accesskey "j">
+<!ENTITY log_level_error.label "Hibák naplózása">
+<!ENTITY log_level_error.accesskey "H">
+<!ENTITY allow_duplicates.label "Munkamenet mentésének engedélyezése egy már létező fájlnévvel">
+<!ENTITY allow_duplicates.accesskey "f">
+<!ENTITY backup_every.label "Új biztonsági mentés létrehozása minden">
+<!ENTITY backup_every.accesskey "j">
+<!ENTITY minutes "percben">
+<!ENTITY restore_on_demand.label "Lapok visszaállítása igényléskor">
+<!ENTITY restore_on_demand.accesskey "V">
+<!ENTITY max_back_history.label "A vissza gomb előzményeinek száma laponként (-1 az összesnek)">
+<!ENTITY max_back_history.accesskey "y">
+<!ENTITY max_forward_history.label "Az előre gomb előzményeinek száma laponként (-1 az összesnek)">
+<!ENTITY max_forward_history.accesskey "z">

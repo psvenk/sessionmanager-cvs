@@ -1,0 +1,157 @@
+<!ENTITY options.title "&sessionManager; - Opciones">
+<!ENTITY startNend.caption "Inicio &amp; Cierre">
+<!ENTITY resume_sess.label "Cargar siempre la siguiente sesión al iniciar:">
+<!ENTITY resume_sess.accesskey "g">
+<!ENTITY backup_sess.label "Al cerrar">
+<!ENTITY backup_sess.accesskey "c">
+<!ENTITY backup_session.label0 "descartar la sesión actual">
+<!ENTITY backup_session.label1 "hacer una copia de seguridad de la sesión actual">
+<!ENTITY backup_session.label2 "preguntar si hacer una copia de seguridad de la sesión actual">
+<!ENTITY crashrecovery.label "Habilitar la recuperación de fallos">
+<!ENTITY crashrecovery.accesskey "H">
+<!ENTITY autosave_session.label "Guardar automáticamente la sesión reemplazada">
+<!ENTITY restoring.caption "Restaurar sesiones">
+<!ENTITY sessionList.caption "Lista de sesiones">
+<!ENTITY orderList.label "Ordenar la lista de sesiones">
+<!ENTITY orderList.accesskey "O">
+<!ENTITY orderList.label1 "alfabéticamente">
+<!ENTITY orderList.label2 "de la más vieja a la más nueva">
+<!ENTITY orderList.label_2 "de la más nueva a la más vieja">
+<!ENTITY max_backup.label "Número de sesiones antiguas (con fallo) a mantener:">
+<!ENTITY max_backup.accesskey "m">
+<!ENTITY undoClose.caption "Deshacer cerrar">
+<!ENTITY windowsNtabs.caption "Ventanas &amp; pestañas cerradas">
+<!ENTITY max_closed.label "Número máximo de ventanas cerradas a guardar:">
+<!ENTITY max_closed.accesskey "v">
+<!ENTITY max_tabs.label "Número máximo de pestañas cerradas a guardar (en cada ventana):">
+<!ENTITY max_tabs.accesskey "p">
+<!ENTITY submenu.label "Mostrar una lista con todas las ventanas y pestañas cerradas en un submenú">
+<!ENTITY submenu.accesskey "l">
+<!ENTITY persistence.caption "Persistencia">
+<!ENTITY closed_tabs.label "Restaurar la lista de las pestañas que pueden volver a abrirse:">
+<!ENTITY closed_tabs.label0 "nunca">
+<!ENTITY closed_tabs.label1 "al iniciar">
+<!ENTITY closed_tabs.label2 "siempre">
+<!ENTITY window_list.label "Restaurar al iniciar la lista de las ventanas que pueden volver a abrirse">
+<!ENTITY window_list.accesskey "a">
+<!ENTITY clear_list.label "Borrar lista">
+<!ENTITY clear_list.accesskey "b">
+<!ENTITY advanced.caption "Avanzadas">
+<!ENTITY name_format.caption "Nombres de las sesiones">
+<!ENTITY name_format.label "Formato para las sugerencias de los nombres de las sesiones:">
+<!ENTITY name_format.desc "Use &#37;t para el título de la pestaña activa, &#37;d para la fecha de hoy y &#37;m para la hora; además la longitud del título puede limitarse a # caracteres: &#37;#t.">
+<!ENTITY service.caption "Opciones &quot;SessionStore&quot;">
+<!ENTITY service.description "No cambie estas opciones, a menos que sepa lo que está haciendo:">
+<!ENTITY interval.label "Intervalo de tiempo mínimo para guardar dos estados (en segundos):">
+<!ENTITY interval.accesskey "t">
+<!ENTITY postdata.label "Máxima cantidad de POSTDATA que se guardarán (en bytes; -1 para guardar todos):">
+<!ENTITY privacy.label "Guardar información privada (datos de formularios, POSTDATA y cookies) en">
+<!ENTITY privacy.accesskey "u">
+<!ENTITY privacy.level0 "todos los sitios">
+<!ENTITY privacy.level1 "sólo sitios no cifrados">
+<!ENTITY privacy.level2 "ningún sitio">
+<!ENTITY sessiondir.caption "Guardar ubicación de las sesiones">
+<!ENTITY sessiondir.desc "Aquí puede cambiar la ubicación por defecto para las sesiones guardadas.">
+<!ENTITY encrypt.caption "Cifrado">
+<!ENTITY encrypt.desc "Atención: Las sesiones con datos cifrados sólo podrán ser abiertas en perfiles con archivos key3.db y cert8.db idénticos. Además, si se ha establecido una contraseña maestra, las sesiones no se podrán cifrar si no la introduce.">
+<!ENTITY encrypt.label "Cifrar los datos de la sesión guardada y cerrada">
+<!ENTITY encrypt.accesskey "i">
+<!ENTITY change_dir.label "Cambiar">
+<!ENTITY default_dir.label "Restaurar valores por defecto">
+<!ENTITY default_dir.accesskey "R">
+<!ENTITY sanitizer.label "Session Manager - Sesiones guardadas">
+<!ENTITY saving.caption "Guardando sesión">
+<!ENTITY lastpage.label "Mostrar mi última página cargada">
+<!ENTITY noSession.label "Ninguna">
+<!ENTITY promptSession.label "Preguntar por una sesión">
+<!ENTITY selectSession.label "Seleccionar la sesión">
+<!ENTITY cookies.label "Guardar las cookies de las sesiones">
+<!ENTITY cookies.accesskey "c">
+<!ENTITY sessionImport.caption "Importar sesiones desde...">
+<!ENTITY importSS.accesskey "I">
+<!ENTITY apply.label "Aplicar">
+<!ENTITY save_and_restore.caption "Guardar &amp; Restaurar">
+<!ENTITY display.caption "Mostrar">
+<!ENTITY middleclick.label "El botón central reabre la última pestaña cerrada">
+<!ENTITY middleclick.accesskey "c">
+<!ENTITY max_display.label "Número máximo de sesiones a mostrar en el menú (-1 para todos)">
+<!ENTITY max_display.accesskey "N">
+<!ENTITY hide_tools_menu.label "No mostrar el menú de Session Manager en el menú Herramientas">
+<!ENTITY hide_tools_menu.accesskey "m">
+<!ENTITY disable_cache_fixer.label "Deshabilitar la opción de recuperación de caché">
+<!ENTITY encrypted_only.label "Si el cifrado falla, NO guardar los datos sin cifrar.">
+<!ENTITY encrypt2.desc "Aviso: Si marca esta opción y los datos de la sesión o la ventana no pueden cifrarse, los datos se perderán sin tener opción a recuperarlos. El cifrado fallará si se le pide la contraseña maestra y no la introduce, así que téngalo en cuenta antes de marcar esta casilla.">
+<!ENTITY closed_window_list.label "Usar la lista de ventanas cerradas propia del navegador">
+<!ENTITY closed_windows.label "Restaurar la lista de las ventanas cerradas:">
+<!ENTITY open_as_tabs.label "Abrir como pestañas en la ventana actual">
+<!ENTITY last_window_shutdown.label "Tratar la última ventana abierta como un apagado">
+<!ENTITY preselect_previous_session.label "Preseleccionar la sesión previa">
+<!ENTITY logging.caption "Registro">
+<!ENTITY enable_logging.label "Habilitar registro">
+<!ENTITY enable_logging.accesskey "h">
+<!ENTITY open_log.label "Abrir archivo de registro">
+<!ENTITY delete_log.label "Borrar archivo de registro">
+<!ENTITY delete_log.accesskey "b">
+<!ENTITY log_level_state.label "Registrar estado de apagado">
+<!ENTITY log_level_state.accesskey "a">
+<!ENTITY log_level_trace.label "Registrar traza de datos">
+<!ENTITY log_level_data.label "Registrar datos variables">
+<!ENTITY log_level_info.label "Registrar mensajes de información">
+<!ENTITY log_level_extra.label "Registrar datos extra de depuración">
+<!ENTITY log_level_extra.accesskey "d">
+<!ENTITY reload.label "Recargar todas las ventanas restauradas">
+<!ENTITY reload.accesskey "d">
+<!ENTITY overwrite.label "Reemplazar las ventanas existentes">
+<!ENTITY overwrite.accesskey "n">
+<!ENTITY allow_saving_during_pbm.label "Permitir guardar en el modo de navegación privada">
+<!ENTITY allow_saving_during_pbm.label2 "Necesita habilitar el cifrado">
+<!ENTITY allow_saving_during_pbm.accesskey "s">
+<!ENTITY session_name_in_titlebar.label "el nombre de las sesiones activas en la barra de título">
+<!ENTITY prepend.label "Poner antes">
+<!ENTITY append.label "Añadir">
+<!ENTITY donotadd.label "No añadir">
+<!ENTITY use_browser_crash_prompt.label "Usar el diálogo de recuperación del navegador">
+<!ENTITY reset_warnings.label "Reiniciar los avisos">
+<!ENTITY export_settings.label "Exportar opciones">
+<!ENTITY import_settings.label "Importar opciones">
+<!ENTITY settingsImportExport.caption "Importar/Exportar opciones">
+<!ENTITY keyboard.caption "Atajos de teclado">
+<!ENTITY keyboard.desc "Para usar un atajo de teclado para una acción, hágalo aquí. En otro caso, deje en blanco. Los cambios no se aplicarán a las ventanas existentes.">
+<!ENTITY clear.label "Borrar">
+<!ENTITY clear.accesskey "B">
+<!ENTITY clear_tab_list.label "Borrar las pestañas cerradas">
+<!ENTITY clear_window_list.label "Borrar las ventanas cerradas">
+<!ENTITY clear_window_list.accesskey "r">
+<!ENTITY backup_on_restart.label "Guardar una copia de seguridad al reiniciar el navegador">
+<!ENTITY backup_on_restart.accesskey "g">
+<!ENTITY keep_deleted_sessions.label "Número de días para mantener temporalmente las sesiones borradas:">
+<!ENTITY concurrent.label "Número de pestañas a restaurar concurrentemente">
+<!ENTITY do_not_color_toolbar_button.label "No colorear el botón de la barra al cargar la sesión">
+<!ENTITY do_not_color_toolbar_button.accesskey "N">
+<!ENTITY preserve_app_tabs.label "No reemplazar las pestañas fijas">
+<!ENTITY preserve_app_tabs.accesskey "N">
+<!ENTITY logging_to_console.label "Registrar en la consola de errores">
+<!ENTITY logging_to_console.accesskey "R">
+<!ENTITY update_message.label "Actualizar la página web tras actualizar">
+<!ENTITY update_message.accesskey "A">
+<!ENTITY double_click_session.label "Doble clic en una sesión sobreescribe la sesión y">
+<!ENTITY replace_with_name_replace.label "reemplaza el nombre con el del cuadro de texto">
+<!ENTITY replace_with_name_keep.label "mantiene el nombre">
+<!ENTITY show_icon_in_menu.label "Mostrar icono en el menú Herramientas">
+<!ENTITY set_encryption_password.label "Introduzca una contraseña para proteger la clave de cifrado">
+<!ENTITY set_encryption_password.accesskey "I">
+<!ENTITY change_encryption_key_password.label "Cambiar la clave de cifrado">
+<!ENTITY save_encryption_key.label "Guardar la clave de cifrado en el administrador de contraseñas del navegador">
+<!ENTITY save_encryption_key.accesskey "G">
+<!ENTITY restore_hidden_tabs.label "Restaurar pestañas ocultas">
+<!ENTITY restore_hidden_tabs.accesskey "o">
+<!ENTITY display_menus_in_submenu.label "Mostrar elementos de menú de Administrador de sesiones en un submenú">
+<!ENTITY display_menus_in_submenu.accesskey "M">
+<!ENTITY use_sql_cache.label "Guardar en caché los datos básicos de la sesión. Habilita la búsqueda en sesiones">
+<!ENTITY rebuild_cache.label "Regenerar la caché">
+<!ENTITY log_level_error.label "Registro de errores">
+<!ENTITY allow_duplicates.label "Permitir guardar una sesión con el mismo nombre que otra ya existente">
+<!ENTITY allow_duplicates.accesskey "a">
+<!ENTITY backup_every.label "Crear una nueva sesión de copia cada">
+<!ENTITY minutes "minutos">
+<!ENTITY restore_on_demand.label "Restaurar pestañas bajo demanda">

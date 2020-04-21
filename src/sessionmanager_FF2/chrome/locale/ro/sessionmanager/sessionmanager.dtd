@@ -1,0 +1,106 @@
+<!ENTITY sessionManager "Gestionar de sesiuni">
+<!ENTITY toolsmenu.accesskey "G">
+<!ENTITY save.label "Salvează sesiunea curentă…">
+<!ENTITY save.accesskey "S">
+<!ENTITY saveOne.label "Salvează fereastra curentă…">
+<!ENTITY saveOne.accesskey "f">
+<!ENTITY closeSession.label "Salvează și închide sesiunea curentă">
+<!ENTITY closeSession.accesskey "c">
+<!ENTITY abandonSession.label "Abandonează sesiunea curentă">
+<!ENTITY abandonSession.accesskey "A">
+<!ENTITY rename.label "Redenumește sesiunea…">
+<!ENTITY rename.accesskey "d">
+<!ENTITY remove.label "Șterge sesiunea…">
+<!ENTITY remove.accesskey "t">
+<!ENTITY openFolder.label "Deschide dosarul de arhivare a sesiunilor">
+<!ENTITY openFolder.accesskey "h">
+<!ENTITY options.label "Opțiuni &sessionManager;">
+<!ENTITY options.accesskey "O">
+<!ENTITY undoClosed.label "Redeschide ferestrele și/sau filele închise…">
+<!ENTITY undoClosed.accesskey "R">
+<!ENTITY closedWindows "Ferestre închise recent:">
+<!ENTITY closedTabs "File închise recent:">
+<!ENTITY clearList.label "Șterge întreaga listă…">
+<!ENTITY clearList.accesskey "l">
+<!ENTITY toolbar.tooltip "Salvează sesiunea curentă…">
+<!ENTITY toolbar.undo.label "Redeschide">
+<!ENTITY toolbar.undo.tooltip "Redeschide cele mai recente file închise">
+<!ENTITY prompt.ignore.label "Nu mai afișa această casetă de dialog">
+<!ENTITY prompt.autosave.label "Activează salvarea automată a acestei sesiuni">
+<!ENTITY prompt.tabprompt.label "Interoghează despre filele de restaurat">
+<!ENTITY load_replace.label "Restaurează sesiunea (înlocuiește sesiunea curentă)">
+<!ENTITY load_replace.accesskey "l">
+<!ENTITY load_append.label "Restaurează sesiunea (adaugă la sesiunea curentă)">
+<!ENTITY load_append.accesskey "a">
+<!ENTITY replace_all.label "Înlocuiește sesiunea cu sesiunea curentă">
+<!ENTITY replace_all.accesskey "l">
+<!ENTITY replace_window.label "Înlocuiește sesiunea cu fereastra curentă">
+<!ENTITY replace_window.accesskey "f">
+<!ENTITY remove_one.label "Șterge sesiunea…">
+<!ENTITY set_startup.label "Stabilește sesiunea ca sesiune de pornire">
+<!ENTITY set_startup.accesskey "p">
+<!ENTITY openSessionManagerSidebar.commandkey "S">
+<!ENTITY session_name.label "Denumire">
+<!ENTITY session_windows.label "Ferestre">
+<!ENTITY session_tabs.label "File">
+<!ENTITY backup_sessions.label "Sesiuni arhivate">
+<!ENTITY backup_sessions.accesskey "a">
+<!ENTITY remove_item.label "Șterge elementul">
+<!ENTITY remove_item.accesskey "t">
+<!ENTITY session_group.label "Grup">
+<!ENTITY rename_group.label "Redenumește grupul…">
+<!ENTITY remove_group.label "Șterge grupul…">
+<!ENTITY change_group.label "Schimbă grupul…">
+<!ENTITY change_group.accesskey "c">
+<!ENTITY group.label "Grupează sesiunile…">
+<!ENTITY group.accesskey "G">
+<!ENTITY toolbar.menu.tooltip "Meniu gestionare sesiuni">
+<!ENTITY toolbar.undo.menu.tooltip "Meniu redeschidere ferestre și file închise recent">
+<!ENTITY prompt.save_every1.label "Salvează la fiecare">
+<!ENTITY prompt.save_every2.label "minute (dezactivat dacă este necompletat)">
+<!ENTITY winTabTree.restoreHeader "Restaurare">
+<!ENTITY winTabTree.listHeader "Ferestre și file">
+<!-- LOCALIZATION NOTE: &#37;S will be replaced with a number. -->
+<!ENTITY winTabTree.windowLabel "Fereastra &#37;S">
+<!ENTITY load.label "Restaurează sesiunea…">
+<!ENTITY load.accesskey "R">
+<!ENTITY prompt.append.label "Adaugă la sesiunea curentă">
+<!ENTITY prompt.replace.label "Înlocuiește sesiunea curentă">
+<!ENTITY tab_open_click_note.label "Notă: Făcând Alt+clic pe înregistrarea unei file, aceasta se va deschide în fereastra curentă.">
+<!ENTITY select_all.label "Selectează tot">
+<!ENTITY select_none.label "Nu selecta nimic">
+<!ENTITY toggle_selection.label "Inversează selecția">
+<!ENTITY winTabTree.urlHeader "Locație">
+<!ENTITY prompt.append_window.label "Adaugă la fereastra curentă">
+<!ENTITY session_explorer.label "Explorator de sesiuni">
+<!ENTITY session_explorer.accesskey "E">
+<!ENTITY closeWindowSession.label "Salvează și închide sesiunea ferestrei">
+<!ENTITY closeWindowSession.accesskey "v">
+<!ENTITY abandonWindowSession.label "Abandonează sesiunea ferestrei">
+<!ENTITY abandonWindowSession.accesskey "b">
+<!ENTITY load_append_window.label "Restaurează sesiunea (adaugă la sesiunea curentă)">
+<!ENTITY load_append_window.accesskey "d">
+<!ENTITY leave_window_open.label "Lasă această fereastră deschisă">
+<!ENTITY clearTabList.label "Șterge lista filelor închise recent…">
+<!ENTITY clearTabList.accesskey "f">
+<!ENTITY clearWindowList.label "Șterge lista ferestrelor închise recent…">
+<!ENTITY clearWindowList.accesskey "e">
+<!ENTITY hidden.label "Ascuns">
+<!ENTITY contribute.label "Contribuiți">
+<!ENTITY support.label "Sprijiniți dezvoltarea suplimentului:">
+<!ENTITY session_group_verb.label "Grupare">
+<!ENTITY deleted_sessions.label "Sesiuni șterse">
+<!ENTITY deleted_sessions.accesskey "e">
+<!ENTITY empty_trash.label "Elimină toate sesiunile șterse">
+<!ENTITY empty_trash.accesskey "E">
+<!ENTITY permanently_delete.label "Șterge definitiv sesiunea">
+<!ENTITY permanently_delete.accesskey "d">
+<!ENTITY search.label "Caută…">
+<!ENTITY edit.label "Editează sesiunea…">
+<!ENTITY edit.accesskey "E">
+<!ENTITY addtab.label "Adaugă fila la sesiune…">
+<!ENTITY addtab.accesskey "A">
+<!ENTITY viewcontents.label "Vizualizează conținutul sesiunii">
+<!ENTITY viewcontents.accesskey "V">
+<!ENTITY export_to_html.label "Exportă conținutul sesiunii într-un fișier cu semne de carte HTML">
+<!ENTITY export_to_html.accesskey "E">

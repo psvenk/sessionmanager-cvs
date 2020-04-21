@@ -1,0 +1,57 @@
+@import url("http://www.mozdev.org/project.css");
+#no-main-content ul {
+  list-style-type: square;
+  list-style-image: none;
+  list-style-position: inherit;
+  padding-left: 15px;
+}
+.image-list img {
+	position: absolute;
+	margin-left: 0px !important;
+	border: 5px 5px 0px 0px;
+}
+.image-list p {
+	padding: 5px 0px 5px 40px;
+}
+.paragraph {
+	margin-left: 20px;
+}
+.paragraph img {
+	margin-left: 40px;
+}
+.return {
+	text-align: center;
+}
+.clear {
+	clear:both;
+	height:1px;
+	overflow:hidden;
+}
+#screenshots {
+	text-align: left !important;
+}
+#screenshots img {
+	margin: 2em; 
+}
+#donation {
+	color: white;
+	font-size: 11px;
+	position: absolute;
+	right: 5px;
+	text-align: center;
+	top: 5px;
+	width: 350px;
+}
+#donation p {
+	margin: 4px;
+	line-height: 1em;
+}
+#donation p a:link {
+	color: #00ffff;
+}
+#donation p a:visited {
+	color: #ff00ff;
+}
+#donation p a:active {
+	color: #ff0000;
+}

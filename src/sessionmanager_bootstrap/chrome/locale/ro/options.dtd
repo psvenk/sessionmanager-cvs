@@ -1,0 +1,202 @@
+<!ENTITY options.title "Opțiuni &sessionManager;">
+<!ENTITY general.caption "General">
+<!ENTITY startNend.caption "Lansare și închidere">
+<!ENTITY resume_sess.label "La lansare">
+<!ENTITY resume_sess.accesskey "l">
+<!ENTITY backup_sess.label "La închidere">
+<!ENTITY backup_sess.accesskey "c">
+<!ENTITY backup_session.label0 "înlătură sesiunea curentă">
+<!ENTITY backup_session.label1 "arhivează sesiunea curentă">
+<!ENTITY backup_session.label2 "întreabă dacă se arhivează sesiunea curentă">
+<!ENTITY crashrecovery.label "Activează recuperarea după o eșuare">
+<!ENTITY crashrecovery.accesskey "r">
+<!ENTITY autosave_session.label "Salvează automat sesiunea înlocuită">
+<!ENTITY autosave_session.accesskey "u">
+<!ENTITY restoring.caption "Restaurare sesiune">
+<!ENTITY sessionList.caption "Listă de sesiuni">
+<!ENTITY orderList.label "Ordonează lista de sesiuni">
+<!ENTITY orderList.accesskey "O">
+<!ENTITY orderList.label1 "alfabetic">
+<!ENTITY orderList.label2 "de la cea mai veche la cea mai recentă">
+<!ENTITY orderList.label_2 "de la cea mai recentă la cea mai veche">
+<!ENTITY max_backup.label "Număr de sesiuni vechi (sau eșuate) care se păstrează:">
+<!ENTITY max_backup.accesskey "p">
+<!ENTITY undoClose.caption "Recuperări">
+<!ENTITY windowsNtabs.caption "Ferestre și file închise">
+<!ENTITY max_closed.label "Număr maxim de ferestre închise:">
+<!ENTITY max_closed.accesskey "e">
+<!ENTITY max_tabs.label "Număr maxim de file închise (într-o fereastră):">
+<!ENTITY max_tabs.accesskey "f">
+<!ENTITY submenu.label "Afișează lista ferestrelor și filelor închise într-un submeniu">
+<!ENTITY submenu.accesskey "m">
+<!ENTITY persistence.caption "Persistență">
+<!ENTITY closed_tabs.label "Restaurează lista filelor închise pentru toate ferestrele:">
+<!ENTITY closed_tabs.accesskey "R">
+<!ENTITY closed_tabs.label0 "niciodată">
+<!ENTITY closed_tabs.label1 "la pornire">
+<!ENTITY closed_tabs.label2 "întotdeauna">
+<!ENTITY window_list.label "La închiderea aplicației, nu șterge lista ferestrelor închise">
+<!ENTITY window_list.accesskey "t">
+<!ENTITY clear_list.label "Șterge lista">
+<!ENTITY clear_list.accesskey "g">
+<!ENTITY advanced.caption "Complex">
+<!ENTITY name_format.caption "Denumiri sesiuni">
+<!ENTITY name_format.label "Sugestii de formare a denumirilor sesiunilor:">
+<!ENTITY name_format.accesskey "f">
+<!ENTITY name_format.desc "Folosiți &#37;t pentru titlul filei active, &#37;d pentru data curentă și &#37;m pentru ora curentă. Lungimea titlului poate fi limitată folosind &#37;#t, unde # este numărul de caractere.">
+<!ENTITY sessionstore.caption "SessionStore">
+<!ENTITY service.caption "Opțiuni „SessionStore”">
+<!ENTITY service.description "Modificați aceste opțiuni doar dacă știți sigur ce înseamnă!">
+<!ENTITY interval.label "Intervalul minim dintre două salvări ale stării sesiunii (în secunde):">
+<!ENTITY interval.accesskey "i">
+<!ENTITY postdata.label "Cantitatea maximă de date „POSTDATA” ce se salvează (în octeți; -1 pentru tot):">
+<!ENTITY postdata.accesskey "x">
+<!ENTITY privacy.label "Salvează datele personale (date din formulare, „POSTDATA” și module „cookie”) pentru:">
+<!ENTITY privacy.accesskey "p">
+<!ENTITY privacy.level0 "toate saiturile">
+<!ENTITY privacy.level1 "saiturile necriptate">
+<!ENTITY privacy.level2 "nici un sait">
+<!ENTITY sessiondir.caption "Dosar de salvare a sesiunilor">
+<!ENTITY sessiondir.desc "Dosarul implicit de salvare a sesiunilor:">
+<!ENTITY encrypt.caption "Criptare">
+<!ENTITY encrypt.desc "AVERTISMENT: Datele din sesiunile criptate pot fi accesate numai din profiluri ce au fișierele „key3.db” identice.  În plus, dacă o parolă principală este activată, sesiunea nu poate fi criptată sau decriptată dacă această parolă nu este furnizată.">
+<!ENTITY encrypt.label "Criptează sesiunea salvată și datele din fereastra închisă">
+<!ENTITY encrypt.accesskey "C">
+<!ENTITY change_dir.label "Modifică">
+<!ENTITY change_dir.accesskey "M">
+<!ENTITY default_dir.label "Inițializează">
+<!ENTITY default_dir.accesskey "I">
+<!ENTITY sanitizer.label "Sesiuni salvate de Gestionarul de sesiuni">
+<!ENTITY sanitizer.accesskey "G">
+<!ENTITY saving.caption "Salvare sesiune">
+<!ENTITY lastpage.label "Arată ultima pagină încărcată">
+<!ENTITY noSession.label "Nu încărca nimic">
+<!ENTITY noSession.accesskey "N">
+<!ENTITY promptSession.label "Solicită o sesiune">
+<!ENTITY promptSession.accesskey "o">
+<!ENTITY selectSession.label "Selectează următoarea sesiune">
+<!ENTITY selectSession.accesskey "u">
+<!ENTITY cookies.label "Salvează modulele cookie ale sesiunii curente">
+<!ENTITY cookies.accesskey "k">
+<!ENTITY sessionImport.caption "Import sesiuni">
+<!ENTITY importSS.label "Din SessionSaver">
+<!ENTITY importSS.accesskey "v">
+<!ENTITY importTMP.label "Din Tab Mix Plus">
+<!ENTITY importTMP.accesskey "T">
+<!ENTITY apply.label "Aplică">
+<!ENTITY save_and_restore.caption "Salvare și restaurare">
+<!ENTITY display.caption "Afișare">
+<!ENTITY middleclick.label "Clic-mijloc redeschide ultima filă închisă">
+<!ENTITY middleclick.accesskey "m">
+<!ENTITY max_display.label "Număr maxim de sesiuni afișate în meniu:">
+<!ENTITY max_display.accesskey "x">
+<!ENTITY hide_tools_menu.label "Nu afișa meniul principal în meniul „Unelte”">
+<!ENTITY hide_tools_menu.accesskey "u">
+<!ENTITY disable_cache_fixer.label "Dezactivează opțiunea de stabilizare a cache-ului">
+<!ENTITY disable_cache_fixer.accesskey "D">
+<!ENTITY encrypted_only.label "Dacă criptarea eșuează, NU salva datele necriptat.">
+<!ENTITY encrypted_only.accesskey "N">
+<!ENTITY encrypt2.desc "AVERTISMENT: Dacă opțiunea este activă și sesiunea sau datele ferestrei nu pot fi criptate, datele se vor pierde fără posibilitatea de a fi recuperate. Criptarea va eșua dacă parola principală va fi cerută și nu va fi furnizată, așa că, gândiți-vă bine înainte de a activa această opțiune!">
+<!ENTITY closed_window_list.label "Folosește lista implicită de ferestre închise a navigatorului">
+<!ENTITY closed_window_list.accesskey "o">
+<!ENTITY closed_windows.label "Restaurează lista ferestrelor închise:">
+<!ENTITY closed_windows.accesskey "R">
+<!ENTITY open_as_tabs.label "Deschide ca file în fereastra curentă">
+<!ENTITY open_as_tabs.accesskey "f">
+<!ENTITY last_window_shutdown.label "Consideră închiderea ultimei ferestre ca închidere a computerului">
+<!ENTITY last_window_shutdown.accesskey "h">
+<!ENTITY preselect_previous_session.label "Preselectează sesiunea precedentă">
+<!ENTITY preselect_previous_session.accesskey "P">
+<!ENTITY logging.caption "Jurnal">
+<!ENTITY enable_logging.label "Activează înregistrarea în jurnal">
+<!ENTITY enable_logging.accesskey "j">
+<!ENTITY open_log.label "Deschide jurnalul">
+<!ENTITY open_log.accesskey "D">
+<!ENTITY delete_log.label "Șterge jurnalul">
+<!ENTITY delete_log.accesskey "t">
+<!ENTITY log_level_state.label "Înregistrează starea la închidere">
+<!ENTITY log_level_state.accesskey "h">
+<!ENTITY log_level_trace.label "Înregistrează datele de urmărire">
+<!ENTITY log_level_trace.accesskey "u">
+<!ENTITY log_level_data.label "Înregistrează datele variabile">
+<!ENTITY log_level_data.accesskey "v">
+<!ENTITY log_level_info.label "Înregistrează mesajele informative">
+<!ENTITY log_level_info.accesskey "m">
+<!ENTITY log_level_extra.label "Înregistrează datele de depanare suplimentare">
+<!ENTITY log_level_extra.accesskey "p">
+<!ENTITY reload.label "Reîncarcă toate ferestrele restaurate">
+<!ENTITY reload.accesskey "R">
+<!ENTITY overwrite.label "Înlocuiește fereastra curentă">
+<!ENTITY overwrite.accesskey "c">
+<!ENTITY allow_saving_during_pbm.label "Autorizează arhivarea la navigarea fără urme">
+<!ENTITY allow_saving_during_pbm.label2 "Necesită activarea criptării">
+<!ENTITY allow_saving_during_pbm.accesskey "p">
+<!ENTITY session_name_in_titlebar.label "denumirea sesiunii active în bara de titlu">
+<!ENTITY session_name_in_titlebar.accesskey "n">
+<!ENTITY prepend.label "Adaugă ca prefix">
+<!ENTITY append.label "Adaugă ca sufix">
+<!ENTITY donotadd.label "Nu adăuga">
+<!ENTITY use_browser_crash_prompt.label "Folosește mesajul predefinit al navigatorului la recuperarea după eșuare">
+<!ENTITY use_browser_crash_prompt.accesskey "m">
+<!ENTITY reset_warnings.label "Inițializează mesajele de avertizare">
+<!ENTITY reset_warnings.accesskey "m">
+<!ENTITY export_settings.label "Exportă">
+<!ENTITY export_settings.accesskey "E">
+<!ENTITY import_settings.label "Importă">
+<!ENTITY import_settings.accesskey "I">
+<!ENTITY settingsImportExport.caption "Import/export opțiuni">
+<!ENTITY keyboard.caption "Comenzi rapide">
+<!ENTITY keyboard.desc "Pentru a utiliza o comandă rapidă de la tastatură pentru o acțiune, tastați combinația în câmpul aferent, altfel lăsați-l gol. Modificările nu se vor aplica ferestrelor existente.">
+<!ENTITY clear.label "Dezasociază">
+<!ENTITY clear.accesskey "z">
+<!ENTITY clear_tab_list.label "Elimină filele închise">
+<!ENTITY clear_tab_list.accesskey "l">
+<!ENTITY clear_window_list.label "Elimină ferestrele închise">
+<!ENTITY clear_window_list.accesskey "i">
+<!ENTITY backup_on_restart.label "Salvează arhiva la repornirea navigatorului">
+<!ENTITY backup_on_restart.accesskey "r">
+<!ENTITY keep_deleted_sessions.label "Număr de zile de păstrare temporară a sesiunilor șterse:">
+<!ENTITY keep_deleted_sessions.accesskey "z">
+<!ENTITY concurrent.label "Număr de file restaurate în același timp:">
+<!ENTITY concurrent.accesskey "f">
+<!ENTITY do_not_color_toolbar_button.label "Nu colora butonul din bara de unelte în timpul încărcării sesiunii">
+<!ENTITY do_not_color_toolbar_button.accesskey "c">
+<!ENTITY preserve_app_tabs.label "Nu înlocui filele fixate ca file de aplicații">
+<!ENTITY preserve_app_tabs.accesskey "x">
+<!ENTITY logging_to_console.label "Înregistrează, de asemenea, în consola de erori">
+<!ENTITY logging_to_console.accesskey "c">
+<!ENTITY update_message.label "Afișează pagina web actualizată după actualizare">
+<!ENTITY update_message.accesskey "p">
+<!ENTITY double_click_session.label "La dublu-clic pe o sesiune existentă înlocuiește sesiunea și">
+<!ENTITY double_click_session.accesskey "d">
+<!ENTITY replace_with_name_replace.label "înlocuiește denumirea acesteia cu textul din caseta „Denumire”">
+<!ENTITY replace_with_name_keep.label "păstrează denumirea acesteia">
+<!ENTITY show_icon_in_menu.label "Afișează pictograma în meniul „Unelte”">
+<!ENTITY show_icon_in_menu.accesskey "p">
+<!ENTITY set_encryption_password.label "Furnizați o parolă pentru a proteja cheia de criptare a sesiunii">
+<!ENTITY set_encryption_password.accesskey "h">
+<!ENTITY change_encryption_key_password.label "Modifică parola de protecție a cheii de criptare">
+<!ENTITY change_encryption_key_password.accesskey "M">
+<!ENTITY save_encryption_key.label "Salvează parola de protecție a cheii de criptare în gestionarul de parole al navigatorului">
+<!ENTITY save_encryption_key.accesskey "S">
+<!ENTITY restore_hidden_tabs.label "Restaurează filele ascunse">
+<!ENTITY restore_hidden_tabs.accesskey "s">
+<!ENTITY display_menus_in_submenu.label "Afișează meniul principal ca submeniu">
+<!ENTITY display_menus_in_submenu.accesskey "s">
+<!ENTITY use_sql_cache.label "Stochează datele de bază ale sesiunii pe disc (se activează căutarea în conținutul sesiunilor)">
+<!ENTITY use_sql_cache.accesskey "S">
+<!ENTITY rebuild_cache.label "Refă datele din cache">
+<!ENTITY rebuild_cache.accesskey "R">
+<!ENTITY log_level_error.label "Înregistrează erorile">
+<!ENTITY log_level_error.accesskey "o">
+<!ENTITY allow_duplicates.label "Permite salvarea sesiunilor cu denumiri identice cu ale unor sesiuni existente">
+<!ENTITY allow_duplicates.accesskey "n">
+<!ENTITY backup_every.label "Salvează sesiunea la fiecare">
+<!ENTITY backup_every.accesskey "l">
+<!ENTITY minutes "minute">
+<!ENTITY restore_on_demand.label "Restabilește filele la cerere">
+<!ENTITY restore_on_demand.accesskey "b">
+<!ENTITY max_back_history.label "Numărul elementelor din istoric afişate pe butonul „Înapoi”, per filă (-1 pentru toate)">
+<!ENTITY max_back_history.accesskey "b">
+<!ENTITY max_forward_history.label "Numărul elementelor din istoric afişate pe butonul „Înainte”, per filă (-1 pentru toate)">
+<!ENTITY max_forward_history.accesskey "u">

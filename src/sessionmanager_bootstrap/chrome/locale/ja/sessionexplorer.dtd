@@ -1,0 +1,44 @@
+<!ENTITY session_open.label "開く">
+<!ENTITY session_open.accesskey "O">
+<!ENTITY session_open.tooltip "選択したセッションを開く">
+<!ENTITY session_open_overwrite.label "開く (上書き)">
+<!ENTITY session_open_overwrite.accesskey "v">
+<!ENTITY session_open_overwrite.tooltip "選択したセッションを開く ???">
+<!ENTITY session_open_newwindow.label "開く (新しいウィンドウ)">
+<!ENTITY session_open_newwindow.accesskey "n">
+<!ENTITY session_open_newwindow.tooltip "選択したセッションを開く ???">
+<!ENTITY session_open_append.label "開く (追加)">
+<!ENTITY session_open_append.accesskey "a">
+<!ENTITY session_open_append.tooltip "選択したセッションを開く">
+<!ENTITY session_rename.label "名前を変更...">
+<!ENTITY session_rename.accesskey "R">
+<!ENTITY session_rename.tooltip "選択したセッション名を変更">
+<!ENTITY session_rename_ok.label "名前を変更">
+<!ENTITY session_delete.label "削除">
+<!ENTITY session_delete.accesskey "D">
+<!ENTITY session_delete.tooltip "選択したセッションを削除">
+<!ENTITY session_save.label "保存...">
+<!ENTITY session_save.accesskey "S">
+<!ENTITY session_save.tooltip "新しいセッションに現在のウィンドウを保存する">
+<!ENTITY session_save_ok.label "保存">
+<!ENTITY session_save_w.label "ウィンドウを保存...">
+<!ENTITY session_save_w.accesskey "W">
+<!ENTITY session_save_w.tooltip "新しいセッションに現在のウィンドウを保存する">
+<!ENTITY session_save_w_ok.label "ウィンドウを保存">
+<!ENTITY session_open_folder.label "フォルダを開く">
+<!ENTITY session_open_folder.accesskey "F">
+<!ENTITY session_open_folder.tooltip "Session Manager のフォルダを開く">
+<!ENTITY column_autosave.label "A">
+<!ENTITY column_autosave.tooltip "セッションを自動保存">
+<!ENTITY column_windows.label "W">
+<!ENTITY column_windows.tooltip "ウィンドウ">
+<!ENTITY column_tabs.label "T">
+<!ENTITY column_tabs.tooltip "タブ">
+<!ENTITY column_time.label "時間">
+<!ENTITY column_time.tooltip "タイムスタンプ">
+<!ENTITY column_name.label "名前">
+<!ENTITY cancel.label "キャンセル">
+<!ENTITY done.label "完了">
+<!ENTITY done.tooltip "セッションエクスプローラのウィンドウを閉じる">
+<!ENTITY session_load.label "読込">
+<!ENTITY session_load.accesskey "L">

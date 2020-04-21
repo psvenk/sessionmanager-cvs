@@ -1,0 +1,106 @@
+<!ENTITY sessionManager "Session Manager">
+<!ENTITY toolsmenu.accesskey "M">
+<!ENTITY save.label "セッションを保存...">
+<!ENTITY save.accesskey "S">
+<!ENTITY saveOne.label "現在のウインドウを保存...">
+<!ENTITY saveOne.accesskey "W">
+<!ENTITY closeSession.label "現在のセッションを保存し閉じる">
+<!ENTITY closeSession.accesskey "C">
+<!ENTITY abandonSession.label "現在のセッションを廃棄">
+<!ENTITY abandonSession.accesskey "A">
+<!ENTITY rename.label "セッション名を変更...">
+<!ENTITY rename.accesskey "R">
+<!ENTITY remove.label "セッションを削除...">
+<!ENTITY remove.accesskey "D">
+<!ENTITY openFolder.label "セッションフォルダを開く">
+<!ENTITY openFolder.accesskey "F">
+<!ENTITY options.label "&sessionManager; オプション">
+<!ENTITY options.accesskey "O">
+<!ENTITY undoClosed.label "元に戻す...">
+<!ENTITY undoClosed.accesskey "C">
+<!ENTITY closedWindows "閉じたウインドウ:">
+<!ENTITY closedTabs "閉じたタブ:">
+<!ENTITY clearList.label "閉じたリストを消去...">
+<!ENTITY clearList.accesskey "C">
+<!ENTITY toolbar.tooltip "現在のブラウジングセッションを保存...">
+<!ENTITY toolbar.undo.label "元に戻す">
+<!ENTITY toolbar.undo.tooltip "最近閉じたタブを元に戻す">
+<!ENTITY prompt.ignore.label "再びこのダイアログを表示しない">
+<!ENTITY prompt.autosave.label "自動保存セッションにする">
+<!ENTITY prompt.tabprompt.label "復元するタブを指定するプロンプト">
+<!ENTITY load_replace.label "読込 (現在のセッションを置換)">
+<!ENTITY load_replace.accesskey "L">
+<!ENTITY load_append.label "読込 (現在のセッションに追加)">
+<!ENTITY load_append.accesskey "A">
+<!ENTITY replace_all.label "セッションを現在のセッションに置換">
+<!ENTITY replace_all.accesskey "R">
+<!ENTITY replace_window.label "セッションを現在のウインドウに置換">
+<!ENTITY replace_window.accesskey "W">
+<!ENTITY remove_one.label "セッションを削除...">
+<!ENTITY set_startup.label "起動時のセッションに設定">
+<!ENTITY set_startup.accesskey "S">
+<!ENTITY openSessionManagerSidebar.commandkey "S">
+<!ENTITY session_name.label "名前">
+<!ENTITY session_windows.label "ウィンドウ">
+<!ENTITY session_tabs.label "タブ">
+<!ENTITY backup_sessions.label "バックアップセッション">
+<!ENTITY backup_sessions.accesskey "B">
+<!ENTITY remove_item.label "項目を削除">
+<!ENTITY remove_item.accesskey "D">
+<!ENTITY session_group.label "グループ">
+<!ENTITY rename_group.label "グループ名を変更...">
+<!ENTITY remove_group.label "グループを削除...">
+<!ENTITY change_group.label "グループを変更...">
+<!ENTITY change_group.accesskey "C">
+<!ENTITY group.label "グループセッション...">
+<!ENTITY group.accesskey "G">
+<!ENTITY toolbar.menu.tooltip "セッション管理メニューを開く">
+<!ENTITY toolbar.undo.menu.tooltip "最近閉じたウィンドウやタブのメニューを開く">
+<!ENTITY prompt.save_every1.label "保存間隔:">
+<!ENTITY prompt.save_every2.label "分 (空白の場合は無効)">
+<!ENTITY winTabTree.restoreHeader "復元">
+<!ENTITY winTabTree.listHeader "ウィンドウやタブ">
+<!-- LOCALIZATION NOTE: &#37;S will be replaced with a number. -->
+<!ENTITY winTabTree.windowLabel "ウィンドウ &#37;S">
+<!ENTITY load.label "セッションを読み込む...">
+<!ENTITY load.accesskey "L">
+<!ENTITY prompt.append.label "セッションに追加">
+<!ENTITY prompt.replace.label "セッションを置換">
+<!ENTITY tab_open_click_note.label "注: Alt キーを押しながらタブのエントリをクリックすると、既存のウィンドウでそのタブを開きます。">
+<!ENTITY select_all.label "すべて選択">
+<!ENTITY select_none.label "選択しない">
+<!ENTITY toggle_selection.label "選択の切替">
+<!ENTITY winTabTree.urlHeader "場所">
+<!ENTITY prompt.append_window.label "現在のウィンドウに追加">
+<!ENTITY session_explorer.label "セッションエクスプローラ">
+<!ENTITY session_explorer.accesskey "E">
+<!ENTITY closeWindowSession.label "ウィンドウセッションを保存し閉じる">
+<!ENTITY closeWindowSession.accesskey "l">
+<!ENTITY abandonWindowSession.label "破棄したウィンドウセッション">
+<!ENTITY abandonWindowSession.accesskey "b">
+<!ENTITY load_append_window.label "読込 (現在のウィンドウに追加)">
+<!ENTITY load_append_window.accesskey "i">
+<!ENTITY leave_window_open.label "このウィンドウを開いたままにする">
+<!ENTITY clearTabList.label "閉じたタブリストを消去...">
+<!ENTITY clearTabList.accesskey "T">
+<!ENTITY clearWindowList.label "閉じたウィンドウリストを消去...">
+<!ENTITY clearWindowList.accesskey "W">
+<!ENTITY hidden.label "隠れている">
+<!ENTITY contribute.label "貢献">
+<!ENTITY support.label "このアドオンをサポート:">
+<!ENTITY session_group_verb.label "グループ">
+<!ENTITY deleted_sessions.label "削除したセッション">
+<!ENTITY deleted_sessions.accesskey "e">
+<!ENTITY empty_trash.label "完全にすべてのセッションを削除">
+<!ENTITY empty_trash.accesskey "R">
+<!ENTITY permanently_delete.label "完全にセッションを削除">
+<!ENTITY permanently_delete.accesskey "P">
+<!ENTITY search.label "検索...">
+<!ENTITY edit.label "セッションを編集...">
+<!ENTITY edit.accesskey "E">
+<!ENTITY addtab.label "セッションにタブを追加...">
+<!ENTITY addtab.accesskey "A">
+<!ENTITY viewcontents.label "セッションの内容を見る">
+<!ENTITY viewcontents.accesskey "V">
+<!ENTITY export_to_html.label "セッションの内容をブックマーク HTML ファイルにエクスポートする">
+<!ENTITY export_to_html.accesskey "E">

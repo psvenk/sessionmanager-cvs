@@ -1,0 +1,60 @@
+<!ENTITY options.title "&sessionManager; Επιλογές">
+<!ENTITY general.caption "Γενικά">
+<!ENTITY startNend.caption "Εκκίνηση &amp; Τερματισμός">
+<!ENTITY resume_sess.label "Φόρτωση πάντα της ακόλουθης συνεδρίας κατά την εκκίνηση:">
+<!ENTITY backup_sess.label "Κατά τον τερματισμό">
+<!ENTITY backup_session.label0 "Διαγραφή της τρέχοντος συνεδρίας">
+<!ENTITY backup_session.label1 "Δημιουργία εφεδρικού αντιγράφου της τρέχοντος συνεδρίας">
+<!ENTITY backup_session.label2 "Ερώτηση για τη δημιουργία εφεδρικού αντιγράφου της τρέχοντος συνεδρίας">
+<!ENTITY autosave_session.label "Σώσε αυτόματα την αντικατεστημένη συνεδρία">
+<!ENTITY sessionList.caption "Λίστα συνεδριών">
+<!ENTITY orderList.label "Ταξινόμηση της λίστας συνεδριών">
+<!ENTITY orderList.label1 "αλφαβητικά">
+<!ENTITY orderList.label2 "από παλαιότερες σε νεότερες">
+<!ENTITY orderList.label_2 "από νεότερες σε παλαιότερες">
+<!ENTITY max_backup.label "Αριθμός παλαιότερων (crashed) εφεδρικών αντιγράφων συνεδριών προς αποθήκευση:">
+<!ENTITY submenu.label "Απαρίθμησε όλα τα κλεισμένα παράθυρα και καρτέλες σε υπομενού">
+<!ENTITY closed_tabs.label0 "ποτέ">
+<!ENTITY closed_tabs.label1 "κατά την εκκίνηση">
+<!ENTITY closed_tabs.label2 "πάντα">
+<!ENTITY window_list.label "Μη διαγράψεις τη λίστα κλεισμένων παραθύρων κατά τον τερματισμό">
+<!ENTITY clear_list.label "Εκκαθάριση λίστας">
+<!ENTITY advanced.caption "Ειδικότερες ρυθμίσεις">
+<!ENTITY name_format.caption "Ονόματα Συνεδριών">
+<!ENTITY name_format.label "Πρότυπο για τις υποδείξεις των ονομάτων των συνεδριών:">
+<!ENTITY name_format.desc "Χρησιμοποιήστε &#37;t για τους τίτλους των ενεργών παραθύρων, &#37;d για τη σημερινή ημερομηνία και &#37;m για την ώρα; επιπρόσθετα το μήκος του τίτλου μπορεί να περιοριστεί σε # χαρακτήρες: &#37;#t.">
+<!ENTITY service.caption "Επιλογές &quot;SessionStore&quot;">
+<!ENTITY service.description "Μην πειράζετε αυτές τις ρυθμίσεις εκτός αν γνωρίζετε τι κάνετε!">
+<!ENTITY sessiondir.caption "Τοποθεσία Αποθηκευμένων Συνεδριών">
+<!ENTITY sessiondir.desc "Η προεπιλεγμένη τοποθεσία των αποθηκευμένων συνεδριών μπορεί να παρακαμφθεί εδώ.">
+<!ENTITY encrypt.caption "Κρυπτογράφηση">
+<!ENTITY encrypt.label "Κρυπτογράφηση σε αποθηκευενες συνεδρίες και δεδομένα κλεισμένων παραθύρων">
+<!ENTITY change_dir.label "Αλλαγή">
+<!ENTITY default_dir.label "Προεπιλεγμένη ρύθμιση">
+<!ENTITY sanitizer.label "Αποθηκευμένες συνεδρίες Session Manager">
+<!ENTITY saving.caption "Αποθήκευση Συνεδριών">
+<!ENTITY lastpage.label "Εμφάνισε την τελευτάια φορτωμένη σελίδα">
+<!ENTITY noSession.label "Καμία">
+<!ENTITY promptSession.label "Ρώτησε με για την επιλογή συνεδρίας">
+<!ENTITY selectSession.label "Επιλογή συνεδρίας">
+<!ENTITY cookies.label "Αποθήκευση Session Cookies">
+<!ENTITY sessionImport.caption "Εισαγωγή Συνεδριών από...">
+<!ENTITY apply.label "Εφαρμογή">
+<!ENTITY save_and_restore.caption "Αποθήκευση &amp; Αντικατάσταση">
+<!ENTITY display.caption "Εμφάνιση">
+<!ENTITY middleclick.label "Το μεσαίο κλίκ ανοίγει την καρτέλα που έκλεισε τελευτάια">
+<!ENTITY max_display.label "Μέγιστος αριθμός συνεδριών που εμφανίζονται στο μενού (-1 για όλες)">
+<!ENTITY hide_tools_menu.label "Απόκρυψη του μενού του Session Manager στο μενού Εργαλείων">
+<!ENTITY closed_window_list.label "Χρησιμοποίησε την built-in λίστα κλεισμένων παραθύρων του φυλλομετρητή">
+<!ENTITY closed_windows.label "Αποκατέστησε τη λίστα των κλεισμένων παραθύρων που μπορούν να επανανοιχτούν:">
+<!ENTITY open_as_tabs.label "Άνοιγμα ως καρτέλες στο τρέχων παράθυρο">
+<!ENTITY preselect_previous_session.label "Προεπιλογή της προηγούμενης συνεδρίας">
+<!ENTITY enable_logging.label "Ενεργοποίηση Καταγραφής">
+<!ENTITY open_log.label "Άνοιγμα Αρχείου Καταγραφής">
+<!ENTITY delete_log.label "Διαγραφή Αρχείου Καταγραφής">
+<!ENTITY log_level_state.label "Καταγραφή Κατάστασης Τερματισμού">
+<!ENTITY log_level_trace.label "Καταγραφή Δεδομένων Εντοπισμού">
+<!ENTITY log_level_data.label "Καταγραφή Δεδομένων Μεταβλητών">
+<!ENTITY log_level_info.label "Καταγραφή Ενημερωτικών Μηνυμάτων">
+<!ENTITY log_level_extra.label "Καταγραφή Έξτρα Δεδομένων Αποσφαλμάτωσης (Debugging)">
+<!ENTITY overwrite.label "Αντικατέστησε τα Υπάρχοντα Παράθυρα">

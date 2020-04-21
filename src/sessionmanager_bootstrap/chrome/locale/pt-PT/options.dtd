@@ -1,0 +1,131 @@
+<!ENTITY options.title "Opções do &sessionManager;">
+<!ENTITY general.caption "Geral">
+<!ENTITY startNend.caption "Iniciar e Encerrar">
+<!ENTITY resume_sess.label "Ao iniciar carregar sempre a seguinte sessão:">
+<!ENTITY backup_sess.label "Ao encerrar">
+<!ENTITY backup_sess.accesskey "n">
+<!ENTITY backup_session.label0 "ignorar a sessão actual">
+<!ENTITY backup_session.label1 "guardar a sessão actual">
+<!ENTITY backup_session.label2 "perguntar se guarda a sessão actual">
+<!ENTITY crashrecovery.label "Activar Crash Recovery">
+<!ENTITY crashrecovery.accesskey "i">
+<!ENTITY autosave_session.label "Guardar automaticamente  a sessão substituída">
+<!ENTITY restoring.caption "Restauro de sessão">
+<!ENTITY sessionList.caption "Lista de sessões">
+<!ENTITY orderList.label "Ordenar a lista de sessões">
+<!ENTITY orderList.accesskey "d">
+<!ENTITY orderList.label1 "alfabeticamente">
+<!ENTITY orderList.label2 "da mais velha para a mais nova">
+<!ENTITY orderList.label_2 "da mais nova para a mais velha">
+<!ENTITY max_backup.label "Número de sessões antigas a manter:">
+<!ENTITY undoClose.caption "Anular Fechar">
+<!ENTITY windowsNtabs.caption "Janelas e Separadores fechados">
+<!ENTITY max_closed.label "Número máximo de janelas fechadas a lembrar:">
+<!ENTITY max_closed.accesskey "x">
+<!ENTITY max_tabs.label "Número máximo de separadores fechados que são lembrados (por janela):">
+<!ENTITY max_tabs.accesskey "f">
+<!ENTITY submenu.label "Listar todas as janelas e separadores fechados num submenu">
+<!ENTITY submenu.accesskey "s">
+<!ENTITY persistence.caption "Persistente">
+<!ENTITY closed_tabs.label "Restaurar a lista de separadores fechados possíveis de reabertura para todas as janelas:">
+<!ENTITY closed_tabs.label0 "nunca">
+<!ENTITY closed_tabs.label1 "ao iniciar">
+<!ENTITY closed_tabs.label2 "sempre">
+<!ENTITY window_list.label "Não limpar a lista de janelas fechadas ao encerrar">
+<!ENTITY clear_list.label "Limpar Lista">
+<!ENTITY clear_list.accesskey "L">
+<!ENTITY advanced.caption "Avançado">
+<!ENTITY name_format.caption "Nomes das sessões">
+<!ENTITY name_format.label "Formatar as sugestões para os nomes das sessões:">
+<!ENTITY name_format.desc "Utilize &#37;t para o título dos separadores activos, &#37;d para a data de hoje e &#37;m para a hora; o comprimento do titulo pode ser limitado a # caracteres: &#37;#t.">
+<!ENTITY service.caption "Definições do &quot;SessionStore&quot;">
+<!ENTITY service.description "Não toque, a não ser que saiba o que está a fazer!">
+<!ENTITY interval.label "Intervalo mínimo para guardar (em segundos):">
+<!ENTITY interval.accesskey "n">
+<!ENTITY postdata.label "Quantidade máxima de POSTDATA a ser guardada (em bytes; -1 para todos):">
+<!ENTITY privacy.label "Guardar dados sensíveis( formulários, POSTDATA e cookies) para">
+<!ENTITY privacy.level0 "todos os sítios">
+<!ENTITY privacy.level1 "apenas para sítios não encriptados">
+<!ENTITY privacy.level2 "nenhum sítio">
+<!ENTITY sessiondir.caption "Localização das sessões guardadas">
+<!ENTITY sessiondir.desc "A localização pré-definida das sessões guardadas pode ser substituída aqui.">
+<!ENTITY encrypt.caption "Cifra">
+<!ENTITY encrypt.desc "Atenção: Dados de sessão cifrados apenas podem ser abertos em perfis com os ficheiros  Key3.db e cert8.db correspondentes. Adicionalmente se tiver uma senha mestra, as sessões não podem ser cifradas ou decifradas se não introduzir a senha mestra.">
+<!ENTITY encrypt.label "Cifrar a sessão guardada e fechar a janela de dados">
+<!ENTITY encrypt.accesskey "i">
+<!ENTITY change_dir.label "Mudar">
+<!ENTITY change_dir.accesskey "M">
+<!ENTITY default_dir.label "Pré-definido">
+<!ENTITY default_dir.accesskey "P">
+<!ENTITY sanitizer.label "Sessões Guardadas do Session Manager">
+<!ENTITY sanitizer.accesskey "G">
+<!ENTITY saving.caption "Guardar sessão">
+<!ENTITY lastpage.label "Mostrar a última pasta carregada">
+<!ENTITY noSession.label "Nenhuma">
+<!ENTITY noSession.accesskey "n">
+<!ENTITY promptSession.label "Preparar uma sessão">
+<!ENTITY selectSession.label "Seleccionar sessão">
+<!ENTITY cookies.label "Guardar cookies da sessão">
+<!ENTITY cookies.accesskey "c">
+<!ENTITY sessionImport.caption "Importar sessões de ...">
+<!ENTITY importSS.label "Guardar sessão">
+<!ENTITY importSS.accesskey "I">
+<!ENTITY apply.label "Aplicar">
+<!ENTITY save_and_restore.caption "Guardar e restaurar">
+<!ENTITY display.caption "Mostrar">
+<!ENTITY middleclick.label "Clique central re-abre o último separador fechado">
+<!ENTITY middleclick.accesskey "C">
+<!ENTITY max_display.label "Número de sessões máximo a apresentar no menu">
+<!ENTITY max_display.accesskey "N">
+<!ENTITY hide_tools_menu.label "Não mostrar o menu do Session Manager no menu Ferramentas">
+<!ENTITY hide_tools_menu.accesskey "m">
+<!ENTITY disable_cache_fixer.label "Desactivar funcionalidade de reparação da cache">
+<!ENTITY encrypted_only.label "Se a cifra falhar, NÃO guarde dados não cifrados.">
+<!ENTITY encrypt2.desc "Aviso: Se isto estiver seleccionado e a sessão ou dados da janela não forem cifrados, os dados serão perdidos sem hipótese de os recuperar. A cifra irá falhar se a senha mestra for pedida e não for introduzida, por isso pense cuidadosamente antes de seleccionar esta caixa.">
+<!ENTITY closed_window_list.label "Usar a lista de janelas encerradas do navegador">
+<!ENTITY closed_windows.label "Restaurar lista de janelas encerradas que podem ser re-abertas:">
+<!ENTITY open_as_tabs.label "Abrir separadores na janela actual">
+<!ENTITY open_as_tabs.accesskey "b">
+<!ENTITY last_window_shutdown.label "Tratar o fecho da última janela aberta como desligar">
+<!ENTITY preselect_previous_session.label "Pré-seleccionar a última sessão">
+<!ENTITY preselect_previous_session.accesskey "l">
+<!ENTITY logging.caption "A registar">
+<!ENTITY enable_logging.label "Activar registo">
+<!ENTITY open_log.label "Abrir ficheiro de registo">
+<!ENTITY open_log.accesskey "b">
+<!ENTITY delete_log.label "Eliminar ficheiro de registo">
+<!ENTITY delete_log.accesskey "l">
+<!ENTITY log_level_state.label "Registar estado do encerramento">
+<!ENTITY log_level_trace.label "Registar dados de trace">
+<!ENTITY log_level_data.label "Registar dados da variável">
+<!ENTITY log_level_info.label "Registar mensagens de informação">
+<!ENTITY log_level_extra.label "Registar dados extra de debug">
+<!ENTITY reload.label "Recarregar todas Janelas Restauradas">
+<!ENTITY reload.accesskey "o">
+<!ENTITY overwrite.label "Substituir as Janelas Existentes">
+<!ENTITY overwrite.accesskey "u">
+<!ENTITY allow_saving_during_pbm.label "Permitir guardar durante o modo de navegação privado">
+<!ENTITY allow_saving_during_pbm.label2 "Necessita de cifra para ser activado">
+<!ENTITY allow_saving_during_pbm.accesskey "c">
+<!ENTITY session_name_in_titlebar.label "o nome das sessões activas na barra de titulo">
+<!ENTITY append.label "Anexar">
+<!ENTITY donotadd.label "Não adicionar">
+<!ENTITY use_browser_crash_prompt.label "Utilizar o aviso de recuperação de erros do navegador">
+<!ENTITY reset_warnings.label "Reiniciar avisos">
+<!ENTITY export_settings.label "Exportar configurações">
+<!ENTITY export_settings.accesskey "x">
+<!ENTITY import_settings.label "Importar configurações">
+<!ENTITY settingsImportExport.caption "Importar/Exportar configurações">
+<!ENTITY keyboard.caption "Atalhos do teclado">
+<!ENTITY keyboard.desc "Para usar os atalhos do teclado numa acção escreva-a aqui, caso contrário deixe-a em branco. As alterações não serão aplicadas às janelas actuais.">
+<!ENTITY clear.label "Limpar">
+<!ENTITY clear.accesskey "a">
+<!ENTITY clear_tab_list.label "Limpar separadores fechados">
+<!ENTITY clear_window_list.label "Limpar janelas fechadas">
+<!ENTITY backup_on_restart.label "Guardar backup ao reiniciar navegador">
+<!ENTITY keep_deleted_sessions.label "Número de dias para guardar temporariamente as sessões eliminadas:">
+<!ENTITY concurrent.label "Número de separadores a restaurar actualmente">
+<!ENTITY concurrent.accesskey "t">
+<!ENTITY backup_every.label "Criar um novo backup da sessão a cada">
+<!ENTITY minutes "minutos">
+<!ENTITY restore_on_demand.label "Restaurar separadores a pedido">

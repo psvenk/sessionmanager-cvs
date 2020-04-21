@@ -1,0 +1,815 @@
+<!-- MAIN CONTENT -->
+<div id="no-main-content">
+<h5 class="page-header">Older Revision History</h5>
+
+<p id="0.6.9.3">Version: <b><a href="http://downloads.mozdev.org/sessionmanager/session_manager-0.6.9.3-fx+sm.xpi">0.6.9.3</a></b> - (November 17, 2010)</p>
+<ul>
+<li>Fixed error in chrome.manifest which was preventing Session Manager from displaying correctly in SeaMonkey's modern theme.</li>
+</ul>
+<hr>
+
+<p id="0.6.9.2">Version: <b><a href="http://downloads.mozdev.org/sessionmanager/session_manager-0.6.9.2-fx+sm.xpi">0.6.9.2</a></b> - (November 13, 2010)</p>
+<ul>
+<li>Fixed the reload tab functionality which broke in 0.6.9.1.</li>
+<li>Fixed issue which resulted in duplicated or missing sessions being displayed in the Session window.  This was a display issue only.</li>
+</ul>
+<hr>
+
+<p id="0.6.9.1">Version: <b><a href="http://downloads.mozdev.org/sessionmanager/session_manager-0.6.9.1-fx+sm.xpi">0.6.9.1</a></b> - (November 10, 2010)</p>
+<ul>
+<li>When importing Session Manager settings, some imported settings weren't being reflected in the options window.  This has been corrected.</li>
+<li>Sessions with no tabs were being marked as corrupted when they are no longer considered so.  Zero tab sessions were being created in Firefox 4 (Minefield), but that should no longer occur in the latest nightlies.  It can still happen in beta 7 though.</li>
+<li>Session Manager 0.6.9 had a bug when reading sessions in certain cases where it wasn't converting the OS newline character to the internally used 0x000a character.  This was causing sessions that were converted from Firefox 3 format to become corrupted and disappear.  This issue has been fixed and any corrupted sessions will automatically be fixed after 0.6.9.1 is installed so they will be visible again.</li>
+<li>Fixed issue with closed tab and window list only showing one entry when that list was not shown in a submenu.  Thanks to Alan Baxter.</li>
+</ul>
+<hr>
+
+<p id="0.6.9">Version: <b><a href="http://downloads.mozdev.org/sessionmanager/session_manager-0.6.9-fx+sm.xpi">0.6.9</a></b> - (October 10, 2010)</p>
+<ul>
+<li>Additions:</li>
+<ul>
+<li>Allow user to choose tabs to save for "Save Window".</li>
+<li>Added a "Keep Session Manager window open" check box and only keep the session manager window open if it's checked.  The check box is "sticky", so it will default to whatever it was last time the window closed.</li>
+<li>Added option to use Firefox's crash prompt.</li>
+<li>Added a reset warning option to reset the warnings that people chose to "not show again".</li>
+<li>Added ability to import/export settings.</li>
+<li>Added support for hot keys.  These can be set in the General options preference. Hot keys are required to use at least one modifier if CTRL is used, otherwise more than one modifier is required. Note that hot keys may not work if the hot key sequence is already being used by the browser or other add-ons.  Session Manager has no way of checking for this so there won't be any warnings if you enter a hot key that's already in use.</li>
+<li>Added separate clear closed tabs and clear closed windows menu items. They are only visible if there are both closed tabs and closed windows in the closed list.</li>
+<li>Added indicator in windows/tabs tree to show which tabs are hidden and what groups they are in.  Only works in Firefox 4.0b4 and up.</li>
+<li>Show warning colors (yellow) and tooltip if permanent private browsing mode is enabled and user wants to backup sessions and/or restore the previous browsing session.  Neither will work in permanent private browsing mode.</li>
+<li>Added warning alert that saving and backing up sessions won't work if permanent private browsing mode is enabled. This can be disabled.</li>
+<li>Allow restoring closed tabs by middle clicking on them.  This will leave the menu closed menu open.</li>
+<li>Show what tabs are hidden and in what groups (if any) in Firefox 4.0b4 and higher since with Tab Candy tabs may not be visible, but will still be saved.</li>
+<li>Added option to save backups on browser restart.  This was previously a hidden preference.</li>
+<li>Allow user to use non-ASCII characters when saving.  This allows filenames with non-English characters.</li>
+</ul>
+<li>Changes:</li>
+<ul>
+<li>Removed all background thread processing from the add-on to prevent crashes.  Use asynchronous read (all) and writes (Firefox 3.6 and up) are now used instead.  This only affects the "change encryption" and "save crashed window session" processing.</li>
+<li>Firefox 4 currently has a tendency to not return valid session data at shutdown so work around this by storing session data at quit-application-granted.  This prevents backup and auto-save sessions from being corrupted when existing the browser using File->Exit.</li>
+<li>Lessen the restrictions used to determine if a session is marked as corrupted.  Sessions with no tabs are now considered "okay" since Firefox 4 can generate them currently. Though they probably aren't that useful.</li>
+<li>Checking the "reload" option now causes Session Manager to bypass the browser cache on a load instead of actually doing a reload. This allows the features to work with the new cascading tab loading features in Minefield.  It's also faster.</li>
+<li>Hide the option to clear closed tabs in SeaMonkey 2.0.x since it doesn't work in that version.</li>
+<li>Don't show use browser crash prompt in Firefox 3.0 since it doesn't work there.</li>
+</ul>
+<li>Fixes:</li>
+<ul>
+<li>Fix for option to restore a closed tab using middle click not working in Minefield.</li>
+<li>Fixed loading session at startup in Minefield.</li>
+<li>Fixed issue with save prompt, where group name wouldn't clear when clicking on an existing session in a group and then typing in a different session name.</li>
+<li>Fixed bug where saving window sessions when resuming from a crash would not work if encryption was enabled.</li>
+<li>Fixed bug in "Cache Fixer" that was causing it not to work.</li>
+<li>Fixed bug where closing the last open browser window under OS X wasn't saving either the currently open autosave session or a backup session.</li>
+<li>Fix clearing all closed tabs at once under SeaMonkey 2.1 beta.</li>
+<li>Prevent user from using invalid or O/S restricted file name when saving</li>.
+</ul>
+</ul>
+<hr>
+
+<p id="0.6.8.3">Version: <b><a href="http://downloads.mozdev.org/sessionmanager/session_manager-0.6.8.3-fx+sm.xpi">0.6.8.3</a></b> - (July 23, 2010)</p>
+<ul>
+<li><a href="https://www.mozdev.org/bugs/show_bug.cgi?id=22980">Fixed Bug 23047</a> - Needed to add a delay when reloading tabs not displaying the most recent history item.</li>
+<li>When the rename window displays after right clicking on a session and choosing rename, focus on the text box in the window.</li>
+</ul>
+<hr>
+
+<p id="0.6.8.2">Version: <b><a href="http://downloads.mozdev.org/sessionmanager/session_manager-0.6.8.2-fx+sm.xpi">0.6.8.2</a></b> - (July 22, 2010)</p>
+<ul>
+<li>Shutdown prompt now works in Firefox 4.0 betas and nightlies.</li>
+<li>Fix issues with SeaMonkey</li>
+</ul>
+<hr>
+
+<p id="0.6.8.1">Version: <b><a href="http://downloads.mozdev.org/sessionmanager/session_manager-0.6.8.1-fx+sm.xpi">0.6.8.1</a></b> - (July 20, 2010)</p>
+<ul>
+<li>Fixed broken ru-RU locale.  Also changed locale name from ru-RU to ru since that's the current standard.</li>
+<li>When using the extensions.{1280606b-2510-4fe0-97ef-9b5a22eafe30}.allowNamedReplace hidden preference, prompt before overwriting existing sessions.</li>
+</ul>
+<hr>
+
+<p id="0.6.8">Version: <b><a href="http://downloads.mozdev.org/sessionmanager/session_manager-0.6.8-fx+sm.xpi">0.6.8</a></b> - (July 12, 2010)</p>
+<ul>
+<li>Additions:</li>
+<ul>
+<li>When saving a session, the windows and tabs to save can be selected.  Note that the way this currently works, is that the current session's windows and tabs, which update in real time, will display no matter what session is selected.  To see the contents of existing sessions, right click on the existing session.</li>
+<li>Cache sessions at startup using a background thread.</li>
+<li>Donations link in Add-ons window in Firefox 3.6 and earlier.</li>
+<li>Added hidden preference "extensions.sessionmanager.allowNamedReplace" which if set to true will cause double clicking a session name in the save window to the replace existing session, but use the default session name.</li>
+</ul>
+<li>Changes:</li>
+<ul>
+<li>Compatibility updates for Firefox 4.0</li>
+<li>Setting to "Reload all restored windows" now reloads instantly instead of waiting for session to load first.</li>
+<li>Change the code that fixed the closed window list so that if the user cancels the master password prompt 3 times, it deletes the closed window list.</li>
+<li>Only save temporary backup copy if user sets to resume last session.  No longer save if set to prompt on startup.</li>
+<li>SeaMonkey 2.1 fixes the bug that prevents closed tabs from being restored or deleted so don't hide close tab restoration preferences in SeaMonkey 2.1.</li>
+<li>Starting with Firefox 4.0, sessions saved under Firefox 3.0 or earlier won't load, so sessions saved under Firefox 3.0 or earlier will be converted to the latest session format when Firefox 4.0 is run.  Session Manager will make a backup copy of these sessions in a "Old_Format_Sessions" folder in the sessions folder.  The new format sessions will load in Firefox 3.0, but not all items will be restored.</li>
+<li>When restoring the previous browsing session or the last crashed browser session, window sessions that were open will be restored if their window is restored.  Currently "window session" windows show as bolded italic.</li>
+<li>Toolbar icons now have Firefox 4.0's disabled look.</li>
+<li>The Session Window is now non-modal for everything except for saving a window, prompting on a crash and prompting at startup.  The window will now remain open until specifically canceled (closed).  In addition the functionality of the window can be changed from the window itself.</li>
+<li>Changed preference branch from extensions.sessionmanager.* to extensions.{1280606b-2510-4fe0-97ef-9b5a22eafe30}.* (Session Manager's GUID).  Old preferences will be migrated over.</li>
+<li>Operating System is now logged so I don't have to keep asking people what O.S. they are using when looking at log files.</li>
+<li>Fade out Session Manager toolbar icon, but not drop down arrow when in private browsing mode to indicate that saving is disabled.</li>
+<li>When saving, selecting a tab label or pressing enter when tab is selected, will fill the text box with that tab's label as a session name.</li>
+<li>When saving, right clicking on an existing session will show you the contents of that session in a popup panel. Press esacpe or click outside the panel to close.</li>
+<li>Gray out logging category check boxes when logging is disabled to indicate that the top checkbox controls all the others.</li>
+<li>Locale changes: de-DE is now de, fr-FR is now fr, nl-NL is now nl.</li>
+</ul>
+<li>Fixes:</li>
+<ul>
+<li>Added work around for <a href="https://bugzilla.mozilla.org/show_bug.cgi?id=488587">Firefox bug 488587</a>.</li>
+<li>Fixed problem where location bar won't allow input on restart when only pop-up window remains (OS X only) - See <a href="https://bugzilla.mozilla.org/show_bug.cgi?id=519099">Firefox bug 519099</a>.</li>
+<li>When changing encryption only put one one error alert, no matter how many fail.</li>
+<li>Fix issue with load window height growing taller every time it is closed with the windows/tabs list open.</li>
+<li>Fixed issue where 1 old backup would be saved if user set to save 0 old backups and also set to not backup sessions.</li>
+<li>No longer get errors when trying to save sessions with an * in the name (at least under Windows).</li>
+<li>Try to work around error that occurs when SessionStore is prevented from initializing correctly by another addon.</li>
+<li>Fix regression compatibility issue with Tab Mix Plus's Single Window mode.</li>
+<li>Fix issue where undo button might not be enabled when there were closed windows or tabs available on Firefox startup.</li>
+<li>Try to prevent the session prompt window from opening off-screen.</li>
+<li>Also try to keep the session prompt window from enlarging off-screen.</li>
+<li>Finally make sure user doesn't resize the session prompt window too small to show the dialog buttons.</li>
+<li>Groups with special regular expression characters in them will no longer prevent the session prompt (load, save, etc) from displaying.</li>
+<li>Groups with ^ character in them will be displayed correctly.</li>
+<li>Don't adjust the window aspect ratio when loading a window if multiple monitors are detected.</li>
+<li>Fixed bug with registering for Tab Events (using wrong XUL object which doesn't work in Firefox 4.0).</li>
+<li>Exception no longer thrown when browser shuts down with multiple windows open in nightly Minefield loads.  This was causing session backups to not save.</li>
+<li>Some positioning issues with toolbar icons in Seamonkey's Modern theme.</li>
+<li>Window sessions that were opened when the browser crashed are now saved in the case where the user chooses not to restore the crashed session or chooses to restore specific windows and tabs in the crashed session.</li>
+<li>Fixed <a href="https://www.mozdev.org/bugs/show_bug.cgi?id=22805">bug 22805</a>: Extra window no longer opens when specifying a session name on the browser command prompt and the "replace existing windows" setting is disabled.</li>
+<li>Session/Crash prompt appearing at browser startup is now centered and sized correctly.</li>
+<li>Window sessions saved at browser shutdown, will now always save the correct screen width and height.  Previously there was a chance of this being saved as "null".</li>
+<li>Issue with backup sessions's group name not being visible when selected.</li>
+<li>Fixed bug where window sessions saved when restoring from a crash were changed into regular auto-save sessions.</li>
+<li>When saving, Append button is now disabled when Replace button is disabled.</li>
+<li>Session List no longer grows when unchecking auto save check box.</li>
+<li>Fixed issues with SeaMonkey: that session names weren't showing in title bar, the new save session window wasn't working and a few other errors that prevented window sessions from working.</li>
+<li>Switched to using lazy getters instead of constants to allow D2D to be enabled in Firefox 4.0.</li>
+<li>Work around high CPU usage issue with Session Manager window open in Firefox 3.6 and up.</li>
+<li><a href="https://www.mozdev.org/bugs/show_bug.cgi?id=22980">Fixed Bug 22980</a> - Checking auto-save checkbox with keyboard doesn't unhide autosave time textbox.</li>
+<li><a href="https://www.mozdev.org/bugs/show_bug.cgi?id=22981">Fixed Bug 22981</a> - If option is set to load last browser session set and auto-save session was open when browser was shut down, then old session wasn't restored.</li>
+<li>Lots of fixes to logging.</li>
+</ul>
+<li>Removals:</li>
+<ul>
+<li>Do to new Mozilla Add-on policies, removed settings that allowed users to save sessions and windows when in private browsing mode.  See the following link for details: <a href="http://blog.mozilla.com/addons/2010/02/23/private-browsing-support-required-for-add-ons/">http://blog.mozilla.com/addons/2010/02/23/private-browsing-support-required-for-add-ons/</a></li>
+</ul>
+</ul>
+<hr>
+
+<p id="0.6.7.4">Version: <b><a href="http://downloads.mozdev.org/sessionmanager/session_manager-0.6.7.4-fx+sm.xpi">0.6.7.4</a></b> - (November 22, 2009)</p>
+<ul>
+<li>Fixed issue where sessions saved on a crash (backup or autosave) could become corrupted.
+<li>Fixed error prompts that should have appeared on a Session or I/O error.
+<li>Fixed file naming issue where a space could end up being a "_".  This could cause a session to duplicate in extremely rare cases.
+</ul>
+<hr>
+<p id="0.6.7.3">Version: <b><a href="http://downloads.mozdev.org/sessionmanager/session_manager-0.6.7.3-fx+sm.xpi">0.6.7.3</a></b> - (November 8, 2009)</p>
+<ul>
+<li>Fixed: The following locales were broken in 0.6.7.1 and 0.6.7.2:  ca, da-DK, fi-FI, it-IT, lt-LT, mk-MK, sr-RS, tr-TR 
+</ul>
+<hr>
+<p id="0.6.7.2">Version: <b><a href="http://downloads.mozdev.org/sessionmanager/session_manager-0.6.7.2-fx+sm.xpi">0.6.7.2</a></b> - (November 7, 2009)</p>
+<ul>
+<li>Fixed: Issue with saving sessions where the replace button would actually append if the "Replace Existing Windows" option was set and the "Open as tabs in current window" option was not.
+<li>Updated: uk-UA locale
+</ul>
+<hr>
+<p id="0.6.7.1">Version: <b><a href="http://downloads.mozdev.org/sessionmanager/session_manager-0.6.7.1-fx+sm.xpi">0.6.7.1</a></b> - (November 4, 2009)</p>
+<ul>
+<li>Fixed: Issue introduced in 0.6.7 where Firefox 3.0 would not be properly detected.  This prevented the "Clear Private Data" functionality in Firefox 3.0 from removing Session Manager sessions even if the user chose to do so.
+<li>Fixed: Issue with clearing sessions using the Clear Private Data functionality in SeaMonkey 2.0.
+<li>Fixed: The wrong Session Manager menu items were being disabled when there were no sessions.
+<li>Changed: When manually using the "Clear Private History" functionality, the "Session Manager Saved Sessions" check box will always default to being unchecked.  Previously the setting would be remembered for next time which could result in undesired deletion of sessions, hence the change.
+<li>Changed: Only override Firefox shutdown prompt if Session Manager is set to prompt.  Previously it was doing so any time it was set to save or restore.
+<li>Updated: Locales
+</ul>
+<hr>
+<p id="0.6.7">Version: <b><a href="http://downloads.mozdev.org/sessionmanager/session_manager-0.6.7-fx+sm.xpi">0.6.7</a></b> - (October 12, 2009)</p>
+<ul>
+<li>Added: Window Sessions -- create by saving a window and checking the auto-save checkbox
+<li>Added: Ability to add the current session or window to an existing session when saving via the save window - <a href="http://sessionmanager.mozdev.org/documentation.html">see documentation</a>.
+<li>Added: Ability to delete specified tabs from an existing session - see documentation.
+<li>Added: Ability to load session(s) by specifying the session file name(s) on command line or by "opening" .session files from explorer (or other O/S equivalent) as long as .session files are associated with the browser.
+<li>Added: Option to save sessions in private browsing mode, only if encryption is enabled.
+<li>Added "extensions.sessionmanager.backup_on_restart" hidden preference which if set to true, causes Session Manager to create a backup session on a browser restart.
+<li>Added: Logging code to help with debugging.
+<li>Added: Save screen width and height in session file and when a restore is done, adjust the window to the current screen size.
+<li>Added: Right click menu item to abandon or close open auto and window sessions.
+<li>Added: Add option as to where in titlebar (if anywhere) to display active session name.
+<li>Fixed: <a href="https://www.mozdev.org/bugs/show_bug.cgi?id=21774">Bug 21774</a> - Added tooltip for session and undo tabs and windows names.
+<li>Fixed: Issue with session manager throwing exception when backing up sessions when Mr Tech Toolkit is installed and set to close all child windows when main window is closed.
+<li>Fixed: Issues where Session Manager could overwrite existing tabs on startup if tab mix plus's single window mode was active.
+<li>Fixed: Toolbar icons in SeaMonkey. SeaMonkey doesn't use the same size icons as Firefox.
+<li>Fixed: If session file header was corrupt and session data was encrypted, the session might not decrypt correctly.
+<li>Fixed: Error with converting old sessionmanager 0.4.2 format to new format (was leaving off {} around session data).
+<li>Fixed: Issue when closing last window under OS X not saving session.
+<li>Fixed: Don't display a "-" in the title bar when an auto-save session isn't loaded.
+<li>Fixed: Works with latest trunk loads.
+<li>Changed: The "Treat closing last open browser window as shutting down" option will now be set by default under OS X.
+<li>Changed: Allow saving of a "window session" with only one window open, to allow creating a window session with only one window open.
+<li>Changed: Optimized the displaying of the closed window and tab list and the shutdown processing.
+<li>Changed: Don't display already loaded auto and window sessions in "Load" window.
+<li>Changed: Always load in a new window if the "Load (Append to Current Session)" right click menu item is used.
+<li>Changed: The Session Manager quit prompt now overrides the built in browser quit prompt.  It also now contains a cancel button to cancel shut down.  In Firefox 3.0 and 3.5 closing the last browser window puts up a "close tab" prompt which Session Manager does not override.  In Firefox 3.6 and above, closing the last browser window will put up a quit prompt, which session manager will override.
+<li>Changed: When reloading tabs, only reload web pages (http:// and https://).  This prevents issues caused by reloading chrome pages.
+<li>Changed: Move the rename, delete and group menu items to top of Session Manager menu and put a seperator between it and any auto-save or window menu items.
+<li>Updated: Locales
+</ul>
+<hr>
+<p id="0.6.6.2">Version: <b><a href="http://downloads.mozdev.org/sessionmanager/session_manager-0.6.6.2-fx+sm.xpi">0.6.6.2</a></b> - (July 1, 2009)</p>
+<ul>
+<li>Fixed: <a href="https://www.mozdev.org/bugs/show_bug.cgi?id=21145">Bug 21145</a> - Session Manager will now remember the previous browser startup option when Session Manager is selected to prompt or load a session at startup.  Thus if the user had previously selected to show the home page at startup and then chose to use Session Manager, the home page would still display when opening new windows and if the user cancels the session prompt at startup.  This is how things worked prior to 0.6.6.
+<li>Fixed: <a href="https://www.mozdev.org/bugs/show_bug.cgi?id=21148">Bug 21148</a> - No longer overrides the built in String.trim function in Firefox 3.5.
+<li>Fixed: Minor issue with Session Manager's option window when the browser.preferences.instantApply is set to true.
+<li>Fixed: No longer displays a second session prompt, if the user cancels the crash prompt.
+<li>Fixed: If the browser crashed just as an update was about to be installed and Session Manager was set to prompt for a session, the update message page would not display.  This has been fixed.
+<li>Update: Don't display both loaded session and browser home page in SeaMonkey.
+<li>Updated: Locales
+</ul>
+<hr>
+<p id="0.6.6.1">Version: <b><a href="http://downloads.mozdev.org/sessionmanager/session_manager-0.6.6.1-fx+sm.xpi">0.6.6.1</a></b> - (June 27, 2009)</p>
+<ul>
+<li>Fixed: <a href="https://www.mozdev.org/bugs/show_bug.cgi?id=20787">Bug 20787</a> - error no longer occurs when opening closed window list (or Tools Session Manager menu) in Firefox 3.0 when encryption is enabled.  
+<li>Fixed: Issue with the displaying of the undo items not being correctly  enabled or disabled when using the built-in closed window list with both the closed window count and closed tab count set to 0.
+<li>Fixed: Error that happens when opening the session menu after adding/removing buttons from toolbar.
+<li>Fixed: Sanitize on shutdown for Firefox 3.5
+<li>Fixed: Sanitize preferences for Firefox 3.5
+<li>Fixed: Height of clear recent history window so we can see our checkbox.
+<li>Added: Confirmation box when checking Session Manager check box in Clear Recent History window.
+</ul>
+<hr>
+<p id="0.6.6">Version: <b><a href="http://downloads.mozdev.org/sessionmanager/session_manager-0.6.6-fx+sm.xpi">0.6.6</a></b> - (June 18, 2009)</p>
+<ul>
+<li>Removed: Removed support for Firefox 2.  As of this release, Session Manager only supports the Mozilla 1.9 and above branches of the Mozilla code.  This includes Firefox 3 and above (as well as any browser based on those versions) and SeaMonkey 2.0.  The main reason I removed support for Firefox 2 is that Firefox 2 is not supported by Mozilla and as such contains a number of security flaws so no one shouuld be running it.  The other reason is it allowed me to remove all the work arounds I had to add for Firefox 2 and to continue to go forward without having to worry about adding something that breaks Firefox 2.
+<li>Added: Firefox 3.5 now has a built-in closed window list.  Session Manager will now default to use the built-in closed window list in Firefox 3.5 instead of it's own internal closed window list.  The difference between the browser built-in closed window list and Session Manager's closed window list is that the built-in closed windows list is actually part of the session data, similar to the closed tab list.  Session Manager's closed window list is stored separated from the session data.  So basically using the built-in closed window list allows closed windows to be saved in sessions and restored when those sessions are loaded while using Session Manager's closed window list allows the list to persist across browser sessions without loading a session.  Because of the differences between the two methods, when using the built-in closed window list the option to clear or keep the closed window list at browser shutdown is not available (since it's not applicable) and an option to persist the closed window data in sessions (similar to the existing closed tabs option) is added.  See the option documentation for more info.
+<li>Added: The closed window list now displays the favicon of first tab in the closed window.
+<li>Added: The closed window list now displays the number of tabs in the closed window in parenthesis.
+<li>Added: Previously hidden preferences to options window:
+<ul>
+<li>"Open session as tab in current window" - When enabled, sessions will default to opening as tabs in the existing window instead of opening in a window.  This basically works like Tab Mix Plus's single window mode, except that it doesn't preventing opening new windows and can be overridden by the key modifier or right click menu items.  Warming: this differs slightly from the way this preference used to work in 0.6.5.
+<li>"Treat closing last window as shutdown" - When enabled, Sesson Manager will treat closing the last browser window as if the browser has shut down, even if the browser process has not exitted.  Basically this causes Session Manager to do it's backup processing if all browser windows are closed, but the browser does not exit.  OS X users may want to check this since Firefox continues to run on OS X even after all browser windows are closed.
+</ul>
+<li>Added: There is now an option to append to the current window in the "Load Session..." window.  This will load the session as tabs in the existing window.
+<li>Added: A hidden preference "extensions.sessionmanager.update_message" which defaults to "true".  When set to false, Session Manager will never display the documentation page after an update.  I only have Session Manager do this if the documentation changes, so I recommend leaving this set to "true".
+<li>Added: Option to pre-select the last backed up session when prompting for a session at startup.  This allows the last session to be loaded by simplying clicking load or hitting enter at the prompt, instead of having to manually select the session first.
+<li>Added: When the browser is shut down while in private browsing mode, Session Manager will now back up the session that existed prior to entering private browsing mode.  If the browser started in private browing mode, nothing is backed up.
+<li>Added: Session Manager startup options to browser startup options window.
+<li>Added: Officially compatible with Flock.
+<li>Added: ca, uk-UA and sr-RS locales.   Not all translations have been updated.
+<li>Fixed: Backup sessions now obey the Session Manager persistance options with respect to saving closed tabs and windows.
+<li>Fixed: Can now open URLs from the command line in SeaMonkey when Session Manager is set to prompt for sessions.
+<li>Fixed: Tweaks to keep advanced pane from opening too small and for the select session session menu from being too wide in the options window.
+<li>Fixed: Changed the way favicons are displayed in undo list for SSL pages to prevent triggering an error box if the SSL certificate is invalid. 
+<li>Fixed: Issue with wrong tab being selected at browser startup in Firefox 3.5 when restoring windows and tabs from previous session.
+<li>Fixed: Made "tick" marks in session load window easier to see when the tab row is selected.
+<li>Fixed: Issue with backing up sessions when entering private browsing mode.
+<li>Change: Session Manager now defaults to saving and restoring closed tabs and windows.
+<li>Change: The undo menu now crops text in the center instead of at the end.
+<li>Change: Replaced "folder" icon with "window" icons in tab tree in the session load window.  This matches the change in Firefox 3.5.
+</ul>
+<hr>
+<p id="0.6.5">Version: <b><a href="http://downloads.mozdev.org/sessionmanager/session_manager-0.6.5-fx+sm.xpi">0.6.5</a></b> - (May 1, 2009)</p>
+<ul>
+<li>Fix: Now really works correctly in Firefox 2.0.0.20 again (though I don't recommend using Firefox 2.0.0.20).
+<li>Fix: Closed tabs can be removed in Firefox 3.5b4.
+<li>Fix: If the user starts the browser by clicking on a link in another program and then selects to load a session with multiple windows when prompted at startup, don't automatically combine all the windows into a single window.
+<li>Fix: Closed tabs can now be restored when loading a session at browser start without overwriting existing tabs.
+<li>Change: Session labels in the session manager menu are now cropped in the center instead of the end.
+<li>Change: When Firefox is restarted, any active auto-save sessions are saved to the session file.
+<li>Change: Worked around Firefox bug 487219 in Firefox 3.5b4 by restoring any active auto-save session that isn't automatically loaded when Firefox restarts.
+<li>Change: In the "Clear Recent History" window, the checkbox to clear Session Manager saved session was moved into the Details area in Firefox 3.5.
+<li>Addition: Added a hideable column to display the URL for tabs in session prompt window.
+<li>Addition: Added prompt when overwriting sessions
+<li>Addition: Added <a href="http://sessionmanager.mozdev.org/documentation.html#hidden">hidden preference "extensions.sessionmanager.append_by_default"</a>.  If this is set to true and the "Replace Existing Windows" option is checked, then loaded session will be appended to the current window instead of replacing all existing windows.  Basically Session Manager will behave as if the user held down the CTRL key when loading the session.  See http://sessionmanager.mozdev.org/documentation.html#restoring.
+</ul>
+<hr>
+<p id="0.6.4.6">Version: <b><a href="http://downloads.mozdev.org/sessionmanager/session_manager-0.6.4.6-fx+sm.xpi">0.6.4.6</a></b> - (April 1, 2009)</p>
+<ul>
+<li>Fix: Works in Firefox 2.0.0.20 again (broke support in 0.6.4.5) - I highly recommend upgrading to Firefox 3 as I'll likely remove support for Firefox 2.0.0.20 once Firefox 3.5 (if released if not sooner).
+<li>Update: Updated pl-PL locale
+</ul>
+<hr>
+<p id="0.6.4.5">Version: <b><a href="http://downloads.mozdev.org/sessionmanager/session_manager-0.6.4.5-fx+sm.xpi">0.6.4.5</a></b> - (March 31, 2009)</p>
+<ul>
+<li>Fix: Workaround for <a href="https://bugzilla.mozilla.org/show_bug.cgi?id=485563">Firefox bug 485563</a> - can now load sessions that contain certain specific unicode characters
+<li>Fix: Workaround issue with being able to remove tabs from the closed tabs lists in Minefield 3.6a1pre until fix for <a href="https://bugzilla.mozilla.org/show_bug.cgi?id=461634">Firefox bug 461634</a> is implemented.
+<li>Enhancement: Added buttons to select all tabs, no tabs or invert selection of the tabs in the session prompt window.
+<li>Enhancement: When displaying the session prompt on browser start up (crash recovery or prompt) move the window so that it will display fulling on screen.
+</ul>
+<hr>
+<p id="0.6.4.4">Version: <b><a href="http://downloads.mozdev.org/sessionmanager/session_manager-0.6.4.4-fx+sm.xpi">0.6.4.4</a></b> - (March 17, 2009)</p>
+<ul>
+<li>Fix: Session backups are now created correctly in Firefox 3.1b3 if the browser is set to clear visited pages at shutdown.
+<li>Fix: Fix some issues with resizing the session prompt window.
+<li>Fix: Minor incompatibility with Tab Mix Plus's Single Window mode corrected.
+<li>Enhancement: Allow OS X users to use Command key instead of CTRL key when clicking on tab names in session prompt window.
+<li>Enhancement: Add ability to restore a single window by CTRL or Command clicking the window container in session prompt window.  
+</ul>
+<hr>
+<p id="0.6.4.3">Version: <b><a href="http://downloads.mozdev.org/sessionmanager/session_manager-0.6.4.3-fx+sm.xpi">0.6.4.3</a></b> - (March 1, 2009)</p>
+<ul>
+<li>Fix: <a href="https://www.mozdev.org/bugs/show_bug.cgi?id=20614">Bug 20614</a> - Don't force user to enter master password if there is no encrypted closed window data.
+To prevent data corruption, 0.6.4.2 needs to convert any encrypted closed window and session data to a new format right after it is installed.
+This triggers a prompt for the master password, if it is set in the browser.  Session Manager incorrectly triggered this prompt even if there was no encrypted data.
+This has been fixed for 0.6.4.3.  As the prompt only appeared once after installing 0.6.4.2, this fix will only affect people who have not installed 0.6.4.2.
+<li>Fix: The tab list will now display tabs' favicons for sessions saved under Firefox 2.0 and 3.0.
+<li>Fix: Forgot to add the session prompt folder icons for SeaMonkey 2.0.
+<li>Enhancement:  The session prompt window will now remember the tab tree height in addition to the session tree height.
+<li>Enhancement:  Prevent the user from shrinking the session prompt window such that the dialog buttons are no longer visible.
+</ul>
+<hr>
+<p id="0.6.4.2">Version: <b><a href="http://downloads.mozdev.org/sessionmanager/session_manager-0.6.4.2-fx+sm.xpi">0.6.4.2</a></b> - (Feb 26, 2009)</p>
+<ul>
+<li>Fix: Regression from 0.6.4.1 which broken the undo close button.
+<li>Fix: <a href="https://www.mozdev.org/bugs/show_bug.cgi?id=20597">Bug 20597</a> - The fix I put in to 0.6.4.1 for this caused old session files to stop working and decrypting them would permanently corrupt them.  This has been corrected.
+The first time the session list is displayed, old session files will be updated to the new format.  If you have a lot of sessions, this will cause a brief to moderate delay depending on CPU speed.  It will only occur once.
+<li>Update: Updated locales.
+</ul>
+<hr>
+<p id="0.6.4.1">Version: <b>0.6.4.1</b> - (Release pulled)</p>
+<ul>
+<li>Fix: <a href="https://www.mozdev.org/bugs/show_bug.cgi?id=20599">Bug 20599</a> - Users will no longer receive "JSON.stringify" errors in Firefox 3.0.6 when certain extensions are installed.
+<li>Fix: <a href="https://www.mozdev.org/bugs/show_bug.cgi?id=20597">Bug 20597</a> - Sessions with unicode data in them will no longer be corrupted when they are encrypted.  Already corrupted sessions will need to be fixed by hand.
+<li>Update: Updated locales.
+</ul>
+<hr>
+<p id="0.6.4">Version: <b>0.6.4</b> - (Release pulled)</p>
+<ul>
+<li>Add: Ability to open the Session Prompt window and load specified tabs on demand.  Use the new "Load Session..." menu item.
+<li>Add: Official support for SeaMonkey 2.0a3. Note, Session Manager will only work in SeaMonkey 2.0, not 1.x.
+<li>Fix: Imported sessions will obey the encryption setting.
+<li>Fix: Grouping will no longer be lost when replacing a session using the right click "Replace Session" menu item.
+<li>Fix: The session prompt window will now display icons when using themes.
+<li>Fix: File->Exit now works again in Firefox 2.0 (broken in version 0.6.3.5).
+<li>Fix: Fixed memory leak that could occur when opening Firefox options.
+<li>Enhancement: Use native JSON encoding/decoding functions in Firefox 3.1 and above.  This should speed up session processing.
+</ul>
+<hr>
+<p id="0.6.3.5">Version: <b><a href="http://downloads.mozdev.org/sessionmanager/session_manager-0.6.3.5-fx+sm.xpi">0.6.3.5</a></b> - (Feb 10, 2009)</p>
+<ul>
+<li>No longer uses the eval() function.  See <a href="http://adblockplus.org/blog/five-wrong-reasons-to-use-eval-in-an-extension">this page</a> for why I changed this.
+<li>Fixed the <a href="http://forums.mozillazine.org/viewtopic.php?p=2170841#p2170841">allowNamedReplace userChrome.js feature</a> I broken in a recent version.
+<li>There is now an option to no longer be prompted when deleting sessions via the right click menu.
+</ul>
+<hr>
+<p id="0.6.3.3">Version: <b><a href="http://downloads.mozdev.org/sessionmanager/session_manager-0.6.3.3-fx+sm.xpi">0.6.3.3</a></b> - (Feb 2, 2009)</p>
+<ul>
+<li>Auto-save sessions will no longer lose their grouping and save periodicity when performing certain actions.
+<li>Loaded auto-save sessions will be properly removed, when the group they are in is deleted.
+</ul>
+<hr>
+<p id="0.6.3.2">Version: <b><a href="http://downloads.mozdev.org/sessionmanager/session_manager-0.6.3.2-fx+sm.xpi">0.6.3.2</a></b> - (Jan 21, 2009)</p>
+<ul>
+<li>The options window should now size correctly in Firefox 2.0.0.20.
+</ul>
+<hr>
+<p id="0.6.3.1">Version: <b><a href="http://downloads.mozdev.org/sessionmanager/session_manager-0.6.3.1-fx+sm.xpi">0.6.3.1</a></b> - (Jan 20, 2009)</p>
+<ul>
+<li>Selecting an encrypted session to load in the session prompt window will no longer give an error (unless the master password is not entered).
+<li>Fixed issue where user could potentially select blank rows in the window/tab list.
+</ul>
+<hr>
+<p id="0.6.3">Version: <b><a href="http://downloads.mozdev.org/sessionmanager/session_manager-0.6.3-fx+sm.xpi">0.6.3</a></b> - (Jan 16, 2009)</p>
+<ul>
+<li>Converted the Session Prompt list into a tree which allows the width of the columns to be resized and the columns can be hidden using the column picker tool.  The column widths and hidden columns are persistent.
+<li>The sort feature is now a three way sort (normal, ascending, descending). Also selected items will remain selected when sorting.
+<li>Added the ability to choose which tabs to restore when recovering from a crash or when prompting for a session at start up. In the future the ability to choose tabs will be added to normal loads as well.
+<li>Added a requested "only saved encrypted" feature which will prevent any unencrypted data from being saved. I don't recommend enabling this as it will cause Session Manager to discard sessions if the session cannot be encrypted. For example, if you don't enter your master password when prompted, nothing will be saved.
+<li>Added separate tool tips to the toolbar buttons and drop down markers.
+<li>Groups will now display in alphabetical order at the top of the session list in the session manager menu.
+<li>Auto save sessions can now be set up to save periodically on their own, in addition to the current triggers listed on the <a href="http://sessionmanager.mozdev.org/documentation.html#saving">documentation page</a>.
+<li>When displaying the session list, if a session is determined to be corrupt it will be moved to a "Corrupt_Sessions" folder inside the sessions folder.
+<li>Clicking the middle mouse button on the save session button will once again save the window, instead of the session. This broke at some point, but is working again. This only works if more than one browser window is open, otherwise it just saves the session (one window).
+</ul>
+<hr>
+<p id="0.6.2.9">Version: <b><a href="http://downloads.mozdev.org/sessionmanager/session_manager-0.6.2.9-fx+sm.xpi">0.6.2.9</a></b> - (Dec 17, 2008)</p>
+<ul>
+<li>Fix for bugs <a href="https://www.mozdev.org/bugs/show_bug.cgi?id=20361">20361</a> and <a href="https://www.mozdev.org/bugs/show_bug.cgi?id=20363">20363</a>.
+</ul>
+<hr>
+<p id="0.6.2.8">Version: <b><a href="http://downloads.mozdev.org/sessionmanager/session_manager-0.6.2.8-fx+sm.xpi">0.6.2.8</a></b> - (Dec 15, 2008)</p>
+<ul>
+<li>Sessions can now be grouped. See <a href="http://sessionmanager.mozdev.org/documentation.html#grouping">the documentation</a>.
+<li>The Session prompt window has been updated to display the name, group, tab count and window count in separate columns. The list can be
+sorted by clicking on the column header.  Clicking the header again will do an inverse sort.
+<li>Session Manager now only runs it's shut down processing when Firefox actually exits instead of when the last browser window is closed.  Please see the documentation for the ramifications of this change.  Setting the <a href="http://sessionmanager.mozdev.org/documentation.html#hidden">hidden preference</a> "extensions.sessionmanager.shutdown_on_last_window_close" to true will undo these changes and make Session Manager behave the same way it did prior to 0.6.2.8.
+<li>If the user chooses the "Save and Quit" option from the Firefox shutdown prompt, then Session Manager won't give the option to save and restore since Firefox will already do so.
+</ul>
+<hr>
+<p id="0.6.2.6">Version: <b><a href="http://downloads.mozdev.org/sessionmanager/session_manager-0.6.2.6-fx+sm.xpi">0.6.2.6</a></b> - (Nov 26, 2008)</p>
+<ul>
+<li>Firefox 3.1 Privacy Mode now obeyed. Session Manager won't save any data while privacy mode is enabled.  It will back up the current session upon entering privacy mode.
+<li>Updated to work with the updated "Clear Recent History" feature in Firefox 3.1.
+<li>Fixed <a href="https://www.mozdev.org/bugs/show_bug.cgi?id=20194">bug 20194</a>.  Session Manager no longer allows the browser to get into a state where there is a single window open with the toolbars hidden as a result of a session restore operation.  This can still happen if the user closes all windows except one with hidden toolbars.
+<li>Fixed <a href="https://www.mozdev.org/bugs/show_bug.cgi?id=20281">bug 20281</a>.  Session Manager was not properly detecting when the user chose to use Firefox's "Save and Quit" when shutting down Firefox.  As a result, if the option to prompt for a session on startup was enabled, there would be one prompt for every window that was opened on shutdown.  Session Manager will no longer prompt for a session if the "Save and Quit" option is chosen at shutdown.
+</ul>
+<hr>
+<p id="0.6.2.5">Version: <b><a href="http://downloads.mozdev.org/sessionmanager/session_manager-0.6.2.5-fx+sm.xpi">0.6.2.5</a></b> - (Oct 24, 2008)</p>
+<ul>
+<li>Preliminary support for the yet to be implement Private Browsing mode in Firefox 3.1.  Session Manager will not save anything while the browser is in Private Browsing mode.  This includes closed windows and backup sessions.
+<li>Better method for determining if tabs should be reloaded or not.  If the reload option is selected, tabs shuold only reload when a session is loaded.
+<li>Sometimes multiple sessions would show as latest (blue) in the menus.  This has been fixed.
+<li>Some of the session popup menu items were enabled in conditions when they should not have disabled.  This has been fixed.
+<li>Fixed issue where backups would not occur if there was only one window open with many tabs open and the first tab was "about:blank".
+<li>The window and tab count is now displayed for the current crashed session. 
+<li>Importing Sessions from Tab Mix Plus will now use code in Tab Mix Plus to convert the session data.  The result of this is that Session Mananager won't need to be updated when Tab Mix Plus's code changes.
+</ul>
+<hr>
+<p id="0.6.2.4">Version: <b><a href="http://downloads.mozdev.org/sessionmanager/session_manager-0.6.2.4-fx+sm.xpi">0.6.2.4</a></b> - (Oct 20, 2008)</p>
+<ul>
+<li>Compatibility update to restore functionality when running with latest Firefox 3.1b2 nightlies.
+<li>Updated Tab Mix Plus session conversion routine with latest code from Tab Mix Plus.
+</ul>
+<hr>
+<p id="0.6.2.3">Version: <b><a href="http://downloads.mozdev.org/sessionmanager/session_manager-0.6.2.3-fx+sm.xpi">0.6.2.3</a></b> - (Sep 8, 2008)</p>
+<ul>
+<li>The "Save Sessions..." menu item will now display all the time and the "Save Current Window..." will only display when there is more than one window open.  This is the opposite of how it worked starting with 0.6.2, but was changed to prevent confusion.  Functionally there is no difference since with one window open "Save Session..." and "Save Current Window..." do the same thing.
+<li>The following translations are now complete: cs-CZ, da-DK, nl-NL, fi-FI, fr-FR, hu-HU, ja-JP, mk-MK, pl-PL, pt-PT, ro-RO, sk-SK, es-ES, sv-SE, tr-TR.
+<li>The following translations are not yet complete:  zh-CN, zh-TW, de-DE, it-IT, ko-KR, lt-LT, pt-BT, ru-RU, sr-YU.  To help with translations please visit <a href="http://www.babelzilla.org/index.php?option=com_wts&Itemid=88&extension=4127&type=lang">Babelzilla</a>.
+</ul>
+<hr>
+<p id="0.6.2.2">Version: <b><a href="http://downloads.mozdev.org/sessionmanager/session_manager-0.6.2.2-fx+sm.xpi">0.6.2.2</a></b> - (Sep 4, 2008)</p>
+<ul>
+<li>Fixed issue with some backup sessions showing up outside the backup sub-menu.
+<li>Fixed issue introduced in 0.6.2 that caused "(0)" to show up after some sessions and the loss of the numbers that appear before the session name.
+<li>Added help button to options.
+<li>Options to disable cache fixer functionality is now in the Advanced options pane.
+<li>Updated translations (some are still incomplete).
+</ul>
+<hr>
+<p id="0.6.2.1">Version: <b><a href="http://downloads.mozdev.org/sessionmanager/session_manager-0.6.2.1-fx+sm.xpi">0.6.2.1</a></b> - (Sep 3, 2008)</p>
+<ul>
+<li>Added additional option to the shutdown prompt to automatically restore the saved session the next time the browser starts up.  This basically works the same as Firefox's "Save and Quit" feature.
+<li>Fixed issue where blank windows were being saved if encryption was enabled.
+<li>Fixed issue where Session Manager could get into a state, where selecting to restore the previous browser session wouldn't do anything.
+<li>Fixed issue with the "rename" and "delete" menu items getting disabled when they should not be.
+</ul>
+	<hr>
+<p id="0.6.2">Version: <b><a href="http://downloads.mozdev.org/sessionmanager/session_manager-0.6.2-fx+sm.xpi">0.6.2</a></b> - (Sep 3, 2008)</p>
+<ul>
+<li>Added option to disable re-opening closed tab by clicking tab-bar with middle mouse button. This option will only show up if neither Tab Mix Plus nor Tab Clicking Options are installed. If they are installed use their options to disable this functionality.
+<li>Reworked the options GUI to make it more compact and it should size correctly now. Some things have moved around, but everything is still there. 
+<li>When using Tab Mix Plus's Single Window mode, the "Replace Existing Windows" becomes "Replace Existing Tabs". 
+<li>Fixed problem which caused session to not be restored if command line was specified.
+<li>Can now import sessions generated by Tab Mix Plus and SessionSaver.
+<li>Changed it so that if user specifies for Session Manager to restore the previous session, Session Manager will handle the restoration itself instead of letting Firefox do it. This only applies if the "select session" radio button is selected. If the "none" button is selected and the "show my windows and tabs from last time" menu entry is chosen, Firefox will handle the restore.
+<li>Reworked the menu to choose which session to restore. Moved non-session menu entries to radio button and also added options for controlling what Firefox does, when session manager is not set up to load any sessions.
+<li>Fixed some bugs that could occur on reload/shutdown which would cause Session Manager to not save the session. I believe this only applies to Firefox 2.0, but I don't remember.
+<li>Added a work-around to prevent windows from being lost when other add-ons initiate a browser restart in Firefox 2.0.x
+<li>Added an option to not save session cookies when saving sessions. Note, Firefox always saves session cookies so any session restore functionality performed by Firefox will also restore them. This is why I added feature #4 above, for those who don't want their session cookies to be restored from the previous browser session.
+<li>Work around Firefox Bug 374288 which was putting button tooltips on popup menus' menu items.
+</ul>
+	<hr>
+<p id="0.6.1.13">Version: <b><a href="http://downloads.mozdev.org/sessionmanager/session_manager-0.6.1.13-fx.xpi">0.6.1.13</a></b> - (Mar 10, 2008)</p>
+<ul>
+<li>Fix: Loading a session in a new window no longer turns it into an auto-save session named "undefined".
+</ul>
+	<hr>
+<p id="0.6.1.12">Version: <b><a href="http://downloads.mozdev.org/sessionmanager/session_manager-0.6.1.12-fx.xpi">0.6.1.12</a></b> - (Mar 6, 2008)</p>
+<ul>
+<li>Fix <a href="https://www.mozdev.org/bugs/show_bug.cgi?id=18746">bug 18746</a>: 0.6.1.11 broke things when closing the browser with an auto-save session open which caused Session Manager to load a blank tab on the next start, but associate that tab with the auto-save session.  This was corrected.
+<li>Fix: Restarting Firefox 2.0.0.x would reload an auto-save session, but not mark it as open.  This was corrected.  Firefox 2.0.0.12 still saves an auto-save session on a restart, but there's nothing I can do to prevent that.  It will work as designed in Firefox 3.0.
+</ul>
+	<hr>
+<p id="0.6.1.11">Version: <b><a href="http://downloads.mozdev.org/sessionmanager/session_manager-0.6.1.11-fx.xpi">0.6.1.11</a></b> - (Mar 4, 2008)</p>
+<ul>
+<li>Fix: If browser crashed with a lot of tabs and windows opened, resulting crash session would fail to parse correctly when trying to update the tab/window count.  This resulted in no sessions being displayed in the Session Manager menu.  This was more likely to occur when using the Firefox 3.0 betas, but could occur with Firefox 2.0.0.12 if the session file was large enough.
+<li>Fix: Cache Fixer will now work if user overrides the cache directory by changing the browser.cache.disk.parent_directory preference.
+<li>Fix: Session Manager will now correctly handle unicode characters in the user-specified session directory and session names.
+</ul>
+	<hr>
+<p id="0.6.1.10">Version: <b><a href="http://downloads.mozdev.org/sessionmanager/session_manager-0.6.1.10-fx.xpi">0.6.1.10</a></b> - (Feb 7, 2008)</p>
+<ul>
+<li>Add: zh-TW localization
+</ul>
+	<hr>
+<p id="0.6.1.9">Version: <b><a href="http://downloads.mozdev.org/sessionmanager/session_manager-0.6.1.9-fx.xpi">0.6.1.9</a></b> - (Feb 6, 2008)</p>
+<ul>
+<li>Fix: Compatibility issue with TabMix Plus, which prevented TMP from making changes to the Firefox preference window.
+<li>Fix: Was not clearing session manager data if the browser was set to clear private data at shutdown, but not prompt when clearing private data and the user chose to clear the session manager data when clearing private data.
+<li>Fix <a href="https://www.mozdev.org/bugs/show_bug.cgi?id=18515">bug 18515</a>: When moving mouse over last saved session in menu, highlight it as light blue instead of blue.  This makes it easier to read.
+<li>Update: Swedish localization
+</ul>
+	<hr>
+<p id="0.6.1.8">Version: <b><a href="http://downloads.mozdev.org/sessionmanager/session_manager-0.6.1.8-fx.xpi">0.6.1.8</a></b> - (Jan 1, 2008)</p>
+<ul>
+<li>Fix to <a href="https://www.mozdev.org/bugs/show_bug.cgi?id=17875">bug 17875</a> caused a problem with opening sessions in Firefox 3.0b3 and on OS X in certain instances.  This was corrected.
+</ul>
+	<hr>
+<p id="0.6.1.7">Version: <b><a href="http://downloads.mozdev.org/sessionmanager/session_manager-0.6.1.7-fx.xpi">0.6.1.7</a></b> - (Dec 29, 2007)</p>
+<ul>
+<li>Fixed <a href="https://www.mozdev.org/bugs/show_bug.cgi?id=17862">bug 17862</a> - Older backup sessions now display the time they were created and not when they were backed up.
+<li>Fixed <a href="https://www.mozdev.org/bugs/show_bug.cgi?id=17875">bug 17875</a> - If there is only one blank window, loading a session will always replace that window even if the user chooses to load into a new window.  Windows with closed tabs are not considered "blank", so a new window will open in that case.
+<li>Fixed <a href="https://www.mozdev.org/bugs/show_bug.cgi?id=18016">bug 18016</a> - User can specify the date format used in the session names.  The default is the ISO date format, but this can be overridden by specifying a specific format in quotes after the %d.  For example %d"%Y-%d-%m" will use YYYY-DD-MM.  The format string used is the same as that used for the <a href="http://developer.mozilla.org/en/docs/Core_JavaScript_1.5_Reference:Global_Objects:Date:toLocaleFormat">toLocaleFormat javascript date function</a>.
+<li>Fixed <a href="https://www.mozdev.org/bugs/show_bug.cgi?id=18119">bug 18119</a> - Saved crashed sessions will now be encrypted if that option is selected. They won't actually encrypt until you use the Session Manager menu the first time after recovering from a crash and only if you put in your master password (if set).
+<li>Fixed <a href="https://www.mozdev.org/bugs/show_bug.cgi?id=18376">bug 18376</a> - Backup sessions are now always stored in the user specified session directory instead of the default one.
+<li>Added Swedish localization
+</ul>
+	<hr>
+<p id="0.6.1.6">Version: <b><a href="http://downloads.mozdev.org/sessionmanager/session_manager-0.6.1.6-fx.xpi">0.6.1.6</a></b> - (Dec 6, 2007)</p>
+<ul>
+<li>Fixed conversion error from 0.4.3 version where name would always be "(Untitled)".  This was a regression.
+<li>More work-arounds for <a href="https://bugzilla.mozilla.org/show_bug.cgi?id=350558">Firefox bug 350558</a>. This should fix the problems where tabs get stuck in "Loading..." and will also fix most (but not all) of the cases where an "aTabData.entries.forEach is not a function" alert would display when saving sessions.  This error won't be completely fixed until the user upgrades to Firefox 3.0 (when it's released) or when <a href="https://bugzilla.mozilla.org/show_bug.cgi?id=402349">Firefox bug 402349</a> is fixed in Firefox 2.0.x
+<li>No longer breaks Firefox options in Firefox 3.0 betas.
+<li>Added Korean localization
+</ul>
+	<hr>
+<p id="0.6.1.5">Version: <b><a href="http://downloads.mozdev.org/sessionmanager/session_manager-0.6.1.5-fx.xpi">0.6.1.5</a></b> - (Sep 24, 2007)</p>
+<ul>
+<li>Fixed <a href="https://www.mozdev.org/bugs/show_bug.cgi?id=15456">bug 15456</a> - Fix don't drop oldest backed up session if user does not backup current session at shutdown.
+<li>Fixed <a href="https://www.mozdev.org/bugs/show_bug.cgi?id=17762">bug 17762</a> - Fix "Reopen Closed" for OS X.
+</ul>
+	<hr>
+<p id="0.6.1.4">Version: <b><a href="http://downloads.mozdev.org/sessionmanager/session_manager-0.6.1.4-fx.xpi">0.6.1.4</a></b> - (Sep 16, 2007)</p>
+<ul>
+<li>Fixed bug where if the user tried to overwrite a session while an autosave session was loaded it could save into the wrong session file.
+</ul>
+	<hr>
+<p id="0.6.1.3">Version: <b><a href="http://downloads.mozdev.org/sessionmanager/session_manager-0.6.1.3-fx.xpi">0.6.1.3</a></b> - (Sep 11, 2007)</p>
+<ul>
+<li>New Feature: CTRL/Command right clicking on an entry in the closed tab/window list will remove it from the list.
+<li>Add: Tab and window counts for sessions are now displayed in prompt window (restore, save, rename, etc). 
+<li>Change: The current session is no longer automatically backed up when loading a new session if the current session is not being replaced.  In other words loading a session into a new window or into existing tabs in the current window will not save the current session.  This was done to prevent backed up overwritten sessions from being overwritten by sessions that weren't really overwritten.
+<li>Updated: fi-FI locale
+<li>Fix: Crashed session is now colored <span style="color:blue;">blue</span> instead of last saved session in the restore from crash prompt.
+<li>Fix: Crash prompt now displays no counts for crashed session instead of (undefined/undefined).  Firefox doesn't store counts in crashed sessions and it is risky to try and calculate it on the fly when recovering the session, so it just won't display.  The counts will be calculated in the back-up of the crash session.
+<li>Fix: Wasn't resuming autosave session after a crash if user chose to restore current session.  This resulted in the autosave session not being saved unless you user manually saved it.
+<li>Fix: Wouldn't match autosession name with chosen name if session had certain certain characters like "quotes" in the name.
+<li>Fix: <a href="https://www.mozdev.org/bugs/show_bug.cgi?id=17677">Bug 17677</a> - Menus with closed tabs are not wide enough to display menu items.
+<li>Fix: <a href="https://www.mozdev.org/bugs/show_bug.cgi?id=17684">bug 17684</a> - No longer overrides Tab Mix Plus's placement of tabs when using the Tab Mix Plus undo close tab button.
+<li>Fix: Converting from old session file formats or enabling encryption could caused the session file to become corrupted. Corrupted session files will be corrected.
+<li>Fix: Issues with getting a "aState.Window[0] has no properties" error when first loading Firefox.
+</ul>
+<hr>
+<p id="0.6.1">Version: <b><a href="http://downloads.mozdev.org/sessionmanager/session_manager-0.6.1-fx.xpi">0.6.1</a></b> - (Sep 1, 2007)</p>
+<ul>
+<li>Changed the options GUI.  SessionStore options are now on their own tab (enable/disable crash recovery moved to this tab from the general tab).  Session names, encryption setting and session folder are now in the Advanced tabs.
+<li>Encryption can now be enabled/disabled from the Advanced tab.
+<li>Last saved session will be colored <span style="color:blue;">blue</span>.
+<li>The total number of windows and tabs are now listed after the session name in the following format: (windows/tabs).
+<li>The Command (Apple) key can be used instead of the CTRL key on Macs.
+<li>Middle clicking on the tab bar will reopen the last closed tab.  This is disabled if <a href="https://addons.mozilla.org/firefox/addon/1122">Tab Mix Plus</a> or <a href="https://addons.mozilla.org/firefox/addon/260">Tab Clicking Options</a> is installed since they allow middle click functionality to be customized.
+<li>When recovering from a crash or a browser restart, tabs won't automatically reload regardless of the "Reload All Restored Windows" setting.
+<li>Session Manager will no longer allow saving over an active auto-save session.  Just use the close and save option if you want to save.
+<li>Optimzed the reading of session files at startup and when displaying the session list for people with extremely large sized session files.  There will still be delays when you take action on said files (load, rename, etc), but it won't "freeze" when Firefox starts any more.  Note the first time 0.6.1 loads it will take longer than normal since the session format changed again for 0.6.1 and the session files will need to be updated.  Subsequent loads will be exponentially faster - <a href="https://www.mozdev.org/bugs/show_bug.cgi?id=17664">bug 17664</a>
+</ul>
+<hr>
+<p id="0.6.0.2">Version: <b><a href="http://downloads.mozdev.org/sessionmanager/session_manager-0.6.0.2-fx.xpi">0.6.0.2</a></b> - (Aug 26, 2007)</p>
+<ul>
+<li>No longer automatically disables the prompt in Minefield to restore the tabs/windows from last time.  I was convinced that Session Manager shouldn't do this and should leave it up to the user as to whether it should be disabled or not.  If you want to turn it back on after installed 0.6.0.2, reset the <a href="http://kb.mozillazine.org/Browser.warnOnQuit">browser.warnOnQuit</a> browser preference back to the default setting (true).
+</ul>
+<hr>
+<p id="0.6.0.1">Version: <b><a href="http://downloads.mozdev.org/sessionmanager/session_manager-0.6.0.1-fx.xpi">0.6.0.1</a></b> - (Aug 22, 2007)</p>
+<ul>
+<li>Fixed memory leak (<a href="http://bugzilla.mozdev.org/show_bug.cgi?id=17586">bug 17586</a>) introduced in 0.6.
+<li>Fixed accidental reversion of <a href="http://bugzilla.mozdev.org/show_bug.cgi?id=17196">Bug 17196</a>.
+<li>Restarting the browser via the restart menu/button will no longer backup current session or save current autosave session.  The reasoning behind this is that when the browser restarts it automatically recovers the current session so nothing will be lost.  Basically from Session Manager's stand point the browser never restarted.  This slightly speeds up restarting as Session Manager will no longer prompt you to save/restore sessions when restarting.  
+<li>Similarly if the browser crashes while an autosave session is open and the user chooses to restore the current browsing session or the autosave session (by name), Session Manager just continues where the user left off without saving the current state to the autosave file.  In other words, crashing won't save the autosave session unless the user specifically load a different session on browser start after the crash.  The crashed session is backed up as usual.
+<li>Disabled Minefield 3.0a8's prompt asking if the user wants to save the current tab/window state on shutdown.  Session Manager already saves these by default and can be set up to prompt if desired.  The reasoning for this was that it was causing duplicate prompting on shutdown.  If you want to re-enable this after uninstalling Session Manager, change the <a href="http://kb.mozillazine.org/Browser.warnOnQuit">browser.warnOnQuit</a> preference back to true.
+<li>Some minor updates for Minefield 3.0a8 (no longer need to work around certain bugs in Minefield).
+</ul>
+<hr>
+<p id="0.6">Version: <b><a href="http://downloads.mozdev.org/sessionmanager/session_manager-0.6-fx.xpi">0.6</a></b> - (Aug 19, 2007)</p>
+<ul>
+<li>Added Autosave functionality (see <a href="documentation.html">documentation</a>)
+<li>Changed append mode to append all tabs in all windows to the current window.  Previously it would only append the tabs from the first window and then open the remaining windows.
+<li>Added caching of closed window list which will dramatically cut down on the amount of disk access required when opening the closed tab/window list.
+<li>Session Manager no longer changes the Firefox default of saving no POSTDATA in sessions to saving all POSTDATA.  Session Manager now leaves the Firefox default in place.  This can be changed back to the way it was in the Advanced Options menu, but read <a href="http://kb.mozillazine.org/Browser.sessionstore.postdata">this link</a> for the reasons why this may not be a good idea (one user ended up with a 100 MB session file). Text in forms on pages is still saved, only submitted text and data is no longer saved by default.
+<li>Added code to encrypt session and closed window data.  This is not yet configurable in the options menu, but can be enabled by setting the extensions.sessionmanager.encrypt_sessions preference to true.  If you have a master password set, you will need to enter it when saving or loading sessions or closed windows.  If not Session Manager will fail to load sessions and will store sessions unencrypted.  It will also complain alot so just enter your master password.  Note, encrypted sessions cannot be shared between different profiles unless they are using identical key3.db and cert8.db files.
+</ul>
+<hr>
+<p id="0.5.4.1">Version: <b><a href="http://downloads.mozdev.org/sessionmanager/session_manager-0.5.4.1-fx.xpi">0.5.4.1</a></b> - (Jul 22, 2007)</p>
+<ul>
+<li>Added mk-MK and fi-FI locales.
+</ul>
+<hr>
+<p id="0.5.4">Version: <b><a href="http://downloads.mozdev.org/sessionmanager/session_manager-0.5.4-fx.xpi">0.5.4</a></b> - (Jul 16, 2007)</p>
+<ul>
+<li>Added the ability to clear out Session Manager saved session data through the Firefox "Clear Private Data..." menu.
+<li>Fixed <a href="http://bugzilla.mozdev.org/show_bug.cgi?id=17196">Bug 17196</a> - Windows that are opened when exiting Firefox will no longer be added to the closed window list.
+<li>Fixed <a href="http://bugzilla.mozdev.org/show_bug.cgi?id=16976">Bug 16976</a> - tr-TR error corrected.
+<li>Fixed issue where if reload all restored window was checked and Tab Mix Plus was loaded, any tab that was un-closed would reload.
+<li>Fixed issue where if the browser.sessionstore.postdata preference was not 0 and Tab Mix Plus is installed or upgraded, the browser.sessionstore.postdata preference was reset back to 0.
+<li> Added: cs-CZ locale.
+</ul>
+<hr>
+<p id="0.5.3.4">Version: <b><a href="http://downloads.mozdev.org/sessionmanager/session_manager-0.5.3.4-fx.xpi">0.5.3.4</a></b> - (May 27, 2007)</p>
+<ul>
+<li>zh-CN and pt-BR locales updated.
+</ul>
+<hr>
+<p id="0.5.3.3">Version: <b><a href="http://downloads.mozdev.org/sessionmanager/session_manager-0.5.3.3-fx.xpi">0.5.3.3</a></b> - (Apr 29, 2007)</p>
+<ul>
+<li>hu-HU, de-DE, sr-Yu, pt-PT locales added.
+<li>zh-CN and pt-BR locales contain some <a href="http://babelfish.altavista.com/">machine translated phrases</a> since the translators are MIA and they were holding up the release of 0.5.3.3.  When/if I receive the updated translations, I'll correct this.  If you want them corrected, just send me updated locales and I'll include them in the next build.
+<li>fr-FR locale mistranslation corrected.
+<li>Obsolete de-CH removed (de-DE is used for all "de" now).
+<li>Added option to disable crash recovery.
+<li>The URL of a closed tab will display in the status bar when it's entry is hovered over in the undo close tab list.
+<li>Added option to move the default saved sessions location for people who want multiple profiles, users, platforms, OS's, etc to be able to access the same saved sessions list.
+<li>Added preference to disable built in implementation of <a href="http://imglikeopera.mozdev.org/cache_fixer.html">Cache Fixer</a> for those who don't like it or have issues with it.  To disable set the "extensions.sessionmanager.disable_cache_fixer" preference to true.
+<li>Fixed "Reload on Window Restore" to work when restarting Firefox.
+<li>Fixed issue where sometimes closing a Window would not enable the closed tab/window menu.
+</ul>
+<hr>
+<p id="0.5.3.2">Version: <b><a href="http://downloads.mozdev.org/sessionmanager/session_manager-0.5.3.2-fx.xpi">0.5.3.2</a></b> - (Feb 14, 2007)</p>
+<ul>
+<li>tr-TR and sk-SK locales added.
+</ul>
+<hr>
+<p id="0.5.3.1">Version: <b><a href="http://downloads.mozdev.org/sessionmanager/session_manager-0.5.3.1.xpi">0.5.3.1</a></b> - (Jan 22, 2007)</p>
+<ul>
+<li>Fixed bug where closed tabs would not be restored if the "Replace Existing Windows" option was not selected or if the shift key was held down while restoring sessions.
+</ul>
+<hr>
+<p id="0.5.3">Version: <b><a href="http://downloads.mozdev.org/sessionmanager/session_manager-0.5.3.xpi">0.5.3</a></b> - (Jan 21, 2007)</p>
+<ul>
+<li>Closed tabs that had icons now display them in the closed tab menu.
+<li>Added clear list menu option to list menu so user doesn't have to go into the options to clear the list. 
+<li>Updated ru-RU locale, Added da-DK locale.
+<li>Work around for <a href="https://bugzilla.mozilla.org/show_bug.cgi?id=350558">Bug 350558</a> which can cause closed tab data to become corrupted (closed tabs can't be restored from loaded sessions).
+<li>Some code optimization.
+</ul>
+<hr>
+<p id="0.5.2">Version: <b><a href="http://downloads.mozdev.org/sessionmanager/session_manager-0.5.2-fx.xpi">0.5.2</a></b> - (Jan 13, 2007)</p>
+<ul>
+<li>Made compatible with Tab Mix Plus's Single Window Mode.
+<li>Automatically enables SessionStore since Session Manager cannot function without it and presumably anyone who installs Session Manager actually wants to use it.  It also enables crash recovery since Session Manager needs that enabled to display the crash dialogue box.
+</ul>
+<hr>
+<p id="0.5.1">Version: <b><a href="http://downloads.mozdev.org/sessionmanager/session_manager-0.5-fx.xpi">0.5.1</a></b> - (Jan 6, 2007)</p>
+<ul>
+<li>Converted to use the SessionStore component built into Firefox 2.0 and above instead of Crash Recovery.
+<li>Integrated closed tab restoring with the version built into Firefox 2.0.
+<li>Adding ability to convert old sessions stored with Session Manager 0.4.3 to new format used by 0.5.1 (done automatically)
+</ul>
+<hr>
+<p id="0.4.3">Version: <b><a href="http://downloads.mozdev.org/sessionmanager/session_manager-0.4.3-fx+fl+zm.xpi">0.4.3</a></b> - (Sep 2, 2006)</p>
+<ul>
+<li>Don't disable POSTDATA saving when the LiveHTTPHeaders extension is installed anymore
+<li>Reduced Session Manager's impact while typing into text fields (c.f. <a href="https://bugzilla.mozilla.org/show_bug.cgi?id=344928">bug 344928</a>)
+<li>Bug fix: Session saving/restoring was broken when a page contained certain non-ASCII characters in the title
+<li>Added a Dutch locale
+</ul>
+<hr>
+<p id="v0.4.2">Version: <b><a href="http://downloads.mozdev.org/sessionmanager/session_manager-0.4.2-fx+fl+mz+zm.xpi">0.4.2</a></b> - (Jun 16, 2006)</p>
+<ul>
+<li>Improved error reporting in the JavaScript/error console (includes line numbers)
+<li>Bug fix: after cleaning the browser history the crash recovery data file was missing for a few seconds
+<li>Bug fix: downloads are only resumed after a crash
+<li>Adapted for <a href="https://bugzilla.mozilla.org/show_bug.cgi?id=326273">bug 326273</a> on Trunk
+</ul>
+<hr>
+<p id="v0.4.1.1">Version: <b><a href="http://downloads.mozdev.org/sessionmanager/session_manager-0.4.1.1-fx+fl+mz+zm.xpi">0.4.1.1</a></b> - (May 5, 2006)</p>
+<ul>
+<li>Regression fix: reopened closed windows could not be maximized (since v0.4.1) [<a href="http://bugzilla.mozdev.org/show_bug.cgi?id=14016">bug 14016</a>]
+</ul>
+<hr>
+<p id="v0.4.1">Version: <b><a href="http://downloads.mozdev.org/sessionmanager/session_manager-0.4.1-fx+fl+mz+zm.xpi">0.4.1</a></b> - (May 5, 2006)</p>
+<ul>
+<li>Added the application name to the Recover dialog: "Session Manager - Mozilla Firefox" [<a href="http://bugzilla.mozdev.org/show_bug.cgi?id=13815">bug 13815</a>]
+<li>Adjusted the opening behavior of the Options dialog to Firefox'
+<li>Delaying the shutdown prompt for better extension interoperability (e.g. don't ask when restarting with MTLI)
+<li>Option to disable Firefox Preloader compatibility (.allow_empty_session)
+<li>Option to disable the Clear Undo List prompt
+<li>Icon for the main dialog (Windows only)
+<li>Minor code improvements
+<li>Fixed errors introduced with <a href="https://bugzilla.mozilla.org/show_bug.cgi?id=268590">bug 268590</a>
+<li>Bug fix: Undo Close Tab was broken for SeaMonkey 
+<li>Added a Russian locale
+</ul>
+<hr>
+<p id="v0.4">Version: <b><a href="http://downloads.mozdev.org/sessionmanager/session_manager-0.4-fx+fl+mz+zm.xpi">0.4</a></b> - (Apr 17, 2006)</p>
+<ul>
+<li>The Options dialog can be opened from the Tools menu (placed instead of the previous 3 options)
+<li>Removed the "Resume Current Session At Restart" option (use the "At startup ..." option instead)
+<li>The session list can now be ordered alphabetically or chronologically
+<li>Session Manager can now keep a certain number of additional backup sessions
+<li>The "Recover" dialog showed after crashes can now be disabled
+<li>Full modifier control over where to open sessions/closed windows (new window, append to current, replace current)
+<li>Don't ask at shutdown when the browser is just restarting
+<li>Support for <a href="http://sourceforge.net/projects/ffpreloader/">Firefox Preloader</a>
+<li>Bug fix: couldn't cancel the recovering of a crashed session
+<li>Bug fix: a new thread was created every 10 seconds
+<li>Bug fix: closing a non-browser window last erased all session data
+<li>Bug fix: cookies for secure sites might have been saved even if that was only allowed for non-encrypted sites
+<li>Added Polish and Japanese locales
+<li>Bumped maxVersion to 3.0 (although I don't test with Trunk nightlies)
+</ul>
+<hr>
+<p id="v0.3.9">Version: <a href="http://downloads.mozdev.org/sessionmanager/session_manager-0.3.9-fx+fl+mz+zm.xpi">0.3.9</a></p>
+<ul>
+<li>Improved (sequential) tab reloading
+<li>Always load documents from the cache (if available)
+<li>Minor code clean-up
+<li>Bug fix: Session tabs appended to the current window didn't get the focus
+<li>Bug fix: Save intervals below 2 seconds might have prevented saving
+<li>Bug fix: Using the Extensions/Themes/Downloads managers or the Console in a tab could break Session Manager
+<li>Bug fix: Restoring a one-popup-only session could make it pretty difficult of getting the browser chrome back
+</ul>
+<hr>
+<dl>
+<dt><a href="http://downloads.mozdev.org/sessionmanager/session_manager-0.3.8-fx+mz.xpi">0.3.8</a>
+<dd>Moved the menu item (for the added Firefox 2 compatibility)
+<dt>0.3.7.9
+<dd>Added a Spanish locale
+<dt>0.3.7.8
+<dd>Bug fix: Renaming the startup session unset it
+<dt>0.3.7.6
+<dd>Speed improvements when displaying the menu with many saved sessions
+<dt>0.3.7.4
+<dd>Bug fix: Removed an ugly hack (since 0.3.7.3)
+<dd>Bug fix: Couldn't replace sessions (since 0.3.7.3)
+<dt>0.3.7.2
+<dd>Improved compatibility with other tab related extensions
+<dd>Added Italian, Chinese (Simplified), Portuguese, French and Lithuanian locales
+<dd>Bug fix: Right-clicking could evoke the toolbar's context menu
+<dd>Bug fix: Closed tabs were never persisted (since 0.3.7.1)
+<dt>0.3.7
+<dd>Minor code clean-up
+<dd>Nit fix: small toolbar icon was 1px too high
+
+<dt>0.3.6.4
+<dd>Slightly improved performance for tab closing and saving of many cookies
+<dd>Bug fix: "Save Current Window..." saved all windows (since 0.3.6.1)
+<dt>0.3.6.2
+<dd>Bug fix: Files with Mac style line-endings weren't correctly read
+<dt>0.3.6.1
+<dd>Major internal code refactoring (updated to comments in <a href="https://bugzilla.mozilla.org/show_bug.cgi?id=328159">bug 328159</a>)<dd>Less performance impact when closing tabs (and correct positioning of restored tabs also for SeaMonkey)
+
+<dt>0.3.5.2
+<dd>Added a new hidden pref (extensions.crashrecovery.resume_session_once) to enable other extensions to trigger a one-time restoration
+<dt>0.3.5.1
+<dd>New options to delete the list of closed windows and to preserve the list of closed tabs (instead of the option to preserve both lists)
+<dd>Improved WYSIWYG text saving
+<dd>Bug fix: saved crashed sessions were unusable (since 0.3.4)
+<dd>Bug fix: the list of closed tabs was cleared when a tab was restored (since 0.3.4)
+<dt>0.3.4.1
+<dd>Blank windows aren't reopenable (blank tabs never were)
+<dd>Experimental WYSIWYG text saving
+<dt>0.3.4
+<dd>New option to preserve the closed windows/tabs list at shutdown
+<dd>Bug fix: Manually restoring windows could fail (especially with disable_xul_cache set to true)
+
+<dt><a href="http://downloads.mozdev.org/sessionmanager/session_manager-0.3.3-fx+mz.xpi">0.3.3</a>
+<dd>Cleaner Options dialog for Firefox
+<dd>Minor performance updates and bug fix
+<dt>0.3.2.2
+<dd>The list of recently closed windows/tabs can be cleared from the Options dialog
+<dt>0.3.1.1
+<dd>New Undo Close toolbar button for Firefox
+<dd>Dialog position is remembered
+<dt>0.3.0.2
+<dd>Replaced the custom file format with a standard .INI format (similar to the one used by Opera)
+<dd>Dialogs are now resizable
+
+<dt>0.2.13.1
+<dd>Internal clean-up
+<dt>0.2.12.1
+<dd>Improved frameset handling (back/forward and POSTDATA are preserved)
+<dd>Bug fix: Restoring additional windows failed when disable_xul_cache was set to true
+<dt>0.2.11.1
+<dd>Multiple sessions can be deleted at once
+<dd>Sidebar state is remembered
+<dd>Bug fix: Restored closed windows were not removed from the list
+<dt>0.2.10
+<dd>Minor bug fix
+<dt>0.2.9
+<dd>Improved stability and minor bug fix
+<dt>0.2.8
+<dd>Improved stability and minor bug fix
+<dt>0.2.7
+<dd>Added an option to always restart a specific session
+<dd>Added an option to always delete the current session
+<dd>Added an option to never save sensitive data for secure/encrypted sites
+<dd>Added a menu entry to save only the current window's state
+<dt>0.2.6
+<dd>Added an Options dialog for Firefox (sorry, SeaMonkey users, you'll have to wait for the <a href="http://wiki.mozilla.org/SeaMonkey:Toolkit_Transition">Toolkit Transition</a>)
+<dd>Minor bug fix
+
+<dt>0.2.5.1
+<dd>Sessions can now easily be overwritten
+<dd>A basic startup/shutdown confirmation dialog can now be toggled through extensions.sessionmanager.resume_prompt (behavior depends on "Resume Current Session At Startup")
+<dt>0.2.4.2
+<dd>Added the option to display closed tabs/windows as a submenu (extensions.sessionmanager.submenus)
+<dd>Added accesskeys to the first 10 sessions
+<dt>0.2.4.1
+<dd>Added the option to reopen closed tabs (as long as the window isn't closed)
+<dd>Improved TMP compatibility
+<dt>0.2.4
+<dd>Added the option to reopen closed windows (persists over sessions)
+<dd>Added the option to format the default session name (see <a href="http://forums.mozillazine.org/viewtopic.php?p=2092614#2092614">this post</a>)
+<dt>0.2.3.1
+<dd>Improved restore prompt
+<dd>TMP compatibility (mostly)
+<dt>0.2.2
+<dd>Added SeaMonkey compatibility
+<dt>0.2
+<dd>Added a toolbar button (which looks like the Add-new-tab button until someone donates an icon)
+<dd>The window dimensions are now restored for all but the current window
+<dd>Added the option to reload all restored tabs
+<dt>0.1
+<dd>Initial release 2006-02-12
+</dl>
+</div>

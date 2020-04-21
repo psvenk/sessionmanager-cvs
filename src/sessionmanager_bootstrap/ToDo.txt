@@ -1,0 +1,86 @@
+Very important:
+1. Firefox will also likely remove the window.__SSi variable at some point.  I should be able to create a WeakMap of ID's (or even window objects) myself. See:
+https://bugzilla.mozilla.org/show_bug.cgi?id=874381
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakMap
+2. Components is depreciated and will be removed at some point.
+
+
+Conversion To Do:
+1. When restoring an autosave session with window sessions from last time, the window sessions aren't being restored because SharedData._restoring_autosave_backup_session is not true
+	 as we don't set it unless restoring the "backup session".  Change to handle choosing the last session even if we didn't specify the previous session.
+
+	 
+	 
+Changes to Firefox that may affect me:
+1. Session Restore in Firefox is being re-written for Firefox 16 to speed things up (see https://wiki.mozilla.org/Speedy_Session_Restore)
+- https://bugzilla.mozilla.org/show_bug.cgi?id=669034 (Re-architect sessionstore to prevent periodic freezes)
+- https://bugzilla.mozilla.org/show_bug.cgi?id=669603 (This moves sessionStorage data data out of sessionstore.js and into the cache and stores a reference into the cache in sessionstore.js, this will be a problem for sessions with no equivalent cache.  I'll need to copy the tabstorage data or something)
+- https://bugzilla.mozilla.org/show_bug.cgi?id=681201
+- https://bugzilla.mozilla.org/show_bug.cgi?id=745040 (SessionStore changed to a module. I could import it and use it directly)
+- https://wiki.mozilla.org/User:Zpao/SessionStore2
+2. There is a "browser.sessionstore.restore_pinned_tabs_on_demand" preference now in the nightly load (added sometime after Firefox 17).
+
+Current working:
+1. I'm trying to get tab groups from becoming mismatched when loading sessions where a tab is overwriten and the groupID of the tab changes.  By default this results in the tab changing groups.  I added code to set the _reconnected flag on those tabs in the first window.  That works for individual windows, but when restoring sessions that open new windows, sometimes the tabsgroup UI gets corrupted and shows groups that don't exist.  Need to figure out how to fix this as it happens with or without my fix.  The first error I see in log is "error in recons: TypeError: browserWindow.gBrowser is null".  That's in groupitems.js : reconstitute().
+2. Also if there is a tab in a new window, that's not in a group and I append a session with tabs to the window, the existing tab ends up in the active tab group.
+3. Add option to load ungrouped tabs into current displayed tab group (old way it worked) or their own group (current way it works as of 0.7.9.6)
+
+Current To Do:
+1. There should be a way to see the tab history in the session manager window, especially since searching finds results in the tab history. Could display it when hovering over or right clicking a tab (context menu?). Probably need to redesign session window to add an arrow to expand on tabs to show history. 
+2. Put autosave backup files and normal backup files in different groups (or sort them or something).
+3. Remove hidden tab in load window since it's not needed (hidden items are grayed out).
+
+Important To Do:
+1. Change to use private/public encryption keys instead of using Firefox encryption.  See https://bugzilla.mozilla.org/show_bug.cgi?id=649154.  Can also use a ChromeWorker to do encryption/decryption in the background as long as no XPCOM or GUI elements are used.  See https://developer.mozilla.org/en/JavaScript_code_modules/Using_workers_in_JavaScript_code_modules.  Currently can't call browser crypto functions, because they aren't thread safe, but there are bugs open to fix that: https://bugzilla.mozilla.org/show_bug.cgi?id=662674, https://bugzilla.mozilla.org/show_bug.cgi?id=753238 (this added functionality I can use, but it's only in Firefox 16 and up.  The add-on DOMCrypt currently implements what I want to do as a worker so that's something I can use.  The Lazarus add-on also uses public/private key encryption.  It uses the public key to encrypt and the private key to decrypt.  The private key is encrypted and stored in their sql file, when decrypting it checks to see whether the private key is encrypted with a password (default is blank password) and if it is, prompts user to enter password when trying to restore data.  Session Manager should be able to do the same thing (only ask for password on restore). Lazarus also uses web workers to do encryption/decryption in background.  Use http://crypto.stanford.edu/sjcl/  
+Use CBC encryption for session.  Encrypt IV with ECB.  Can use RSA to encryption session data and store the public and private (encrypted with symetric AES encryption using password) in session files.  This allows decrypting a session with just the password, but encrypting does not require the password.  Using CFB encryption mode would allow writing/reading to the disk at the same time as encrypting/decrypting which might be faster.
+2. Fix code to use the built in openUI... code in Gecko2+ when opening sessions.  See https://developer.mozilla.org/en/Code_snippets/Tabbed_browser#Opening_a_URL_in_the_correct_window.2Ftab
+
+To Do:
+1. Use "lastUpdate" and "recentCrashes" fields in sessionstore.js to only show crash prompt when crashing "too often" (use setting to determine how often  is too often).
+  a. Note that Firefox will show a crash prompt if Firefox crashes more than "max_resumed_crashes" times in a row in a 6 hour period where "max_resumed_crashes" defaults to 1.  As such Session Manager currently clears the "lastUpdate" and "recentCrashes" fields when it wants Firefox to restore the session without prompting.  Without these fields there's no way to tell how often Firefox has crashed.  If Session Manager doesn't clear them, but doesn't prompt, the Firefox may prompt on it's own, so it may be necesssary to use the built-in "browser.sessionstore.max_resumed_crashes" preference for Session Manager as well.  Note, that if Session Manager restores the crashed session, then these fields will be restores, so it is possible to have a "restore X crashes automatically field" (or whatever I want to call it). See SessionStore::_needsRestorePage for conditions (don't care about safe mode since Session Manager doesn't run in safe mode).
+	b. https://bugzilla.mozilla.org/show_bug.cgi?id=665702 will make this easier to use.  This has been implemented as of Firefox 10.  It returns a "session" object returned by SessionStore.getBrowserState().  This contains: state - current state (running or stopped), lastUpdate - last update time (updated everytime getBrowserState() is called), startTime - start time, recentCrashes - number of crashes since last clean start.
+2. Add a Session Editor functionality, using drag and drop to edit sessions.  Allow editing tab history as well.
+3. Add sub-grouping. Might want to allow users to simply place sessions in folders under the main folder and use that for grouping and subgrouping.  Session Manager could add a ".sm_ignore" file or something to folders that should be ignored.  Note SQL cache currently uses filename without any path info so if grouping by folder is used, the SQL cache will also need the path to differentiate between session files.
+4. Allow users to remove a window from an auto-save session so that it won't be saved automatically.  In Firefox 20 and up private windows won't be saved, so users can use that.
+5. Add ability to import/export sessions. Storing in single SQL file would work, though that requires encryption changes first. 
+6. Add option to show crash/restore prompt inside browser window, just like Firefox does or don't make crash prompt modal. Might be able to use Firefox's built in web page.
+7. Add ability to change a session to auto-save (or window) session as well as change the saving interval without having to re-save session. Being able to edit all save parameters (group, name, etc) would work. Would be better to have one edit window with ability to delete, rename, etc. (see #2).
+8. Add Session Manager menu to Mac dock menu.  Currently only in hidden window.  See See browser/base/content/{hiddenWindow.xul,macBrowserOverlay.xul,browser.js}.  In browser.js, look at nonBrowserWindowStartup().
+9. Add ability to show all the names and URLs of all tabs in all sessions (this might cause performance problems).  Use SQL file.  Allow exporting as bookmarks.html file. 
+10. Add menu context item to tabs to allow user to add them to a session when right clicking on a tab (i.e. "Add tab to session...").  Translation exists.  Could pop up the normal save window with the textboxes disabled.  When the user selects a session, show the windows/tabs area, but don't allow selecting tabs (or even show checkboxes for tabs).  If only one window exists, add it to that window.
+11. Use asynchronous reading for functions that run in background: save (append), keepOldBackups (if browser is exiting this would be bad), gatherAppTabs (only when loading crashed session so probably ok), load (not sure it pays to delay loading session to fix this). Functions that only read header, but do so synchronously: cacheSessions (uses timers so should be okay), getSessions. gatherSessionData also read synchronously, but it does so on a timer so it should be okay.  Firefox 16 and up has a built-in module that handles read/write in a background thread (https://bugzilla.mozilla.org/show_bug.cgi?id=747876):  http://mxr.mozilla.org/mozilla-central/source/toolkit/components/osfile/osfile.jsm.  SessionStore uses this now - see http://mxr.mozilla.org/mozilla-central/source/browser/components/sessionstore/src/_SessionFile.jsm
+12. Add "Save Window" to Session Manager window.  Allow choosing which window to save. This can be done using the window.__SSi value or by showing normal
+    save prompt and only letting one window to be selected.  Requires modifying checks for private window since they check window.opener.
+13. Add popup message explaning what the different key filters do in search (only show name and group if caching disabled).
+14. Add a way to load window sessions in a saved session.  Probably could have a checkbox in the load window or something.
+15. Add a way to specify more than one session folder (not sure how to do this).
+16. Allow prepending or appending text (PC name) to backup sessions (good for syncing sessions).
+17. Remove preferences when uninstalling (see bottom of file).
+18. Add ability to have multiple session folders (see email from Ken below).
+19. Currently cannot use arrow keys to get to Session Manager submenu (likely splitmenu issue).  See if I can fix this (unlikely as FF has same problem).
+20. Backup menu can display too many items (does not respect limit).
+21. Allow selectively choosing what to save.  For example: tab history, forms, etc.  See what Tab Mix Plus does for an example
+22. Convert to bootstrap add-on (allows install/upgrade without restart) - See https://developer.mozilla.org/en/Extensions/Bootstrapped_extensions
+    - http://adblockplus.org/blog/modularization-in-a-restartless-extension
+		- http://adblockplus.org/blog/how-many-hacks-does-it-take-to-make-your-extension-install-without-a-restart
+	  - Note a lot of issue above were fixed in Firefox 8, so I can use Services.ww.registerNotification() to be notified of new windows and document.loadOverlay() to overlay on them.  Also Components.utils.unload() allows unloading loaded modules.
+		- As of Firefox 10, chrome.manifest loads on it's own, though only content, locale and skin are supported.  Meaning I can't use resource, overlay or component registration.
+23. Make getSessions() an asynchronous call with callback.  This would prevent hanging when trying to open Session Manager menu.
+24. Deleted folder should be loaded on demand in menu since if there are a lot of deleted sessions, this takes a long time to load.
+25. Switch to using OS.File for read/writes.  See https://developer.mozilla.org/en-US/docs/JavaScript_OS.File
+26. On update, go to a special update page for release version (like the beta version does).  On that page list the changes just for that version and have link to history page.
+
+Future Firefox stuff:
+1. Session format changes for Firefox ?: https://bugzilla.mozilla.org/show_bug.cgi?id=588217 and https://bugzilla.mozilla.org/show_bug.cgi?id=587873
+	a. This was put on hold and isn't in Firefox 4, 5 or 6.  Not sure when it will be fixed
+2. Firefox adding options to disable addons, toolbar, preferences, etc after crash - https://bugzilla.mozilla.org/show_bug.cgi?id=347680
+
+Notes:
+1. If there's a way to remove the extra /sessionmanager/ folder from content, locale and skin without losing version info in CVS, do it and update chrome.manifest.
+2. Info on titlebar in Windows:
+	a. Dao can confirm, but yes I believe this is correct, it's just a swap out of styles and some new custom backgrounds. We currently render everything in the titlbar when the fx button is enabled, relying on the windows theme code for background painting. So for example the middle background section is handled by two -moz-appearance styles, -moz-window-titlebar and -moz-window-titlebar-maximized. These set minimum heights and paint the default	windows titlebar graphics. You can remove those and apply your own styling.
+3. Encrypting and decrypting very large (eg: 32 MB) session files is very slow.  This can cause GUI lock ups when creating the SQL cache.
+
+Other potential stuff:
+1. Use Web Console (console) instead of or in addition to error console when logging.  Not sure if this makes sense since logging isn't on a per web page basis. https://developer.mozilla.org/en/Using_the_Web_Console
+

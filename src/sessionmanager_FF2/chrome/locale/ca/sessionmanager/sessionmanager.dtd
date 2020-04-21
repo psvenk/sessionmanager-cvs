@@ -1,0 +1,47 @@
+<!ENTITY sessionManager "Gestor de sessions">
+<!ENTITY save.label "Desa la sessió...">
+<!ENTITY saveOne.label "Desa la finestra actual...">
+<!ENTITY closeSession.label "Desa i tanca la sessió actual">
+<!ENTITY abandonSession.label "Abandona la sessió actual">
+<!ENTITY rename.label "Canvia el nom de la sessió...">
+<!ENTITY remove.label "Suprimeix sessions...">
+<!ENTITY openFolder.label "Obre la carpeta de la sessió">
+<!ENTITY options.label "Opcions del &sessionManager;">
+<!ENTITY undoClosed.label "Torna a obrir el que s'hagi tancat...">
+<!ENTITY closedWindows "Finestres tancades:">
+<!ENTITY closedTabs "Pestanyes tancades:">
+<!ENTITY clearList.label "Neteja la llista d'elements tancats...">
+<!ENTITY toolbar.tooltip "Desa la sessió de navegació actual...">
+<!ENTITY toolbar.undo.label "Desfés el tancament">
+<!ENTITY toolbar.undo.tooltip "Torna a obrir la pestanya tancada més recent">
+<!ENTITY prompt.ignore.label "No tornis a mostrar aquest diàleg">
+<!ENTITY prompt.autosave.label "Fes d'aquesta una sessió de desament automàtic">
+<!ENTITY prompt.tabprompt.label "Demana'm si vull restaurar les pestanyes">
+<!ENTITY load_replace.label "Carrega (reemplaça la sessió actual)">
+<!ENTITY load_append.label "Carrega (afegeix a la sessió actual)">
+<!ENTITY replace_all.label "Reemplaça la sessió per la sessió actual">
+<!ENTITY replace_window.label "Reemplaça la sessió per la finestra actual">
+<!ENTITY remove_one.label "Suprimeix una sessió...">
+<!ENTITY set_startup.label "Estableix com a sessió d'inici">
+<!ENTITY session_name.label "Nom">
+<!ENTITY session_windows.label "Finestres">
+<!ENTITY session_tabs.label "Pestanyes">
+<!ENTITY backup_sessions.label "Còpia de seguretat de les sessions">
+<!ENTITY remove_item.label "Suprimeix l'element">
+<!ENTITY session_group.label "Grup">
+<!ENTITY rename_group.label "Canvia el nom d'un grup...">
+<!ENTITY remove_group.label "Suprimeix un grup...">
+<!ENTITY change_group.label "Canvia un grup...">
+<!ENTITY prompt.save_every1.label "Desa cada">
+<!ENTITY prompt.save_every2.label "minuts (no habilitat si es deixa en blanc)">
+<!ENTITY winTabTree.restoreHeader "Restaura">
+<!ENTITY winTabTree.listHeader "Finestres i pestanyes">
+<!ENTITY load.label "Carrega una sessió...">
+<!ENTITY prompt.append.label "Afegeix a la sessió">
+<!ENTITY prompt.replace.label "Reemplaça la sessió">
+<!ENTITY select_all.label "Selecciona-ho tot">
+<!ENTITY select_none.label "No seleccionis res">
+<!ENTITY toggle_selection.label "Commuta la selecció">
+<!ENTITY winTabTree.urlHeader "Ubicació">
+<!ENTITY prompt.append_window.label "Afegeix a la finestra actual">
+<!ENTITY session_explorer.label "Explorador de sessions">

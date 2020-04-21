@@ -1,0 +1,424 @@
+﻿<?xml version="1.0" encoding="UTF-8"?> 
+<RDF xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:em="http://www.mozilla.org/2004/em-rdf#">
+  <Description about="urn:mozilla:install-manifest">
+    <em:id>{1280606b-2510-4fe0-97ef-9b5a22eafe30}</em:id>
+    <em:version>0.8.1.13</em:version>
+    <em:type>2</em:type>
+    <em:bootstrap>true</em:bootstrap>
+    <em:multiprocessCompatible>true</em:multiprocessCompatible>
+		
+    <!-- Firefox -->
+    <em:targetApplication>
+      <Description>
+        <em:id>{ec8030f7-c20a-464f-9b0e-13a3a9e97384}</em:id>
+        <em:minVersion>38.0</em:minVersion>
+        <em:maxVersion>54.0</em:maxVersion>
+      </Description>
+    </em:targetApplication>
+    
+    <!-- SeaMonkey -->
+    <em:targetApplication> 
+      <Description>
+         <em:id>{92650c4d-4b8e-4d2a-b7eb-24ecf4f6b63a}</em:id>
+         <em:minVersion>2.33</em:minVersion>
+         <em:maxVersion>2.50</em:maxVersion>
+      </Description>
+    </em:targetApplication>
+    
+    <!-- Front End MetaData -->
+    <em:name>Session Manager</em:name>
+    <em:description>Saves and restores the state of all windows.</em:description>
+    <em:creator>Michael Kraft</em:creator>
+    <em:contributor>zeniko (Original Author)</em:contributor>
+    <em:contributor>dougeeebear (Session Manager icon)</em:contributor>
+    <em:contributor>Icon Design at ReadyIcons.com (options icons)</em:contributor>
+    <em:homepageURL>http://sessionmanager.mozdev.org/</em:homepageURL>
+    
+    <!-- Front End Integration Hooks (used by Extension Manager)-->
+    <em:optionsURL>chrome://sessionmanager/content/options/options.xul</em:optionsURL>
+    <em:iconURL>chrome://sessionmanager/skin/icon.png</em:iconURL>
+    <em:icon64URL>chrome://sessionmanager/skin/icon64.png</em:icon64URL>
+	
+    <!-- Localizations -->
+    <em:localized>
+      <Description>
+        <em:locale>ca</em:locale>
+        <em:name>Gestor de sessions</em:name>
+        <em:description>Desa i restaura l'estat de totes les finestres.</em:description>
+        <em:creator>Michael Kraft</em:creator>
+        <em:contributor>zeniko (Original Author)</em:contributor>
+        <em:contributor>dougeeebear (Session Manager icon)</em:contributor>
+        <em:contributor>Icon Design at ReadyIcons.com (options icons)</em:contributor>
+        <em:translator>dplanella</em:translator>
+        <em:homepageURL>http://sessionmanager.mozdev.org/</em:homepageURL>
+      </Description>
+    </em:localized>
+    <em:localized>
+      <Description>
+        <em:locale>cs</em:locale>
+        <em:name>Správce relací</em:name>
+        <em:description>Ukládá a obnovuje stav všech oken.</em:description>
+        <em:creator>Michael Kraft</em:creator>
+        <em:contributor>zeniko (Original Author)</em:contributor>
+        <em:contributor>dougeeebear (Session Manager icon)</em:contributor>
+        <em:contributor>Icon Design at ReadyIcons.com (options icons)</em:contributor>
+        <em:translator>PetrTwo</em:translator>
+        <em:homepageURL>http://sessionmanager.mozdev.org/</em:homepageURL>
+      </Description>
+    </em:localized>
+    <em:localized>
+      <Description>
+        <em:locale>da</em:locale>
+        <em:name>Session Manager</em:name>
+        <em:description>Gemmer og henter tilstanden for alle vinduer.</em:description>
+        <em:creator>Michael Kraft</em:creator>
+        <em:contributor>zeniko (Original Author)</em:contributor>
+        <em:contributor>dougeeebear (Session Manager icon)</em:contributor>
+        <em:contributor>Icon Design at ReadyIcons.com (options icons)</em:contributor>
+        <em:translator>Ossipoff</em:translator>
+        <em:homepageURL>http://sessionmanager.mozdev.org/</em:homepageURL>
+      </Description>
+    </em:localized>
+    <em:localized>
+      <Description>
+        <em:locale>de</em:locale>
+        <em:name>Sitzungs-Manager</em:name>
+        <em:description>Sichert den Zustand aller Fenster und Tabs und stellt ihn wieder her.</em:description>
+        <em:creator>Michael Kraft</em:creator>
+        <em:contributor>zeniko (Original Author)</em:contributor>
+        <em:contributor>dougeeebear (Session Manager icon)</em:contributor>
+        <em:contributor>Icon Design at ReadyIcons.com (options icons)</em:contributor>
+        <em:translator>Team erweiterungen.de</em:translator>
+        <em:translator>o.roth (ReinekeFux) von BabelZilla.org</em:translator>
+        <em:homepageURL>http://sessionmanager.mozdev.org/</em:homepageURL>
+      </Description>
+    </em:localized>
+    <em:localized>
+      <Description>
+        <em:locale>el</em:locale>
+        <em:name>Session Manager</em:name>
+        <em:description>Saves and restores the state of all windows.</em:description>
+        <em:creator>Michael Kraft</em:creator>
+        <em:contributor>zeniko (Original Author)</em:contributor>
+        <em:contributor>dougeeebear (Session Manager icon)</em:contributor>
+        <em:contributor>Icon Design at ReadyIcons.com (options icons)</em:contributor>
+        <em:translator>cielattique</em:translator>
+        <em:homepageURL>http://sessionmanager.mozdev.org/</em:homepageURL>
+      </Description>
+    </em:localized>
+    <em:localized>
+      <Description>
+        <em:locale>es-ES</em:locale>
+        <em:name>Administrador de sesiones</em:name>
+        <em:description>Guarda y recupera el estado de todas las ventanas.</em:description>
+        <em:creator>Michael Kraft</em:creator>
+        <em:contributor>zeniko (Original Author)</em:contributor>
+        <em:contributor>dougeeebear (Session Manager icon)</em:contributor>
+        <em:contributor>Icon Design at ReadyIcons.com (options icons)</em:contributor>
+        <em:translator>Proyecto Nave</em:translator>
+        <em:translator>chuzo</em:translator>
+        <em:homepageURL>http://sessionmanager.mozdev.org/</em:homepageURL>
+      </Description>
+    </em:localized>
+    <em:localized>
+      <Description>
+        <em:locale>fi</em:locale>
+        <em:name>Istuntojenhallinta</em:name>
+        <em:description>Tallentaa ja palauttaa kaikkien ikkunoiden tilan.</em:description>
+        <em:creator>Michael Kraft</em:creator>
+        <em:contributor>zeniko (Original Author)</em:contributor>
+        <em:contributor>dougeeebear (Session Manager icon)</em:contributor>
+        <em:contributor>Icon Design at ReadyIcons.com (options icons)</em:contributor>
+        <em:translator>Kenmooda</em:translator>
+        <em:homepageURL>http://sessionmanager.mozdev.org/</em:homepageURL>
+      </Description>
+    </em:localized>
+    <em:localized>
+      <Description>
+        <em:locale>fr</em:locale>
+        <em:name>Gestionnaire de session</em:name>
+        <em:description>Enregistre et rétabli l'état de toutes les fenêtres.</em:description>
+        <em:creator>Michael Kraft</em:creator>
+        <em:contributor>zeniko (Original Author)</em:contributor>
+        <em:contributor>dougeeebear (Session Manager icon)</em:contributor>
+        <em:contributor>Icon Design at ReadyIcons.com (options icons)</em:contributor>
+        <em:translator>jojaba</em:translator>
+        <em:homepageURL>http://sessionmanager.mozdev.org/</em:homepageURL>
+      </Description>
+    </em:localized>
+    <em:localized>
+      <Description>
+        <em:locale>gl-ES</em:locale>
+        <em:name>Session Manager</em:name>
+        <em:description>Garda e restaura o estado de tódalas xanelas.</em:description>
+        <em:creator>Michael Kraft</em:creator>
+        <em:contributor>zeniko (Original Author)</em:contributor>
+        <em:contributor>dougeeebear (Session Manager icon)</em:contributor>
+        <em:contributor>Icon Design at ReadyIcons.com (options icons)</em:contributor>
+        <em:translator>Joe82</em:translator>
+        <em:homepageURL>http://sessionmanager.mozdev.org/</em:homepageURL>
+      </Description>
+    </em:localized>
+    <em:localized>
+      <Description>
+        <em:locale>hu</em:locale>
+        <em:name>Session Manager</em:name>
+        <em:description>Lehetővé teszi a munkamenet (ablakok és lapok) mentését és visszaállítását</em:description>
+        <em:creator>Michael Kraft</em:creator>
+        <em:contributor>zeniko (Original Author)</em:contributor>
+        <em:contributor>dougeeebear (Session Manager icon)</em:contributor>
+        <em:contributor>Icon Design at ReadyIcons.com (options icons)</em:contributor>
+        <em:translator>Mikes Kaszmán István</em:translator>
+        <em:homepageURL>http://sessionmanager.mozdev.org/</em:homepageURL>
+      </Description>
+    </em:localized>
+    <em:localized>
+      <Description>
+        <em:locale>it</em:locale>
+        <em:name>Gestione sessioni</em:name>
+        <em:description>Salva e ripristina lo stato di tutte le finestre.</em:description>
+        <em:creator>Michael Kraft</em:creator>
+        <em:contributor>zeniko (Original Author)</em:contributor>
+        <em:contributor>dougeeebear (Session Manager icon)</em:contributor>
+        <em:contributor>Icon Design at ReadyIcons.com (options icons)</em:contributor>
+        <em:translator>Andrea</em:translator>
+        <em:homepageURL>http://sessionmanager.mozdev.org/</em:homepageURL>
+      </Description>
+    </em:localized>
+    <em:localized>
+      <Description>
+        <em:locale>ja</em:locale>
+        <em:name>セッションマネージャ</em:name>
+        <em:description>すべてのウインドウの状態を保存し復元します</em:description>
+        <em:creator>Michael Kraft</em:creator>
+        <em:contributor>zeniko (Original Author)</em:contributor>
+        <em:contributor>dougeeebear (Session Manager icon)</em:contributor>
+        <em:contributor>Icon Design at ReadyIcons.com (options icons)</em:contributor>
+        <em:translator>Haebaru</em:translator>
+        <em:homepageURL>http://sessionmanager.mozdev.org/</em:homepageURL>
+      </Description>
+    </em:localized>
+    <em:localized>
+      <Description>
+        <em:locale>ko</em:locale>
+        <em:name>Session Manager</em:name>
+        <em:description>모든 창의 상태를 저장하여 복원합니다.</em:description>
+        <em:creator>Michael Kraft</em:creator>
+        <em:contributor>zeniko (Original Author)</em:contributor>
+        <em:contributor>dougeeebear (Session Manager icon)</em:contributor>
+        <em:contributor>Icon Design at ReadyIcons.com (options icons)</em:contributor>
+        <em:translator>Elapsem</em:translator>
+        <em:homepageURL>http://sessionmanager.mozdev.org/</em:homepageURL>
+      </Description>
+    </em:localized>
+    <em:localized>
+      <Description>
+        <em:locale>lt</em:locale>
+        <em:name>Sesijų tvarkytojas</em:name>
+        <em:description>Išsaugo ir atkuria visus langus.</em:description>
+        <em:creator>Michael Kraft</em:creator>
+        <em:contributor>zeniko (Original Author)</em:contributor>
+        <em:contributor>dougeeebear (Session Manager icon)</em:contributor>
+        <em:contributor>Icon Design at ReadyIcons.com (options icons)</em:contributor>
+        <em:translator>Edgaras Janušauskas</em:translator>
+        <em:translator>garas</em:translator>
+        <em:homepageURL>http://sessionmanager.mozdev.org/</em:homepageURL>
+      </Description>
+    </em:localized>
+    <em:localized>
+      <Description>
+        <em:locale>mk</em:locale>
+        <em:name>Менаџер на сесијата</em:name>
+        <em:description>Ја зачувува и обновува состојбата на сите прозорци.</em:description>
+        <em:creator>Michael Kraft</em:creator>
+        <em:contributor>zeniko (Original Author)</em:contributor>
+        <em:contributor>dougeeebear (Session Manager icon)</em:contributor>
+        <em:contributor>Icon Design at ReadyIcons.com (options icons)</em:contributor>
+        <em:translator>Ivan Jonoski</em:translator>
+        <em:homepageURL>http://sessionmanager.mozdev.org/</em:homepageURL>
+      </Description>
+    </em:localized>
+    <em:localized>
+      <Description>
+        <em:locale>nl</em:locale>
+        <em:name>Session Manager</em:name>
+        <em:description>Session Manager slaat de status van alle vensters op, en stelt u in staat ze te herstellen.</em:description>
+        <em:creator>Michael Kraft</em:creator>
+        <em:contributor>zeniko (Original Author)</em:contributor>
+        <em:contributor>dougeeebear (Session Manager icon)</em:contributor>
+        <em:contributor>Icon Design at ReadyIcons.com (options icons)</em:contributor>
+        <em:translator>JW_00000</em:translator>
+        <em:homepageURL>http://sessionmanager.mozdev.org/</em:homepageURL>
+      </Description>
+    </em:localized>
+    <em:localized>
+      <Description>
+        <em:locale>pl</em:locale>
+        <em:name>Session Manager</em:name>
+        <em:description>Zapisuje i odtwarza stan wszystkich okien</em:description>
+        <em:creator>Michael Kraft</em:creator>
+        <em:contributor>zeniko (Original Author)</em:contributor>
+        <em:contributor>dougeeebear (Session Manager icon)</em:contributor>
+        <em:contributor>Icon Design at ReadyIcons.com (options icons)</em:contributor>
+        <em:translator>Leszek(teo)Życzkowski</em:translator>
+        <em:homepageURL>http://sessionmanager.mozdev.org/</em:homepageURL>
+      </Description>
+    </em:localized>
+    <em:localized>
+      <Description>
+        <em:locale>pt-BR</em:locale>
+        <em:name>Gerenciador de Sessões</em:name>
+        <em:description>Salva e restaura o estado de todas as janelas.</em:description>
+        <em:creator>Michael Kraft</em:creator>
+        <em:contributor>zeniko (Original Author)</em:contributor>
+        <em:contributor>dougeeebear (Session Manager icon)</em:contributor>
+        <em:contributor>Icon Design at ReadyIcons.com (options icons)</em:contributor>
+        <em:translator>Teboga</em:translator>
+        <em:homepageURL>http://sessionmanager.mozdev.org/</em:homepageURL>
+      </Description>
+    </em:localized>
+    <em:localized>
+      <Description>
+        <em:locale>pt-PT</em:locale>
+        <em:name>Session Manager</em:name>
+        <em:description>Guarda e restaura o estado de todas as janelas.</em:description>
+        <em:creator>Michael Kraft</em:creator>
+        <em:contributor>zeniko (Original Author)</em:contributor>
+        <em:contributor>dougeeebear (Session Manager icon)</em:contributor>
+        <em:contributor>Icon Design at ReadyIcons.com (options icons)</em:contributor>
+        <em:translator>lloco</em:translator>
+        <em:homepageURL>http://sessionmanager.mozdev.org/</em:homepageURL>
+      </Description>
+    </em:localized>
+    <em:localized>
+      <Description>
+        <em:locale>ro</em:locale>
+        <em:name>Gestionar de sesiuni</em:name>
+        <em:description>Salvează şi restaurează starea tuturor ferestrelor şi filelor navigatorului.</em:description>
+        <em:creator>Michael Kraft</em:creator>
+        <em:contributor>zeniko (Original Author)</em:contributor>
+        <em:contributor>dougeeebear (Session Manager icon)</em:contributor>
+        <em:contributor>Icon Design at ReadyIcons.com (options icons)</em:contributor>
+        <em:translator>Cătălin Zamfirescu (x10firefox)</em:translator>
+        <em:homepageURL>http://sessionmanager.mozdev.org/</em:homepageURL>
+      </Description>
+    </em:localized>
+    <em:localized>
+      <Description>
+        <em:locale>ru</em:locale>
+        <em:name>Менеджер сессий</em:name>
+        <em:description>Функциональный менеджер сессий. Сохраняет и восстанавливает состояние всех окон.</em:description>
+        <em:creator>Michael Kraft</em:creator>
+        <em:contributor>zeniko (Original Author)</em:contributor>
+        <em:contributor>dougeeebear (Session Manager icon)</em:contributor>
+        <em:contributor>Icon Design at ReadyIcons.com (options icons)</em:contributor>
+        <em:translator>stoneflash</em:translator>
+        <em:homepageURL>http://sessionmanager.mozdev.org/</em:homepageURL>
+      </Description>
+    </em:localized>
+    <em:localized>
+      <Description>
+        <em:locale>sk</em:locale>
+        <em:name>Session Manager</em:name>
+        <em:description>Umožní uložiť a obnoviť stav všetkých okien</em:description>
+        <em:creator>Michael Kraft</em:creator>
+        <em:contributor>zeniko (Original Author)</em:contributor>
+        <em:contributor>dougeeebear (Session Manager icon)</em:contributor>
+        <em:contributor>Icon Design at ReadyIcons.com (options icons)</em:contributor>
+        <em:translator>Wladow</em:translator>
+        <em:homepageURL>http://sessionmanager.mozdev.org/</em:homepageURL>
+      </Description>
+    </em:localized>
+    <em:localized>
+      <Description>
+        <em:locale>sl</em:locale>
+        <em:name>Upravljalnik sej</em:name>
+        <em:description>Shranjuje in restavrira stanje vseh oken</em:description>
+        <em:creator>Michael Kraft</em:creator>
+        <em:contributor>zeniko (Original Author)</em:contributor>
+        <em:contributor>dougeeebear (Session Manager icon)</em:contributor>
+        <em:contributor>Icon Design at ReadyIcons.com (options icons)</em:contributor>
+        <em:translator>Hrastovec</em:translator>
+        <em:homepageURL>http://sessionmanager.mozdev.org/</em:homepageURL>
+      </Description>
+    </em:localized>
+    <em:localized>
+      <Description>
+        <em:locale>sv-SE</em:locale>
+        <em:name>Session Manager</em:name>
+        <em:description>Sparar och återställer alla fönster.</em:description>
+        <em:creator>Michael Kraft</em:creator>
+        <em:contributor>zeniko (Original Author)</em:contributor>
+        <em:contributor>dougeeebear (Session Manager icon)</em:contributor>
+        <em:contributor>Icon Design at ReadyIcons.com (options icons)</em:contributor>
+        <em:translator>Natanael_L01</em:translator>
+        <em:homepageURL>http://sessionmanager.mozdev.org/</em:homepageURL>
+      </Description>
+    </em:localized>
+    <em:localized>
+      <Description>
+        <em:locale>tr</em:locale>
+        <em:name>Oturum Yöneticisi</em:name>
+        <em:description>Tüm pencerelerin durumlarını kaydeder ve geri yükler</em:description>
+        <em:creator>Michael Kraft</em:creator>
+        <em:contributor>zeniko (Original Author)</em:contributor>
+        <em:contributor>dougeeebear (Session Manager icon)</em:contributor>
+        <em:contributor>Icon Design at ReadyIcons.com (options icons)</em:contributor>
+        <em:translator>SerdarSahin</em:translator>
+        <em:homepageURL>http://sessionmanager.mozdev.org/</em:homepageURL>
+      </Description>
+    </em:localized>
+    <em:localized>
+      <Description>
+        <em:locale>uk</em:locale>
+        <em:name>Менеджер сесій</em:name>
+        <em:description>Зберігає та відновлює стан всіх вікон.</em:description>
+        <em:creator>Michael Kraft</em:creator>
+        <em:contributor>zeniko (Original Author)</em:contributor>
+        <em:contributor>dougeeebear (Session Manager icon)</em:contributor>
+        <em:contributor>Icon Design at ReadyIcons.com (options icons)</em:contributor>
+				<em:translator>Zhouck</em:translator>
+        <em:homepageURL>http://sessionmanager.mozdev.org/</em:homepageURL>
+      </Description>
+    </em:localized>
+    <em:localized>
+      <Description>
+        <em:locale>vi</em:locale>
+        <em:name>Trình Quản Lý Phiên</em:name>
+        <em:description>Lưu và phục hồi trạng thái của mọi cửa sổ.</em:description>
+        <em:creator>Michael Kraft</em:creator>
+        <em:contributor>zeniko (Original Author)</em:contributor>
+        <em:contributor>dougeeebear (Session Manager icon)</em:contributor>
+        <em:contributor>Icon Design at ReadyIcons.com (options icons)</em:contributor>
+				<em:translator>kimkha</em:translator>
+        <em:homepageURL>http://sessionmanager.mozdev.org/</em:homepageURL>
+      </Description>
+    </em:localized>
+    <em:localized>
+      <Description>
+        <em:locale>zh-CN</em:locale>
+        <em:name>会话管理器</em:name>
+        <em:description>会话管理器：保存和恢复全部浏览窗口的状态。</em:description>
+        <em:creator>Michael Kraft</em:creator>
+        <em:contributor>zeniko (Original Author)</em:contributor>
+        <em:contributor>dougeeebear (Session Manager icon)</em:contributor>
+        <em:contributor>Icon Design at ReadyIcons.com (options icons)</em:contributor>
+        <em:translator>Rick Cart</em:translator>
+        <em:homepageURL>http://sessionmanager.mozdev.org/</em:homepageURL>
+      </Description>
+    </em:localized>
+    <em:localized>
+      <Description>
+        <em:locale>zh-TW</em:locale>
+        <em:name>瀏覽頁組管理員</em:name>
+        <em:description>儲存及還原所有瀏覽視窗的狀態。</em:description>
+        <em:creator>Michael Kraft</em:creator>
+        <em:contributor>zeniko (Original Author)</em:contributor>
+        <em:contributor>dougeeebear (Session Manager icon)</em:contributor>
+        <em:contributor>Icon Design at ReadyIcons.com (options icons)</em:contributor>
+        <em:translator>Tsprajna</em:translator>
+        <em:homepageURL>http://sessionmanager.mozdev.org/</em:homepageURL>
+      </Description>
+    </em:localized>
+  </Description>
+</RDF>

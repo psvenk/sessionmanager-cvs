@@ -1,0 +1,279 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://sessionmanager/skin/sessionexplorer.css" type="text/css"?>
+<?xml-stylesheet href="chrome://sessionmanager/skin/sessionmanager.css"	type="text/css"?>
+<?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
+
+<!DOCTYPE dialog [
+	<!ENTITY % sessionmanagerDTD SYSTEM "chrome://sessionmanager/locale/sessionmanager.dtd"> %sessionmanagerDTD;
+	<!ENTITY % sessionexplorerDTD SYSTEM "chrome://sessionmanager/locale/sessionexplorer.dtd"> %sessionexplorerDTD;
+]>
+
+<window
+	xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
+	xmlns:xhtml2="http://www.w3.org/TR/xhtml2"
+	id="sessionexplorer"
+	title="&sessionManager;"
+	style="min-width: 60em; -moz-user-focus: ignore;"
+	persist="width,height"
+	onload="com.morac.SessionManagerAddon.gSessionManagerSessionExplorer.onLoad()"
+>
+	<script
+		type="application/x-javascript"
+		src="chrome://sessionmanager/content/sessionexplorer.js"
+	/>
+
+	<stringbundleset id="stringbundleset">
+		<stringbundle
+			id="bundle_sessionmanager"
+			src="chrome://sessionmanager/locale/sessionmanager.properties"
+		/>
+		<stringbundle
+			id="bundle_brand"
+			src="chrome://branding/locale/brand.properties"
+		/>
+	</stringbundleset>
+
+	<!-- why do I need to use broadcaster
+	instead of disabling the commandset below?
+	-->
+	<broadcaster id="stdMode" disabled="false" />
+
+	<commandset>
+		<command
+			id="cmd_session_open"
+			observes="stdMode"
+			oncommand="com.morac.SessionManagerAddon.gSessionManagerSessionExplorer.onCmdOpen('');window.close()"
+			label="&session_open.label;"
+			accesskey="&session_open.accesskey;"
+			tooltiptext="&session_open.tooltip;"
+		/>
+		<command
+			id="cmd_session_open_overwrite"
+			observes="stdMode"
+			oncommand="com.morac.SessionManagerAddon.gSessionManagerSessionExplorer.onCmdOpen('overwrite');window.close()"
+			label="&session_open_overwrite.label;"
+			accesskey="&session_open_overwrite.accesskey;"
+			tooltiptext="&session_open_overwrite.tooltip;"
+		/>
+		<command
+			id="cmd_session_open_newwindow"
+			observes="stdMode"
+			oncommand="com.morac.SessionManagerAddon.gSessionManagerSessionExplorer.onCmdOpen('newwindow');window.close()"
+			label="&session_open_newwindow.label;"
+			accesskey="&session_open_newwindow.accesskey;"
+			tooltiptext="&session_open_newwindow.tooltip;"
+		/>
+		<command
+			id="cmd_session_open_append"
+			observes="stdMode"
+			oncommand="com.morac.SessionManagerAddon.gSessionManagerSessionExplorer.onCmdOpen('append');window.close()"
+			label="&session_open_append.label;"
+			accesskey="&session_open_append.accesskey;"
+			tooltiptext="&session_open_append.tooltip;"
+		/>
+		<command
+			id="cmd_session_rename"
+			observes="stdMode"
+			oncommand="com.morac.SessionManagerAddon.gSessionManagerSessionExplorer.onCmdRename('&session_rename_ok.label;')"
+			label="&session_rename.label;"
+			accesskey="&session_rename.accesskey;"
+			tooltiptext="&session_rename.tooltip;"
+		/>
+		<command
+			id="cmd_session_delete"
+			observes="stdMode"
+			oncommand="com.morac.SessionManagerAddon.gSessionManagerSessionExplorer.onCmdDelete()"
+			label="&session_delete.label;"
+			accesskey="&session_delete.accesskey;"
+			tooltiptext="&session_delete.tooltip;"
+		/>
+		<command
+			id="cmd_session_save"
+			observes="stdMode"
+			oncommand="com.morac.SessionManagerAddon.gSessionManagerSessionExplorer.onCmdSave()"
+			label="&session_save.label;"
+			accesskey="&session_save.accesskey;"
+			tooltiptext="&session_save.tooltip;"
+		/>
+		<command
+			id="cmd_session_save_w"
+			observes="stdMode"
+			oncommand="com.morac.SessionManagerAddon.gSessionManagerSessionExplorer.onCmdSaveWindow()"
+			label="&session_save_w.label;"
+			accesskey="&session_save_w.accesskey;"
+			tooltiptext="&session_save_w.tooltip;"
+		/>
+		<command
+			id="cmd_session_open_folder"
+			observes="stdMode"
+			oncommand="com.morac.SessionManagerAddon.gSessionManagerSessionExplorer.onCmdOpenFolder()"
+			label="&session_open_folder.label;"
+			accesskey="&session_open_folder.accesskey;"
+			tooltiptext="&session_open_folder.tooltip;"
+		/>
+	</commandset>
+	
+	<keyset>
+		<key
+			id="key_open"
+			keycode="VK_RETURN"
+			command="cmd_session_open"
+		/>
+		<key
+			id="key_rename"
+			keycode="VK_F2"
+			command="cmd_session_rename"
+		/>
+		<key
+			id="key_delete"
+			keycode="VK_DELETE"
+			command="cmd_session_delete"
+		/>
+		<key
+			id="key_save"
+			key="S"
+			modifiers="control"
+			command="cmd_session_save"
+		/>
+		<key
+			keycode="VK_ESCAPE"
+			observes="stdMode"
+			oncommand="window.close()"
+		/>
+	</keyset>
+
+	<keyset id="keyset_input_mode" disabled="true">
+		<key
+			id="key_input_mode_cancel"
+			keycode="VK_ESCAPE"
+			disabled="true"
+			oncommand="com.morac.SessionManagerAddon.gSessionManagerSessionExplorer.onCancel()"
+		/>
+	</keyset>
+
+	<popupset>
+		<popup id="ctx_session_popup">
+			<menuitem command="cmd_session_open" key="key_open" default="true"/>
+			<menuitem command="cmd_session_open_overwrite" />
+			<menuitem command="cmd_session_open_newwindow" />
+			<menuitem command="cmd_session_open_append" />
+			<menuitem command="cmd_session_rename" key="key_rename" />
+			<menuitem command="cmd_session_delete" key="key_delete" />
+			<menuitem command="cmd_session_save" key="key_save" />
+			<menuitem command="cmd_session_save_w" />
+			<menuitem command="cmd_session_open_folder" />
+		</popup>
+	</popupset>
+			
+
+	<toolbar>
+		<toolbarbutton
+			type="menu"
+			label="&session_open.label;"
+			accesskey="&session_open.accesskey;"
+		>
+			<menupopup>
+				<menuitem command="cmd_session_open" key="key_open" />
+				<menuitem command="cmd_session_open_overwrite" />
+				<menuitem command="cmd_session_open_newwindow" />
+				<menuitem command="cmd_session_open_append" />
+			</menupopup>
+		</toolbarbutton>
+		<toolbarbutton id="tb_btn_rename" command="cmd_session_rename" />
+		<toolbarbutton id="tb_btn_delete" command="cmd_session_delete" />
+		<toolbarbutton command="cmd_session_save" />
+		<toolbarbutton command="cmd_session_save_w" />
+		<toolbarbutton command="cmd_session_open_folder" />
+	</toolbar>
+
+	<separator />
+
+	<hbox flex="1">
+		<vbox flex="1">
+			<tree
+				id="sessiontree"
+				observes="stdMode"
+				hidecolumnpicker="true"
+				context="ctx_session_popup"
+				flex="1"
+			>
+				<treecols>
+					<treecol
+						label="&column_autosave.label;"
+						tooltiptext="&column_autosave.tooltip;"
+					/>
+					<splitter class="tree-splitter"/>
+					<treecol
+						label="&column_windows.label;"
+						tooltiptext="&column_windows.tooltip;"
+					/>
+					<splitter class="tree-splitter"/>
+					<treecol
+						label="&column_tabs.label;"
+						tooltiptext="&column_tabs.tooltip;"
+					/>
+					<splitter class="tree-splitter"/>
+					<treecol
+						label="&column_time.label;"
+						tooltiptext="&column_time.tooltip;"
+					/>
+					<splitter class="tree-splitter"/>
+					<treecol
+						label="&column_name.label;"
+						flex="1"
+						primary="true"
+					/>
+				</treecols>
+
+				<treechildren />
+			</tree>
+			<vbox>
+				<separator />
+				<hbox id="prompt" hidden="true">
+					<textbox
+						id="text_box"
+						oninput="com.morac.SessionManagerAddon.gSessionManagerSessionExplorer.onTextboxInput();"
+						flex="1"
+					/>
+					<button label="&cancel.label;" oncommand="com.morac.SessionManagerAddon.gSessionManagerSessionExplorer.onCancel()" />
+					<button id="ok_button" />
+				</hbox>
+				<!-- TODO
+				<hbox id="checkbox_container" hidden="true">
+					<checkbox id="checkbox_ignore" label="prompt.ignore.label;" hidden="false"/>
+					<checkbox id="checkbox_autosave" label="prompt.autosave.label;" hidden="false"/>
+				</hbox>
+				-->
+			</vbox>
+		</vbox>
+		<vbox>
+			<button type="menu-button" command="cmd_session_open">
+				<menupopup>
+					<menuitem command="cmd_session_open_overwrite" />
+					<menuitem command="cmd_session_open_newwindow" />
+					<menuitem command="cmd_session_open_append" />
+				</menupopup>
+			</button>
+			<separator />
+			<button command="cmd_session_rename" />
+			<button command="cmd_session_delete" />
+			<separator />
+			<button command="cmd_session_save" />
+			<button command="cmd_session_save_w" />
+			<separator />
+			<button command="cmd_session_open_folder" />
+		</vbox>
+	</hbox>
+
+	<separator class="groove" />
+
+	<hbox>
+		<spacer flex="1" />
+		<button
+			observes="stdMode"
+			label="&done.label;"
+			tooltiptext="&done.tooltip;"
+			oncommand="window.close()"
+		/>
+	</hbox>
+</window>

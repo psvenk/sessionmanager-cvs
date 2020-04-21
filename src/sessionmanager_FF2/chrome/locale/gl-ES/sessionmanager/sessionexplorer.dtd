@@ -1,0 +1,44 @@
+<!ENTITY session_open.label "Abrir">
+<!ENTITY session_open.accesskey "A">
+<!ENTITY session_open.tooltip "Abrir a sesión seleccionada">
+<!ENTITY session_open_overwrite.label "Abrir (sobreescribir)">
+<!ENTITY session_open_overwrite.accesskey "b">
+<!ENTITY session_open_overwrite.tooltip "Seica queres sobreescribir a sesión seleccionada ???">
+<!ENTITY session_open_newwindow.label "Abrir (nova xanela)">
+<!ENTITY session_open_newwindow.accesskey "n">
+<!ENTITY session_open_newwindow.tooltip "Seica queres abrir unha nova xanela ???">
+<!ENTITY session_open_append.label "Abrir (engadir)">
+<!ENTITY session_open_append.accesskey "a">
+<!ENTITY session_open_append.tooltip "Engadir a sesión seleccionada">
+<!ENTITY session_rename.label "Renomear...">
+<!ENTITY session_rename.accesskey "R">
+<!ENTITY session_rename.tooltip "Renomear a sesión seleccionada">
+<!ENTITY session_rename_ok.label "Renomear">
+<!ENTITY session_delete.label "Borrar">
+<!ENTITY session_delete.accesskey "B">
+<!ENTITY session_delete.tooltip "Borrar sesión seleccionada">
+<!ENTITY session_save.label "Gardar...">
+<!ENTITY session_save.accesskey "G">
+<!ENTITY session_save.tooltip "Gardar xanelas nunha nova sesión">
+<!ENTITY session_save_ok.label "Gardar">
+<!ENTITY session_save_w.label "Gardar Xanela...">
+<!ENTITY session_save_w.accesskey "X">
+<!ENTITY session_save_w.tooltip "Gardar xanela nunha nova sesión">
+<!ENTITY session_save_w_ok.label "Gardar Xanela">
+<!ENTITY session_open_folder.label "Abrir Arquivo">
+<!ENTITY session_open_folder.accesskey "A">
+<!ENTITY session_open_folder.tooltip "Abrir Cartafol do Xestor de Sesións">
+<!ENTITY column_autosave.label "A">
+<!ENTITY column_autosave.tooltip "Auto-gardado das Sesións">
+<!ENTITY column_windows.label "S">
+<!ENTITY column_windows.tooltip "Xanelas">
+<!ENTITY column_tabs.label "l">
+<!ENTITY column_tabs.tooltip "Lapelas">
+<!ENTITY column_time.label "Tempo">
+<!ENTITY column_time.tooltip "Marca de Tempo">
+<!ENTITY column_name.label "Nome">
+<!ENTITY cancel.label "Cancelar">
+<!ENTITY done.label "Feito!">
+<!ENTITY done.tooltip "Pechar a Xanela do Explorador de Sesións">
+<!ENTITY session_load.label "Cargar">
+<!ENTITY session_load.accesskey "C">

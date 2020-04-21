@@ -1,0 +1,48 @@
+### Menu [Tools] (Firefox)
+save
+saveOne
+rename
+remove
+openFolder
+options
+undoClosed
+
+### Menu [Tools] (SeaMonkey)
+save
+saveOne
+rename
+remove
+openFolder
+resume
+reload
+overwrite
+clearList
+
+### Menu [Tools] (SeaMonkey - Undo submenu)
+save
+saveOne
+rename
+remove
+openFolder
+resume
+reload
+overwrite
+undoClosed
+
+### Options Dialog
+resume_sess
+backup_sess
+overwrite
+reload
+orderList
+max_backup
+max_closed
+max_tabs
+submenu
+closed_tabs
+window_list
+clear_list
+name_format
+interval
+postdata
+privacy

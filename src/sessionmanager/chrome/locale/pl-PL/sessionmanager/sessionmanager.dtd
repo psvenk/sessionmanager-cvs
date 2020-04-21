@@ -1,0 +1,35 @@
+<!ENTITY sessionManager       "Menedżer sesji">
+<!ENTITY toolsmenu.accesskey  "M">
+
+<!ENTITY save.label           "Zapisz sesję">
+<!ENTITY save.accesskey       "Z">
+<!ENTITY saveOne.label        "Zapisz aktywne okno">
+<!ENTITY saveOne.accesskey    "S">
+<!ENTITY rename.label         "Zmień nazwę sesji">
+<!ENTITY rename.accesskey     "N">
+<!ENTITY remove.label         "Usuń sesję(e)">
+<!ENTITY remove.accesskey     "U">
+<!ENTITY openFolder.label     "Otwórz folder sesji">
+<!ENTITY openFolder.accesskey "f">
+
+<!ENTITY options.label        "Menedżer sesji - opcje">
+<!ENTITY options.accesskey    "M">
+<!ENTITY resume.label         "Podczas otwierania odtwórz ostatnią aktywną sesję">
+<!ENTITY resume.accesskey     "k">
+<!ENTITY reload.label         "Odśwież wszystkie odtworzone okna">
+<!ENTITY reload.accesskey     "w">
+<!ENTITY overwrite.label      "Zamień istniejące okna">
+<!ENTITY overwrite.accesskey  "a">
+
+<!ENTITY undoClosed.label     "Otwórz ponownie">
+<!ENTITY undoClosed.accesskey "O">
+<!ENTITY closedWindows        "Zamknięte okna:">
+<!ENTITY closedTabs           "Zamknięte karty:">
+<!ENTITY clearList.label      "Wyczyść listę">
+<!ENTITY clearList.accesskey  "l">
+
+<!ENTITY toolbar.tooltip      "Zapisuje aktualną sesję">
+<!ENTITY toolbar.undo.label   "Cofnij">
+<!ENTITY toolbar.undo.tooltip "Otwiera ponownie ostatnio zamknięte karty">
+
+<!ENTITY prompt.ignore.label  "Nie pokazuj tego okna ponownie">

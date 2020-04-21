@@ -1,0 +1,202 @@
+<!ENTITY options.title "Možnosti &sessionManager;">
+<!ENTITY general.caption "Hlavní">
+<!ENTITY startNend.caption "Spuštění &amp; ukončení">
+<!ENTITY resume_sess.label "Při spuštění prohlížeče vždy načíst následující relaci:">
+<!ENTITY resume_sess.accesskey "s">
+<!ENTITY backup_sess.label "Při ukončení">
+<!ENTITY backup_sess.accesskey "k">
+<!ENTITY backup_session.label0 "neukládat aktuální relaci">
+<!ENTITY backup_session.label1 "uložit aktuální relaci">
+<!ENTITY backup_session.label2 "dotázat se na uložení aktuální relace">
+<!ENTITY crashrecovery.label "Zapnout obnovu otevřených stránek po pádu aplikace">
+<!ENTITY crashrecovery.accesskey "e">
+<!ENTITY autosave_session.label "Automaticky uložit nahrazenou relaci">
+<!ENTITY autosave_session.accesskey "a">
+<!ENTITY restoring.caption "Obnovení relace">
+<!ENTITY sessionList.caption "Seznam relací">
+<!ENTITY orderList.label "Seřadit seznam relací">
+<!ENTITY orderList.accesskey "d">
+<!ENTITY orderList.label1 "abecedně">
+<!ENTITY orderList.label2 "od nejstarší po nejnovější">
+<!ENTITY orderList.label_2 "od nejnovější po nejstarší">
+<!ENTITY max_backup.label "Počet zálohovaných (nebo havarovaných) relací:">
+<!ENTITY max_backup.accesskey "n">
+<!ENTITY undoClose.caption "Znovu otevřít">
+<!ENTITY windowsNtabs.caption "Zavřená okna &amp; panely">
+<!ENTITY max_closed.label "Maximální počet zavřených oken k zapamatování:">
+<!ENTITY max_closed.accesskey "o">
+<!ENTITY max_tabs.label "Maximální počet zavřených panelů (na jedno okno) k zapamatování:">
+<!ENTITY max_tabs.accesskey "p">
+<!ENTITY submenu.label "Seznam všech zavřených oken a panelů v podnabídce">
+<!ENTITY submenu.accesskey "z">
+<!ENTITY persistence.caption "Uchování">
+<!ENTITY closed_tabs.label "Obnovit seznam zavřených panelů k možnému obnovení pro všechna okna:">
+<!ENTITY closed_tabs.accesskey "b">
+<!ENTITY closed_tabs.label0 "nikdy">
+<!ENTITY closed_tabs.label1 "při startu">
+<!ENTITY closed_tabs.label2 "vždy">
+<!ENTITY window_list.label "Nečistit seznam zavřených oken při ukončení programu">
+<!ENTITY window_list.accesskey "o">
+<!ENTITY clear_list.label "Vyčistit seznamy">
+<!ENTITY clear_list.accesskey "t">
+<!ENTITY advanced.caption "Pokročilé">
+<!ENTITY name_format.caption "Názvy relací">
+<!ENTITY name_format.label "Formát pro návrhy názvů relací:">
+<!ENTITY name_format.accesskey "F">
+<!ENTITY name_format.desc "Použijte &#37;t pro název aktivního panelů, &#37;d pro dnešní datum a &#37;m pro čas; pro úplnost: délka názvů může být omezena na # znaků: &#37;#t.">
+<!ENTITY sessionstore.caption "Ukládání relace">
+<!ENTITY service.caption "Ukládání relace - Nastavení">
+<!ENTITY service.description "Neměňte následující nastavení, pokud si nejste svými činy jisti!">
+<!ENTITY interval.label "Minimální časový odstup mezi dvěma uvedeními uložení (v sekundách):">
+<!ENTITY interval.accesskey "i">
+<!ENTITY postdata.label "Maximální množství uložených POSTDAT (v bajtech; -1 pro všechna):">
+<!ENTITY postdata.accesskey "x">
+<!ENTITY privacy.label "Uložit citlivá data (údaje z formulářů, POSTDATA a cookies) pro">
+<!ENTITY privacy.accesskey "c">
+<!ENTITY privacy.level0 "všechny stránky">
+<!ENTITY privacy.level1 "pouze nezašifrované stránky">
+<!ENTITY privacy.level2 "žádné stránky">
+<!ENTITY sessiondir.caption "Umístění ukládaných relací">
+<!ENTITY sessiondir.desc "Výchozí umístění ukládaných relací může být přepsáno zde.">
+<!ENTITY encrypt.caption "Šifrování">
+<!ENTITY encrypt.desc "Varování: Zašifrovaná data relací mohou být otevřena pouze v profilu s identickými soubory key3.db. Pokud je navíc nastaveno hlavní heslo, relace nemohou být zašifrovány nebo rozšifrovány, dokud ho nezadáte.">
+<!ENTITY encrypt.label "Zašifrovat data uložených relací a zavřených oken">
+<!ENTITY encrypt.accesskey "f">
+<!ENTITY change_dir.label "Změnit">
+<!ENTITY change_dir.accesskey "Z">
+<!ENTITY default_dir.label "Výchozí">
+<!ENTITY default_dir.accesskey "V">
+<!ENTITY sanitizer.label "Správce relací - Uložené relace">
+<!ENTITY sanitizer.accesskey "s">
+<!ENTITY saving.caption "Ukládání relace">
+<!ENTITY lastpage.label "Zobrazit poslední načtenou stránku">
+<!ENTITY noSession.label "Žádnou">
+<!ENTITY noSession.accesskey "u">
+<!ENTITY promptSession.label "Dotázat se na relaci">
+<!ENTITY promptSession.accesskey "D">
+<!ENTITY selectSession.label "Zvolit relaci">
+<!ENTITY selectSession.accesskey "Z">
+<!ENTITY cookies.label "Uložit cookies relace">
+<!ENTITY cookies.accesskey "c">
+<!ENTITY sessionImport.caption "Importovat relace z...">
+<!ENTITY importSS.label "SessionSaver">
+<!ENTITY importSS.accesskey "I">
+<!ENTITY importTMP.label "Tab Mix Plus">
+<!ENTITY importTMP.accesskey "I">
+<!ENTITY apply.label "Použít">
+<!ENTITY save_and_restore.caption "Ukládání &amp; obnova">
+<!ENTITY display.caption "Zobrazení">
+<!ENTITY middleclick.label "Klepnutí prostředním tlačítkem myši otevře poslední zavřený panel">
+<!ENTITY middleclick.accesskey "m">
+<!ENTITY max_display.label "Maximální počet relací zobrazených v nabídce">
+<!ENTITY max_display.accesskey "M">
+<!ENTITY hide_tools_menu.label "Nezobrazovat Správce relací v nabídce Nástroje">
+<!ENTITY hide_tools_menu.accesskey "N">
+<!ENTITY disable_cache_fixer.label "Vypnout možnost opravy vyrovnávací paměti">
+<!ENTITY disable_cache_fixer.accesskey "v">
+<!ENTITY encrypted_only.label "Pokud šifrování selže, rozhodně NEUKLÁDEJTE data nezašifrovaná.">
+<!ENTITY encrypted_only.accesskey "N">
+<!ENTITY encrypt2.desc "Varování: Pokud je tato volba zaškrtnutá a dala relace nebo okna nemohou být zašifrována, data budou navždy ztracena bez možnosti obnovy. Šifrování selže, pokud bude vyžádáno hlavní heslo a nebude zadáno. Zaškrtnutí této volby si tedy pečlivě promyslete.">
+<!ENTITY closed_window_list.label "Použít seznam zavřených oken zabudovaný v prohlížeči">
+<!ENTITY closed_window_list.accesskey "P">
+<!ENTITY closed_windows.label "Obnovit seznam zavřených oken, které lze znovu otevřít:">
+<!ENTITY closed_windows.accesskey "s">
+<!ENTITY open_as_tabs.label "Otevřít jako panely v aktuálním okně">
+<!ENTITY open_as_tabs.accesskey "p">
+<!ENTITY last_window_shutdown.label "Považovat zavření posledního otevřeného okna prohlížeče za ukončení aplikace">
+<!ENTITY last_window_shutdown.accesskey "u">
+<!ENTITY preselect_previous_session.label "Předvybrat předchozí relaci">
+<!ENTITY preselect_previous_session.accesskey "r">
+<!ENTITY logging.caption "Zaznamenávání">
+<!ENTITY enable_logging.label "Zapnout zaznamenávání">
+<!ENTITY enable_logging.accesskey "e">
+<!ENTITY open_log.label "Otevřít soubor se záznamem">
+<!ENTITY open_log.accesskey "o">
+<!ENTITY delete_log.label "Odstranit soubor se záznamem">
+<!ENTITY delete_log.accesskey "d">
+<!ENTITY log_level_state.label "Zaznamenávat stav při vypínání">
+<!ENTITY log_level_state.accesskey "s">
+<!ENTITY log_level_trace.label "Zaznamenávat stopy dat">
+<!ENTITY log_level_trace.accesskey "t">
+<!ENTITY log_level_data.label "Zaznamenávat proměnná data">
+<!ENTITY log_level_data.accesskey "p">
+<!ENTITY log_level_info.label "Zaznamenávat informační zprávy">
+<!ENTITY log_level_info.accesskey "i">
+<!ENTITY log_level_extra.label "Zaznamenávat další debuggovací data">
+<!ENTITY log_level_extra.accesskey "e">
+<!ENTITY reload.label "Znovu načíst všechna obnovená okna">
+<!ENTITY reload.accesskey "v">
+<!ENTITY overwrite.label "Nahradit existující okna">
+<!ENTITY overwrite.accesskey "h">
+<!ENTITY allow_saving_during_pbm.label "Povolit ukládání při zapnutém režimu Anonymní prohlížení">
+<!ENTITY allow_saving_during_pbm.label2 "Vyžaduje zapnuté šifrování">
+<!ENTITY allow_saving_during_pbm.accesskey "f">
+<!ENTITY session_name_in_titlebar.label "název aktivní relace v záhlaví okna">
+<!ENTITY session_name_in_titlebar.accesskey "n">
+<!ENTITY prepend.label "Zobrazit na začátku">
+<!ENTITY append.label "Zobrazit na konci">
+<!ENTITY donotadd.label "Nezobrazovat v">
+<!ENTITY use_browser_crash_prompt.label "Po pádu aplikace použít dialog pro obnovu panelů a oken vestavěný v prohlížeči">
+<!ENTITY use_browser_crash_prompt.accesskey "u">
+<!ENTITY reset_warnings.label "Obnovit zobrazování varování">
+<!ENTITY reset_warnings.accesskey "r">
+<!ENTITY export_settings.label "Nastavení exportu">
+<!ENTITY export_settings.accesskey "x">
+<!ENTITY import_settings.label "Nastavení importu">
+<!ENTITY import_settings.accesskey "i">
+<!ENTITY settingsImportExport.caption "Nastavení importu/exportu">
+<!ENTITY keyboard.caption "Klávesové zkratky">
+<!ENTITY keyboard.desc "Pokud chcete používat klávesové zkratky pro některé akce, zadejte je do políček níže, jinak nechte políčka volná. Změny provedené zde se v existujících oknech neprojeví.">
+<!ENTITY clear.label "Vyčistit">
+<!ENTITY clear.accesskey "č">
+<!ENTITY clear_tab_list.label "Vyčistit seznam zavřených panelů">
+<!ENTITY clear_tab_list.accesskey "a">
+<!ENTITY clear_window_list.label "Vyčistit seznam zavřených oken">
+<!ENTITY clear_window_list.accesskey "i">
+<!ENTITY backup_on_restart.label "Uložit data do zálohy při restartování prohlížeče">
+<!ENTITY backup_on_restart.accesskey "d">
+<!ENTITY keep_deleted_sessions.label "Počet dnů, kdy budou dočasně uchovány smazané relace:">
+<!ENTITY keep_deleted_sessions.accesskey "d">
+<!ENTITY concurrent.label "Počet souběžně obnovovaných panelů">
+<!ENTITY concurrent.accesskey "t">
+<!ENTITY do_not_color_toolbar_button.label "Po načtení relace nezabarvovat tlačítko v nástrojové liště">
+<!ENTITY do_not_color_toolbar_button.accesskey "P">
+<!ENTITY preserve_app_tabs.label "Nenahrazovat připnuté panely">
+<!ENTITY preserve_app_tabs.accesskey "N">
+<!ENTITY logging_to_console.label "Také zaznamenávat do chybové konzoly">
+<!ENTITY logging_to_console.accesskey "T">
+<!ENTITY update_message.label "Zobrazit aktualizovanou webovou stránku po aktualizaci">
+<!ENTITY update_message.accesskey "Z">
+<!ENTITY double_click_session.label "Dvojité klepnutí na existující relaci přepíše relaci a">
+<!ENTITY double_click_session.accesskey "D">
+<!ENTITY replace_with_name_replace.label "nahradí stávající název relace názvem v textovém boxu">
+<!ENTITY replace_with_name_keep.label "zachová stávající název relace">
+<!ENTITY show_icon_in_menu.label "Zobrazit ikonu v nabídce nástrojů">
+<!ENTITY show_icon_in_menu.accesskey "i">
+<!ENTITY set_encryption_password.label "Zadejte heslo, kterým ochráníte šifrovací klíč k relaci">
+<!ENTITY set_encryption_password.accesskey "e">
+<!ENTITY change_encryption_key_password.label "Změnit heslo k šifrovacímu klíči">
+<!ENTITY change_encryption_key_password.accesskey "c">
+<!ENTITY save_encryption_key.label "Uložit heslo k šifrovacímu klíči ve Správci hesel v prohlížeči">
+<!ENTITY save_encryption_key.accesskey "s">
+<!ENTITY restore_hidden_tabs.label "Obnovit skryté panely">
+<!ENTITY restore_hidden_tabs.accesskey "y">
+<!ENTITY display_menus_in_submenu.label "Zobrazit položky nabídky Správce relací v podnabídce">
+<!ENTITY display_menus_in_submenu.accesskey "d">
+<!ENTITY use_sql_cache.label "Přednačítat základní data relace na disk. Umožňuje vyhledávání uvnitř relací">
+<!ENTITY use_sql_cache.accesskey "c">
+<!ENTITY rebuild_cache.label "Znovu sestavit přednačtená data">
+<!ENTITY rebuild_cache.accesskey "Z">
+<!ENTITY log_level_error.label "Zaznamenávat chyby">
+<!ENTITY log_level_error.accesskey "e">
+<!ENTITY allow_duplicates.label "Povolit relaci se stejným názvem jako má již existující relace">
+<!ENTITY allow_duplicates.accesskey "a">
+<!ENTITY backup_every.label "Ukládat novou zálohu relace každých">
+<!ENTITY backup_every.accesskey "c">
+<!ENTITY minutes "minut">
+<!ENTITY restore_on_demand.label "Obnovit panely na požádání">
+<!ENTITY restore_on_demand.accesskey "O">
+<!ENTITY max_back_history.label "Počet stránek, na které lze v panelu přejít zpět v historii (-1 pro všechny dostupné stránky)">
+<!ENTITY max_back_history.accesskey "z">
+<!ENTITY max_forward_history.label "Počet stránek, na které lze v panelu přejít vpřed (-1 pro všechny dostupné stránky)">
+<!ENTITY max_forward_history.accesskey "v">

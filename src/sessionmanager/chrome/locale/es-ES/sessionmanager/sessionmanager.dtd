@@ -1,0 +1,35 @@
+<!ENTITY sessionManager       "Administrador de sesiones">
+<!ENTITY toolsmenu.accesskey  "A">
+
+<!ENTITY save.label           "Guardar sesión">
+<!ENTITY save.accesskey       "G">
+<!ENTITY saveOne.label        "Guardar la ventana actual">
+<!ENTITY saveOne.accesskey    "v">
+<!ENTITY rename.label         "Renombrar sesión...">
+<!ENTITY rename.accesskey     "R">
+<!ENTITY remove.label         "Borrar sesión(es)...">
+<!ENTITY remove.accesskey     "B">
+<!ENTITY openFolder.label     "Abrir carpeta de sesiones">
+<!ENTITY openFolder.accesskey "A">
+
+<!ENTITY options.label        "&sessionManager; Opciones">
+<!ENTITY options.accesskey    "O">
+<!ENTITY resume.label         "Recuperar la sesión actual al iniciar">
+<!ENTITY resume.accesskey     "s">
+<!ENTITY reload.label         "Recargar todas las ventanas restauradas">
+<!ENTITY reload.accesskey     "d">
+<!ENTITY overwrite.label      "Reemplazar las ventanas existentes">
+<!ENTITY overwrite.accesskey  "n">
+
+<!ENTITY undoClosed.label     "Volver a abrir las cerradas...">
+<!ENTITY undoClosed.accesskey "c">
+<!ENTITY closedWindows        "Ventanas cerradas:">
+<!ENTITY closedTabs           "Pestañas cerradas:">
+<!ENTITY clearList.label      "Vaciar lista de 'Cerradas'...">
+<!ENTITY clearList.accesskey  "C">
+
+<!ENTITY toolbar.tooltip      "Guardar la sesión actual de navegación...">
+<!ENTITY toolbar.undo.label   "Deshacer cerrar">
+<!ENTITY toolbar.undo.tooltip "Vuelve a abrir la pestaña cerrada más recientemente">
+
+<!ENTITY prompt.ignore.label  "No volver a mostrar este mensaje">

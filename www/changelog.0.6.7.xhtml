@@ -1,0 +1,148 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML Basic 1.1//EN"
+    "http://www.w3.org/TR/xhtml-basic/xhtml-basic11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US">
+<head><title>Session Manager Development changelog</title></head>
+<body>
+
+<h2>0.6.2.2009101001</h2>
+<ul>
+<li>Additions:</li>
+<ul>
+<li>Allow users to delete specific windows and tabs from a Session.</li>
+</ul>
+<li>Fixes:</li>
+<ul>
+<li>Don't show overwrite prompt if appending to sesssion file.</li>
+</ul>
+<li>Changes:</li>
+<ul>
+<li>Move the rename, delete and group menu items to top of Session Manager menu and put a seperator between it and any auto-save or window menu items.</li>
+</ul>
+</ul>
+
+<h2>0.6.2.2009100901</h2>
+<ul>
+<li>Additions:</li>
+<ul>
+<li>Added option to append the current session or window to a selected session when saving via the save window.</li>
+</ul>
+<li>Fixes:</li>
+<ul>
+<li>Correctly show this change log when installing a beta version</li>
+<li>Don't display a "-" in the title bar when an auto-save session isn't loaded.</li>
+<li>Fixed quit prompt to handle case where use checks the don't ask prompt and chose to save and restore.</li>
+<li>Fixed SeaMonkey detection - wasn't working</li>
+<li>Fixed issue with tabs loading into a different window when the "open as tabs in current window" option was enabled.</li>
+<li>Try to prevent Tab Mix Plus from putting up a close window prompt when Session Manager is doing so.  This only affects TMP's development loads and could stop working depending on how TMP changes.</li>
+</ul>
+<li>Changes:</li>
+<ul>
+<li>Updated locales.</li>
+</ul>
+</ul>
+
+<h2>0.6.2.2009100601</h2>
+<ul>
+<li>Additions:</li>
+<ul>
+<li>Add a "Load (Append to Current Window)" right click menu item to session context menu.</li>
+<li>Add option as to where in titlebar (if anywhere) to display active session name.</li>
+</ul>
+<li>Fixes:</li>
+<ul>
+<li>Fixed a problem where window sessions would improperly close if the user cancelled the prompt to close a window.</li>
+<li>If session file header was corrupt and session data was encrypted, the session might not decrypt correctly.</li>
+<li>Fixed error with converting old sessionmanager 0.4.2 format to new format (was leaving off {} around session data).</li>
+<li>Updated to work with latest trunk loads</li>
+<li>Fix some display issues with Main options pane</li>
+<li>When reloading tabs, only reload web pages (http:// and https://).  This prevents issues caused by reloading chrome pages.</li>
+<li>FUEL stuff now works with SeaMonkey, though only 2.0b2 or later.  FUEL is called SMILE in SeaMonkey and uses a different component.</li>
+</ul>
+<li>Changes:</li>
+<ul>
+<li>The Session Manager quit prompt now overrides the built in browser quit prompt.  It also now contains a cancel button to cancel shut down.  In Firefox 3.0 and 3.5 closing the last browser window puts up a "close tab" prompt which Session Manager does not override.  In Firefox 3.6, closing the last browser window will put up a quit prompt, which session manager will override.</li>
+<li>Session, closed tab and closed window names now display as a tooltip when mousing over their menu entry.</li>
+<li>Always load in a new window if the "Load (Append to Current Session)" right click menu item is used.</li>
+<li>Hide the "Load (Append to Current Session)" right click menu item if Tab Mix Plus's single window mode is enabled.</li>
+<li>Can now specify multiple command line session names at once and they will all load.  Likewise you can select multiple session files and open then all at once.</li>
+<li>Some values that used to be temporary preference values are now Application storage values.  This will prevent Session Manager thinking it is already running after an improper shutdown.</li>
+<li>Changed logger to be more self contained - store initialization values as constants.  Other addons that want to use this can change these values.</li>
+<li>Log Browser name and version as well as addons.</li>
+<li>Made some changes to the way Session Manager handles window closes to prevent session data from getting lost or corrupted when last browser window is closed under certain circumstances (such as being in private browser mode).</li>
+</ul>
+</ul>
+
+<h2>0.6.2.2009082001</h2>
+<ul>
+<li>Additions:</li>
+<ul>
+<li>Added right click menu item to abandon or close open auto and window sessions.</li>
+<li>Sessions can be loaded by specifying the filename on the command line or associating .session files with the browser and launching the session file.</li>
+<ul>
+<li>Sessions specified on the command line will open in addition to any session that should normally be opened.  This includes when the browser is set to restore windows from last time or when the user has set Session Manager to load a specific session or prompt for a session.</li>
+<li>Sessions can be loaded from the command line even if the browser is already running. These will always be appended to the current session to be safe since there's no real way to tell whether the user wants to append or overwrite in this case.</li>
+<li>Command line specified sessions can be loaded from anywhere on the drive (not just the sessions folder), loading an auto save or window session will result in the session being saved into the session folder though.</li>
+<li>Allow command line sessions to be opened when browser is running and TMP's single window mode is active.</li>
+</ul>
+</ul>
+<br/>
+<li>Fixes:</li>
+<ul>
+<li>Because of changes I made to use "close", open window sessions in other windows weren't being saved.  This was corrected.</li>
+<li>When window session was closed, we delete window value, but SessionStore doesn't save this immediately so it can be lost on a crash. Added work around.</li>
+<li>Don't display already loaded auto and window sessions in "Load" window.</li>
+<li>Never allow already active auto or window sessions to be loaded. The load will simply be ignored.</li>
+<li>Fixed issues where Session Manager could overwrite existing tabs on startup if tab mix plus's single window mode was active.</li>
+<li>Existings window and auto sessions won't close if loading other sessions won't overwrite them.</li>
+<li>Fixed issue when closing last window under OS X not saving session.</li>
+<li>When opening a new window after shutting down do to last window closing, don't look at the session startup type since we only care about this value at browser startup. This fixes issues that can occur with opening new windows not triggering startup processing when the "Treat closing last open browser window as shutting down" option is set.</li>
+</ul>
+<br/>
+<li>Chamges:</li>
+<ul>
+<li>Store list of opened window session in Application Storage.  This allows us to easily return the list of open window sessions without searching through all the open browser windows.</li>
+<li>Auto sessions won't be enabled if loaded into a new window or appended as tabs in current window.</li>
+<li>Window sessions won't be enabled if appended as tabs in current window.</li>
+<li>The "Treat closing last open browser window as shutting down" option will now be set by default under OS X.</li>
+<li>New load modes:</li>
+<ul>
+<li><b>"newwindow_always"</b> - always loads in a new window, even if existing window is blank.</li>
+<li><b>"overwrite_window"</b> - only overwrites current window (not all windows)</li>
+</ul>
+</ul>
+</ul>
+
+<h2>0.6.2.2009081701</h2>
+<ul>
+<li>Use FUEL Application object instead of mApp to determine application name and version.</li>
+<li>Use FUEL Applcation to store session and closed window cache.  This allows only one list to be maintained instead of one for each window.  Also optimized the reading of the closedwindow cache so it isn't read every time to check the size.</li>
+<li>Don't save to cache during browser shutdown since there's no point in doing so and it will cause an exception.</li>
+<li>Try and save current session on shutdown if in private browsing mode (PBM) and user sets both preference to save in PBM and encryption. Unless the user started in PBM, this will save the session as it was prior to entering PBM.</li>
+<li>Window sessions are now properly restored on a restart or a crash recovery.  They also are no longer loaded when they should not be.  If the user does not choose to restore the current session or restores only some of the tabs in the current session, the currently open window sessions will be lost.  This will be fixed at some point.</li>
+<li>Session Manager now listens for the window close event in addition to the unload event.  This makes things a lot easier on me and I no longer need to have work arounds for other addons that interfere with closing windows such as Mr Tech Toolkit.</li>
+</ul>
+
+<h2>0.6.2.2009081301</h2>
+<ul>
+<li>Made logging code into a module - this allows a singleton logger.  It's also modular so it can be used in other addons.</li>
+<li>Fixed memory leak that occured when closing all but the first session manager window (this include prompts and option windows)</li>
+<li>Use FUEL library to make things easier on myself.</li>
+</ul>
+
+<h2>0.6.2.2009081101 - Changes from 0.6.2.2</h2>
+<ul>
+<li>Added window sessions - create by saving a window and checking the auto-save checkbox</li>
+<li>Allow saving of a "window session" with only one window open, to handle case above</li>
+<li>Allow user to load session by specifying session file name on command line</li>
+<li>Added option to save sessions in private browsing mode, only if encryption is enabled</li>
+<li>Added logging for debugging purposes</li>
+<li>Worked around issue with session manager throwing exception when backing up sessions when Mr Tech Toolkit is installed and set to close all child windows when main window is closed.</li>
+<li>Fixed toolbar icons in SeaMonkey. SeaMonkey doesn't use the same size icons as Firefox.</li>
+<li>Added extensions.sessionmanager.backup_on_restart preference which if set to true, causes Session Manager to create a backup session on a browser restart.</li>
+<li>Save screen width and height in session name and when a restore is done, adjust the window to the current screen size.</li>
+<li>Updated max version for SeaMonkey and Firefox.</li>
+<li>updated locales</li>
+</ul>
+
+</body>
+</html>

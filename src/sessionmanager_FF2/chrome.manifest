@@ -1,0 +1,66 @@
+# New Component Registration
+component {5714d620-47ce-11db-b0de-0800200c9a66} components/SessionManagerHelperComponent.js
+contract @morac/sessionmanager-helper;1 {5714d620-47ce-11db-b0de-0800200c9a66}
+category profile-after-change SessionManagerHelperComponent @morac/sessionmanager-helper;1
+category command-line-handler SessionManagerHelperComponent @morac/sessionmanager-helper;1
+
+# Shared Resources
+resource sessionmanager ./
+content	sessionmanager	chrome/content/sessionmanager/
+skin	sessionmanager	classic/1.0	chrome/skin/classic/sessionmanager/
+skin	sessionmanager	modern/1.0	chrome/skin/modern/sessionmanager/
+
+locale	sessionmanager	en-US	chrome/locale/en-US/sessionmanager/
+locale	sessionmanager	ca		chrome/locale/ca/sessionmanager/
+locale	sessionmanager	cs		chrome/locale/cs/sessionmanager/
+locale	sessionmanager	da		chrome/locale/da/sessionmanager/
+locale	sessionmanager	de		chrome/locale/de/sessionmanager/
+locale	sessionmanager	el		chrome/locale/el/sessionmanager/
+locale	sessionmanager	es-ES	chrome/locale/es-ES/sessionmanager/
+locale	sessionmanager	fi		chrome/locale/fi/sessionmanager/
+locale	sessionmanager	fr		chrome/locale/fr/sessionmanager/
+locale	sessionmanager	gl-ES	chrome/locale/gl-ES/sessionmanager/
+locale	sessionmanager	hu		chrome/locale/hu/sessionmanager/
+locale	sessionmanager	it		chrome/locale/it/sessionmanager/
+locale	sessionmanager	ja		chrome/locale/ja/sessionmanager/
+locale	sessionmanager	ko		chrome/locale/ko/sessionmanager/
+locale	sessionmanager	lt		chrome/locale/lt/sessionmanager/
+locale	sessionmanager	mk		chrome/locale/mk/sessionmanager/
+locale	sessionmanager	nl		chrome/locale/nl/sessionmanager/
+locale	sessionmanager	pl		chrome/locale/pl/sessionmanager/
+locale	sessionmanager	pt-BR	chrome/locale/pt-BR/sessionmanager/
+locale	sessionmanager	pt-PT	chrome/locale/pt-PT/sessionmanager/
+locale	sessionmanager	ro		chrome/locale/ro/sessionmanager/
+locale	sessionmanager	ru		chrome/locale/ru/sessionmanager/
+locale	sessionmanager	sk		chrome/locale/sk/sessionmanager/
+locale	sessionmanager	sl		chrome/locale/sl/sessionmanager/
+locale	sessionmanager	sv-SE	chrome/locale/sv-SE/sessionmanager/
+locale	sessionmanager	tr		chrome/locale/tr/sessionmanager/
+locale	sessionmanager	uk		chrome/locale/uk/sessionmanager/
+locale	sessionmanager	vi		chrome/locale/vi/sessionmanager/
+locale	sessionmanager	zh-CN	chrome/locale/zh-CN/sessionmanager/
+locale	sessionmanager	zh-TW	chrome/locale/zh-TW/sessionmanager/
+
+# Firefox
+overlay	chrome://browser/content/preferences/preferences.xul	chrome://sessionmanager/content/preferencesOverlay.xul	application={ec8030f7-c20a-464f-9b0e-13a3a9e97384}
+overlay chrome://browser/content/preferences/sanitize.xul		chrome://sessionmanager/content/overlaySanitizeUI.xul	application={ec8030f7-c20a-464f-9b0e-13a3a9e97384}
+overlay chrome://browser/content/sanitize.xul					chrome://sessionmanager/content/overlaySanitizeUI.xul	application={ec8030f7-c20a-464f-9b0e-13a3a9e97384}
+overlay	chrome://browser/content/browser.xul					chrome://sessionmanager/content/sessionmanager.xul		application={ec8030f7-c20a-464f-9b0e-13a3a9e97384}
+overlay	chrome://browser/content/hiddenWindow.xul					chrome://sessionmanager/content/sessionmanager.xul		application={ec8030f7-c20a-464f-9b0e-13a3a9e97384}
+overlay chrome://sessionmanager/content/options.xul				chrome://sessionmanager/content/ff-options.xul			application={ec8030f7-c20a-464f-9b0e-13a3a9e97384}
+
+# SeaMonkey
+overlay	chrome://communicator/content/pref/preferences.xul		chrome://sessionmanager/content/preferencesOverlay.xul	application={92650c4d-4b8e-4d2a-b7eb-24ecf4f6b63a}
+overlay chrome://communicator/content/sanitize.xul				chrome://sessionmanager/content/overlaySanitizeUI.xul	application={92650c4d-4b8e-4d2a-b7eb-24ecf4f6b63a}
+overlay	chrome://navigator/content/navigator.xul				chrome://sessionmanager/content/sessionmanager.xul		application={92650c4d-4b8e-4d2a-b7eb-24ecf4f6b63a}
+overlay chrome://sessionmanager/content/options.xul				chrome://sessionmanager/content/sm-options.xul			application={92650c4d-4b8e-4d2a-b7eb-24ecf4f6b63a}
+style	chrome://sessionmanager/content/sessionmanager.xul		chrome://sessionmanager/skin/sm_sessionmanager.css		application={92650c4d-4b8e-4d2a-b7eb-24ecf4f6b63a}
+
+# Shared Styles (needs to be below any other styles)
+style	chrome://sessionmanager/content/session_prompt.xul		chrome://sessionmanager/skin/tabWin.css
+style	chrome://global/content/customizeToolbar.xul			chrome://sessionmanager/skin/sessionmanager.css
+style	chrome://global/content/sessionmanager.xul			chrome://sessionmanager/skin/sessionmanager.css
+
+# SeaMonkey
+style	chrome://global/content/customizeToolbar.xul			chrome://sessionmanager/skin/sm_sessionmanager.css		application={92650c4d-4b8e-4d2a-b7eb-24ecf4f6b63a}
+style	chrome://sessionmanager/content/session_prompt.xul		chrome://sessionmanager/skin/tabWinSM.css				application={92650c4d-4b8e-4d2a-b7eb-24ecf4f6b63a}

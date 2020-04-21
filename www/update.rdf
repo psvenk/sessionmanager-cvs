@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<RDF:RDF xmlns:em="http://www.mozilla.org/2004/em-rdf#"
+         xmlns:NC="http://home.netscape.com/NC-rdf#"
+         xmlns:RDF="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+  <RDF:Description RDF:about="rdf:#$w1cDl3"
+                   em:id="{92650c4d-4b8e-4d2a-b7eb-24ecf4f6b63a}"
+                   em:minVersion="2.0"
+                   em:maxVersion="2.1a3"
+                   em:updateLink="http://downloads.mozdev.org/sessionmanager/session_manager_dev_public.xpi"
+                   em:updateInfoURL="http://sessionmanager.mozdev.org/changelog.xhtml"
+                   em:updateHash="sha256:04e18d5a9ac2ab325c8b7ce4350d6206f0706d1749785c8fbeb917655347515c" />
+  <RDF:Description RDF:about="urn:mozilla:extension:{1280606b-2510-4fe0-97ef-9b5a22eafe30}"
+                   em:signature="MIGTMA0GCSqGSIb3DQEBDQUAA4GBAGU8mqZfCSvb8HkH+6HwAkb9noHQ8tNCkfh5EAiQqYLkMmXiYi6G1UosuCS7bakmbQBh+mUb5FoOCKs2UcG2j5tL7drCms6YAvEd/YcUYNVlWSiKxREGvoCCwkqtyQxkvsAteLp1PmLtMvCPw0LgSavX9Ifxz5ymIFccjw0lAv5n">
+    <em:updates RDF:resource="rdf:#$k1cDl3"/>
+  </RDF:Description>
+  <RDF:Description RDF:about="rdf:#$E1cDl3"
+                   em:id="{a463f10c-3994-11da-9945-000d60ca027b}"
+                   em:minVersion="1.2"
+                   em:maxVersion="2.6"
+                   em:updateLink="http://downloads.mozdev.org/sessionmanager/session_manager_dev_public.xpi"
+                   em:updateInfoURL="http://sessionmanager.mozdev.org/changelog.xhtml"
+                   em:updateHash="sha256:04e18d5a9ac2ab325c8b7ce4350d6206f0706d1749785c8fbeb917655347515c" />
+  <RDF:Description RDF:about="rdf:#$o1cDl3"
+                   em:id="{ec8030f7-c20a-464f-9b0e-13a3a9e97384}"
+                   em:minVersion="3.0"
+                   em:maxVersion="4.0b4pre"
+                   em:updateLink="http://downloads.mozdev.org/sessionmanager/session_manager_dev_public.xpi"
+                   em:updateInfoURL="http://sessionmanager.mozdev.org/changelog.xhtml"
+                   em:updateHash="sha256:04e18d5a9ac2ab325c8b7ce4350d6206f0706d1749785c8fbeb917655347515c" />
+  <RDF:Description RDF:about="rdf:#$l1cDl3"
+                   em:version="0.6.8.4pre20100816">
+    <em:targetApplication RDF:resource="rdf:#$o1cDl3"/>
+    <em:targetApplication RDF:resource="rdf:#$w1cDl3"/>
+    <em:targetApplication RDF:resource="rdf:#$E1cDl3"/>
+  </RDF:Description>
+  <RDF:Seq RDF:about="rdf:#$k1cDl3">
+    <RDF:li RDF:resource="rdf:#$l1cDl3"/>
+  </RDF:Seq>
+</RDF:RDF>

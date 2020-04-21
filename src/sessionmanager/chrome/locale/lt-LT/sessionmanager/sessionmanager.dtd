@@ -1,0 +1,35 @@
+<!ENTITY sessionManager       "Sesijų tvarkytojas">
+<!ENTITY toolsmenu.accesskey  "t">
+
+<!ENTITY save.label           "Saugoti sesiją...">
+<!ENTITY save.accesskey       "S">
+<!ENTITY saveOne.label        "Saugoti šį langą...">
+<!ENTITY saveOne.accesskey    "l">
+<!ENTITY rename.label         "Pervardyti sesiją...">
+<!ENTITY rename.accesskey     "P">
+<!ENTITY remove.label         "Trinti sesiją(-as)...">
+<!ENTITY remove.accesskey     "T">
+<!ENTITY openFolder.label     "Atverti sesijų aplanką">
+<!ENTITY openFolder.accesskey "A">
+
+<!ENTITY options.label        "&sessionManager; nustatymai">
+<!ENTITY options.accesskey    "n">
+<!ENTITY resume.label         "Tęsti šią sesiją paleidžiant">
+<!ENTITY resume.accesskey     "d">
+<!ENTITY reload.label         "Perkrauti visus atkurtus langus">
+<!ENTITY reload.accesskey     "e">
+<!ENTITY overwrite.label      "Pakeisti egzistuojančius langus">
+<!ENTITY overwrite.accesskey  "k">
+
+<!ENTITY undoClosed.label     "Iš naujo atverti užvertus...">
+<!ENTITY undoClosed.accesskey "u">
+<!ENTITY closedWindows        "Užverti langai:">
+<!ENTITY closedTabs           "Užverti skirtukai:">
+<!ENTITY clearList.label      "Valyti &quot;Užvertų&quot; sąrašą...">
+<!ENTITY clearList.accesskey  "V">
+
+<!ENTITY toolbar.tooltip      "Saugoti šią naršymo sesiją...">
+<!ENTITY toolbar.undo.label   "Atšaukti uždarymą">
+<!ENTITY toolbar.undo.tooltip "Iš naujo atverti paskiausiai užvertą skirtuką">
+
+<!ENTITY prompt.ignore.label  "Nerodyti šio lango vėl">

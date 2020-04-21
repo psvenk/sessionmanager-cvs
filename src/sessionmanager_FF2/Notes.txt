@@ -1,0 +1,42 @@
+Info:
+
+1. As of Firefox 13, if the browser crashes more than "toolkit.startup.max_resumed_crashes" in a 6 hour period the browser will automatically start in safe mode (even if Session Manager is handling crashes).  In Firefox 15, it will pop-up a dialog box asking whether to continue in safe mode or reset everything except cookies, history, bookmarks and passwords back to the default (https://bugzilla.mozilla.org/show_bug.cgi?id=732303). This only occurs with repeated crashes on startup (before windows load) so it doesn't really affect Session Manager.  Uses "toolkit.startup.max_resumed_crashes", "toolkit.startup.recent_crashes", "toolkit.startup.last_success".
+
+2. Firefox 20 introduces private browsing windows, replacing private browsing mode.  
+ a. The (Ci.nsIPrivateBrowsingService).privateBrowsingEnabled flag is always false (and might be removed) so checking this is not reliable.
+ b. Use the following to check for a window being private, not that resource://gre/modules/PrivateBrowsingUtils.jsm doesn't exist in Firefox 16 and earlier
+    XPCOMUtils.defineLazyModuleGetter(this, "PrivateBrowsingUtils", "resource://gre/modules/PrivateBrowsingUtils.jsm");
+    var isWindowPrivate = PrivateBrowsingUtils.isWindowPrivate(window);
+ c. Session Data returned by SessionStore marks a ".isPrivate" window data to true for private windows.  Don't save those.
+ d. RecentWindow.jsm: RecentWindow.getMostRecentBrowserWindow({ private: true/false }) - to get recent private or recent non-private window
+ e. PrivateBrowsingUtils.jsm: PrivateBrowsingUtils.permanentPrivateBrowsing - true if Firefox auto start in private mode, then all windows are private
+    (old nsIPrivateBrowsingService autoStarted value isn't used).  When this is changed, Firefox will restart.
+
+RecentWindow.jsm only exists in Firefox 20 and up.  Also exists in SeaMonkey (2.17)
+PrivateBrowsingUtils.jsm exists in Firefox 17 and up.	 Also exists in SeaMonkey (2.17)
+	
+3. How to remove preferences when uninstalling in Firefox 4 and up:
+
+	// use this as a guideline - also check to see if Firefox sets it's own uninstall preference.
+	if (topic == "em-action-requested") {
+			subject.QueryInterface(Components.interfaces.nsIUpdateItem);
+			if (subject.id == this.wootUUID) {
+					prefs.setBoolPref("extensions.{1280606b-2510-4fe0-97ef-9b5a22eafe30}.uninstalled",(data == 'item-uninstalled'));
+			}
+	} else if (topic == "quit-application-granted") {
+			if (prefs.getBoolPref("extensions.{1280606b-2510-4fe0-97ef-9b5a22eafe30}.uninstalled") === true) {
+					prefs.deleteBranch("extensions.{1280606b-2510-4fe0-97ef-9b5a22eafe30}");
+			}
+	}
+
+
+	
+	
+Email from Ken:
+
+Hi Michael,
+
+I've been thinking about the multiple session folder access UI. I'm a big believer in a minimalist's UI and believe I have a great minimalist UI for this new potential feature: Add another hierarchical layer to the SM menus. Top level would be the list of open session folders and within each session folder would be the normal session folder hierarchy. Multiple session folder access will require the ability to name session folders. Also, as we've discussed in the past, it would be helpful to provide a couple of more hierarchical levels of organization (deeper within each session folder) as well. There would also need to be a new SM menu option such as "Open Session Folder". Once the session folder is open it stays open until a user closes it (which subsequently disappears from the SM hierarchical menus). Your thoughts?
+
+Best,
+Ken Reeser

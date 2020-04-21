@@ -1,0 +1,60 @@
+<!ENTITY options.title         "Opzioni">
+<!ENTITY options.width         "52em">
+
+<!ENTITY general.caption       "Generali">
+<!ENTITY startNend.caption     "Avvio e chiusura">
+<!ENTITY resume_sess.label     "All'avvio caricare sempre la seguente sessione:">
+<!ENTITY resume_sess.accesskey "A">
+<!ENTITY backup_sess.label     "Alla chiusura">
+<!ENTITY backup_sess.accesskey "h">
+<!ENTITY backup_session.label0 "scartare la sessione corrente">
+<!ENTITY backup_session.label1 "fare il backup della sessione corrente">
+<!ENTITY backup_session.label2 "chiedere se fare il backup della sessione corrente">
+
+<!ENTITY restoring.caption     "Ripristino sessioni">
+<!ENTITY sessionList.caption   "Lista sessioni">
+<!ENTITY orderList.label       "Ordinare la lista delle sessioni">
+<!ENTITY orderList.accesskey   "d">
+<!ENTITY orderList.label1      "alfabeticamente">
+<!ENTITY orderList.label2      "dalla più vecchia alla più recente">
+<!ENTITY orderList.label_2     "dalla più recente alla più vecchia">
+<!ENTITY max_backup.label      "Numero di vecchie sessioni (crashate) da mantenere:">
+<!ENTITY max_backup.accesskey  "N">
+
+<!ENTITY undoClose.caption     "Riapri">
+<!ENTITY windowsNtabs.caption  "Finestre e schede chiuse">
+<!ENTITY max_closed.label      "Numero massimo di finestre chiuse in memoria:">
+<!ENTITY max_closed.accesskey  "u">
+<!ENTITY max_tabs.label        "Numero massimo di schede chiuse in memoria (per finestra):">
+<!ENTITY max_tabs.accesskey    "t">
+<!ENTITY submenu.label         "Elencare tutte le finestre e le schede chiuse in un sottomenu">
+<!ENTITY submenu.accesskey     "s">
+
+<!ENTITY persistence.caption   "Persistenza">
+<!ENTITY closed_tabs.label     "Rispristina lista delle schede chiuse in tutte le finestre:">
+<!ENTITY closed_tabs.accesskey "e">
+<!ENTITY closed_tabs.label0    "mai">
+<!ENTITY closed_tabs.label1    "all'avvio">
+<!ENTITY closed_tabs.label2    "sempre">
+<!ENTITY window_list.label     "Non svuotare la lista di finestre chiuse alla chiusura">
+<!ENTITY window_list.accesskey "c">
+<!ENTITY clear_list.label      "Svuota lista">
+<!ENTITY clear_list.accesskey  "l">
+
+<!ENTITY advanced.caption      "Per esperti">
+<!ENTITY name_format.caption   "Nome della sessione">
+<!ENTITY name_format.label     "Formato del suggerimento per il nome della sessione:">
+<!ENTITY name_format.accesskey "F">
+<!ENTITY name_format.desc      "Usa &#37;t per il titolo della scheda attiva, &#37;d per la data odierna e &#37;m per l'orario; in più la lunghezza del titolo può essere limitata a # caratteri: &#37;#t.">
+
+<!ENTITY service.caption       "Impostazioni di &quot;Crash Recovery&quot;">
+<!ENTITY service.description   "Non modificare queste impostazioni se non sai cosa stai facendo:">
+<!ENTITY interval.label        "Intervallo minimo tra due salvataggi dello stato (in secondi):">
+<!ENTITY interval.accesskey    "m">
+<!ENTITY postdata.label        "Ammontare massimo di POSTDATA da memorizzare (in byte; -1 per tutti):">
+<!ENTITY postdata.accesskey    "P">
+<!ENTITY privacy.label         "Salvare i dati sensibili (dati nei moduli, POSTDATA e cookie) per">
+<!ENTITY privacy.accesskey     "v">
+<!ENTITY privacy.level0        "tutti i siti">
+<!ENTITY privacy.level1        "i siti non criptati">
+<!ENTITY privacy.level2        "nessun sito">

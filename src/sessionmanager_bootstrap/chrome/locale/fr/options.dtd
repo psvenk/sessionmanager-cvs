@@ -1,0 +1,202 @@
+<!ENTITY options.title "Options du &sessionManager;">
+<!ENTITY general.caption "Générales">
+<!ENTITY startNend.caption "Démarrage &amp; fermeture">
+<!ENTITY resume_sess.label "Au démarrage, toujours charger la session suivante :">
+<!ENTITY resume_sess.accesskey "r">
+<!ENTITY backup_sess.label "À la fermeture">
+<!ENTITY backup_sess.accesskey "m">
+<!ENTITY backup_session.label0 "fermer la session courante">
+<!ENTITY backup_session.label1 "sauvegarder la session courante">
+<!ENTITY backup_session.label2 "demander s&apos;il faut sauvegarder la session courante">
+<!ENTITY crashrecovery.label "Activer Crash Recovery">
+<!ENTITY crashrecovery.accesskey "c">
+<!ENTITY autosave_session.label "Enregistrer automatiquement les sessions remplacées">
+<!ENTITY autosave_session.accesskey "a">
+<!ENTITY restoring.caption "Rétablissement de session">
+<!ENTITY sessionList.caption "Liste des sessions">
+<!ENTITY orderList.label "Trier la liste des sessions">
+<!ENTITY orderList.accesskey "T">
+<!ENTITY orderList.label1 "dans l&apos;ordre alphabétique">
+<!ENTITY orderList.label2 "de la plus ancienne à la plus récente">
+<!ENTITY orderList.label_2 "de la plus récente à la plus ancienne">
+<!ENTITY max_backup.label "Nombre de sauvegardes d&apos;anciennes sessions (plantées) à conserver :">
+<!ENTITY max_backup.accesskey "v">
+<!ENTITY undoClose.caption "Récupération">
+<!ENTITY windowsNtabs.caption "Fenêtres et onglets fermés">
+<!ENTITY max_closed.label "Nombre maximal de fenêtres fermées mémorisées :">
+<!ENTITY max_closed.accesskey "n">
+<!ENTITY max_tabs.label "Nombre maximal d&apos;onglets fermés mémorisés (par fenêtre) :">
+<!ENTITY max_tabs.accesskey "o">
+<!ENTITY submenu.label "Lister toutes les fenêtres et tous les onglets fermés dans un sous-menu">
+<!ENTITY submenu.accesskey "L">
+<!ENTITY persistence.caption "Persistance">
+<!ENTITY closed_tabs.label "Rétablir la liste des onglets fermés que l&apos;on peut à nouveau ouvrir pour toutes les fenêtres :">
+<!ENTITY closed_tabs.accesskey "R">
+<!ENTITY closed_tabs.label0 "jamais">
+<!ENTITY closed_tabs.label1 "au démarrage">
+<!ENTITY closed_tabs.label2 "toujours">
+<!ENTITY window_list.label "Ne pas effacer la liste des fenêtres fermées à la fermeture">
+<!ENTITY window_list.accesskey "a">
+<!ENTITY clear_list.label "Effacer la liste">
+<!ENTITY clear_list.accesskey "f">
+<!ENTITY advanced.caption "Avancées">
+<!ENTITY name_format.caption "Noms de session">
+<!ENTITY name_format.label "Format pour le nom de session suggéré :">
+<!ENTITY name_format.accesskey "e">
+<!ENTITY name_format.desc "Utiliser &#37;t pour le titre de l&apos;onglet actif, &#37;d pour la date du jour et &#37;m pour l&apos;horaire ; de plus, la longueur du titre peut être limitée à # caractères : &#37;#t.">
+<!ENTITY sessionstore.caption "Stockage de session">
+<!ENTITY service.caption "Paramètres de stockage de session">
+<!ENTITY service.description "Ne modifiez rien, tant que vous ne savez pas ce que vous faites !">
+<!ENTITY interval.label "Intervalle minimum entre deux enregistrements d&apos;état (en secondes) :">
+<!ENTITY interval.accesskey "i">
+<!ENTITY postdata.label "Nombre maximum de POSTDATA stockés (en bytes ; -1 pour tous) :">
+<!ENTITY postdata.accesskey "y">
+<!ENTITY privacy.label "Enregistrer les données sensibles (données de formulaires, POSTDATA et cookies) pour">
+<!ENTITY privacy.accesskey "b">
+<!ENTITY privacy.level0 "tous les sites">
+<!ENTITY privacy.level1 "les sites non chiffrés uniquement">
+<!ENTITY privacy.level2 "aucun site">
+<!ENTITY sessiondir.caption "Emplacement des sessions enregistrées">
+<!ENTITY sessiondir.desc "L'emplacement par défaut de stockage des sessions enregistrées peut être modifié ici.">
+<!ENTITY encrypt.caption "Chiffrement">
+<!ENTITY encrypt.desc "Avertissement : les données de session chiffrées ne peuvent être lues qu'avec des fichiers key3.db et cert8.db identiques. De plus, si un mot de passe principal a été défini, les sessions ne peuvent ni être chiffrées, ni être déchiffrées si ce mot de passe n'est pas indiqué.">
+<!ENTITY encrypt.label "Chiffrer la session enregistrée et les données de la fenêtre fermée">
+<!ENTITY encrypt.accesskey "c">
+<!ENTITY change_dir.label "Modifier">
+<!ENTITY change_dir.accesskey "M">
+<!ENTITY default_dir.label "Défaut">
+<!ENTITY default_dir.accesskey "D">
+<!ENTITY sanitizer.label "Sessions enregistrées dans le gestionnaire">
+<!ENTITY sanitizer.accesskey "G">
+<!ENTITY saving.caption "Enregistrement de session">
+<!ENTITY lastpage.label "Afficher ma dernière page chargée">
+<!ENTITY noSession.label "Aucun">
+<!ENTITY noSession.accesskey "c">
+<!ENTITY promptSession.label "Demander l'ouverture d'une session">
+<!ENTITY promptSession.accesskey "D">
+<!ENTITY selectSession.label "Choisir une session">
+<!ENTITY selectSession.accesskey "S">
+<!ENTITY cookies.label "Enregistrer les cookies de session">
+<!ENTITY cookies.accesskey "c">
+<!ENTITY sessionImport.caption "Importer des sessions à partir de…">
+<!ENTITY importSS.label "SessionSaver">
+<!ENTITY importSS.accesskey "v">
+<!ENTITY importTMP.label "Tab Mix Plus">
+<!ENTITY importTMP.accesskey "T">
+<!ENTITY apply.label "Appliquer">
+<!ENTITY save_and_restore.caption "Enregistrement &amp; rétablissement">
+<!ENTITY display.caption "Affichage">
+<!ENTITY middleclick.label "Le clic du milieu ouvre à nouveau le dernier onglet fermé">
+<!ENTITY middleclick.accesskey "M">
+<!ENTITY max_display.label "Nombre maximum de sessions à afficher dans le menu">
+<!ENTITY max_display.accesskey "M">
+<!ENTITY hide_tools_menu.label "Ne pas afficher l'entrée « Gestionnaire de session » dans le menu « Outils »">
+<!ENTITY hide_tools_menu.accesskey "P">
+<!ENTITY disable_cache_fixer.label "Désactiver la fonctionnalité Cache Fixer">
+<!ENTITY disable_cache_fixer.accesskey "D">
+<!ENTITY encrypted_only.label "Si le chiffrement a échoué, NE PAS enregistrer les données non chiffrées.">
+<!ENTITY encrypted_only.accesskey "h">
+<!ENTITY encrypt2.desc "Avertissement : si cette option est cochée et que les données de session ou de fenêtre ne peuvent pas être chiffrées, les données seront perdues sans aucun moyen de les récupérer. Le chiffrement échoue lorsque le mot de passe principal est demandé et n'est pas indiqué, veuillez donc bien y réfléchir à deux fois avant de cocher cette case.">
+<!ENTITY closed_window_list.label "Utiliser la liste de fenêtres fermées proposée par le navigateur">
+<!ENTITY closed_window_list.accesskey "F">
+<!ENTITY closed_windows.label "Rétablir la liste des fenêtres que l'on peut à nouveau ouvrir :">
+<!ENTITY closed_windows.accesskey "S">
+<!ENTITY open_as_tabs.label "Ouvrir dans des onglets dans la fenêtre courante">
+<!ENTITY open_as_tabs.accesskey "V">
+<!ENTITY last_window_shutdown.label "Quitter le navigateur lors de la fermeture de la dernière fenêtre">
+<!ENTITY last_window_shutdown.accesskey "D">
+<!ENTITY preselect_previous_session.label "Présélectionner la session précédente">
+<!ENTITY preselect_previous_session.accesskey "R">
+<!ENTITY logging.caption "Journal">
+<!ENTITY enable_logging.label "Activer le journal">
+<!ENTITY enable_logging.accesskey "A">
+<!ENTITY open_log.label "Ouvrir le fichier journal">
+<!ENTITY open_log.accesskey "O">
+<!ENTITY delete_log.label "Supprimer le fichier journal">
+<!ENTITY delete_log.accesskey "S">
+<!ENTITY log_level_state.label "Enregistrer les arrêts">
+<!ENTITY log_level_state.accesskey "g">
+<!ENTITY log_level_trace.label "Enregistrer les données de traçage">
+<!ENTITY log_level_trace.accesskey "j">
+<!ENTITY log_level_data.label "Enregistrer les données variables">
+<!ENTITY log_level_data.accesskey "d">
+<!ENTITY log_level_info.label "Enregistrer les messages d'informations">
+<!ENTITY log_level_info.accesskey "i">
+<!ENTITY log_level_extra.label "Enregistrer des données de débogage supplémentaires">
+<!ENTITY log_level_extra.accesskey "d">
+<!ENTITY reload.label "Recharger toutes les fenêtres rétablies">
+<!ENTITY reload.accesskey "c">
+<!ENTITY overwrite.label "Remplacer les fenêtres existantes">
+<!ENTITY overwrite.accesskey "x">
+<!ENTITY allow_saving_during_pbm.label "Autoriser l'enregistrement en mode de navigation privée">
+<!ENTITY allow_saving_during_pbm.label2 "Nécessite le chiffrement pour être activé">
+<!ENTITY allow_saving_during_pbm.accesskey "m">
+<!ENTITY session_name_in_titlebar.label "le nom de la session active à la barre de titre">
+<!ENTITY session_name_in_titlebar.accesskey "n">
+<!ENTITY prepend.label "Ajouter au début">
+<!ENTITY append.label "Ajouter à la fin">
+<!ENTITY donotadd.label "Ne pas ajouter">
+<!ENTITY use_browser_crash_prompt.label "Utiliser la fenêtre de restauration après plantage intégrée au navigateur">
+<!ENTITY use_browser_crash_prompt.accesskey "U">
+<!ENTITY reset_warnings.label "Réinitialiser les notifications">
+<!ENTITY reset_warnings.accesskey "R">
+<!ENTITY export_settings.label "Exporter les paramètres">
+<!ENTITY export_settings.accesskey "X">
+<!ENTITY import_settings.label "Importer les paramètres">
+<!ENTITY import_settings.accesskey "I">
+<!ENTITY settingsImportExport.caption "Importer/Exporter des paramètres">
+<!ENTITY keyboard.caption "Raccourcis clavier">
+<!ENTITY keyboard.desc "Pour associer un raccourci clavier à une action, veuillez l'indiquer ici, sinon laissez le champ vide. Les modifications ne seront pas appliquez aux fenêtres existantes.">
+<!ENTITY clear.label "Effacer">
+<!ENTITY clear.accesskey "f">
+<!ENTITY clear_tab_list.label "Effacer les onglets fermés">
+<!ENTITY clear_tab_list.accesskey "g">
+<!ENTITY clear_window_list.label "Effacer les fenêtres fermées">
+<!ENTITY clear_window_list.accesskey "n">
+<!ENTITY backup_on_restart.label "Enregistrer la sauvegarde au démarrage du navigateur">
+<!ENTITY backup_on_restart.accesskey "v">
+<!ENTITY keep_deleted_sessions.label "Nombre de jours à garder temporairement les sessions supprimées :">
+<!ENTITY keep_deleted_sessions.accesskey "j">
+<!ENTITY concurrent.label "Nombre d'onglets à restaurer en même temps">
+<!ENTITY concurrent.accesskey "o">
+<!ENTITY do_not_color_toolbar_button.label "Ne pas colorer le bouton de la barre d'outils lorsque les sessions se chargent">
+<!ENTITY do_not_color_toolbar_button.accesskey "p">
+<!ENTITY preserve_app_tabs.label "Ne pas remplacer les onglets des applications épinglées">
+<!ENTITY preserve_app_tabs.accesskey "p">
+<!ENTITY logging_to_console.label "Également inscrire dans le journal de la console d'erreur">
+<!ENTITY logging_to_console.accesskey "E">
+<!ENTITY update_message.label "Afficher la page de mise à jour après mise à jour">
+<!ENTITY update_message.accesskey "A">
+<!ENTITY double_click_session.label "En double-cliquant sur une session existante, cela remplace la session et">
+<!ENTITY double_click_session.accesskey "d">
+<!ENTITY replace_with_name_replace.label "remplace le nom de la session existante par celui de la zone de texte">
+<!ENTITY replace_with_name_keep.label "conserve le nom de session existante">
+<!ENTITY show_icon_in_menu.label "Afficher l'icône dans le menu « outils »">
+<!ENTITY show_icon_in_menu.accesskey "i">
+<!ENTITY set_encryption_password.label "Indiquer un mot de passe pour protéger votre clé de chiffrement de session">
+<!ENTITY set_encryption_password.accesskey "c">
+<!ENTITY change_encryption_key_password.label "Modifier le mot de passe de la clé de chiffrement">
+<!ENTITY change_encryption_key_password.accesskey "M">
+<!ENTITY save_encryption_key.label "Enregistrer le mot de passe de la clé de chiffrement dans le gestionnaire de mots de passe du navigateur">
+<!ENTITY save_encryption_key.accesskey "E">
+<!ENTITY restore_hidden_tabs.label "Rétablir les onglets masqués">
+<!ENTITY restore_hidden_tabs.accesskey "m">
+<!ENTITY display_menus_in_submenu.label "Afficher les éléments de menu du gestionnaire de session dans le sous-menu">
+<!ENTITY display_menus_in_submenu.accesskey "f">
+<!ENTITY use_sql_cache.label "Placer les données de session basiques dans le cache disque. Active la recherche dans les sessions">
+<!ENTITY use_sql_cache.accesskey "C">
+<!ENTITY rebuild_cache.label "Reconstruire les données du cache">
+<!ENTITY rebuild_cache.accesskey "R">
+<!ENTITY log_level_error.label "Journal des erreurs">
+<!ENTITY log_level_error.accesskey "e">
+<!ENTITY allow_duplicates.label "Autoriser l'enregistrement d'une session avec le même nom qu'une session existante">
+<!ENTITY allow_duplicates.accesskey "A">
+<!ENTITY backup_every.label "Créer une nouvelle sauvegarde de session toutes les">
+<!ENTITY backup_every.accesskey "g">
+<!ENTITY minutes "minutes">
+<!ENTITY restore_on_demand.label "Rétablir les onglets à la demande">
+<!ENTITY restore_on_demand.accesskey "R">
+<!ENTITY max_back_history.label "Nombre d'éléments d'historique du bouton reculer par onglet à enregistrer (-1 pour tous)">
+<!ENTITY max_back_history.accesskey "r">
+<!ENTITY max_forward_history.label "Nombre d'éléments d'historique du bouton avancer par onglet à enregistrer (-1 pour tous)">
+<!ENTITY max_forward_history.accesskey "a">

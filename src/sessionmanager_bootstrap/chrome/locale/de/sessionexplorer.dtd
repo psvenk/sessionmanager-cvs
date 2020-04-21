@@ -1,0 +1,44 @@
+<!ENTITY session_open.label "Öffnen">
+<!ENTITY session_open.accesskey "f">
+<!ENTITY session_open.tooltip "Ausgewählte Sitzung öffnen">
+<!ENTITY session_open_overwrite.label "Öffnen (überschreiben)">
+<!ENTITY session_open_overwrite.accesskey "b">
+<!ENTITY session_open_overwrite.tooltip "Ausgewählte Sitzung öffnen?">
+<!ENTITY session_open_newwindow.label "Öffnen (neues Fenster)">
+<!ENTITY session_open_newwindow.accesskey "n">
+<!ENTITY session_open_newwindow.tooltip "Ausgewählte Sitzung öffnen?">
+<!ENTITY session_open_append.label "Öffnen (hinzufügen)">
+<!ENTITY session_open_append.accesskey "h">
+<!ENTITY session_open_append.tooltip "Ausgewählte Sitzung öffnen">
+<!ENTITY session_rename.label "Umbenennen …">
+<!ENTITY session_rename.accesskey "U">
+<!ENTITY session_rename.tooltip "Ausgewählte Sitzung umbenennen">
+<!ENTITY session_rename_ok.label "Umbenennen">
+<!ENTITY session_delete.label "Löschen">
+<!ENTITY session_delete.accesskey "L">
+<!ENTITY session_delete.tooltip "Ausgewählte Sitzungen löschen">
+<!ENTITY session_save.label "Sichern …">
+<!ENTITY session_save.accesskey "S">
+<!ENTITY session_save.tooltip "Aktuelle Fenster als neue Sitzung sichern">
+<!ENTITY session_save_ok.label "Sichern">
+<!ENTITY session_save_w.label "Fenster sichern …">
+<!ENTITY session_save_w.accesskey "F">
+<!ENTITY session_save_w.tooltip "Aktuelles Fenster als neue Sitzung sichern">
+<!ENTITY session_save_w_ok.label "Fenster sichern">
+<!ENTITY session_open_folder.label "Ordner öffnen">
+<!ENTITY session_open_folder.accesskey "O">
+<!ENTITY session_open_folder.tooltip "Ordner der Sitzungsverwaltung öffnen">
+<!ENTITY column_autosave.label "A">
+<!ENTITY column_autosave.tooltip "Sitzung automatisch sichern">
+<!ENTITY column_windows.label "F">
+<!ENTITY column_windows.tooltip "Fenster">
+<!ENTITY column_tabs.label "T">
+<!ENTITY column_tabs.tooltip "Tabs">
+<!ENTITY column_time.label "Zeit">
+<!ENTITY column_time.tooltip "Zeitstempel">
+<!ENTITY column_name.label "Name">
+<!ENTITY cancel.label "Abbrechen">
+<!ENTITY done.label "Fertig">
+<!ENTITY done.tooltip "Sitzungsfenster schließen">
+<!ENTITY session_load.label "Laden">
+<!ENTITY session_load.accesskey "L">

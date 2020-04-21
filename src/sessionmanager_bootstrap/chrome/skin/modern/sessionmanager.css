@@ -1,0 +1,159 @@
+#sessionmanager-menu menuitem[_id="windows"],
+#sessionmanager-appmenu menuitem[_id="windows"],
+#sessionmanager-toolbar menuitem[_id="windows"],
+#sessionmanager-undo menuitem[_id="windows"],
+#sessionmanager-menu menuitem[_id="tabs"],
+#sessionmanager-appmenu menuitem[_id="tabs"],
+#sessionmanager-toolbar menuitem[_id="tabs"],
+#sessionmanager-undo menuitem[_id="tabs"] {
+	font-size: 80% !important;
+}
+
+#sessionmanager-menu menuitem[marked="true"],
+#sessionmanager-appmenu menuitem[marked="true"],
+#sessionmanager-toolbar menuitem[marked="true"] {
+	font-weight: bold !important;
+}
+
+#sessionmanager-toolbar,
+#sessionmanager-undo {
+	list-style-image: url("chrome://sessionmanager/skin/toolbar.png") !important;
+}
+
+#sessionmanager-undo {
+	-moz-image-region: rect(0px, 48px, 24px, 24px) !important;
+}
+
+#sessionmanager-menu[icon="true"], 
+#sessionmanager-appmenu[icon="true"] {
+	list-style-image: url("chrome://sessionmanager/skin/menuicon.png") !important;
+}
+
+/* Dougeebear's newer icon for Session Manager - overrides above */
+#sessionmanager-toolbar {
+	list-style-image: url("chrome://sessionmanager/skin/dougeeebear.png") !important;
+	-moz-image-region: rect(8px, 56px, 32px, 32px) !important;
+}
+
+toolbar[iconsize="small"] #sessionmanager-undo {
+	-moz-image-region: rect(24px, 40px, 40px, 24px) !important;
+}
+
+toolbar[iconsize="small"] #sessionmanager-toolbar {
+	-moz-image-region: rect(15px, 72px, 31px, 56px) !important;
+}
+
+/* Color Toolbar button for auto sessions */
+#sessionmanager-toolbar[windowsession="true"] toolbarbutton {
+	-moz-appearance: none !important;
+	background-color: yellow !important;
+}
+#sessionmanager-toolbar[autosession="true"] toolbarbutton {
+	-moz-appearance: none !important;
+	background-color: aqua !important;
+}
+#sessionmanager-toolbar[windowsession="true"][autosession="true"] toolbarbutton {
+	background-color: lawngreen !important;
+}
+
+/* Color Toolbar button tooltip for auto sessions */
+#sessionmanager-button-tooltip {
+	background-color: #33DD00 !important;
+}
+#sessionmanager-button-tooltip  label:not([header="true"]) {
+	color: red !important;
+}
+#sessionmanager-button-tooltip label[autosession="true"] {
+	color: blue !important;
+}
+
+/* Bold undo button tooltip for name and url */
+#sessionmanager-undo-button-tooltip  label:not([header="true"]) {
+	color: grey !important;
+	font-weight: bold !important;
+}
+
+/* Fade out Session Manager button when in private browsing mode */
+#sessionmanager-toolbar[private="true"] toolbarbutton {
+	opacity: 0.2 !important;
+}
+
+#sessionmanager-actionButton[private="true"], #sessionmanager-actionButton[nowindows="true"] {
+	-moz-border-top-colors: transparent threedhighlight threedlightshadow;
+	-moz-border-right-colors: transparent threeddarkshadow threedshadow;
+	-moz-border-bottom-colors: transparent threeddarkshadow threedshadow;
+	-moz-border-left-colors: transparent threedhighlight threedlightshadow;
+	color: graytext !important;
+}
+
+/* Make closed tabs have icons, but not display entire graphic for images */
+.sessionmanager-closedtab-item > .menu-iconic-left > .menu-iconic-icon {
+  width: 16px !important;
+  height: 16px !important;
+  -moz-padding-start: 0px !important;
+}
+
+/* Latest session is blue */
+#sessionmanager-menu menuitem[latest="true"],
+#sessionmanager-appmenu menuitem[latest="true"],
+#sessionmanager-toolbar menuitem[latest="true"],
+#sessionmanager_session_tree > treechildren::-moz-tree-cell-text(latest),
+#session_list listitem[latest="true"] {
+	color: blue !important;
+}
+
+/* Autosave sessions are bold */
+#sessionmanager-menu menuitem[autosave="session"],
+#sessionmanager-appmenu menuitem[autosave="session"],
+#sessionmanager-toolbar menuitem[autosave="session"],
+#sessionmanager_session_tree > treechildren::-moz-tree-cell-text(session),
+#session_list listitem[autosave="session"] {
+	font-weight: bold !important;
+}
+
+/* Window Autosave sessions are bold green */
+#sessionmanager-menu menuitem[autosave="window"],
+#sessionmanager-appmenu menuitem[autosave="window"],
+#sessionmanager-toolbar menuitem[autosave="window"],
+#sessionmanager_session_tree > treechildren::-moz-tree-cell-text(window),
+#session_list listitem[autosave="window"] {
+	font-weight: bold !important;
+	font-style: oblique !important;
+}
+
+/* Disabled sessions are gray */
+#sessionmanager-menu menuitem[disabled="true"],
+#sessionmanager-appmenu menuitem[disabled="true"],
+#sessionmanager-toolbar menuitem[disabled="true"],
+#sessionmanager_session_tree > treechildren::-moz-tree-cell-text(disabled),
+#session_list listitem[session_loaded="true"] {
+	color: gray !important;
+}
+
+/* Invalid items are red */
+#text_box[badname="true"],
+#autosave_time[badname="true"],
+#group_menu_list input[class="menulist-editable-input"][badname="true"] {
+	color: red !important;
+}
+
+/* Centered White text */
+#sessionmanager-titlebar-label {
+	display: none;
+	color: white !important;
+	font-weight: 600 !important;
+}
+
+#sessionmanager-titlebar-label[showLabel] {
+	display: -moz-box !important;
+}
+
+/* Hide title bar text when in full screen mode */
+#main-window[tabsintitlebar] #sessionmanager-titlebar-label {
+	display: none !important;
+}
+
+/* Gray search text when not searching */
+#sessionmanager-search[searching="false"] {
+	color: gray !important;
+}

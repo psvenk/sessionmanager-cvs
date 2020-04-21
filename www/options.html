@@ -1,0 +1,257 @@
+<!-- MAIN CONTENT -->
+<div id="no-main-content">
+<h4 class="page-header">Session Manager Options</h4>
+
+<a name="contents">
+<h5>Contents:</h5>
+<div>
+	<a href="#import">Importing/Exporting</a><br>
+	<a href="#startup">Startup & Shutdown</a><br>
+	<a href="#saving">Saving & Restoring</a><br>
+	<a href="#display">Display</a><br>
+	<a href="#keyboard">Keyboard Shortcuts</a><br>
+	<a href="#undo">Undo Close</a><br>
+	<a href="#advanced">Advanced</a><br>
+	<a href="#sessionstore">SessionStore</a><br><br>
+	<a href="#logging">Logging</a><br><br>
+	<a href="documentation.html#contents">User Guide</a>
+</div>
+<hr>
+<a name="import"></a>
+<h4>Importing/Exporting:</h5>
+<div class="paragraph">
+	<p>Session Manager can import sessions created by the Tab Mix Plus and SessionSaver add-ons.  To import press the associated import button on the general options page.  Note that to import Tab Mix Plus sessions, Tab Mix Plus 0.3.6 or higher must be installed and enabled.</p>
+	<p>Session Manager can export (backup) and import (restore) its current settings from the general options page.</p>
+</div>
+<div class="return"><p><a href="#contents">Return to contents</a></p></div>
+
+<hr>
+<a name="startup"></a>
+<img style="margin: 1em; float: right;" src="images/startup_shutdown.png"/>
+<h4>Startup & Shutdown:</h5>
+<div class="paragraph">
+	<p>The startup and shutdown options allow the user to configure what Session Manager does on startup and shutdown.</p>
+	<p>For startup there are three startup options for Session Manager:</p>
+	<ul>
+		<li><p><b>None</b> - Session Manager will not do anything at startup and will let the browser handle startup.  To make things easier for the user, the user can set the Firefox startup options here.  The <a href="http://kb.mozillazine.org/Browser.startup.page">"Show my last loaded page"</a> is a hidden preference in Firefox that will cause it to always load the last loaded page when opening a new browser window.  It was included here for the sake of completeness, but I don't recommend using it.</p>
+		
+		<li><p><b>Prompt for a session</b> - Session Manager will prompt for which session to load at browser startup as well as allow the user to choose which windows and tabs in the session to restore.  Note that when this is selected, Session Manager will always backup the current browser session at shutdown in case the user wants to select it at startup. For more information see below.</p>
+		
+		<li><p><b>Pre-select previous session</b> - When displaying the prompt, Session Manager will pre-select the latest backed up session.  This makes it easier to restore the last session as it will already be selected when the session prompt window opens.</p>
+		
+		<li><p><b>Select session</b> - Session Manager will always load the selected session at startup.  A few notes about selecting the "&lt;Previous Browsing Session&gt;" in 0.6.2 and above.  Prior to 0.6.2, selecting this would set the Firefox option to "Show my windows and tabs from last time".  In other words it caused Firefox to restore the previous session at startup.  As of 0.6.2, if "&lt;Previous Browsing Session&gt;" is selected, then <b>Session Manager will do the restore itself</b>.  This was changed because Session Manager's backup data may differ from Firefox's depending on the Session Manager settings (see <a href="#saving">Saving & Restoring</a>).</p>
+	</ul>
+	
+	<p>The shutdown options are as follows:</p>
+	<ul>
+		<li><p><b>backup the current session</b> - This saves a backup of the browser session at shutdown if it is not an "autosave" session.  Backup sessions can be accessed from the Backup folder.  Note that empty sessions (blank windows) are never saved.</p>
+		
+		<li><p><b>discard the current session</b> - The current session is not backed up at browser shutdown, with one exception (see below).</p>
+		
+		<li><p><b>ask whether to backup the current session</b> - Session Manager will prompt the user at shutdown whether or not to backup the current session.  The prompt at shutdown has three options:</p>
+		<ul>
+			<li><p><b>Save</b> - This will backup the current browsing session to the backup folder.</p>
+			<li><p><b>Save and restore at startup</b> - This will backup the current browsing session to the backup folder and then restore it the next time the browser starts.  Choosing this will temporarily override the current startup options.  This basically works like the Firefox "Save and Quit" prompt.</p>
+			<li><p><b>Don't Save</b> - This discards the current browsing session (see exception below).</p>
+		</ul>
+	</ul>
+	
+	<p>The exception I mentioned above is that Session Manager will always back up the current session, if the startup option is set to "prompt" or it is set to restoring the "&lt;Previous Browsing Session&gt;".  The reason for this is that if the current session were not backed up then there would nothing to restore.  What happens in this case is if the user chooses to not save the session at shutdown, then the backup file will be deleted at browser startup.  For those curious, the reason the backup session is saved for the "prompt" startup setting is because the user can choose the "&lt;Previous Browsing Session&gt;" from the list.</p>
+	
+	<p><b>Treat closing last open browser window as shutting down</b> - If checked, Sesson Manager will treat closing the last browser window as if the browser has shut down, even if the browser process has not exitted.  Basically this causes Session Manager to do it's backup processing if all browser windows are closed, but the browser does not exit.  OS X users may want to check this since Firefox continues to run on OS X even after all browser windows are closed.  Windows and Linux users can also trigger this by closing all the browser windows, but leaving things like the Download or Error Console open.  If not checked, Session Manager will open do it's backup processing when the browser process actually exits.</p>
+	
+	<p><b>Save backup on browser restart</b> - If checked, Sesson Manager will make a backup when the browser is restarted, such as after installing an add-on or updating the browser.  If not checked, the default, Session Manager will only make a backup when the browser is exited.</p>
+
+	<p><b>Use browser's built in crash recovery prompt</b> - If checked, Sesson Manager will not display its own Session Manager session window on a crash and instead defer to the browser for crash processing.  If not checked, the default, Session Manager will display the Session Manager session window on a crash.</p>
+	
+</div>
+<div class="return"><p><a href="#contents">Return to contents</a></p></div>
+
+<hr>
+<a name="saving"></a>
+<img style="margin: 1em; float: right;" src="images/save_restore.png"/>
+<h4>Saving & Restoring:</h5>
+<div class="paragraph">
+	<p>The saving and restoring options allow the user to configure what Session Manager does when saving and restoring sessions.</p>
+	<p>Saving:</p>
+	<ul>
+		<li><p><b>Save Session Cookies</b> - When checked session cookies are saved in the session files, otherwise they are not.  Regardless of what this is set to, Session Manager will only save session cookies on pages specified in the <a href="#sessionstore">SessionStore options</a>.  Note that permanent cookies are never saved in session files.</p>
+		
+		<li><p><b>Allow saving a session with same name as an existing session</b> - When this is checked, then multiple sessions can have the same name.  If it's not checked, then Session Manager will not allow the user to save a session with the same name as an existing session.</p>
+		
+		<li><p><b>Number of older (crashed) session backups to keep</b> - This specifies the total number of old backup and crashed sessions to keep.  This number does not include the "<Previous browser session>".  To disable backing up old sessions, set this number to 0.  Note that the cleanup of older backup sessions occurs when the browser shuts down normally so backup sessions created by crashes can exceed this limit, but will be cleaned up when the browser is shut down normally.</p>
+		
+		<li><p><b>Double clicking an existing session overwrites the session and...</b> - This setting controls what happens when an existing session in double clicked in the save window.  The session will be always overwritten with the current browser session.  By default the session will keep the existing session name.  If this option is changed to "replaces the existing session name with the one in the text box", then the session will be renamed to match what the user typed in the session name text box.</p>
+		
+	</ul>
+	
+	<p>Restoring:</p>
+	<ul>
+		<li><p><b>Replace Existing Windows</b> - When checked, Session Manager will default to replacing the existing windows when a session is loaded.  This setting can be overridden at load time by either <a href="documentation.html#restoring">right clicking on the session name or by using one of the modifier key combinations</a>.</p>
+			<p style="color:red;">Note that if Tab Mix Plus's single window mode is enabled, this setting changes to "Replace Existing Tabs" which when checked causes Session Manager to replace existing tabs when a session is loaded instead of appending to them.</p>
+		
+		<li><p><b>Open as tabs in current window</b> - When checked, session will default to loading into tabs in the current window instead of into windows.  This basically makes loading sessions behave as if Tab Mix Plus's single window mode is enabled, with the main difference being that all the <a href="documentation.html#restoring">key modifiers and right click menu entries</a> will still work.</p>
+		
+		<li><p><b>Bypass cache when restoring sessions</b> - When checked, the content of tabs in all restored windows will loaded off the web server even if the data is in the browser cache.  This will result in the tabs always being up to date, but may cause the session restoration to take longer as the data will be fetched from the remote web server.</p>
+		
+		<li><p><b>Automatically save replaced session</b> - When checked, any time a session is loaded the current session is saved first to the <a href="documentation.html#restoring">"Last Replaced session"</a> backup session.</p>
+		
+		<li><p><b>Do not replace pinned App tabs</b> - When checked, loaded sessions will never overwrite existing app tabs.  The sole exception to this is when restoring the previous backup or crashed session at startup since those sessions will already contain the app tabs.  When not check (the default), app tabs will be overwritten when loading a session and replacing the existing windows.  Note setting this can result in duplication of app tabs if the app tab exists both in the current window(s) and in the loaded session.</p>
+		
+		<li><p><b>Restore hidden tabs</b> - In Firefox 6 and up, the default setting won't load hidden tabs.  Checking this box causes Firefox to load all tabs, even those that are groups that are not visible.</p>
+		
+		<li><p><b>Number of tabs to restore concurrently</b> - This option only exists in Firefox 4 through 7. Firefox 4 added the ability to load tabs progressively.  This settings changes the browser.sessionstore.max_concurrent_tabs browser settings which controls how many tabs to load at the same time.  The default value is 3.  If set to 0, then tabs will not load until clicked on when loading a session.  If set to -1, all tabs will load at the same time, just like it used to do under Firefox 3.6 and earlier.  See <a href="http://blog.zpao.com/post/1140456188/cascaded-session-restore-a-hidden-bonus">this page</a> for more details.</p> 
+		
+		<li><p><b>Restore tabs on demand</b> - Firefox 8 and up hardcode the number of tabs to load concurrently at 3.  As such this option replaces the above option in Firefox 8 and up. If checked, tabs will not load until clicked on a restore, otherwise they will automatically load concurrently.</p>
+	</ul>
+	
+	<p><b>Create a new backup every x minutes</b> - When this is checked, Session Manager will create a new backup session file every x minutes, where x is the value entered by the user.  This is affected by the number of older sessions option to keep option, so older backup sessions will be removed as new ones are created.
+	
+	<p><b>Number of days to temporarily keep deleted sessions</b> - By default, Session Manager will place deleted sessions in a "trash" folder when they are deleted. This settings controls how long a session will remain in the trash before it is automatically deleted.  Setting this to 0 will cause Session Manager to immediately and permanently remove any deleted sessions.</p>
+</div>
+<div class="return"><p><a href="#contents">Return to contents</a></p></div>
+
+<hr>
+<a name="display"></a>
+<img style="margin: 1em; float: right;" src="images/display.png"/>
+<h4>Display:</h5>
+<div class="paragraph">
+	<p>The display options allow the user to configure how Session Manager displays the session list and the session name format.</p>
+	<ul>
+		<li><p><b>Order the session list</b>
+		<ul>
+			<li><b>Alphabetically</b> - Sessions are listed in alphabetical order.
+			<li><b>newest to oldest</b> - Newer sessions are displayed above older ones.
+			<li><b>oldest to newest</b> - Older sessions are displayed above newer ones.
+		</ul></p>
+		
+		<li><p><b>Maximum number of sessions to display in menu</b> - This specifies the maximum number of sessions that will be displayed in the Session list. If this is set to a negative number, then all sessions will be displayed.</p>
+	
+		<li><p><b>Format for the suggestions of session names</b> - This is used to fill in the default session name when saving a session.  %t is replaced with the active tab's title, %d for today's date and %t for the current time.  The title's length can be limited to # characters by putting a number between the "%" and "t" (%#t).  The date format defaults to <a href="http://en.wikipedia.org/wiki/ISO_8601">ISO8601 standard</a>, but this can be overridden by specifying a specific format string in quotes after the %d.  The format string used is the same as that used for the <a href="http://developer.mozilla.org/en/docs/Core_JavaScript_1.5_Reference:Global_Objects:Date:toLocaleFormat">toLocaleFormat javascript date</a> function.  For example, %d"%Y-%d-%m" will use YYYY-DD-MM.
+
+		<li><p><b>... the name of active sessions to the title bar</b> - This only applies to auto-save and window sessions
+		<ul>
+			<li><b>Append</b> - The active session name is added to the title bar after the browser name.
+			<li><b>Prepend</b> - The active session name is added to the title bar before the current page title.
+			<li><b>Do not add</b> - The active session name is not added to the title bar..
+		</ul></p>
+		
+		<li><p><b>Display Session Manager menu items in submenu</b> - When checked, the Session Manager menu items will be displayed in a sub-menu, otherwise they won't.</p>
+		<li><p><b>Do not display Session Manager menu in tools menu</b> - When checked, the Session Manager menu is not displayed in the tools and application menus.</p>
+		<li><p><b>Show icon in tools menu</b> - When checked, Session Manager's icon will display next to the Session Manager menu in the tools and application menus.</p>
+		<li><p><b>Do not color toolbar button when sessions loaded</b> - By default Session Manager will color the Session Manager toolbar button when an autosave and/or window session is loaded.  Checking this will disabled that.</p>
+	</ul>
+</div>
+<div class="return"><p><a href="#contents">Return to contents</a></p></div>
+
+<hr>
+<a name="keyboard"></a>
+<img style="margin: 1em; float: right;" src="images/keyboard.png"/>
+<h4>Keyboard Shortcuts:</h5>
+<div class="paragraph">
+	<p>The keyboard shortcut options allow the user to map keyboard hotkeys to specific Session Manager functions.  To enter a shortcut simply click the textbox next to the function and press the keys on the keyboard you want to map to that function.  There are restrictions on to what keys can be mapped.  They are as follows:</p>
+	<ul>
+		<li><p>At least one modifier must be used.  Modifiers are: alt, control, meta and shift.</p>
+		<li><p>If only one modifier is used it must be control.  So for example alt+shift+a is valid, but alt+a and shift+a are not.</p>
+		<li><p>The following keys cannot be used: tab, escape, return, enter, delete, backspace and F1.</p>
+	</ul>
+	<p>To remove a mapping either click the text box and press delete or backspace or click the clear button next to the text box for that command.  Note: keymappings will not take affect on existing windows opened at the time of the change.</p>
+</div>
+<div class="clear"></div>
+<div class="return"><p><a href="#contents">Return to contents</a></p></div>
+
+<hr>
+<a name="undo"></a>
+<img style="margin: 1em; float: right;" src="images/undo_close.png"/>
+<h4>Undo Close:</h5>
+<div class="paragraph">
+	<p>The undo close options allow the user to how many close tabs and windows are saved and for how long.</p>
+	<ul>
+		<li><p><b>Maximum number of closed windows</b> - The maximum number of closed windows that will be saved.  If more than this number of windows are closed, the oldest closed window is deleted to make room for the newest one.  If set to 0, no closed windows will be saved.  The default is 10.</p>
+		
+		<li><p><b>Maximum number of closed tabs (per window)</b> - The maximum number of closed tabs per window that will be saved.  If more than this number of tabs in a window are closed, the oldest closed tab is deleted to make room for the newest one.  If set to 0, no closed tabs will be saved.  The default is 10 tabs per window if using Session Manager's closed window list and 3 tabs per window if using the browser's built-in list.</p>
+		
+		<li><p><b>List all closed windows and tabs in a submenu</b> - If checked, all closed windows and tabs are displayed in a submenu in the Session Manager menu, otherwise they are displayed at the end of the Session Manager menu.</p>
+		
+		<li><p><b>Use browser's built-in closed window list</b> - If checked, Session Manager will use the browser's built-in closed window list instead of it's own list.  This is only displayed if the browser has a built-in closed window list, in other words Firefox 3.5 and higher.  See the <a href="documentation.html#tabs">documentation of closed windows</a> for more information about this.</p>
+		
+		<li><p><b>Middle Click re-opens last closed tab</b> - If checked, then middle clicking on the tab bar will reopen the last closed tab.  <span style="color:red;">This option will not appear if Tab Mix Plus or Tab Clicking Options is installed since those two extensions allow middle click functionality to be customized.</span>
+		
+		<li><p><b>Restore the list of reopenable closed tabs for all windows</b>
+		<ul>
+			<li><p><b>never</b> - Never save closed tabs in sessions even in the backup session created when the browser is shutdown.  Also closed tabs will not be restored from saved sessions that had been saved with closed tabs.</p>
+			<li><p><b>startup</b> - Never save closed tabs in sessions, but does save them in the backup session created when the browser is shutdown.  Closed tabs in saved sessions will only be restored if that session is loaded at startup (either via prompting or by setting that sessions name in the load at startup setting in the General options page.</p>
+			<li><p><b>always</b> - Always save closed tabs in sessions and restore them from saved sessions.  This is the default setting.</p>
+		</ul>
+		
+		<li><p><b>Restore the list of reopenable closed windows</b> - Only displayed if "Use browser's built-in closed window list" is checked.</p>
+		<ul>
+			<li><p><b>never</b> - Never save closed windows in sessions even in the backup session created when the browser is shutdown.  Also closed windows will not be restored from saved sessions that had been saved with closed windows.</p>
+			<li><p><b>startup</b> - Never save closed windows in sessions, but does save them in the backup session created when the browser is shutdown.  Closed windows in saved sessions will only be restored if that session is loaded at startup (either via prompting or by setting that sessions name in the load at startup setting in the General options page.</p>
+			<li><p><b>always</b> - Always save closed windows in sessions and restore them from saved sessions.  This is the default setting.</p>
+		</ul>
+		
+		<li><p><b>Don't clear the list of closed windows at shutdown</b> - If checked, Session Manager will save the closed windows list when the browser is shut down, otherwise the closed window list will be deleted.  This does <b>not</b> affect closed tabs.</p>  This option is only available if "Use browser's built-in closed window list" is not checked, since the browser closed window list is always cleared on shutdown unless either Session Manager or the browser is set to load the previous session at startup. 
+	
+		<li><p><b>Clear List</b> - This clears all closed tabs and windows. Warning, this cannot be undone.</p>
+	</ul>
+</div>
+<div class="return"><p><a href="#contents">Return to contents</a></p></div>
+
+<hr>
+<a name="advanced"></a>
+<img style="margin: 1em; float: right;" src="images/advanced.png"/>
+<h4>Advanced:</h5>
+<div class="paragraph">
+	<p>The advanced options allow the user to change the default session folder and enable/disable encryption of session files.</p>
+	<ul>
+		<li><p><b>Saved Session Location</b> - This allows the user to override the default location for storing saved sessions. The default location is in a "sessions" folder in the user's profile.  Note that modifying the saved session location does not copy existing saved sessions files to the new location specified.  They must be copied manually.</p>
+		
+		<li><p><b>Encrypt saved session and closed window data</b> - When this is toggled, all existing sessions will be encrypted or unencrypted depending on whether the box is checked or unchecked.  While this option is checked, any sessions that are saved will be encrypted, otherwise they will not be.  There are a few caveats:</p>
+		<ul>
+			<li><p>The sessions are encrypted using the encryption key stored in the <a href="http://kb.mozillazine.org/Key3.db">key3.db</a> file in the user's profile.  This means that sessions can only be read in profiles that contain identical copies of the <a href="http://kb.mozillazine.org/Key3.db">key3.db</a> file.</p> 
+			<li><p>If the browser is set to use a master browser password, then this password must be specified in order to load and save sessions.  If the master password is not entered correctly when loading a session, the session will not load.  If it is not entered correctly when saving a session or closing a window, the session or closed window will be saved, but <b>not encrypted</b>.</p>
+			<li><p>If the user manually puts an unencrypted session file in the session folder after the encryption checkbox was checked, that session file will not be encrypted.  To fix this, uncheck the checkbox, hit apply and the check the checkbox again and hit apply.</p>
+		</ul>
+		<li><p><b>If encryption fails, do NOT save data unencrypted</b> - If this is not checked and Session Manager fails to encrypt session or closed window data for whatever reason, Session Manager will still save the data, but leave it unencrypted.  If this setting is checked, Session Manager will not save data that fails to encrypt and will simply discard it.  This will result in data being lost if encryption fails, which will happen if the user does not enter the master browser password when prompted.  <span style="color:red;">I do not recommend checking this box unless security and privacy is more important to you than having your data saved reliably.</span></p>
+		<li><p><b>Cache basic session data on disk. Enables searching inside sessions</b> - If this is checked, Sesssion Manager will be a SQLite database of the tab titles and urls of store sessions.  If this box is not checked, then the SQLite database will be deleted.  As the SQLite database is used when searching for tabs within sessions, searching inside sessions will only work if this is checked.  The rebuild cache data button can be used to rebuild the database.</p>
+		<li><p><b>Show update web page after updating</b> - By default Session Manager will automatically load the Session Manager history page after updating to let users know of what has changed in the new released.  Check this if you do not want the page to load automatically after updating.</p>
+		<li><p><b>Reset warning prompts</b> - Pressing this will cause all warning prompts that were dismissed with the "do not show again" option to default to displaying again.
+	</ul>
+</div>
+<div class="return"><p><a href="#contents">Return to contents</a></p></div>
+
+<hr>
+<a name="sessionstore"></a>
+<img style="margin: 1em; float: right;" src="images/sessionstore.png"/>
+<h4>SessionStore:</h5>
+<div class="paragraph">
+	<p>The sessionstore options allows the user to change the browser's hidden SessionStore options.</p>
+	<ul>
+	<li><p><b>Enable Crash Recovery</b> - This sets the <a href="http://kb.mozillazine.org/Browser.sessionstore.resume_from_crash">browser.sessionstore.resume_from_crash</a> preference. When checked, Firefox's built in crash recovery is enabled, otherwise it is disabled.  Session Manager cannot recover from crashes or backup crashed sessions unless this is enabled.</p>
+		
+		<li><p><b>Minimum time interval between two saves (in seconds)</b> - This sets the <a href="http://kb.mozillazine.org/Browser.sessionstore.interval">browser.sessionstore.interval</a> preference.  It controls how often Firefox backs up the session data to disk.  The default is 15 seconds as of Firefox 4. <span style="color:red;">There should be no reason to change this setting when running Firefox from a hard drive.</span></p>
+		
+		<li><p><b>Maximum amount of POSTDATA to be stored (in bytes; -1 for all)</b> - This sets the <a href="http://kb.mozillazine.org/Browser.sessionstore.postdata">browser.sessionstore.postdata</a> preference.  POSTDATA is data that gets sent to servers when submitting forms.  This includes files uploaded via forms.  As a result, the amount of POSTDATA can be very, very large.  For example, uploading a 5 MB file using a form will result in about a 6 MB of session data.  In addition, loading a session with POSTDATA in it, will result in the form being automatically posted again.  This can have negative results on forms that should not be submitted more than once.  So for security and performance reasons it is <b>highly recommended</b> that you not change this setting or if you do, that you not set it to -1</p>
+		
+		<li><p><b>Save sensitive data (form data, POSTDATA and cookies for</b> - This sets the <a href="http://kb.mozillazine.org/Browser.sessionstore.privacy_level">browser.sessionstore.privacy_level</a> preference.  This settings takes preference over all other related Session Manager settings (except the POSTDATA setting above).</p>
+		<ul>
+			<li><p><b>all site</b> - This will save sensitive session data for all sites, including secure sites.  This is the default setting in Firefox 4 and higher.</p>
+		
+			<li><p><b>unencrypted sites only</b> - This will save sensitive session data only for unencrypted (not https://) sites.  This is the default setting in Firefox 3.6 and earlier.</p>
+			
+			<li><p><b>no sites at all</b> - Sensitive session data will never be saved.  This basically turns sessions into glorified bookmarks.</p>
+		</ul>			
+	</ul>
+</div>
+
+<hr>
+<a name="logging"></a>
+<img style="margin: 1em; float: right;" src="images/logging.png"/>
+<h4>Logging:</h5>
+<div class="paragraph">
+	<p>The logging options allows the user to enable logging and choose what gets logged.  Logging should normally be disabled unless something isn't working correctly and the user is requested help from the developer.</p>
+	<ul>
+
+</div>
+<div class="return"><p><a href="#contents">Return to contents</a></p></div>

@@ -1,0 +1,35 @@
+<!ENTITY sessionManager       "Gestionnaire de session">
+<!ENTITY toolsmenu.accesskey  "s">
+
+<!ENTITY save.label           "Enregistrer la session...">
+<!ENTITY save.accesskey       "g">
+<!ENTITY saveOne.label        "Enregistrer la fenêtre courante...">
+<!ENTITY saveOne.accesskey    "f">
+<!ENTITY rename.label         "Renommer la session...">
+<!ENTITY rename.accesskey     "R">
+<!ENTITY remove.label         "Supprimer la(les) session(s)...">
+<!ENTITY remove.accesskey     "S">
+<!ENTITY openFolder.label     "Ouvrir le dossier des sessions">
+<!ENTITY openFolder.accesskey "d">
+
+<!ENTITY options.label        "Options du &sessionManager;">
+<!ENTITY options.accesskey    "O">
+<!ENTITY resume.label         "Reprendre la session courante au démarrage">
+<!ENTITY resume.accesskey     "p">
+<!ENTITY reload.label         "Recharger toutes les fenêtres restaurées">
+<!ENTITY reload.accesskey     "c">
+<!ENTITY overwrite.label      "Remplacer les fenêtres existantes">
+<!ENTITY overwrite.accesskey  "x">
+
+<!ENTITY undoClosed.label     "Réouvrir ...">
+<!ENTITY undoClosed.accesskey "v">
+<!ENTITY closedWindows        "Fenêtres fermées :">
+<!ENTITY closedTabs           "Onglets fermés :">
+<!ENTITY clearList.label      "Effacer la liste des 'éléments fermés'...">
+<!ENTITY clearList.accesskey  "E">
+
+<!ENTITY toolbar.tooltip      "Enregistrer la session de navigation courante...">
+<!ENTITY toolbar.undo.label   "Récupération">
+<!ENTITY toolbar.undo.tooltip "Réouvrir le dernier onglet fermé">
+
+<!ENTITY prompt.ignore.label  "Ne plus afficher cette boîte de dialogue à l'avenir">

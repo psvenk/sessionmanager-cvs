@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+
+<RDF:RDF xmlns:RDF="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.mozilla.org/2004/em-rdf#">
+	<RDF:Description about="urn:mozilla:install-manifest">
+		<id>{1280606b-2510-4fe0-97ef-9b5a22eafe6a}</id>
+		
+		<name>Crash Recovery</name>
+		<version>0.6.10+</version>
+		
+		<description>Automagically recovers all windows (after a crash).</description>
+		<homepageURL>http://sessionmanager.mozdev.org/crashrecovery/</homepageURL>
+		<updateURL>http://www.haslo.ch/zeniko/software/update.xml</updateURL>
+		
+		<creator>zeniko</creator>
+		<contributor>Danil Ivanov (Cache Fixer)</contributor>
+		
+		<targetApplication><!-- Firefox -->
+			<RDF:Description>
+				<id>{ec8030f7-c20a-464f-9b0e-13a3a9e97384}</id>
+				<minVersion>1.5</minVersion>
+				<maxVersion>1.5.0.*</maxVersion>
+			</RDF:Description>
+		</targetApplication>
+		
+		<targetApplication><!-- SeaMonkey -->
+			<RDF:Description>
+				<id>{92650c4d-4b8e-4d2a-b7eb-24ecf4f6b63a}</id>
+				<minVersion>1.0</minVersion>
+				<maxVersion>1.0.*</maxVersion>
+			</RDF:Description>
+		</targetApplication>
+		
+		<targetApplication><!-- Flock -->
+			<RDF:Description>
+				<id>{a463f10c-3994-11da-9945-000d60ca027b}</id>
+				<minVersion>0.5</minVersion>
+				<maxVersion>0.*</maxVersion> <!-- don't take my word for it! -->
+			</RDF:Description>
+		</targetApplication>
+	</RDF:Description>
+</RDF:RDF>

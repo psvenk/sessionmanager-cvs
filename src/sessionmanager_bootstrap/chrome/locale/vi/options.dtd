@@ -1,0 +1,41 @@
+<!ENTITY options.title "Tùy Chọn &sessionManager;">
+<!ENTITY general.caption "Chung">
+<!ENTITY startNend.caption "Khởi Động &amp; Tắt">
+<!ENTITY resume_sess.label "Lúc khởi động luôn mới phiên sau:">
+<!ENTITY backup_sess.label "Lúc tắt">
+<!ENTITY backup_session.label0 "bỏ qua phiên hiện tại">
+<!ENTITY backup_session.label1 "sao lưu phiên hiện tại">
+<!ENTITY backup_session.label2 "hỏi xem liệu có lưu phiên hiện tại không">
+<!ENTITY crashrecovery.label "Bật Phục Hồi Hư Hỏng">
+<!ENTITY autosave_session.label "Tự động lưu phiên được thay thế">
+<!ENTITY restoring.caption "Phục Hồi Phiên">
+<!ENTITY sessionList.caption "Danh Sách Phiên">
+<!ENTITY orderList.label "Sắp xếp danh sách phiên">
+<!ENTITY orderList.label1 "theo bảng chữ cái">
+<!ENTITY orderList.label2 "từ cũ đến mới">
+<!ENTITY orderList.label_2 "từ mới đến cũ">
+<!ENTITY undoClose.caption "Hoàn Tác Việc Đóng">
+<!ENTITY windowsNtabs.caption "Cửa Sổ &amp; Thẻ Đã Đóng">
+<!ENTITY max_closed.label "Số lượng tối đa các cửa sổ đã đóng được lưu nhớ:">
+<!ENTITY max_tabs.label "Số lượng tối đa các thẻ đã đóng (trên một cửa sổ) được lưu nhớ:">
+<!ENTITY submenu.label "Liệt kê tất cả cửa sổ và thẻ đã đóng trong trình đơn con">
+<!ENTITY closed_tabs.label "Phục hồi danh sách các thẻ đã đóng có thể mở lại cho mọi cửa sổ:">
+<!ENTITY closed_tabs.label0 "không bao giờ">
+<!ENTITY closed_tabs.label1 "lúc khởi động">
+<!ENTITY closed_tabs.label2 "luôn luôn">
+<!ENTITY window_list.label "Đừng xóa sạch danh sách cửa sổ đã đóng lúc tắt">
+<!ENTITY clear_list.label "Xóa Sạch Danh Sách">
+<!ENTITY advanced.caption "Nâng Cao">
+<!ENTITY name_format.caption "Tên Phiên">
+<!ENTITY open_as_tabs.label "Mở dạng các thẻ trong cửa sổ hiện tại">
+<!ENTITY last_window_shutdown.label "Xem như việc đóng cửa sổ trình duyệt như là tắt máy">
+<!ENTITY preselect_previous_session.label "Chọn trước phiên vừa rồi">
+<!ENTITY logging.caption "Ghi nhật ký">
+<!ENTITY enable_logging.label "Bật Nhật ký">
+<!ENTITY open_log.label "Mở Tập Tin Nhật Ký">
+<!ENTITY delete_log.label "Xóa Tập Tin Nhật Ký">
+<!ENTITY log_level_state.label "Ghi Lại Trạng Thái Tắt Máy">
+<!ENTITY session_name_in_titlebar.label "tên của các phiên hiện hành trên thanh tiêu đề">
+<!ENTITY prepend.label "Thêm đầu">
+<!ENTITY append.label "Thêm cuối">
+<!ENTITY donotadd.label "Không thêm">

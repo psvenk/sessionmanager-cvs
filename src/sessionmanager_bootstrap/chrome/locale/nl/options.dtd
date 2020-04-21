@@ -1,0 +1,202 @@
+<!ENTITY options.title "&sessionManager;-opties">
+<!ENTITY general.caption "Algemeen">
+<!ENTITY startNend.caption "Opstarten &amp; afsluiten">
+<!ENTITY resume_sess.label "Bij opstarten altijd de volgende sessie laden:">
+<!ENTITY resume_sess.accesskey "o">
+<!ENTITY backup_sess.label "Bij afsluiten">
+<!ENTITY backup_sess.accesskey "a">
+<!ENTITY backup_session.label0 "de huidige sessie verwerpen">
+<!ENTITY backup_session.label1 "de huidige sessie opslaan">
+<!ENTITY backup_session.label2 "vragen of de sessie moet worden opgeslagen">
+<!ENTITY crashrecovery.label "Crashherstel inschakelen">
+<!ENTITY crashrecovery.accesskey "C">
+<!ENTITY autosave_session.label "Vervangen sessie automatisch opslaan">
+<!ENTITY autosave_session.accesskey "s">
+<!ENTITY restoring.caption "Sessieherstel">
+<!ENTITY sessionList.caption "Sessielijst">
+<!ENTITY orderList.label "De sessielijst rangschikken">
+<!ENTITY orderList.accesskey "c">
+<!ENTITY orderList.label1 "alfabetisch">
+<!ENTITY orderList.label2 "oud naar nieuw">
+<!ENTITY orderList.label_2 "nieuw naar oud">
+<!ENTITY max_backup.label "Aantal te behouden oudere (gecrashte) sessieback-ups:">
+<!ENTITY max_backup.accesskey "n">
+<!ENTITY undoClose.caption "Sluiten ongedaan maken">
+<!ENTITY windowsNtabs.caption "Gesloten vensters &amp; tabbladen">
+<!ENTITY max_closed.label "Maximale aantal onthouden gesloten vensters:">
+<!ENTITY max_closed.accesskey "n">
+<!ENTITY max_tabs.label "Maximale aantal onthouden gesloten tabbladen (per venster):">
+<!ENTITY max_tabs.accesskey "t">
+<!ENTITY submenu.label "Alle gesloten vensters en tabbladen in een submenu tonen">
+<!ENTITY submenu.accesskey "b">
+<!ENTITY persistence.caption "Herstellen na starten">
+<!ENTITY closed_tabs.label "De lijst van heropenbare tabbladen voor alle vensters herstellen:">
+<!ENTITY closed_tabs.accesskey "l">
+<!ENTITY closed_tabs.label0 "nooit">
+<!ENTITY closed_tabs.label1 "bij opstarten">
+<!ENTITY closed_tabs.label2 "altijd">
+<!ENTITY window_list.label "De lijst met gesloten vensters niet wissen bij afsluiten">
+<!ENTITY window_list.accesskey "o">
+<!ENTITY clear_list.label "Lijst wissen">
+<!ENTITY clear_list.accesskey "w">
+<!ENTITY advanced.caption "Geavanceerd">
+<!ENTITY name_format.caption "Sessienamen">
+<!ENTITY name_format.label "Notatie voor de suggesties van sessienamen:">
+<!ENTITY name_format.accesskey "o">
+<!ENTITY name_format.desc "Gebruik &#37;t voor de titel van het actieve tabblad, &#37;d voor de datum en &#37;m voor de tijd. Bovendien kan de lengte van de titel tot X tekens worden beperkt door &#37;Xt te gebruiken (bv. &#37;10t).">
+<!ENTITY sessionstore.caption "SessionStore">
+<!ENTITY service.caption "SessionStore-instellingen">
+<!ENTITY service.description "Wijzig deze instellingen niet, tenzij u weet wat u doet.">
+<!ENTITY interval.label "Minimale tijdsinterval tussen het opslaan van de status (in seconden):">
+<!ENTITY interval.accesskey "i">
+<!ENTITY postdata.label "Maximale hoeveelheid POSTGEGEVENS om op te slaan (in bytes; -1 voor alle):">
+<!ENTITY postdata.accesskey "a">
+<!ENTITY privacy.label "Gevoelige gegevens (formuliergegevens, POSTGEGEVENS en cookies) opslaan voor">
+<!ENTITY privacy.accesskey "G">
+<!ENTITY privacy.level0 "alle websites">
+<!ENTITY privacy.level1 "alleen niet-versleutelde websites">
+<!ENTITY privacy.level2 "geen enkele website">
+<!ENTITY sessiondir.caption "Locatie van de opgeslagen sessies">
+<!ENTITY sessiondir.desc "De standaardlocatie van de opgeslagen sessie kan hier worden overschreven.">
+<!ENTITY encrypt.caption "Versleuteling">
+<!ENTITY encrypt.desc "Waarschuwing: versleutelde sessiegegevens kunnen alleen in profielen met identieke key3.db-bestanden worden geopend. Als een hoofdwachtwoord is ingesteld, kunnen versleutelde sessies bovendien niet worden geopend of gesloten als dit wachtwoord niet wordt ingevoerd.">
+<!ENTITY encrypt.label "Opgeslagen sessiegegevens versleutelen">
+<!ENTITY encrypt.accesskey "v">
+<!ENTITY change_dir.label "Wijzigen">
+<!ENTITY change_dir.accesskey "W">
+<!ENTITY default_dir.label "Standaard herstellen">
+<!ENTITY default_dir.accesskey "S">
+<!ENTITY sanitizer.label "Door Session Manager opgeslagen sessies">
+<!ENTITY sanitizer.accesskey "M">
+<!ENTITY saving.caption "Sessie opslaan">
+<!ENTITY lastpage.label "Mijn laatst geladen pagina tonen">
+<!ENTITY noSession.label "Geen">
+<!ENTITY noSession.accesskey "G">
+<!ENTITY promptSession.label "Vragen naar een sessie">
+<!ENTITY promptSession.accesskey "V">
+<!ENTITY selectSession.label "Sessie selecteren">
+<!ENTITY selectSession.accesskey "S">
+<!ENTITY cookies.label "Sessiecookies opslaan">
+<!ENTITY cookies.accesskey "c">
+<!ENTITY sessionImport.caption "Sessies importeren van…">
+<!ENTITY importSS.label "SessionSaver">
+<!ENTITY importSS.accesskey "e">
+<!ENTITY importTMP.label "Tab Mix Plus">
+<!ENTITY importTMP.accesskey "i">
+<!ENTITY apply.label "Toepassen">
+<!ENTITY save_and_restore.caption "Opslaan &amp; herstellen">
+<!ENTITY display.caption "Weergave">
+<!ENTITY middleclick.label "Klikken met middelste muisknop heropent het laatst gesloten tabblad">
+<!ENTITY middleclick.accesskey "m">
+<!ENTITY max_display.label "Maximale aantal weer te geven sessies in het menu (-1 voor alle)">
+<!ENTITY max_display.accesskey "M">
+<!ENTITY hide_tools_menu.label "Session Manager-menu in menu Extra niet weergeven">
+<!ENTITY hide_tools_menu.accesskey "S">
+<!ENTITY disable_cache_fixer.label "Bufferherstelfunctie uitschakelen">
+<!ENTITY disable_cache_fixer.accesskey "B">
+<!ENTITY encrypted_only.label "Als versleuteling mislukt, gegevens NIET onversleuteld opslaan">
+<!ENTITY encrypted_only.accesskey "N">
+<!ENTITY encrypt2.desc "Waarschuwing: als dit is aangevinkt en de sessie- of venstergegevens niet kunnen worden versleuteld, zullen de gegevens verloren gaan zonder mogelijkheid tot herstel. Versleuteling zal niet lukken als om het hoofdwachtwoord wordt gevraagd en dit niet wordt ingevoerd, dus denk goed na voordat u dit aanvinkt.">
+<!ENTITY closed_window_list.label "Ingebouwde lijst van gesloten vensters van de browser gebruiken">
+<!ENTITY closed_window_list.accesskey "I">
+<!ENTITY closed_windows.label "De lijst van heropenbare gesloten vensters herstellen:">
+<!ENTITY closed_windows.accesskey "s">
+<!ENTITY open_as_tabs.label "Openen als tabbladen in het huidige venster">
+<!ENTITY open_as_tabs.accesskey "p">
+<!ENTITY last_window_shutdown.label "Sluiten van het laatst openstaande venster als afsluiten beschouwen">
+<!ENTITY last_window_shutdown.accesskey "u">
+<!ENTITY preselect_previous_session.label "De vorige sessie vooraf selecteren">
+<!ENTITY preselect_previous_session.accesskey "r">
+<!ENTITY logging.caption "Logboekregistratie">
+<!ENTITY enable_logging.label "Logboekregistratie inschakelen">
+<!ENTITY enable_logging.accesskey "L">
+<!ENTITY open_log.label "Logboekbestand openen">
+<!ENTITY open_log.accesskey "o">
+<!ENTITY delete_log.label "Logboekbestand verwijderen">
+<!ENTITY delete_log.accesskey "w">
+<!ENTITY log_level_state.label "Afsluitstatus registreren">
+<!ENTITY log_level_state.accesskey "s">
+<!ENTITY log_level_trace.label "Tracegegevens registreren">
+<!ENTITY log_level_trace.accesskey "T">
+<!ENTITY log_level_data.label "Variabelegegevens registreren">
+<!ENTITY log_level_data.accesskey "V">
+<!ENTITY log_level_info.label "Informatieve berichten registreren">
+<!ENTITY log_level_info.accesskey "I">
+<!ENTITY log_level_extra.label "Extra debug-gegevens registreren">
+<!ENTITY log_level_extra.accesskey "E">
+<!ENTITY reload.label "Buffer negeren bij het herstellen van sessies">
+<!ENTITY reload.accesskey "B">
+<!ENTITY overwrite.label "Bestaande vensters vervangen">
+<!ENTITY overwrite.accesskey "r">
+<!ENTITY allow_saving_during_pbm.label "Opslaan tijdens privénavigatiemodus toestaan">
+<!ENTITY allow_saving_during_pbm.label2 "Hiervoor moet versleuteling zijn ingeschakeld">
+<!ENTITY allow_saving_during_pbm.accesskey "s">
+<!ENTITY session_name_in_titlebar.label "de naam van actieve sessies aan de titelbalk toevoegen">
+<!ENTITY session_name_in_titlebar.accesskey "n">
+<!ENTITY prepend.label "Vooraan">
+<!ENTITY append.label "Achteraan">
+<!ENTITY donotadd.label "Niet">
+<!ENTITY use_browser_crash_prompt.label "Ingebouwde crashherstelfunctie van de browser gebruiken">
+<!ENTITY use_browser_crash_prompt.accesskey "n">
+<!ENTITY reset_warnings.label "Waarschuwingen herinitialiseren">
+<!ENTITY reset_warnings.accesskey "r">
+<!ENTITY export_settings.label "Instellingen exporteren">
+<!ENTITY export_settings.accesskey "x">
+<!ENTITY import_settings.label "Instellingen importeren">
+<!ENTITY import_settings.accesskey "m">
+<!ENTITY settingsImportExport.caption "Instellingen importeren/exporteren">
+<!ENTITY keyboard.caption "Sneltoetsen">
+<!ENTITY keyboard.desc "Als u een sneltoets voor een actie wilt gebruiken, kunt u deze hier ingeven, anders kunt u dit leeg laten. Wijzigingen zijn niet van toepassing op bestaande vensters.">
+<!ENTITY clear.label "Wissen">
+<!ENTITY clear.accesskey "W">
+<!ENTITY clear_tab_list.label "Gesloten tabbladen wissen">
+<!ENTITY clear_tab_list.accesskey "a">
+<!ENTITY clear_window_list.label "Gesloten vensters wissen">
+<!ENTITY clear_window_list.accesskey "v">
+<!ENTITY backup_on_restart.label "Back-up opslaan bij het herstarten van de browser">
+<!ENTITY backup_on_restart.accesskey "B">
+<!ENTITY keep_deleted_sessions.label "Aantal dagen voor het tijdelijk behouden van verwijderde sessies:">
+<!ENTITY keep_deleted_sessions.accesskey "d">
+<!ENTITY concurrent.label "Aantal tabbladen om gelijktijdig te herstellen">
+<!ENTITY concurrent.accesskey "t">
+<!ENTITY do_not_color_toolbar_button.label "Werkbalkknop niet inkleuren bij geladen sessies">
+<!ENTITY do_not_color_toolbar_button.accesskey "W">
+<!ENTITY preserve_app_tabs.label "Vastgezette app-tabbladen niet vervangen">
+<!ENTITY preserve_app_tabs.accesskey "V">
+<!ENTITY logging_to_console.label "Ook naar foutconsole registreren">
+<!ENTITY logging_to_console.accesskey "k">
+<!ENTITY update_message.label "Update-webpagina tonen na bijwerken">
+<!ENTITY update_message.accesskey "U">
+<!ENTITY double_click_session.label "Dubbelklikken op een bestaande sessie overschrijft deze en">
+<!ENTITY double_click_session.accesskey "f">
+<!ENTITY replace_with_name_replace.label "vervangt de bestaande sessienaam met die in het tekstvak">
+<!ENTITY replace_with_name_keep.label "behoudt de bestaande sessienaam">
+<!ENTITY show_icon_in_menu.label "Pictogram in menu Extra tonen">
+<!ENTITY show_icon_in_menu.accesskey "P">
+<!ENTITY set_encryption_password.label "Voer een wachtwoord in om uw coderingssleutel mee te beveiligen">
+<!ENTITY set_encryption_password.accesskey "e">
+<!ENTITY change_encryption_key_password.label "Wachtwoord voor coderingssleutel wijzigen">
+<!ENTITY change_encryption_key_password.accesskey "c">
+<!ENTITY save_encryption_key.label "Wachtwoord voor coderingssleutel opslaan in wachtwoordenbeheerder van browser">
+<!ENTITY save_encryption_key.accesskey "s">
+<!ENTITY restore_hidden_tabs.label "Verborgen tabbladen herstellen">
+<!ENTITY restore_hidden_tabs.accesskey "o">
+<!ENTITY display_menus_in_submenu.label "Menu-items van Session Manager in submenu weergeven">
+<!ENTITY display_menus_in_submenu.accesskey "u">
+<!ENTITY use_sql_cache.label "Basale sessiegegevens op schijf bufferen (maakt zoeken binnen sessies mogelijk)">
+<!ENTITY use_sql_cache.accesskey "B">
+<!ENTITY rebuild_cache.label "Buffergegevens opnieuw opbouwen">
+<!ENTITY rebuild_cache.accesskey "f">
+<!ENTITY log_level_error.label "Fouten registreren">
+<!ENTITY log_level_error.accesskey "F">
+<!ENTITY allow_duplicates.label "Opslaan van een sessie met dezelfde naam als een bestaande sessie toestaan">
+<!ENTITY allow_duplicates.accesskey "a">
+<!ENTITY backup_every.label "Elke">
+<!ENTITY backup_every.accesskey "k">
+<!ENTITY minutes "minuten een nieuwe back-upsessie aanmaken">
+<!ENTITY restore_on_demand.label "Tabbladen op aanvraag herstellen">
+<!ENTITY restore_on_demand.accesskey "T">
+<!ENTITY max_back_history.label "Aantal geschiedenisvermeldingen van knop ‘Terug’ dat moet worden opgeslagen, per tabblad (-1 voor alle)">
+<!ENTITY max_back_history.accesskey "u">
+<!ENTITY max_forward_history.label "Aantal geschiedenisvermeldingen van knop ‘Vooruit’ dat moet worden opgeslagen, per tabblad (-1 voor alle)">
+<!ENTITY max_forward_history.accesskey "w">

@@ -1,0 +1,70 @@
+<!ENTITY save.label "Spara session">
+<!ENTITY saveOne.label "Spara nuvarande fönster...">
+<!ENTITY closeSession.label "Spara och stäng nuvarande session">
+<!ENTITY abandonSession.label "Överge nuvarande session">
+<!ENTITY rename.label "Byt namn på session...">
+<!ENTITY remove.label "Radera session(er)...">
+<!ENTITY openFolder.label "Öppna sessionsmapp">
+<!ENTITY options.label "&sessionManager; Alternativ">
+<!ENTITY undoClosed.label "Återställ stängda...">
+<!ENTITY closedWindows "Stängda fönster:">
+<!ENTITY closedTabs "Stängda flikar:">
+<!ENTITY clearList.label "Rensa &apos;Stängda&apos;-lista...">
+<!ENTITY toolbar.tooltip "Spara nuvarande session...">
+<!ENTITY toolbar.undo.label "Ångra Stäng">
+<!ENTITY toolbar.undo.tooltip "Återställ senast stängda flik">
+<!ENTITY prompt.ignore.label "Visa inte den här dialogen igen">
+<!ENTITY prompt.autosave.label "Gör det här till en auto-sparnings-session">
+<!ENTITY prompt.tabprompt.label "Fråga efter flikar att återställa">
+<!ENTITY load_replace.label "Ladda in (ersätt nuvarande session)">
+<!ENTITY load_append.label "Ladda in (lägg till på nuvarande session)">
+<!ENTITY replace_all.label "Ersätt session med nuvarande session">
+<!ENTITY replace_window.label "Ersätt session med nuvarande fönster">
+<!ENTITY remove_one.label "Radera session...">
+<!ENTITY set_startup.label "Ställ in som startsession">
+<!ENTITY session_name.label "Namn">
+<!ENTITY session_windows.label "Fönster">
+<!ENTITY session_tabs.label "Flikar">
+<!ENTITY backup_sessions.label "Säkerhetskopiera sessioner">
+<!ENTITY remove_item.label "Ta bort">
+<!ENTITY session_group.label "Grupp">
+<!ENTITY rename_group.label "Byt namn på grupp...">
+<!ENTITY remove_group.label "Radera grupp...">
+<!ENTITY change_group.label "Ändra grupp...">
+<!ENTITY group.label "Gruppsession(er)...">
+<!ENTITY toolbar.menu.tooltip "Öppna sessionshanteringsmeny">
+<!ENTITY toolbar.undo.menu.tooltip "Öppna meny för nyligen stängda fönster och flikar">
+<!ENTITY prompt.save_every1.label "Spara post">
+<!ENTITY prompt.save_every2.label "minuter (inaktiverad om tom)">
+<!ENTITY winTabTree.restoreHeader "Återställ">
+<!ENTITY winTabTree.listHeader "Fönster och flikar">
+<!ENTITY winTabTree.windowLabel "Fönster &#37;S">
+<!ENTITY load.label "Ladda in session...">
+<!ENTITY prompt.append.label "Lägg till på session">
+<!ENTITY prompt.replace.label "Ersätt session">
+<!ENTITY tab_open_click_note.label "Observera: att klicka på en flikpost medan Alt-knappen hålls in öppnar fliken i det nuvarande fönstret.">
+<!ENTITY select_all.label "Markera alla">
+<!ENTITY select_none.label "Markera inga">
+<!ENTITY toggle_selection.label "Växla markering">
+<!ENTITY winTabTree.urlHeader "Plats">
+<!ENTITY prompt.append_window.label "Öppna i nuvarande fönster">
+<!ENTITY session_explorer.label "Sessionsbläddrare">
+<!ENTITY closeWindowSession.label "Spara och stäng fönstersession">
+<!ENTITY abandonWindowSession.label "Överge fönstersession">
+<!ENTITY load_append_window.label "Ladda (lägg till i nuvarande fönster)">
+<!ENTITY leave_window_open.label "Lämna detta fönster öppet">
+<!ENTITY clearTabList.label "Töm listan över 'stängda' flikar">
+<!ENTITY clearWindowList.label "Töm listan över 'stängda' fönster">
+<!ENTITY hidden.label "Dold">
+<!ENTITY contribute.label "Bidra">
+<!ENTITY support.label "Stöd detta tillägg:">
+<!ENTITY session_group_verb.label "Grupp">
+<!ENTITY deleted_sessions.label "Raderade sessioner">
+<!ENTITY empty_trash.label "Ta bort alla raderade sessioner">
+<!ENTITY permanently_delete.label "Ta bort raderade sessioner permanent">
+<!ENTITY search.label "Sök…">
+<!ENTITY edit.label "Redigera session…">
+<!ENTITY addtab.label "Lägg till flik till session…">
+<!ENTITY viewcontents.label "Visa innehållet i sessionen">
+<!ENTITY export_to_html.label "Exportera sessionsinnehållet till HTML-fil">
+<!ENTITY export_to_html.accesskey "V">

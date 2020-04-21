@@ -1,0 +1,44 @@
+<!ENTITY session_open.label "Aç">
+<!ENTITY session_open.accesskey "O">
+<!ENTITY session_open.tooltip "Seçilen oturumu Aç">
+<!ENTITY session_open_overwrite.label "Aç (yeniden Yükle)">
+<!ENTITY session_open_overwrite.accesskey "V">
+<!ENTITY session_open_overwrite.tooltip "Seçilen oturumu Aç?">
+<!ENTITY session_open_newwindow.label "Aç (Yeni Pencerede)">
+<!ENTITY session_open_newwindow.accesskey "n">
+<!ENTITY session_open_newwindow.tooltip "Seçilen oturumu Aç?">
+<!ENTITY session_open_append.label "Aç (ilave et)">
+<!ENTITY session_open_append.accesskey "a">
+<!ENTITY session_open_append.tooltip "Seçilen oturumu Aç">
+<!ENTITY session_rename.label "Adını Değiştir..">
+<!ENTITY session_rename.accesskey "R">
+<!ENTITY session_rename.tooltip "Seçili oturumu yeniden adlandır">
+<!ENTITY session_rename_ok.label "Adını Değiştir">
+<!ENTITY session_delete.label "Sil">
+<!ENTITY session_delete.accesskey "D">
+<!ENTITY session_delete.tooltip "Seçilen oturumu sil">
+<!ENTITY session_save.label "Kaydet...">
+<!ENTITY session_save.accesskey "S">
+<!ENTITY session_save.tooltip "Şimdiki pencereleri yeni bir oturum olarak kaydet">
+<!ENTITY session_save_ok.label "Kaydet">
+<!ENTITY session_save_w.label "Pencereyi Kaydet...">
+<!ENTITY session_save_w.accesskey "W">
+<!ENTITY session_save_w.tooltip "Şimdiki pencereyi yeni bir oturum olarak kaydet">
+<!ENTITY session_save_w_ok.label "Pencereyi Kaydet">
+<!ENTITY session_open_folder.label "Dizin Aç">
+<!ENTITY session_open_folder.accesskey "F">
+<!ENTITY session_open_folder.tooltip "Oturum yöneticisi Dizinini aç">
+<!ENTITY column_autosave.label "A">
+<!ENTITY column_autosave.tooltip "Otutumu Otomatik Kaydet">
+<!ENTITY column_windows.label "W">
+<!ENTITY column_windows.tooltip "Pencereler">
+<!ENTITY column_tabs.label "T">
+<!ENTITY column_tabs.tooltip "Sekmeler">
+<!ENTITY column_time.label "Saat">
+<!ENTITY column_time.tooltip "Tarih Bilgisi">
+<!ENTITY column_name.label "İsim">
+<!ENTITY cancel.label "Vazgeç">
+<!ENTITY done.label "Tamam">
+<!ENTITY done.tooltip "Oturum Gezgini Penceresini Kapat">
+<!ENTITY session_load.label "Yükle">
+<!ENTITY session_load.accesskey "L">

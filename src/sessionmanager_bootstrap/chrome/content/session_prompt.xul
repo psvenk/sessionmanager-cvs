@@ -1,0 +1,166 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://sessionmanager/skin/sessionmanager.css" type="text/css"?>
+<?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
+
+<!DOCTYPE dialog [
+	<!ENTITY % sessionmanagerDTD SYSTEM "chrome://sessionmanager/locale/sessionmanager.dtd"> %sessionmanagerDTD;
+	<!ENTITY % sessionexplorerDTD SYSTEM "chrome://sessionmanager/locale/sessionexplorer.dtd"> %sessionexplorerDTD;
+]>
+
+<dialog
+	xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
+	xmlns:xhtml2="http://www.w3.org/TR/xhtml2"
+	xmlns:wairole="http://www.w3.org/2005/01/wai-rdf/GUIRoleTaxonomy#"
+	xhtml2:role="wairole:alert"
+	id="sessionmanagerPrompt"
+	title="&sessionManager;"
+	onload="gSessionManagerSessionPrompt.onLoad();"
+	onunload="gSessionManagerSessionPrompt.onUnload();"
+	ondialogaccept="return gSessionManagerSessionPrompt.onAcceptDialog(false);"
+	ondialogextra1="return gSessionManagerSessionPrompt.onAcceptDialog(true);"
+	onresize="gSessionManagerSessionPrompt.resize();"
+	buttonlabelextra1="&prompt.append.label;"
+	style="min-width: 40em; -moz-user-focus: ignore;"
+	persist="width"
+	windowtype="SessionManager:SessionPrompt"
+>
+	<stringbundleset id="stringbundleset">
+		<stringbundle id="bundle_brand" src="chrome://branding/locale/brand.properties"/>
+	</stringbundleset>
+
+	<command id="cmd_menuselect" oncommand="gSessionManagerSessionPrompt.onSelectMenu(event.sourceEvent || event);"/>
+
+	<panel id="sessionmanager-sessionContentPanel"
+		   onpopupshowing="gSessionManagerSessionBrowserPanel.initTreeView();"
+		   onpopuphidden="gSessionManagerSessionBrowserPanel.restoreSelection();">
+		<tree xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul" id="sessionmanager-tabTreePanel" flex="1" flags="dont-build-content"
+			  seltype="single" _window_label="&winTabTree.windowLabel;" onselect="gSessionManagerSessionBrowserPanel.onSessionTreeSelect();">
+			<treecols>
+				<treecol primary="true" id="titlePanel" persist="width" label="&winTabTree.listHeader;" flex="17" ignoreincolumnpicker="true"/>
+				<splitter class="tree-splitter"/>
+				<treecol id="hidden_panel" persist="width _hidden" hidden="true" label="&hidden.label;" flex="1" ignoreincolumnpicker="true"/>
+				<splitter class="tree-splitter"/>
+				<treecol id="tabgroup_panel" persist="width _hidden" hidden="true" label="&session_group.label;" flex="2" ignoreincolumnpicker="true"/>
+				<splitter class="tree-splitter"/>
+				<treecol id="locationPanel" persist="width hidden" label="&winTabTree.urlHeader;" flex="20"/>
+			</treecols>
+			<treechildren flex="1"/>
+		</tree>
+	</panel>
+	
+	<hbox id="menuBox" hidden="true">
+		<button type="menu" id="sessionmanager-actionButton" label="">
+			<menupopup id="actionButtonPopup" onpopupshown="gSessionManagerSessionPrompt.updateForPrivateBrowsingMode();">
+				<menuitem id="load" label="&session_load.label;" accesskey="&session_load.accesskey;" command="cmd_menuselect"/>
+				<menuitem id="save" label="&session_save_ok.label;" accesskey="&session_save.accesskey;" command="cmd_menuselect"/>
+				<menuitem id="saveWin" hidden="true" label="&saveOne.label;" accesskey="&saveOne.accesskey;" command="cmd_menuselect"/> <!-- TODO -->
+				<menuitem id="rename" label="&session_rename_ok.label;" accesskey="&session_rename.accesskey;" command="cmd_menuselect"/>
+				<menuitem id="remove" label="&session_delete.label;" accesskey="&session_delete.accesskey;" command="cmd_menuselect"/>  
+				<menuitem id="group-menu" label="&session_group_verb.label;" accesskey="&group.accesskey;" command="cmd_menuselect"/>
+			</menupopup>
+		</button>
+		<checkbox id="leave_window_open" label="&leave_window_open.label;" oncommand="gSessionManagerSessionPrompt.leaveWindowOpenChange(this.checked);"/>
+		<textbox id="sessionmanager-search" placeholder="&search.label;" flex="1" 
+		         onkeyup="gSessionManagerSessionPrompt.doSearch();"
+		         onblur="gSessionManagerSessionPrompt.resetSearch();"/>
+	</hbox>
+
+	<hbox flex="1">
+		<vbox flex="1">
+			<label id="mac_title" value="&sessionManager;" class="dialogTitle" hidden="true"/>
+			
+			<vbox id="session_label"/>
+			<vbox flex="1">
+				<tree xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul" 
+					  id="sessionmanager_session_tree" rows="5" flex="1" flags="dont-build-content" 
+					  oncontextmenu="gSessionManagerSessionBrowserPanel.checkForOpen(this, event);"
+					  onkeypress="gSessionManagerSessionPrompt.onSessionTreeKeyPress(event)"
+					  onclick="gSessionManagerSessionPrompt.onSessionTreeClick(event);" 
+					  ondblclick="gSessionManagerSessionPrompt.onSessionTreeClick(event)"
+					  onselect="gSessionManagerSessionPrompt.onSessionTreeSelect();">
+					<treecols id="sessionTreeCols">
+						<treecol id="name" label="&session_name.label;" persist="width" flex="2" ignoreincolumnpicker="true"/>
+						<splitter class="tree-splitter"/>
+						<treecol id="group" label="&session_group.label;" persist="width hidden" flex="1"/>
+						<splitter class="tree-splitter"/>
+						<treecol id="win_count" persist="width hidden" label="&session_windows.label;"/>
+						<splitter class="tree-splitter"/>
+						<treecol id="tab_count" persist="width hidden" label="&session_tabs.label;"/>
+					</treecols>
+					<treechildren flex="1"/>
+				</tree>
+				<splitter id="tree_splitter" hidden="true" state="open" collapse="both" oncommand="gSessionManagerSessionPrompt.resize();">
+					<grippy/>
+				</splitter>
+				<vbox id="tabTreeBox" hidden="true" flex="1">
+					<tree xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul" id="sessionmanager_tabTree"
+						seltype="multiple" flex="1" flags="dont-build-content"
+						onclick="gSessionManagerSessionBrowser.onTabTreeClick(event);" 
+						onkeydown="gSessionManagerSessionBrowser.onTabTreeKeyDown(event);"
+						onselect="gSessionManagerSessionBrowser.onTabTreeSelection(event);"
+						_window_label="&winTabTree.windowLabel;">
+						<treecols>
+							<treecol id="restore" type="checkbox" label="&winTabTree.restoreHeader;" ignoreincolumnpicker="true"/>
+							<splitter class="tree-splitter"/>
+							<treecol primary="true" id="title" persist="width" label="&winTabTree.listHeader;" flex="17" ignoreincolumnpicker="true"/>
+							<splitter class="tree-splitter"/>
+							<treecol id="hidden" persist="width _hidden" hidden="true" label="&hidden.label;" flex="1" ignoreincolumnpicker="true"/>
+							<splitter class="tree-splitter"/>
+							<treecol id="tabgroup" persist="width _hidden" hidden="true" label="&session_group.label;" flex="2" ignoreincolumnpicker="true"/>
+							<splitter class="tree-splitter"/>
+							<treecol id="location" persist="width hidden" label="&winTabTree.urlHeader;" flex="20"/>
+						</treecols>
+						<treechildren flex="1"/>
+					</tree>
+					<hbox>
+						<button label="&select_all.label;" onclick="gSessionManagerSessionBrowser.tabTreeSelect('ALL');"/>
+						<button label="&select_none.label;" onclick="gSessionManagerSessionBrowser.tabTreeSelect('NONE');"/>
+						<button label="&toggle_selection.label;" onclick="gSessionManagerSessionBrowser.tabTreeSelect('TOGGLE');"/>
+					</hbox>
+					<description id="tab_open_click_note" class="header" hidden="true">&tab_open_click_note.label;</description>
+				</vbox>
+			</vbox>
+			<separator class="thin"/>
+			<label id="save_label" value="&session_save_ok.label;" collapsed="true"/>
+			
+			<vbox id="text_container" hidden="true">
+				<vbox id="text_label" class="header"/>
+				<hbox id="session-text-container" hidden="true">
+					<label class="textbox_label" value="&session_name.label;"></label>
+					<textbox flex="1" id="text_box" oninput="gSessionManagerSessionPrompt.onTextboxInput();"/>
+				</hbox>
+				<hbox id="group-text-container" hidden="true">
+					<label class="textbox_label" value="&session_group.label;"></label>
+					<menulist flex="1" id="group_menu_list" editable="true" onkeyup="gSessionManagerSessionPrompt.isAcceptable();"
+					          onchange="window.setTimeout(function() { gSessionManagerSessionPrompt.isAcceptable(); },50)"
+					          onmouseup="window.setTimeout(function() { gSessionManagerSessionPrompt.isAcceptable(); },50)">
+						<menupopup>
+						</menupopup>
+					</menulist>
+				</hbox>
+				<separator class="thin"/>
+			</vbox>
+			<vbox>
+				<hbox id="checkbox_container">
+					<radiogroup id="radio_append_replace" hidden="true">
+						<radio id="radio_append" label="&prompt.append.label;"/>
+						<radio id="radio_replace" label="&prompt.replace.label;"/>
+						<radio id="radio_append_window" label="&prompt.append_window.label;"/>
+					</radiogroup>
+					<checkbox id="checkbox_ignore" label="&prompt.ignore.label;" hidden="true"/>
+					<checkbox id="checkbox_autosave" label="&prompt.autosave.label;" hidden="true"
+					          oncommand="window.setTimeout(function() { gSessionManagerSessionPrompt._save_every_update(); },0)"/>
+				</hbox>
+				<hbox id="save_every" hidden="true">
+					<label class="textbox_label" id="autosave_label" value="&prompt.save_every1.label;"/>
+					<textbox flex="1" minwidth="25" id="autosave_time" onkeyup="gSessionManagerSessionPrompt.isNumber(this);"/>
+					<label class="textbox_label" id="autosave_label2" value="&prompt.save_every2.label;"/>
+				</hbox>
+			</vbox>
+		</vbox>
+	</hbox>
+	
+	<script type="application/x-javascript" src="chrome://sessionmanager/content/sessionbrowser.js"/>
+	<script type="application/x-javascript" src="chrome://sessionmanager/content/sessionbrowserPanel.js"/>
+	<script type="application/x-javascript" src="chrome://sessionmanager/content/session_prompt.js"/>
+</dialog>

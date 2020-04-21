@@ -1,0 +1,38 @@
+@import url("chrome://global/skin/");
+
+radio[pane] {
+  list-style-image:url("chrome://sessionmanager/skin/sm_pref.png");
+}
+
+radio[pane=mainPrefPane] {
+	-moz-image-region:rect(0px,32px,32px,0px);
+}
+radio[pane=mainPrefPane]:hover, radio[pane=mainPrefPane][selected="true"] {
+	-moz-image-region:rect(32px,32px,64px,0px);
+}
+radio[pane=undoclosePrefPane] {
+	-moz-image-region:rect(0px,96px,32px,64px);
+}
+radio[pane=undoclosePrefPane]:hover, radio[pane=undoclosePrefPane][selected="true"] {
+	-moz-image-region:rect(32px,96px,64px,64px);
+}
+radio[pane=advancedPrefPane] {
+	-moz-image-region:rect(0px,64px,32px,32px);
+}
+radio[pane=advancedPrefPane]:hover, radio[pane=advancedPrefPane][selected="true"] {
+	-moz-image-region:rect(32px,64px,64px,32px);
+}
+radio[pane=sessionstorePrefPane] {
+	-moz-image-region:rect(0px,128px,32px,96px);
+}
+radio[pane=sessionstorePrefPane]:hover, radio[pane=sessionstorePrefPane][selected="true"] {
+	-moz-image-region:rect(32px,128px,64px,96px);
+}
+radio[pane=loggingPrefPane] {
+	-moz-image-region:rect(0px,160px,32px,128px);
+}
+
+menulist[warn="true"]  {
+	background-color: yellow;
+	-moz-appearance: none;
+}

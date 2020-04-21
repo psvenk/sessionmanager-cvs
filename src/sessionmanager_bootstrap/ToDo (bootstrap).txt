@@ -1,0 +1,167 @@
+It's likely Session Manager won't work correctly when multiprocess features come out because add-ons won't be
+able to access the web page content.
+
+https://blog.mozilla.org/addons/2015/08/21/the-future-of-developing-firefox-add-ons/
+https://developer.mozilla.org/en-US/Add-ons/Working_with_multiprocess_Firefox
+https://wiki.mozilla.org/WebExtensions
+https://developer.mozilla.org/en-US/Firefox/Multiprocess_Firefox/Limitations_of_chrome_scripts#Compatibility_shims
+https://developer.mozilla.org/en-US/Add-ons/WebExtensions/API/windows
+
+Need to replace all of these:
+gBrowser.contentWindow;                    // null
+gBrowser.contentDocument;                  // null
+gBrowser.selectedBrowser.contentWindow;    // null
+window.content;                            // null
+content;                                   // null
+gBrowser.docShell;                         // null
+gBrowser.selectedBrowser.docShell;         // null
+window.addeventlistener                    // Doesn't work for browser windows content, but does work for the browser itself
+
+
+Things currently broken:
+
+flags argument of String.prototype.{search,match,replace} is deprecated utils.jsm:701:12
+
+------------------------------------------------------------------------------------------
+
+Conflict with Tree Style Tabs?
+
+bash console has many pages of errors after restart: broken tree detected. Conflict w. Tree Style Tabs? Both are updated.
+Works alone, possible conflict with Tree Style Tabs: Error: TypeError: this.__treestyletab__customizeDone is not a function Source File: chrome://treestyletab/content/windowHelper.js Line: 138
+
+
+Very important:
+
+1. If the Session Manager and/or undo close toolbar buttons are in the toolbar and opened and then move to customize window, they aren't removed when 
+   session manager unloadas and session manager leaks. To fix this need to re-enable Session Manager move to a toolbar and then unload again.
+	 If simply enable and disable session manager while in this state, the modules unload, but the button duplicates in the customize toolbar window.
+
+1. The Tools menu, "sessionmanager-menu" xul element leaks frequently once the Tools menu is opened.  Not sure why or how to fix this.
+
+2. I also ended up leaking sql_manager.jsm and options.xul somehow in my normal browser.  Which is odd since I didn't even have the SQL
+   database enabled.   All I had done was open the options window and look at the Undo Close options.  When I reinstalled, options.xul unleaked,
+	 but sql_manager.jsm did not.  I managed to get session_prompt.xul to leak as well when I enabled SQL manager and did a search in the load prompt.
+	 There must be something in sql_manager.jsm leaking somehow.  I think .xul files leak because of caching so that may be okay as long as they go away 
+	 on reinstall and unintall.
+
+	 
+Important:
+
+1. Window sessions tend to duplicate when shutting down Firefox or closing last window session windows and having last window trigger shutdown.
+   Could be because of safe-writes or background writes.  May only be an issue on (slow) work PC, but can still happen.  Try using PR_SYNC file mode maybe?
+	 NOTE: I may have fixed this when I fixed the issue with the duplicate entries showing in session manager window, but keep looking for this.
+
+		For example, I had an open window session and closed the last browser window with the error console still open.  Shutdown on last window closed was 
+		set so it did shutdown processing.  I ended up with a copy of the window session with a "-1" at the end of the name.  I also see errors from #5 below.
+
+2. Upgrading or disabling/enabling restarts the idle timer processing so it kicks off again, instead of 24 hours later.  Might not want to do that.
+
+3. Find a way to dynamically load Session Manager menus (async calls to getSessions()).  Also don't let a lot of deleted sessions cause menu to be slow to load.
+
+
+	 
+Currently working on:
+
+1. Changes to preferences in Session Manager options window don't update the Firefox options window in real time and vice-versa.
+
+2. Convert 3 line header to a 1 line JSON string.  Will make it easier to parse.  Can just check for 2 lines (first line JSON) string and if not, use old read method.  
+   Converting can be done as part of caching process.  Can also save things like SM version number in session files. When switch to private/public key, store the
+	 public and private keys in the session file as a JSON object, with the private key encrypted with the user specified password.  This will allow saving without
+	 prompting for password and also allows decryption without relying on the sql file.
+
+3. Check guy's session files and see if can figure out why they don't parse.  Maybe add JSON fixer to code?
+
+4. If no tab groups, hide "Restore hidden tabs" option.  Also make sure no tabs hidden when restoring.
+	 
+5. Figure out where this error is coming from.  I've seen it when closing autosave/window sessions and when disabling add-on.  
+   Edit: I found a problem in the writefile function where it was calling a null callback function.  I fixed it so this error shouldn't occur anymore.
+
+	Sat Mar 02 2013 04:18:18
+	Error: [Exception... "'TypeError: callback is not a function' when calling method: [nsIRequestObserver::onStopRequest]"  nsresult: "0x8057001c (NS_ERROR_XPC_JS_THREW_JS_OBJECT)"  location: "native frame :: <unknown filename> :: <TOP_LEVEL> :: line 0"  data: no]
+	
+6. Closing last window and opening when prompting displays prompt that says it will restore a window session, but does not (if Firefox is set to not restore).
+   Also exists in 0.7.9.6 .
+
+7. Whatever changes I made seems to have mostly resolved the browser window displaying in the background behind the prompt in Firefox 20+.  I 
+   still see it occasionally so I need way to "freeze" opening window when prompting.  Might be able to display prompt immediately on window
+   loading.  Though this would cause it to display when it shouldn't (for example after a restart or crash).  Maybe Open session prompt 
+	 before session data available and then populate or close depending on the session data. Currently crash and session prompt can appear after window opens. 
+	 
+
+Restartless issues:
+
+1. Need to test to make sure Tab Mix Plus and Firefox's prompting on window closing or browser shutdown doesn't 
+   screw up saving sessions.   Also make SM's prompting works. 
+
+2. Don't forget to test SeaMonkey. 
+
+3. If add-on is started with logging disabled, then it is enabled get following error. Probably because of observers since I also get errors when disabling addon.
+		Fri Feb 22 2013 17:33:26
+		Error: ReferenceError: logger is not defined
+		Source file: chrome://sessionmanager/content/modules/logger.jsm
+		Line: 46
+
+		
+General issues:
+
+1. PreferenceManager References SessionIo and Utils and both reference PreferenceManager.  Need to break up Utils so PM doesn't call Utils.
+   PM's call to SessionIo seems to work, but will likely prevents garbage collection so need to figure out a way to prevent that as well.
+	 Basically modules should load in a tree like structure.  Lower tree levels should not reference upper levels or other branches.
+	 Should make a map of all the functions in all files and what functions call what other functions.  This would make things easier to organize.
+	 For Utils, anything that references another module should be moved elsewhere
+	 
+	 The alternative would be to use https://developer.mozilla.org/en-US/docs/Components.utils.getWeakReference to get a weak reference to temporarily
+	 access objects.  Actually most references should be week to allow objects to be destroyed even if a module or component holds a reference to it.
+	 
+2. Session Export addon doesn't currently work.  Should just pull it into my add-on.
+
+3. Use https://developer.mozilla.org/en-US/docs/JavaScript_OS.File if available for read/writes/directory listings.
+
+4. SessionIo isn't available after quit-application or on window unload (after quit-application) so moved the call to shutdown to quit-application-granted 
+   and specifically call unload in windows on quit-application-granted.
+	 
+5. One time when shuting down browser with a window session open, it saved the window session with a new filename, leaving the old one.  Could be a safe file write problem.
+
+6. When set to treat closing last window as shutting down and "x" out of last window, the window close function fires before the quit-application-granted,
+   thus causing shutdown to run.  If sanitizing shutdown shouldn't run, but don't do sanitizing until quit granted.  As such, end up with errors trying
+	 to delete folder.  It usually fails.  I currently add these to a delete later list and delete them when the write completes, but this could miss some.
+
+7. Make it so don't need to store "window" in our bootstrap code.  Can get "window" from events (event.view). Can also get window from ownerDocument.defaultView.
+
+	 
+On the fly disable/enable issues:
+
+1. Need to remove all modules, observers and overlays on disable/uninstall.
+2. Need to re-add all observers and overlays on enable/install.
+3. Since can be enabled at any time, can't depend on startup up observers to kick off processing
+4. Need to remove overlays from Options window (since when instantApply preference set window can stay open).
+5. Not sure what will happen if add-on is disabled when last window was closed, but browser hasn't shut down.  Test this.
+
+
+Notes:
+
+1. The logging call from the observe: function in session_manager.jsm and options.js causes exceptions to be thrown when enabling logging
+   because it calls log() while the log_backend.jsm file is being loaded, but before it actually loads.  It also throws when being unloaded, 
+	 from the callback function to NetUtil.asyncCopy, since the callback function no longer exists.  Neither is "bad" and checking for these cases 
+	 would add overhead so just ignore them.
+	 
+2. I added a watch for chrome://browser/content/hiddenWindow.xul (Services.appShell.hiddenDOMWindow), but I'm not sure it's working since I can't test under Windows.
+   Might need to use Services.appShell.hiddenWindow instead.
+
+3. Upgrading or disabling/enabling restarts the idle timer processing so it kicks off again, instead of 24 hours later.  Might not want to do that, but it's okay.
+	 
+4. OS X does not fire "click" events for menu items.  Only fires "command".
+	 
+	 
+Odd things I've seen:	 
+
+1. Sometimes window sessions aren't restored when unselect tab in another window.  Not sure what triggers it exactly.
+
+2. A few times when playing with window sessions and closing windows, then disabling add-on, data.jsm never unloaded.  Not sure why.
+
+3. Sometimes the WebProgress throws when removing the onStateChange event handler:
+
+		Session Manager: Mon, 11 Mar 2013 16:05:34 GMT: EXCEPTION - {aWebProgress.chromeEventHandler is undefined} 
+		exports.loadBrowserWindow/Private.tabbrowserProgressListener.onStateChange@resource://gre/modules/XPIProvider.jsm -> jar:file:///C:/Documents%20and%20Settings/mkraft/Application%20Data/Mozilla/Firefox/Profiles/z9va2nqi.Default%20User/extensions/%7B1280606b-2510-4fe0-97ef-9b5a22eafe30%7D.xpi!/bootstrap.js -> jar:file:///C:/Documents%20and%20Settings/mkraft/Application%20Data/Mozilla/Firefox/Profiles/z9va2nqi.Default%20User/extensions/%7B1280606b-2510-4fe0-97ef-9b5a22eafe30%7D.xpi!/packages/browserWindowOverlay.js:254
+
+4. Only Menuitems will trigger "command" elements that use an event listener.  Everything works with "oncommand".  Click event listener does work.

@@ -1,0 +1,44 @@
+<!ENTITY session_open.label "Abrir">
+<!ENTITY session_open.accesskey "A">
+<!ENTITY session_open.tooltip "Abrir sessão selecionada">
+<!ENTITY session_open_overwrite.label "Abrir (sobrescrever)">
+<!ENTITY session_open_overwrite.accesskey "e">
+<!ENTITY session_open_overwrite.tooltip "Abrir sessão selecionada?">
+<!ENTITY session_open_newwindow.label "Abrir (nova janela)">
+<!ENTITY session_open_newwindow.accesskey "n">
+<!ENTITY session_open_newwindow.tooltip "Abrir sessão selecionada?">
+<!ENTITY session_open_append.label "Abrir (anexar)">
+<!ENTITY session_open_append.accesskey "a">
+<!ENTITY session_open_append.tooltip "Abrir sessão selecionada">
+<!ENTITY session_rename.label "Renomear...">
+<!ENTITY session_rename.accesskey "R">
+<!ENTITY session_rename.tooltip "Renomear sessão selecionada">
+<!ENTITY session_rename_ok.label "Renomear">
+<!ENTITY session_delete.label "Apagar">
+<!ENTITY session_delete.accesskey "g">
+<!ENTITY session_delete.tooltip "Apagar sessão selecionada">
+<!ENTITY session_save.label "Salvar...">
+<!ENTITY session_save.accesskey "S">
+<!ENTITY session_save.tooltip "Salvar a janela atual em uma nova sessão">
+<!ENTITY session_save_ok.label "Salvar">
+<!ENTITY session_save_w.label "Salvar Janela...">
+<!ENTITY session_save_w.accesskey "J">
+<!ENTITY session_save_w.tooltip "Salvar janela atual em uma nova sessão">
+<!ENTITY session_save_w_ok.label "Salvar Janela">
+<!ENTITY session_open_folder.label "Abrir Pasta">
+<!ENTITY session_open_folder.accesskey "P">
+<!ENTITY session_open_folder.tooltip "Abrir pasta do Session Manager">
+<!ENTITY column_autosave.label "M">
+<!ENTITY column_autosave.tooltip "Sessão de salvamento automático">
+<!ENTITY column_windows.label "J">
+<!ENTITY column_windows.tooltip "Janelas">
+<!ENTITY column_tabs.label "A">
+<!ENTITY column_tabs.tooltip "Abas">
+<!ENTITY column_time.label "Tempo">
+<!ENTITY column_time.tooltip "Rótulo de Tempo">
+<!ENTITY column_name.label "Nome">
+<!ENTITY cancel.label "Cancelar">
+<!ENTITY done.label "Pronto">
+<!ENTITY done.tooltip "Fechar Janela do Explorador de Sessões">
+<!ENTITY session_load.label "Carregar">
+<!ENTITY session_load.accesskey "C">

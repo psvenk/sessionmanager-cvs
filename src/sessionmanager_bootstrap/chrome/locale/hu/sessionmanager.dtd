@@ -1,0 +1,106 @@
+<!ENTITY sessionManager "Session Manager">
+<!ENTITY toolsmenu.accesskey "M">
+<!ENTITY save.label "Munkamenet mentése...">
+<!ENTITY save.accesskey "m">
+<!ENTITY saveOne.label "Jelenlegi ablak mentése...">
+<!ENTITY saveOne.accesskey "a">
+<!ENTITY closeSession.label "Jelenlegi munkamenet mentése és bezárása">
+<!ENTITY closeSession.accesskey "s">
+<!ENTITY abandonSession.label "Jelenlegi munkamenet elhagyása">
+<!ENTITY abandonSession.accesskey "h">
+<!ENTITY rename.label "Munkamenet átnevezése...">
+<!ENTITY rename.accesskey "n">
+<!ENTITY remove.label "Munkamenet törlése...">
+<!ENTITY remove.accesskey "k">
+<!ENTITY openFolder.label "Munkamenetek mappájának megnyitása">
+<!ENTITY openFolder.accesskey "e">
+<!ENTITY options.label "&sessionManager; - beállítások">
+<!ENTITY options.accesskey "b">
+<!ENTITY undoClosed.label "Bezárt lapok és ablakok megnyitása...">
+<!ENTITY undoClosed.accesskey "g">
+<!ENTITY closedWindows "Bezárt ablakok:">
+<!ENTITY closedTabs "Bezárt lapok:">
+<!ENTITY clearList.label "Listák törlése...">
+<!ENTITY clearList.accesskey "L">
+<!ENTITY toolbar.tooltip "Jelenlegi munkamenet mentése...">
+<!ENTITY toolbar.undo.label "Bezárás visszavonása">
+<!ENTITY toolbar.undo.tooltip "Legutoljára bezárt lapok megnyitása">
+<!ENTITY prompt.ignore.label "Ez a párbeszédablak ne jelenjen meg többet">
+<!ENTITY prompt.autosave.label "Automatikus mentés mostantól">
+<!ENTITY prompt.tabprompt.label "Lapok visszaállításának megerősítése">
+<!ENTITY load_replace.label "Betöltés (jelenlegi munkamenet cseréje)">
+<!ENTITY load_replace.accesskey "B">
+<!ENTITY load_append.label "Betöltés (hozzáfűzés a jelenlegi munkamenethez)">
+<!ENTITY load_append.accesskey "h">
+<!ENTITY replace_all.label "Munkamenet cseréje a jelenlegivel">
+<!ENTITY replace_all.accesskey "j">
+<!ENTITY replace_window.label "Munkamenet cseréje a jelenlegi ablakkal">
+<!ENTITY replace_window.accesskey "a">
+<!ENTITY remove_one.label "Munkamenet törlése...">
+<!ENTITY set_startup.label "Beállítás kezdő munkamenetként">
+<!ENTITY set_startup.accesskey "k">
+<!ENTITY openSessionManagerSidebar.commandkey "S">
+<!ENTITY session_name.label "Név">
+<!ENTITY session_windows.label "Ablakok">
+<!ENTITY session_tabs.label "Lapok">
+<!ENTITY backup_sessions.label "Munkamenetek biztonsági mentése">
+<!ENTITY backup_sessions.accesskey "u">
+<!ENTITY remove_item.label "Elem törlése">
+<!ENTITY remove_item.accesskey "t">
+<!ENTITY session_group.label "Csoport">
+<!ENTITY rename_group.label "Csoport átnevezése...">
+<!ENTITY remove_group.label "Csoport törlése...">
+<!ENTITY change_group.label "Csoport módosítása...">
+<!ENTITY change_group.accesskey "s">
+<!ENTITY group.label "Munkamenet(ek) csoportosítása...">
+<!ENTITY group.accesskey "c">
+<!ENTITY toolbar.menu.tooltip "Munkamenet-kezelő megnyitása">
+<!ENTITY toolbar.undo.menu.tooltip "Legutoljára bezárt lapok és fül menü megnyitása">
+<!ENTITY prompt.save_every1.label "Mentés minden">
+<!ENTITY prompt.save_every2.label "percben (letiltáshoz hagyja üresen)">
+<!ENTITY winTabTree.restoreHeader "Visszaállítás">
+<!ENTITY winTabTree.listHeader "Ablakok és lapok">
+<!--    -->
+<!ENTITY winTabTree.windowLabel "Ablak &#37;S">
+<!ENTITY load.label "Munkamenet betöltése...">
+<!ENTITY load.accesskey "l">
+<!ENTITY prompt.append.label "Hozzáfűzés a jelenlegi munkamenethez">
+<!ENTITY prompt.replace.label "Jelenlegi munkamenet felülírása">
+<!ENTITY tab_open_click_note.label "Megjegyzés: az aktuális ablakban nyílik meg, ha a bejegyzésre kattintás közben a ALT billentyű le van nyomva.">
+<!ENTITY select_all.label "Mindent kijelöl">
+<!ENTITY select_none.label "Kijelölés megszüntetése">
+<!ENTITY toggle_selection.label "Kijelölés megfordítása">
+<!ENTITY winTabTree.urlHeader "Hely">
+<!ENTITY prompt.append_window.label "Hozzácsatolás a jelenlegi ablakhoz">
+<!ENTITY session_explorer.label "Munkamenet intéző">
+<!ENTITY session_explorer.accesskey "z">
+<!ENTITY closeWindowSession.label "Munkamenet ablak mentése és bezárása">
+<!ENTITY closeWindowSession.accesskey "s">
+<!ENTITY abandonWindowSession.label "Munkamenet ablak elvetése">
+<!ENTITY abandonWindowSession.accesskey "v">
+<!ENTITY load_append_window.label "Betöltés (hozzáadás a jelenlegi ablakhoz)">
+<!ENTITY load_append_window.accesskey "B">
+<!ENTITY leave_window_open.label "Az ablak maradjon nyitva">
+<!ENTITY clearTabList.label "A 'Bezárt' lapok listájának törlése...">
+<!ENTITY clearTabList.accesskey "l">
+<!ENTITY clearWindowList.label "A 'Bezárt' ablakok listájának törlése...">
+<!ENTITY clearWindowList.accesskey "a">
+<!ENTITY hidden.label "Rejtett">
+<!ENTITY contribute.label "Közreműködők">
+<!ENTITY support.label "Kiterjesztés támogatása:">
+<!ENTITY session_group_verb.label "Csoport">
+<!ENTITY deleted_sessions.label "Törölt munkamenetek">
+<!ENTITY deleted_sessions.accesskey "r">
+<!ENTITY empty_trash.label "Mindegyik törölt munkamenet eltávolítása">
+<!ENTITY empty_trash.accesskey "M">
+<!ENTITY permanently_delete.label "Munkamenet végleges törlése">
+<!ENTITY permanently_delete.accesskey "v">
+<!ENTITY search.label "Keresés…">
+<!ENTITY edit.label "Munkamenet szerkesztése…">
+<!ENTITY edit.accesskey "k">
+<!ENTITY addtab.label "Lap hozzáadása a munkamenethez…">
+<!ENTITY addtab.accesskey "h">
+<!ENTITY viewcontents.label "Munkamenet tartalmának megtekintése">
+<!ENTITY viewcontents.accesskey "t">
+<!ENTITY export_to_html.label "Munkamenet tartalmának exportálása könyvjelző HTML fájlba">
+<!ENTITY export_to_html.accesskey "e">

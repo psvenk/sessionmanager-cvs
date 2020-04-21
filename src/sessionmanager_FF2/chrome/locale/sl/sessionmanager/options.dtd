@@ -1,0 +1,135 @@
+<!ENTITY options.title "&sessionManager; Možnosti">
+<!ENTITY general.caption "Splošno">
+<!ENTITY startNend.caption "Zagon &amp; Zapiranje">
+<!ENTITY resume_sess.label "Ob zagonu vedno naloži naslednjo sejo:">
+<!ENTITY backup_sess.label "Ob zapiranju">
+<!ENTITY backup_session.label0 "zavrži trenutno sejo">
+<!ENTITY backup_session.label1 "shrani trenutno sejo">
+<!ENTITY backup_session.label2 "vprašaj, če naj se trenutna seja shrani">
+<!ENTITY crashrecovery.label "Omogoči restavriranje seje po sesutju">
+<!ENTITY autosave_session.label "Avtomatsko posnemi zamenjano sejo">
+<!ENTITY restoring.caption "Restavriranje seje">
+<!ENTITY sessionList.caption "Seznam sej">
+<!ENTITY orderList.label "Uredi seje">
+<!ENTITY orderList.label1 "po abecedi">
+<!ENTITY orderList.label2 "od najstarejše do najnovejše">
+<!ENTITY orderList.label_2 "od najnovejše do najstarejše">
+<!ENTITY max_backup.label "Število shranjenih starih sej:">
+<!ENTITY undoClose.caption "Razveljavitev zapiranj">
+<!ENTITY windowsNtabs.caption "Zaprta okna &amp; zavihki">
+<!ENTITY max_closed.label "Največje zapomnjeno število zaprtih oken:">
+<!ENTITY max_tabs.label "Največje zapomnjeno število zaprtih zavihkov (na okno):">
+<!ENTITY submenu.label "Prikaži vsa zaprta okna in zavihke v podmeniju">
+<!ENTITY persistence.caption "Vztrajnost">
+<!ENTITY closed_tabs.label "Povrni seznam zaprtih zavihkov, ki so lahko ponovno odprta, za vsa okna:">
+<!ENTITY closed_tabs.label0 "nikoli">
+<!ENTITY closed_tabs.label1 "ob zagonu">
+<!ENTITY closed_tabs.label2 "vedno">
+<!ENTITY window_list.label "Ne izprazni seznama zaprtih oken ob zaprtju programa">
+<!ENTITY clear_list.label "Izprazni seznam">
+<!ENTITY advanced.caption "Napredno">
+<!ENTITY name_format.caption "Imena sej">
+<!ENTITY name_format.label "Oblika predlaganih imen sej:">
+<!ENTITY name_format.desc "Uporabi &#37;t za naslov aktivnega zavihka, &#37;d za trenutni datum and &#37;m za čas; dodatno lahko omejite dolžina naslova na # znakov: &#37;#t.">
+<!ENTITY sessionstore.caption "Shramba Sej">
+<!ENTITY service.caption "Nastavitve shrambe sej">
+<!ENTITY service.description "Tega se ne dotikaj, če nisi prepričan, kaj delaš!">
+<!ENTITY interval.label "Najmanjši interval med dvema shrenjanima stanjema (v sekundah):">
+<!ENTITY postdata.label "Največja količina podatkov POSTDATA (v bajtih; -1 za vse):">
+<!ENTITY privacy.label "Shrani občutljive podatke (obrazci, POSTDATA in piškotki) za">
+<!ENTITY privacy.level0 "vse strani">
+<!ENTITY privacy.level1 "samo nekriptirane strani">
+<!ENTITY privacy.level2 "nobeno stran">
+<!ENTITY sessiondir.caption "Lokacija shranjenih sej">
+<!ENTITY sessiondir.desc "Tu lahko povozite privzeto lokacijo shranjenih sej.">
+<!ENTITY encrypt.caption "Enkripcija">
+<!ENTITY encrypt.desc "Opozorilo: Kriptirane podatke sej lahko odpreš le v profilih, ki imajo identične key3.db datoteke. Če je nastavljeno glavno geslo, ne moreš kriptirati ali dekriptirati sej, dokler ne vpišeš tega gesla.">
+<!ENTITY encrypt.label "Kriptiraj shranjene seje in podatke o zaprtih oknih.">
+<!ENTITY change_dir.label "Spremeni">
+<!ENTITY default_dir.label "Privzeto">
+<!ENTITY sanitizer.label "Shranjene seje upravljalnika sej">
+<!ENTITY saving.caption "Shranjevanje seje">
+<!ENTITY lastpage.label "Prikaži mojo zadnjo stran">
+<!ENTITY noSession.label "Brez">
+<!ENTITY promptSession.label "Vprašaj za sejo">
+<!ENTITY selectSession.label "Izberi sejo">
+<!ENTITY cookies.label "Shrani piškotke seje">
+<!ENTITY sessionImport.caption "Uvozi seje iz...">
+<!ENTITY importSS.label "Shranjevalec sej">
+<!ENTITY apply.label "Uveljavi">
+<!ENTITY save_and_restore.caption "Shranjevanje &amp; Restavriranje">
+<!ENTITY display.caption "Prikaži">
+<!ENTITY middleclick.label "Srednji klik ponovno odpre nazadnje zaprti zavihek">
+<!ENTITY max_display.label "Največje število prikazanih sej v meniju (-1 za vse)">
+<!ENTITY hide_tools_menu.label "Ne prikaži menija upravljalnika sej v meniju Orodja">
+<!ENTITY disable_cache_fixer.label "Onemogoči možnost popravljanja predpomnilnika">
+<!ENTITY encrypted_only.label "Če enkripcija ne uspe, NE shrani nekriptiranih podatkov.">
+<!ENTITY encrypt2.desc "Opozorilo: Če je to vklopljeno in če podatki ne morejo biti kriptirani, bodo podatki izgubljeni. Enrkripcija ne bo uspela, če je potrebno glavno geslo in ne bo vpisano, zato bodi pazljiv/a, preden vklopiš to možnost.">
+<!ENTITY closed_window_list.label "Uporabi vgrajen seznam zaprtih oken.">
+<!ENTITY closed_windows.label "Restavriraj seznam zaprtih oken, ki se jih da ponovno odpreti:">
+<!ENTITY open_as_tabs.label "Odpri kot zavihek v treuntnem oknu">
+<!ENTITY last_window_shutdown.label "Smatraj zapiranje zadnjega okna kot končanje programa">
+<!ENTITY preselect_previous_session.label "Predizberi prejšnjo sejo">
+<!ENTITY logging.caption "Dnevnik">
+<!ENTITY enable_logging.label "Omogoči dnevnik">
+<!ENTITY open_log.label "Odpri dnevniško datoteko">
+<!ENTITY delete_log.label "Zbriši dnevniško datoteko">
+<!ENTITY log_level_state.label "Beleži podatke ob zapiranju">
+<!ENTITY log_level_trace.label "Beleži podatke o sledenju">
+<!ENTITY log_level_data.label "Beleži podatke o spremenljivkah">
+<!ENTITY log_level_info.label "Beleži informativna sporočila">
+<!ENTITY log_level_extra.label "Beleži posebne podatke za razhroščevanje">
+<!ENTITY reload.label "Ponovno naloži vsa okna">
+<!ENTITY overwrite.label "Zamenjaj vsa okna">
+<!ENTITY allow_saving_during_pbm.label "Dovoli shranjevanje med zasebnim brskanjem.">
+<!ENTITY allow_saving_during_pbm.label2 "Za vklop zahteva enkripcijo">
+<!ENTITY session_name_in_titlebar.label " ime aktivnih sej v naslovno vrstico">
+<!ENTITY prepend.label "Dodaj spredaj">
+<!ENTITY append.label "Dodaj zadaj">
+<!ENTITY donotadd.label "Ne dodaj">
+<!ENTITY use_browser_crash_prompt.label "Uporabi vgrajen izbirnik za restavriranje sesute seje">
+<!ENTITY reset_warnings.label "Ponastavi opozorila">
+<!ENTITY export_settings.label "Izvozi nastavitve">
+<!ENTITY import_settings.label "Uvozi nastavitve">
+<!ENTITY settingsImportExport.caption "Uvoz/Izvoz nastavitev">
+<!ENTITY keyboard.caption "Bližnjice">
+<!ENTITY keyboard.desc "Za uporabo bližnjic jih vnesite tukaj, ali pa pustite prazne. Spremembe ne vplivajo na odprta okna.">
+<!ENTITY clear_tab_list.label "Zbriši zaprte zavihke">
+<!ENTITY clear_window_list.label "Zbriši zaprta okna">
+<!ENTITY backup_on_restart.label "Shrani kopijo ob ponovnem zagonu">
+<!ENTITY keep_deleted_sessions.label "Število dni za začasno hrambo zbrisanih sej:">
+<!ENTITY concurrent.label "Število zavihkov, ki jih je možno lahko restavrirati naenkrat">
+<!ENTITY do_not_color_toolbar_button.label "Ne obarvaj orodne vrstice, ko se seja naloži">
+<!ENTITY do_not_color_toolbar_button.accesskey "N">
+<!ENTITY preserve_app_tabs.label "Ne zamenjaj zavihkov, ki so pripeti">
+<!ENTITY preserve_app_tabs.accesskey "N">
+<!ENTITY logging_to_console.label "Zapisuj dnevnik tudi v konzolo">
+<!ENTITY logging_to_console.accesskey "Z">
+<!ENTITY update_message.label "Prikaži spletno stran posodobitve po posodabljanju">
+<!ENTITY update_message.accesskey "P">
+<!ENTITY double_click_session.label "Dvojni klik na obstoječo aplikacijo prepiše sejo in">
+<!ENTITY replace_with_name_replace.label "zamenja obstoječe ime seje z vnesenim">
+<!ENTITY replace_with_name_keep.label "ohrani obstoječe ime seje">
+<!ENTITY show_icon_in_menu.label "Pokaži ikono v meniju orodja">
+<!ENTITY set_encryption_password.label "Vpišite geslo za zaščito ključa za kriptiranje sej">
+<!ENTITY set_encryption_password.accesskey "Z">
+<!ENTITY change_encryption_key_password.label "Spremenite geslo ključa za kriptiranje">
+<!ENTITY change_encryption_key_password.accesskey "g">
+<!ENTITY save_encryption_key.label "Shranite geslo ključa za kriptiranje v brskalnikovem upravljalniku gesel">
+<!ENTITY restore_hidden_tabs.label "Povrni skrite zavihke">
+<!ENTITY restore_hidden_tabs.accesskey "P">
+<!ENTITY display_menus_in_submenu.label "Prikaži izbire upravljalnika sej v podmeniju">
+<!ENTITY display_menus_in_submenu.accesskey "I">
+<!ENTITY use_sql_cache.label "Hrani osnovne podatke o sejah na disku. To omogoča iskanje znotraj sej.">
+<!ENTITY use_sql_cache.accesskey "H">
+<!ENTITY rebuild_cache.label "Osveži podatke na disku.">
+<!ENTITY rebuild_cache.accesskey "S">
+<!ENTITY log_level_error.label "Beleži napake">
+<!ENTITY log_level_error.accesskey "b">
+<!ENTITY allow_duplicates.label "Dovoli snemanje seje z istim imenom, kot je obstoječa seja.">
+<!ENTITY allow_duplicates.accesskey "D">
+<!ENTITY backup_every.label "Naredi novo varnostno kopijo seje vaskih">
+<!ENTITY backup_every.accesskey "R">
+<!ENTITY minutes "minut">
+<!ENTITY restore_on_demand.label "Restavriraj zavihke na zahtevo">
+<!ENTITY restore_on_demand.accesskey "Z">

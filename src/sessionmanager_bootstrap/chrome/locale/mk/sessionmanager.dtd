@@ -1,0 +1,81 @@
+<!ENTITY sessionManager "Менаџер на сесијата">
+<!ENTITY toolsmenu.accesskey "М">
+<!ENTITY save.label "Зачувај ја сесијата...">
+<!ENTITY save.accesskey "З">
+<!ENTITY saveOne.label "Зачувај го моменталниот прозорец...">
+<!ENTITY saveOne.accesskey "М">
+<!ENTITY closeSession.label "Зачувај и Затвори ја Моменталната Сесија">
+<!ENTITY closeSession.accesskey "ј">
+<!ENTITY abandonSession.label "Напуштија Моменталната Сесија">
+<!ENTITY abandonSession.accesskey "Н">
+<!ENTITY rename.label "Преименувај ја сесијата..">
+<!ENTITY rename.accesskey "П">
+<!ENTITY remove.label "Избриши сеси(и)ја">
+<!ENTITY remove.accesskey "И">
+<!ENTITY openFolder.label "Отвори ја Папката на Сесијата">
+<!ENTITY openFolder.accesskey "Ф">
+<!ENTITY options.label "&sessionManager; Опции">
+<!ENTITY options.accesskey "О">
+<!ENTITY undoClosed.label "Повторно отвори ги затворените...">
+<!ENTITY undoClosed.accesskey "н">
+<!ENTITY closedWindows "Затворени прозорци:">
+<!ENTITY closedTabs "Затворени јазичиња:">
+<!ENTITY clearList.label "Исчисти ја &apos;затворената&apos; листа">
+<!ENTITY clearList.accesskey "ч">
+<!ENTITY toolbar.tooltip "Зачувај ја моменталната сурферска сесија...">
+<!ENTITY toolbar.undo.label "Отповикај го затворањето">
+<!ENTITY toolbar.undo.tooltip "Повторно отвори ги неодамнешните затворени јазичиња">
+<!ENTITY prompt.ignore.label "Не го покажувај овај дијалог повторно">
+<!ENTITY prompt.autosave.label "Автоматски зачувај ја сесијата">
+<!ENTITY prompt.tabprompt.label "Прашај за обновување на јазичиња">
+<!ENTITY load_replace.label "Вчитај (Заменија Моменталната Сесија)">
+<!ENTITY load_replace.accesskey "В">
+<!ENTITY load_append.label "Вчитај (Додај Во Моменталната Сесија)">
+<!ENTITY load_append.accesskey "А">
+<!ENTITY replace_all.label "Заменија Сесијата со Моменталната Сесија">
+<!ENTITY replace_all.accesskey "З">
+<!ENTITY replace_window.label "Заменија Сесијата со Моменталниот Прозорец">
+<!ENTITY replace_window.accesskey "М">
+<!ENTITY remove_one.label "Избриши ја Сесијата">
+<!ENTITY set_startup.label "Постави ја како Почетна сесија">
+<!ENTITY set_startup.accesskey "С">
+<!ENTITY openSessionManagerSidebar.commandkey "С">
+<!ENTITY session_name.label "Име">
+<!ENTITY session_windows.label "Прозорци">
+<!ENTITY session_tabs.label "Јазичиња">
+<!ENTITY backup_sessions.label "Резервни Сесии">
+<!ENTITY backup_sessions.accesskey "Р">
+<!ENTITY remove_item.label "Избриши елемент">
+<!ENTITY remove_item.accesskey "И">
+<!ENTITY session_group.label "Група">
+<!ENTITY rename_group.label "Применувај ја Групата...">
+<!ENTITY remove_group.label "Избриши ја Групата...">
+<!ENTITY change_group.label "Промени ја Групата...">
+<!ENTITY change_group.accesskey "П">
+<!ENTITY group.label "Сесии на Група...">
+<!ENTITY group.accesskey "Г">
+<!ENTITY toolbar.menu.tooltip "Отвори го менито за управување со сесиите">
+<!ENTITY toolbar.undo.menu.tooltip "Отвори го менито за неодамна затворените прозорци и јазичиња">
+<!ENTITY prompt.save_every1.label "Зачувај секои">
+<!ENTITY prompt.save_every2.label "минути (оневозможено ако е празно)">
+<!ENTITY winTabTree.restoreHeader "Обнови">
+<!ENTITY winTabTree.listHeader "Прозорци и Јазичиња">
+<!ENTITY winTabTree.windowLabel "Прозорец &#37;S">
+<!ENTITY load.label "Вчитај ја сесијата...">
+<!ENTITY load.accesskey "В">
+<!ENTITY prompt.append.label "Додади на сесијата">
+<!ENTITY prompt.replace.label "Замени ја сесијата">
+<!ENTITY tab_open_click_note.label "Забелешка: кликањето на запис на јазичето додека го држите притиснато ALT копчето, ќе го отвори тоа јазиче во постоечкиот прозорец.">
+<!ENTITY select_all.label "Избери ги сите">
+<!ENTITY select_none.label "Избери ниедно">
+<!ENTITY toggle_selection.label "Смени го изборот">
+<!ENTITY winTabTree.urlHeader "Локација">
+<!ENTITY prompt.append_window.label "Додај во тековниот прозорец">
+<!ENTITY session_explorer.label "Истражувач на Сесијата">
+<!ENTITY session_explorer.accesskey "С">
+<!ENTITY closeWindowSession.label "Зачувај ја и Затвори ја сесијата на прозорецот">
+<!ENTITY closeWindowSession.accesskey "т">
+<!ENTITY abandonWindowSession.label "Напушти ја сесијата на прозорецот">
+<!ENTITY abandonWindowSession.accesskey "у">
+<!ENTITY load_append_window.label "Вчитај (Додај ја на тековниот прозорец)">
+<!ENTITY load_append_window.accesskey "ј">

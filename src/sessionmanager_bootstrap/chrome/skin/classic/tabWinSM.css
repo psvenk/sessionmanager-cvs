@@ -1,0 +1,5 @@
+/* Window and Tab tree - differences for SeaMonkey */
+#sessionmanager_tabTree > treechildren::-moz-tree-image(noicon),
+#sessionmanager-tabTreePanel > treechildren::-moz-tree-image(noicon) {
+  list-style-image: url("chrome://sessionmanager/skin/bookmark-item.png") !important;
+}

@@ -1,0 +1,35 @@
+<!ENTITY sessionManager       "会话管理器">
+<!ENTITY toolsmenu.accesskey  "M">
+
+<!ENTITY save.label           "保存会话...">
+<!ENTITY save.accesskey       "S">
+<!ENTITY saveOne.label        "保存当前窗口...">
+<!ENTITY saveOne.accesskey    "W">
+<!ENTITY rename.label         "重命名会话...">
+<!ENTITY rename.accesskey     "R">
+<!ENTITY remove.label         "删除会话...">
+<!ENTITY remove.accesskey     "D">
+<!ENTITY openFolder.label     "打开会话文件夹">
+<!ENTITY openFolder.accesskey "F">
+
+<!ENTITY options.label        "&sessionManager;选项">
+<!ENTITY options.accesskey    "O">
+<!ENTITY resume.label         "开启浏览器时恢复当前会话">
+<!ENTITY resume.accesskey     "m">
+<!ENTITY reload.label         "重新载入全部已恢复窗口">
+<!ENTITY reload.accesskey     "l">
+<!ENTITY overwrite.label      "替代已存在窗口">
+<!ENTITY overwrite.accesskey  "x">
+
+<!ENTITY undoClosed.label     "重新打开...">
+<!ENTITY undoClosed.accesskey "C">
+<!ENTITY closedWindows        "已关闭的窗口：">
+<!ENTITY closedTabs           "已关闭的标签页：">
+<!ENTITY clearList.label      "清除已关闭列表">
+<!ENTITY clearList.accesskey  "C">
+
+<!ENTITY toolbar.tooltip      "保存当前会话...">
+<!ENTITY toolbar.undo.label   "撤销关闭">
+<!ENTITY toolbar.undo.tooltip "重新打开最近一次关闭的标签页">
+
+<!ENTITY prompt.ignore.label  "不要再次显示此对话框">

@@ -1,0 +1,106 @@
+<!ENTITY sessionManager "Xestor de Sesións">
+<!ENTITY toolsmenu.accesskey "X">
+<!ENTITY save.label "Gardar Sesión...">
+<!ENTITY save.accesskey "G">
+<!ENTITY saveOne.label "Gardar Xanela...">
+<!ENTITY saveOne.accesskey "X">
+<!ENTITY closeSession.label "Gardar e Pechar a Sesión">
+<!ENTITY closeSession.accesskey "P">
+<!ENTITY abandonSession.label "Marchar da Sesión">
+<!ENTITY abandonSession.accesskey "a">
+<!ENTITY rename.label "Renomear Sesión...">
+<!ENTITY rename.accesskey "R">
+<!ENTITY remove.label "Borrar Sesión(s)...">
+<!ENTITY remove.accesskey "B">
+<!ENTITY openFolder.label "Abrir o Cartafol de Sesións">
+<!ENTITY openFolder.accesskey "A">
+<!ENTITY options.label "Opcións do &amp;Xestor de Sesións;">
+<!ENTITY options.accesskey "O">
+<!ENTITY undoClosed.label "Reabrir Pechadas...">
+<!ENTITY undoClosed.accesskey "P">
+<!ENTITY closedWindows "Xanelas Pechadas:">
+<!ENTITY closedTabs "Lapelas Pechadas:">
+<!ENTITY clearList.label "Borrar a Lista de &quot;Pechadas&quot;...">
+<!ENTITY clearList.accesskey "L">
+<!ENTITY toolbar.tooltip "Guardar a Sesión...">
+<!ENTITY toolbar.undo.label "Desfacer Pechar">
+<!ENTITY toolbar.undo.tooltip "Reabrir a última lapela que pechaste">
+<!ENTITY prompt.ignore.label "Non amosar este mensaxe xamais na vida">
+<!ENTITY prompt.autosave.label "Gardar a sesión automáticamente">
+<!ENTITY prompt.tabprompt.label "Confirmar a restauración de lapelas">
+<!ENTITY load_replace.label "Cargar (Substituir a sesión actual)">
+<!ENTITY load_replace.accesskey "l">
+<!ENTITY load_append.label "Cargar (Engadir á sesión actual)">
+<!ENTITY load_append.accesskey "a">
+<!ENTITY replace_all.label "Substituir Sesión pola Sesión Actual">
+<!ENTITY replace_all.accesskey "r">
+<!ENTITY replace_window.label "Substituir Sesión pola Xanela Actual">
+<!ENTITY replace_window.accesskey "S">
+<!ENTITY remove_one.label "Borrar Sesión...">
+<!ENTITY set_startup.label "Fixar como Sesión de Inicio">
+<!ENTITY set_startup.accesskey "S">
+<!ENTITY openSessionManagerSidebar.commandkey "S">
+<!ENTITY session_name.label "Nome">
+<!ENTITY session_windows.label "Xanelas">
+<!ENTITY session_tabs.label "Lapelas">
+<!ENTITY backup_sessions.label "Sesións Anteriores">
+<!ENTITY backup_sessions.accesskey "A">
+<!ENTITY remove_item.label "Borrar Elemento">
+<!ENTITY remove_item.accesskey "E">
+<!ENTITY session_group.label "Grupo">
+<!ENTITY rename_group.label "Renomear Grupo...">
+<!ENTITY remove_group.label "Borrar Grupo...">
+<!ENTITY change_group.label "Mudar Grupo...">
+<!ENTITY change_group.accesskey "M">
+<!ENTITY group.label "Grupo de sesión(s)...">
+<!ENTITY group.accesskey "G">
+<!ENTITY toolbar.menu.tooltip "Abrir o menú de xestión de sesións">
+<!ENTITY toolbar.undo.menu.tooltip "Abrir xanelas e lapelas pechadas recentemente">
+<!ENTITY prompt.save_every1.label "Gardar cada">
+<!ENTITY prompt.save_every2.label "minutos (desactivado se se deixa en branco)">
+<!ENTITY winTabTree.restoreHeader "Restaurar">
+<!ENTITY winTabTree.listHeader "Xanelas e Lapelas">
+<!-- LOCALIZATION NOTE: &#37;S will be replaced with a number. -->
+<!ENTITY winTabTree.windowLabel "Xanela &#37;S">
+<!ENTITY load.label "Cargar Sesión...">
+<!ENTITY load.accesskey "S">
+<!ENTITY prompt.append.label "Engadir á Sesión">
+<!ENTITY prompt.replace.label "Substituir Sesión">
+<!ENTITY tab_open_click_note.label "Nota: se premes nunha lapela mentres premes o botón de ALT, a lapela abrirase na xanela actual.">
+<!ENTITY select_all.label "Seleccionalo Todo">
+<!ENTITY select_none.label "Non Seleccionar Nada">
+<!ENTITY toggle_selection.label "Mudar Selección">
+<!ENTITY winTabTree.urlHeader "Ubicación">
+<!ENTITY prompt.append_window.label "Engadir á Xanela Activa">
+<!ENTITY session_explorer.label "Session Explorer">
+<!ENTITY session_explorer.accesskey "E">
+<!ENTITY closeWindowSession.label "Gardar e Pechar a Sesión">
+<!ENTITY closeWindowSession.accesskey "h">
+<!ENTITY abandonWindowSession.label "Deixar a Sesión">
+<!ENTITY abandonWindowSession.accesskey "x">
+<!ENTITY load_append_window.label "Cargar (Engadir á Xanela Activa)">
+<!ENTITY load_append_window.accesskey "i">
+<!ENTITY leave_window_open.label "Deixar esta xanela aberta">
+<!ENTITY clearTabList.label "Limpar a Lista de Lapelas &quot;Pechadas&quot;...">
+<!ENTITY clearTabList.accesskey "L">
+<!ENTITY clearWindowList.label "Limpar a Lista de Xanelas &quot;Pechadas&quot;...">
+<!ENTITY clearWindowList.accesskey "X">
+<!ENTITY hidden.label "Agochado">
+<!ENTITY contribute.label "Contribuír">
+<!ENTITY support.label "Colaboran con este complemento:">
+<!ENTITY session_group_verb.label "Grupo">
+<!ENTITY deleted_sessions.label "Sesións Borradas">
+<!ENTITY deleted_sessions.accesskey "e">
+<!ENTITY empty_trash.label "Eliminar tódalas sesións borradas">
+<!ENTITY empty_trash.accesskey "r">
+<!ENTITY permanently_delete.label "Borrar Permanentemente a Sesión">
+<!ENTITY permanently_delete.accesskey "p">
+<!ENTITY search.label "Buscar...">
+<!ENTITY edit.label "Editar Sesión...">
+<!ENTITY edit.accesskey "E">
+<!ENTITY addtab.label "Engadir lapela á sesión...">
+<!ENTITY addtab.accesskey "l">
+<!ENTITY viewcontents.label "Ver os contidos desta sesión">
+<!ENTITY viewcontents.accesskey "V">
+<!ENTITY export_to_html.label "Exportar os contidos da sesión  a un arquivo de marcadores HTML">
+<!ENTITY export_to_html.accesskey "E">

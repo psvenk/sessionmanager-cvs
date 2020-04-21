@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE prefwindow [
+<!ENTITY % sessionManagerDTD SYSTEM "chrome://sessionmanager/locale/options.dtd" >
+%sessionManagerDTD;
+]>
+
+<overlay id="SessionManager_PreferencesOverlay"
+        xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+
+	<script type="application/x-javascript" src="chrome://sessionmanager/content/preferencesOverlay.js"/>
+	<script type="application/x-javascript">
+		com.morac.SessionManagerAddon.gSessionManager_preferencesOverlay.sanitizeLabel = {
+			label: "&sanitizer.label;",
+			accesskey: "&sanitizer.accesskey;"
+		}
+	</script>
+</overlay>

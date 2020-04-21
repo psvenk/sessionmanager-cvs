@@ -1,0 +1,106 @@
+<!ENTITY sessionManager "Session Manager">
+<!ENTITY toolsmenu.accesskey "G">
+<!ENTITY save.label "Salvar Sessão...">
+<!ENTITY save.accesskey "S">
+<!ENTITY saveOne.label "Salvar Janela Atual...">
+<!ENTITY saveOne.accesskey "J">
+<!ENTITY closeSession.label "Salvar e Fechar Sessão Atual">
+<!ENTITY closeSession.accesskey "H">
+<!ENTITY abandonSession.label "Abandonar Sessão Atual">
+<!ENTITY abandonSession.accesskey "N">
+<!ENTITY rename.label "Renomear Sessão...">
+<!ENTITY rename.accesskey "R">
+<!ENTITY remove.label "Excluir Sessão(ões)...">
+<!ENTITY remove.accesskey "E">
+<!ENTITY openFolder.label "Abrir Pasta da Sessão">
+<!ENTITY openFolder.accesskey "A">
+<!ENTITY options.label "Opções do &sessionManager;">
+<!ENTITY options.accesskey "O">
+<!ENTITY undoClosed.label "Reabrir Fechadas ...">
+<!ENTITY undoClosed.accesskey "F">
+<!ENTITY closedWindows "Janelas Fechadas:">
+<!ENTITY closedTabs "Abas Fechadas:">
+<!ENTITY clearList.label "Limpar lista de 'Fechadas'...">
+<!ENTITY clearList.accesskey "L">
+<!ENTITY toolbar.tooltip "Salva a sessão de navegação atual...">
+<!ENTITY toolbar.undo.label "Desfazer Fechar">
+<!ENTITY toolbar.undo.tooltip "Reabre a aba fechada mais recentemente">
+<!ENTITY prompt.ignore.label "Não mostrar essa mensagem novamente">
+<!ENTITY prompt.autosave.label "Fazer com que essa sessão se salve automaticamente">
+<!ENTITY prompt.tabprompt.label "Lembrar abas para restaurar">
+<!ENTITY load_replace.label "Carregar (Substitui a Sessão Atual)">
+<!ENTITY load_replace.accesskey "C">
+<!ENTITY load_append.label "Carregar (Anexa à Sessão Atual)">
+<!ENTITY load_append.accesskey "A">
+<!ENTITY replace_all.label "Substituir Sessão com a Sessão Atual">
+<!ENTITY replace_all.accesskey "S">
+<!ENTITY replace_window.label "Substituir Sessão com a Janela Atual">
+<!ENTITY replace_window.accesskey "J">
+<!ENTITY remove_one.label "Apagar sessão...">
+<!ENTITY set_startup.label "Ajustar como sessão de início">
+<!ENTITY set_startup.accesskey "I">
+<!ENTITY openSessionManagerSidebar.commandkey "S">
+<!ENTITY session_name.label "Nome">
+<!ENTITY session_windows.label "Janelas">
+<!ENTITY session_tabs.label "Abas">
+<!ENTITY backup_sessions.label "Cópia de Segurança das Sessões">
+<!ENTITY backup_sessions.accesskey "C">
+<!ENTITY remove_item.label "Apagar item">
+<!ENTITY remove_item.accesskey "A">
+<!ENTITY session_group.label "Grupo">
+<!ENTITY rename_group.label "Renomear Grupo...">
+<!ENTITY remove_group.label "Apagar Grupo...">
+<!ENTITY change_group.label "Alterar Grupo...">
+<!ENTITY change_group.accesskey "A">
+<!ENTITY group.label "Sessões do Grupo...">
+<!ENTITY group.accesskey "G">
+<!ENTITY toolbar.menu.tooltip "Abrir menu de gerenciamento de sessão">
+<!ENTITY toolbar.undo.menu.tooltip "Abrir janelas recentemente fechadas e o menu de abas">
+<!ENTITY prompt.save_every1.label "Salvar a cada">
+<!ENTITY prompt.save_every2.label "minutos (se estiver em branco será desativado)">
+<!ENTITY winTabTree.restoreHeader "Restaurar">
+<!ENTITY winTabTree.listHeader "Janelas e Abas">
+<!-- LOCALIZATION NOTE: &#37;S will be replaced with a number. -->
+<!ENTITY winTabTree.windowLabel "Janela &#37;S">
+<!ENTITY load.label "Carregar Sessão:">
+<!ENTITY load.accesskey "C">
+<!ENTITY prompt.append.label "Anexar à Sessão">
+<!ENTITY prompt.replace.label "Substituir Sessão">
+<!ENTITY tab_open_click_note.label "Nota: clicando em uma entrada de aba ao segurar a tecla Alt, essa aba será aberta numa janela existente.">
+<!ENTITY select_all.label "Selecionar Todos">
+<!ENTITY select_none.label "Desmarcar todos">
+<!ENTITY toggle_selection.label "Inverter seleção">
+<!ENTITY winTabTree.urlHeader "Local">
+<!ENTITY prompt.append_window.label "Anexar a janela atual">
+<!ENTITY session_explorer.label "Explorador de Sessões">
+<!ENTITY session_explorer.accesskey "E">
+<!ENTITY closeWindowSession.label "Salvar e Fechar Janela da Sessão">
+<!ENTITY closeWindowSession.accesskey "l">
+<!ENTITY abandonWindowSession.label "Abandonar Janela da Sessão">
+<!ENTITY abandonWindowSession.accesskey "b">
+<!ENTITY load_append_window.label "Carregar (Anexa à Janela em Uso)">
+<!ENTITY load_append_window.accesskey "n">
+<!ENTITY leave_window_open.label "Mantenha esta janela aberta">
+<!ENTITY clearTabList.label "Limpar Lista de Abas 'Fechadas'">
+<!ENTITY clearTabList.accesskey "A">
+<!ENTITY clearWindowList.label "Limpar Lista de Janelas 'Encerradas'">
+<!ENTITY clearWindowList.accesskey "J">
+<!ENTITY hidden.label "Oculto">
+<!ENTITY contribute.label "Contribuir">
+<!ENTITY support.label "Apóie este complemento:">
+<!ENTITY session_group_verb.label "Grupo">
+<!ENTITY deleted_sessions.label "Sessões Apagadas">
+<!ENTITY deleted_sessions.accesskey "e">
+<!ENTITY empty_trash.label "Remover todas as sessões apagadas">
+<!ENTITY empty_trash.accesskey "R">
+<!ENTITY permanently_delete.label "Excluir permanentemente a sessão">
+<!ENTITY permanently_delete.accesskey "x">
+<!ENTITY search.label "Buscar…">
+<!ENTITY edit.label "Editar Sessão...">
+<!ENTITY edit.accesskey "E">
+<!ENTITY addtab.label "Acrescentar aba à sessão...">
+<!ENTITY addtab.accesskey "A">
+<!ENTITY viewcontents.label "Ver o conteúdo da sessão">
+<!ENTITY viewcontents.accesskey "V">
+<!ENTITY export_to_html.label "Exportar o conteúdo da sessão para o arquivo HTML de Favoritos">
+<!ENTITY export_to_html.accesskey "E">

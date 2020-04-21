@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://browser/skin/preferences/preferences.css" type="text/css"?>
+
+<!-- Firefox Specific Elements that overlay options.xul -->
+<!DOCTYPE overlay [
+	<!ENTITY % optionsDTD SYSTEM "chrome://sessionmanager/locale/options.dtd">
+	%optionsDTD;
+	<!ENTITY % mainDTD SYSTEM "chrome://browser/locale/preferences/main.dtd" >
+	%mainDTD;
+]>
+
+<overlay id="SeaMonkeyStartupPageOverlay" xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+	<menupopup id="browserStartupPage_menu">
+		<menuitem label="&startupHomePage.label;" value="1"/>
+		<menuitem label="&startupBlankPage.label;" value="0"/>
+		<menuitem label="&lastpage.label;" value="2"/>
+		<menuitem label="&startupLastSession.label;" value="3"/>
+	</menupopup>
+</overlay>

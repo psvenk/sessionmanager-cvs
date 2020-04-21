@@ -1,0 +1,60 @@
+<!ENTITY options.title         "Opties">
+<!ENTITY options.width         "56em">
+
+<!ENTITY general.caption       "Algemeen">
+<!ENTITY startNend.caption     "Opstarten &amp; Afsluiten">
+<!ENTITY resume_sess.label     "Bij opstarten altijd de volgende sessie laden:">
+<!ENTITY resume_sess.accesskey "s">
+<!ENTITY backup_sess.label     "Bij afsluiten">
+<!ENTITY backup_sess.accesskey "u">
+<!ENTITY backup_session.label0 "de huidige sessie verwerpen">
+<!ENTITY backup_session.label1 "de huidige sessie opslaan">
+<!ENTITY backup_session.label2 "vragen of de sessie opgeslagen moet worden">
+
+<!ENTITY restoring.caption     "Sessieherstelling">
+<!ENTITY sessionList.caption   "Sessielijst">
+<!ENTITY orderList.label       "Rangschik de sessielijst">
+<!ENTITY orderList.accesskey   "c">
+<!ENTITY orderList.label1      "alfabetisch">
+<!ENTITY orderList.label2      "oud naar nieuw">
+<!ENTITY orderList.label_2     "nieuw naar oud">
+<!ENTITY max_backup.label      "Aantal oudere (vastgelopen) sessie-backups te houden:">
+<!ENTITY max_backup.accesskey  "k">
+
+<!ENTITY undoClose.caption     "Sluiten ongedaan maken">
+<!ENTITY windowsNtabs.caption  "Gesloten vensters &amp; tabs">
+<!ENTITY max_closed.label      "Maximum aantal gesloten vensters te onthouden:">
+<!ENTITY max_closed.accesskey  "v">
+<!ENTITY max_tabs.label        "Maximum aantal gesloten tabs te onthouden (per venster):">
+<!ENTITY max_tabs.accesskey    "t">
+<!ENTITY submenu.label         "De gesloten venters en tabs in een submenu opsommen">
+<!ENTITY submenu.accesskey     "b">
+
+<!ENTITY persistence.caption   "Herstel na start">
+<!ENTITY closed_tabs.label     "De lijst van heropenbare tabs herstellen:">
+<!ENTITY closed_tabs.accesskey "j">
+<!ENTITY closed_tabs.label0    "nooit">
+<!ENTITY closed_tabs.label1    "bij opstarten">
+<!ENTITY closed_tabs.label2    "altijd">
+<!ENTITY window_list.label     "De lijst met gesloten vensters niet leegmaken bij afsluiten">
+<!ENTITY window_list.accesskey "g">
+<!ENTITY clear_list.label      "Lijst legen">
+<!ENTITY clear_list.accesskey  "L">
+
+<!ENTITY advanced.caption      "Geavanceerd">
+<!ENTITY name_format.caption   "Sessienamen">
+<!ENTITY name_format.label     "Formaat voor de suggesties van sessienamen:">
+<!ENTITY name_format.accesskey "F">
+<!ENTITY name_format.desc      "Gebruik &#37;t voor de titel van de actieve tab, &#37;d voor de datum en &#37;m voor de tijd. Bovendien kan de lengte van de titel gelimiteerd worden tot # karakters door bvb. &#37;#t te gebruiken.">
+
+<!ENTITY service.caption       "Instellingen voor herstel na vastlopen">
+<!ENTITY service.description   "Gelieve dit niet te veranderen, tenzij u weet wat u doet.">
+<!ENTITY interval.label        "Minimum tijdsinterval tussen het opslaan van de status (in seconden):">
+<!ENTITY interval.accesskey    "i">
+<!ENTITY postdata.label        "Maximum hoeveelheid POSTDATA op te slaan (in bytes; -1 voor alles):">
+<!ENTITY postdata.accesskey    "a">
+<!ENTITY privacy.label         "Gevoelige data (formulierdata, POSTDATA en cookies) opslaan voor">
+<!ENTITY privacy.accesskey     "d">
+<!ENTITY privacy.level0        "alle sites">
+<!ENTITY privacy.level1        "alleen onversleutelde sites">
+<!ENTITY privacy.level2        "geen enkele site">

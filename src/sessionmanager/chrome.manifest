@@ -1,0 +1,19 @@
+content	sessionmanager	chrome/content/sessionmanager/
+
+skin	sessionmanager	classic/1.0	chrome/skin/classic/sessionmanager/
+
+locale	sessionmanager	en-US	chrome/locale/en-US/sessionmanager/
+locale	sessionmanager	de-CH	chrome/locale/de-CH/sessionmanager/
+locale	sessionmanager	it-IT	chrome/locale/it-IT/sessionmanager/
+locale	sessionmanager	zh-CN	chrome/locale/zh-CN/sessionmanager/
+locale	sessionmanager	pt-BR	chrome/locale/pt-BR/sessionmanager/
+locale	sessionmanager	fr-FR	chrome/locale/fr-FR/sessionmanager/
+locale	sessionmanager	lt-LT	chrome/locale/lt-LT/sessionmanager/
+locale	sessionmanager	es-ES	chrome/locale/es-ES/sessionmanager/
+locale	sessionmanager	pl-PL	chrome/locale/pl-PL/sessionmanager/
+locale	sessionmanager	ja-JP	chrome/locale/ja-JP/sessionmanager/
+locale	sessionmanager	ru-RU	chrome/locale/ru-RU/sessionmanager/
+locale	sessionmanager	nl-NL	chrome/locale/nl-NL/sessionmanager/
+
+overlay	chrome://browser/content/browser.xul	chrome://sessionmanager/content/sessionmanager.xul
+style	chrome://global/content/customizeToolbar.xul	chrome://sessionmanager/skin/sessionmanager.css

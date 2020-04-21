@@ -1,0 +1,44 @@
+<!ENTITY session_open.label "Open">
+<!ENTITY session_open.accesskey "O">
+<!ENTITY session_open.tooltip "Open selected session">
+<!ENTITY session_open_overwrite.label "Open (overwrite)">
+<!ENTITY session_open_overwrite.accesskey "v">
+<!ENTITY session_open_overwrite.tooltip "Open selected session ???">
+<!ENTITY session_open_newwindow.label "Open (new window)">
+<!ENTITY session_open_newwindow.accesskey "n">
+<!ENTITY session_open_newwindow.tooltip "Open selected session ???">
+<!ENTITY session_open_append.label "Open (append)">
+<!ENTITY session_open_append.accesskey "a">
+<!ENTITY session_open_append.tooltip "Open selected session">
+<!ENTITY session_rename.label "Rename...">
+<!ENTITY session_rename.accesskey "R">
+<!ENTITY session_rename.tooltip "Rename selected session">
+<!ENTITY session_rename_ok.label "Rename">
+<!ENTITY session_delete.label "Delete">
+<!ENTITY session_delete.accesskey "D">
+<!ENTITY session_delete.tooltip "Delete selected session">
+<!ENTITY session_save.label "Save...">
+<!ENTITY session_save.accesskey "S">
+<!ENTITY session_save.tooltip "Save current windows to a new session">
+<!ENTITY session_save_ok.label "Save">
+<!ENTITY session_save_w.label "Save Window...">
+<!ENTITY session_save_w.accesskey "W">
+<!ENTITY session_save_w.tooltip "Save current window to a new session">
+<!ENTITY session_save_w_ok.label "Save Window">
+<!ENTITY session_open_folder.label "Open Folder">
+<!ENTITY session_open_folder.accesskey "F">
+<!ENTITY session_open_folder.tooltip "Open Session Manager folder">
+<!ENTITY column_autosave.label "A">
+<!ENTITY column_autosave.tooltip "Autosave Session">
+<!ENTITY column_windows.label "W">
+<!ENTITY column_windows.tooltip "Windows">
+<!ENTITY column_tabs.label "T">
+<!ENTITY column_tabs.tooltip "Tabs">
+<!ENTITY column_time.label "Time">
+<!ENTITY column_time.tooltip "Timestamp">
+<!ENTITY column_name.label "Name">
+<!ENTITY cancel.label "Cancel">
+<!ENTITY done.label "Done">
+<!ENTITY done.tooltip "Close Session Explorer Window">
+<!ENTITY session_load.label "Load">
+<!ENTITY session_load.accesskey "L">

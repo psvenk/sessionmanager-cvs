@@ -1,0 +1,214 @@
+<!-- MAIN CONTENT -->
+<div id="no-main-content">
+<h4 class="page-header">Session Manager Users Guide</h4>
+<span style="color:green;"><b>See <a href="history.html">Change log</a> for latest feature additions.</b></span>
+<a name="contents">
+<h5>Contents:</h5>
+<div>
+	<a href="#basics">The Basics</a><br>
+	<a href="#saving">Saving Sessions</a><br>
+	<a href="#restoring">Restoring Sessions</a><br>
+	<a href="#tabs">Restoring Tabs and Windows</a><br>
+	<a href="#grouping">Session Groups</a><br>
+	<a href="#searching">Searching</a><br>
+	<a href="#other">Other Features</a><br><br>
+	<a href="#hidden">Hidden Preferences</a><br><br>
+	<a href="options.html#contents">Options</a>
+</div>
+<hr>
+<a name="basics"></a>
+<h4>The Basics:</h5>
+<div class="paragraph">
+	<p>By default, Session Manager adds a sub-menu to the toolbar menu named "Session Manager" which contains the sessions, closed tabs and window as well as commands.  <span style="color:red;">Note that Tab Mix Plus also adds a "Session Manager" sub-menu by default so be careful not to confuse the two</span>.</p>
+	
+	<img src="images/session_menu.png"/>
+	
+	<p>In Firefox, Session Manager adds two optional toolbar items that can be manually added to any toolbar by either right clicking anywhere on the menu toolbar and choosing customize or going into the View menu, the picking Toolbars and then customize.</p>
+	<img style="margin: 1em;" src="images/cust1.png"/><img src="images/cust2.png"/>
+	
+	<p>Then drag one or both of the following to anywhere on any toolbar:</p>
+	<img style="display: block; margin-left: auto; margin-right: auto" src="images/customize.png"/>
+
+	<br><br>
+	<div class="image-list">
+		<img src="images/icon.png"><p><b>Session Manager Toolbar</b> - Main Session Manager menu.</p>
+	</div>
+	<br><img src="images/save_toolbar.png"/>
+	<img src="images/group_menu.png"/>
+	<div class="image-list">
+		<img src="images/icon2.png"><p><b>Recently Closed Button</b> - Contains recently closed tabs and windows as well as option to clear recently closed list.  When this button is displayed, the recently closed list is not displayed in the Session Manager toolbar.</p>
+	</div>
+	<br><img src="images/undo_toolbar.png"/>
+	
+</div>
+<div class="return"><p><a href="#contents">Return to contents</a></p></div>
+
+<hr>	
+<a name="saving"></a>
+<img style="margin: 1em; float: right;" src="images/save.png"/>
+<h4>Saving Sessions:</h5>
+<div class="paragraph">	
+	<p>Session can be manually saved by clicking the save button or going into the menu and choosing save session or save window. Saving the session will save all opened windows.  Saving the window will only save that window. Session are stored by default in a sessions directory in your profile directory, but this can be changed on the SessionStore options page.</p>  <p>In addition, an existing session can be replaced by the current window by right clicking on the session name and choosing "Replace Session with current window."</p>
+	
+	<p>If a session with the same name already exists, the user is given the choice to replace that session with the current session/window or append the current session/window to the existing session file.  Note that the current session cannot be appended to an active window or auto-save session.
+	
+	<p>Saved sessions include session cookies (see <a href="options.html#saving">options</a>), form data (including text boxes), POSTDATA (disabled by default), open tabs (including positions), closed tabs (optional, see below) and window positions and sizes. Note, by default form data, session cookies and POSTDATA are only stored on non-encrypted pages (ie: not https://).  This can be changed in the SessionStore options page to enable it for encrypted pages or disable it altogether. In addition, the default is that POSTDATA is never stored since storing it can cause the problems <a href="http://kb.mozillazine.org/Browser.sessionstore.postdata">mentioned here</a>, namely that it can cause forms (emails, online payments, files, etc) to be resubmitted when loading sessions.  If you are careful with where you save sessions, you can enable storing it in the SessionStore options page.</p>
+	
+	<p>There is an option to have Session Manager automatically back up your current browsing session at browser shutdown, ask you if you want to save or never save.  By default it backs up the ten previous browsing sessions and crashes (deleting older ones).  This can be changed in the <a href="options.html#startup">Startup and Shutdown options</a> on the General Options page.  Old sessions are only removed on browser shutdown.  Restarting or recovering from a crash will not remove old sessions.  <b>Warning,</b> the backup is made when the browser actually shut downs, so if you close the browser by "X"ing out of all the windows, only the last window will be saved.  If you want to save the last session, use the File->Exit command or better yet manually save it or use the autosave feature.</p>
+	
+	<p><b>"Autosave" sessions</b> - When a session is saved, there is now an option to make it an auto-save session, as well as specify how often the session should save itself. These sessions remain active when loaded and can then be closed to save them back to the same session. An "Autosave" session will be saved when any of the following occurs:</p>
+
+	<ul>
+		<li>The user chooses the save and close menu option
+		<li>The user shuts down the browser (file->exit)
+		<li>The browser crashes and the user chooses a different session (only when crash recovery is enabled)
+		<li>The user loads a different session, replacing the existing one.
+		<li>Periodically if the session was saved as a periodic autosave session.
+	</ul>
+
+	<p>To abandon and "autosave" session and prevent it from automatically being saved, choose the abandon menu entry.</p>
+	<p>If an "autosave" session is open and the loads a different session into a new window, that session will be appended to the current "autosave" session.  In other words, the "autosave" session will remain open.
+
+	<p><b>Window sessions</b> - When a window is saved, there is now an option to make it an auto-save window session, as well as specify how often the session should save itself. These sessions remain active when loaded and can then be closed to save them back to the same session. Unlike "autosave" browser sessions, there can be multiple window sessions active at any one time, but only one window session is allowed per window.  Both "autosave" and window sessions can be active at the same time.  A window session will be saved when any of the following occurs:</p>
+
+	<ul>
+		<li>The user chooses the save and close menu option
+		<li>The user closes the window
+		<li>The user shuts down the browser (file->exit)
+		<li>The user loads a different session into the window, replacing the existing one.
+		<li>Periodically if the session was saved as a periodic window session.
+	</ul>
+
+	<p>To abandon and "autosave" session and prevent it from automatically being saved, choose the abandon menu entry.</p>
+	<p style="color:red;">Note that any active window sessions will be lost on a crash if the user chooses not to restore the current browser session from the resume session prompt.  The current session itself will be saved, but the window sessions won't be updated and will remain as they were when last saved. So if you have active window sessions that you want to save, choose to restore the current session on a crash.</p>
+	
+	<p>Note: That when in private browsing mode, the ability to save sessions is disabled unless both the <a href="http://sessionmanager.mozdev.org/options.html#saving">option to allow this</a> and <a href="http://sessionmanager.mozdev.org/options.html#advanced">encryption</a> are enabled.  A backup session will be created before entering private browsing mode, unless the browser was already in private browsing mode when the browser started.
+	
+</div>
+<div class="return"><p><a href="#contents">Return to contents</a></p></div>
+
+<hr>
+<a name="restoring"></a>
+<img style="margin: 1em; float: right;" src="images/load.png"/>
+<h4>Restoring Sessions</h4>
+<div class="paragraph">	
+	<p>Session can be restored by going into the menu and choosing the session name to restore, by opening the "Load Session..." menu and choosing the session to load, by specifying the session file as a command line parameter when running the browser, by "opening" .session files from explorer (or other O/S equivalent) as long as .session files are associated with the browser. When a session is restored, the tabs are loaded from the session file.  There is an option to reload the page when the session is restored on the General Options page.  Checking this will cause the browser to get the most up to date version from the web site.</p>
+	
+	<p>There are a number of ways a session can be restored depending on the chosen options and on what keys are held down while clicking. Key presses will always override the options.  There are three different restoration options.</p>
+	<ul>
+		<li><p><b>Replace current session</b> - The chosen session will replace the current browser session.  Any open windows will be lost.  This is the default setting.  This will occur if the "Replace Existing Windows" option is checked, if the user holds down CTRL/Command+SHIFT while clicking on the session name or if the user right clicks on a session and selects "Load (Replace Current Session)".  If an "auto-save" session is currently open it will be saved and closed.  If there is no open "auto-save" session, then the current session will be backed up to the "last replaced" browsing session.</p>
+		<li><p><b>Preserve current session</b> - The chosen session will be opened and the already opened windows will be preserved.  This will occur if the "Replace Existing Windows" option is not checked, if the user middle clicks on the session name, if the user holds down the SHIFT key while left clicking on the session name or if the user right clicks on a session and selects "Load (Append to Current Session".  This has no effect on any opened "auto-save" sessions.</p>
+		<li><p><b>Append to current window</b> - The chosen session will be added to the current window.  In other words every tab in every window in the saved session will be added to the current window.  This only occurs if the user holds down the CTRL or Command key while click on the session name. This has no effect on any opened "auto-save" sessions.</p>
+	</ul>
+	<p>There is another option that relates to save and restoring sessions.  The "Restore list of reopen-able closed tabs..." persistence option in the <a href="options.html#undo">Undo Options</a> tells Session Manager what you want it to do with closed tabs in sessions.</p>
+	<p style="color:red;">Note that if Tab Mix Plus's Single Window mode is enabled, then Session Manager will always restore into a single window.  The only two options at that point are to overwrite the existing tabs (replace) or append to the existing tabs (preserve or append).</p>
+
+	<p><b>Loading certain tabs in a session</b> - If the user clicks the "Load Session..." menu item, a session prompt window will open which not only allows the user to choose which session to load, but which windows and tabs in that session to load.  Also ALT clicking on a tab name in that window will open that tab in the existing window and ALT clicking on a window folder will open all the tabs in that window into a new window.  Loading specific tabs/window will not work in the Session Prompt displayed at browser startup.</p> 
+	
+	<p><b>Last Replaced session</b> - Whenever a "Replace current session" restore is done, if the current session is not an "autosave" session, Session Manager will back up the current browser session to the "Last Replaced" session file before the restore is done. The "Last Replaced" session is basically an "undo" command which will undo the last session restore.  The "Last Replaced" session will get overwritten on any subsequent restores, so if you load a bunch of sessions and then realized you wanted something 2 or 3 loads ago you are SOL. This session is automatically deleted when the browser is shutdown. This is enabled by default, but can be disabled in the <a href="options.html#saving">Saving and Restoring</a> General options page under Session Restoring.</p> 
+		
+	<p>Additional information:</p>
+	<ul>
+		<li>The total number of windows and tabs are now listed after the session name in the following format: (windows/tabs).
+		<li>The last saved session is colored <span style="color:blue;">blue</span>.
+		<li>Auto-save sessions are <b>bold</b>
+		<li>Open Auto-save sessions are <span style="color:gray;">disabled (gray)</span>.
+		<li>Existing app tabs are normally overwritten, but there is <a href="options.html#saving">an option</a> to not do so.
+	</ul>
+</div>
+<div class="return"><p><a href="#contents">Return to contents</a></p></div>
+
+<hr>
+<a name="tabs"></a>
+<h4>Restoring Tabs and Windows</h4>
+<div class="paragraph">	
+	<p><b>Restoring Closed Tabs</b> - By default, Firefox saves tabs when they are closed.  The number of windows saved (default is 10) is customizable in the <a href="options.html#undo">Undo Close options</a>.  The closed tabs can be remembered from browser session to browser session (see the <a href="options.html#undo">Undo Close options</a>).  To restore a closed tab click its name in the recently closed button menu or if that is not visible from the session manager menu. To restore the last closed tab click the reopen closed button (if visible).  You can also use the default Firefox keyboard shortcut of Ctrl/Command+Shift+T to restore the last closed tab or middle click the tab bar (see <a href="options.html#undo">options</a>). To remove an item from the closed tab list either right click the item and select "Delete" or CTRL/Command right click the item.  The closed tab list can be cleared, by selecting the clear list option.</p>
+
+	<p><strong>Note:</strong> the option to open the last closed tab by middle-clicking on the tab bar is disabled if <a href="https://addons.mozilla.org/firefox/addon/1122">Tab Mix Plus</a> or <a href="https://addons.mozilla.org/firefox/addon/260">Tab Clicking Options</a> is installed since they allow middle click functionality to be customized.</p>
+		
+	<p><b>Restoring Closed Windows</b> - Prior to Firefox 3.5, closed windows were not saved by the browser.  As such Session Manager maintained it's own closed window list.  In Firefox 3.5 and above, Firefox maintains it's own closed window list as a part of the browser session data.  As such the user has a choice to either use Session Manager's closed window list or the browser's.  The main difference between the two is that Session Manager does not saved closed window as part of the session data.  Session Manager keeps it's closed window list separate from the session files which is not affected by loading sessions.  Since the browser saves it's closed window list as part of the browser session, the closed windows will be saved into the sessions files and overwriting when loading sessions.  This also means that when using the browser's closed window list, it will be blank upon starting the browser unless the previous session is loaded.  See the <a href="options.html#undo">Undo Close options</a> for information on the settings that affect saving and restoring closed windows.  
+	To restore a closed window, click on its name in the recently closed button menu or if that is not visible in the session manager menu.  The options and key presses that apply to restoring sessions, also apply when opening closed windows (ie: CTRL or Command will append a closed window).  To restore the last closed window shift-click the reopen closed button (if visible).  To remove an item from the closed tab list either right click the item and select "Delete" or CTRL/Command right click the item.  The closed window list can be cleared, by selecting the clear list option.</p>
+
+</div>
+<div class="return"><p><a href="#contents">Return to contents</a></p></div>
+
+<hr>
+<a name="grouping"></a>
+<img style="margin: 1em; float: right;" src="images/group.png"/>
+<h4>Session Groups</h4>
+<div class="paragraph">
+	<p>Sessions can be grouped so that all sessions in the same group will display in a submenu in the Sesssion Manager menu.  Backup sessions created by Session Manager will always appear in their own group.  Any other sessions can be grouped any way the user desires.</p>	
+	
+	<p><b>Adding Session from a Group</b> - There are two ways to add session(s) to a group.  The first method is to choose the "Group Session(s)" menu entry from the Session Manager menu and then select which sessions you want to group and then either choose and existing group to add them to or type in the name of a new group that you want to add them to.  The second method is to right click on the session name in the Session Manager menu and choose "Change Groups..." and then type in the group name.</p>
+	
+	<p><b>Removing Session(s) from a Group</b> - The process for removing session(s) from a group is identical to adding session(s) to a group.  The only difference is to leave the group name blank.</p>
+	
+	<p><b>Renaming a Group</b> - To change the group name for all sessions in a group, right click on the group's menu and choose "Rename Group" and then type in the new group name.</p>
+	
+	<p><b>Deleting all sessions in a Group</b> - If you wish to delete all sessions within a group, right click on the group's menu and choose "Delete Group" and confirm that you want to delete all the sessions in the group.  <span style="color:red; font-weight: bolder;">Warning, this will permanently delete all the sessions in the group</span>.</p>
+	
+	<p><strong>Note:</strong> The backup group is unique in that it can only contain sessions backed up by Session Manager.  User created sessions cannot be placed in the backup group and the backup group cannot be renamed or deleted.  If the user renames a backup session it will become a user session and will be removed from the backup sesssions group.</p>
+	
+</div>
+<div class="return"><p><a href="#contents">Return to contents</a></p></div>
+
+<hr>
+<a name="searching"></a>
+<h4>Searching</h4>
+<div class="paragraph">	
+	<p>Session can be searched for in any of the Session Manager window mode (save, load, group, etc).  By default, searching treats entered text as a case insensitive <a href="http://en.wikipedia.org/wiki/Regular_expression">regular expressions</a> and will search session names and group names.  If <a href="options.html#advanced">the option to cache session data to disk</a> is enabled, searching will also search tab titles and urls.  If the search can't be parsed as a regular expression, it is then treated as normal text.  To perform a case sensitive search, surround the search term with quotes.  Similar to keyword filters in <a href="http://kb.mozillazine.org/Location_Bar_Search">Firefox's location bar</a>, Session Manager supports filtering the results of the search as follows (note the keyword uses the same keyword that Firefox uses, the defaults are listed below):</p>
+	<ul>
+	<li>* = Only search for session names</li>
+	<li>+ = Only search for session group names</li>
+	<li># = Only search for tab titles in sessions</li>
+	<li>@ = Only search for tab urls in sessions</li>
+	<li>^ = Only Search for tab titles and urls in tab history data.  This does not search active tabs, only tab history.  Using this key shortcut is the only way to search tab history as it is not searched b default.</li>
+	</ul>
+</div>
+<div class="return"><p><a href="#contents">Return to contents</a></p></div>
+
+<hr>
+<a name="other"></a>
+<h4>Other Features</h4>
+<div class="paragraph">	
+	<p><b>Encryption</b> - Session Manager can now encrypt the session data stored in session files as well as the closed window file. This feature can be enabled in the Advanced options tab. A caveat for this is that if the user has set a master password, then that password must be entered before Session Manager will be able to encrypt or decrypt data (similar to stored passwords in the browser).  If the user has not yet entered the master password for the browsing session, he/she will be prompted for the master password whenever a session is loaded or saved (including at browser startup and shutdown) or a window is closed or opened.  If the user cancels this prompt when loading a session or reopening a closed window, the operator will fail.  If the user cancel the prompt when saving a session or closing a window, then the saved data will <b>not</b> be encrypted as long as the force encryption setting is not set.  If it is set, nothing will be saved.  In all cases Session Manager will throw up a warning, so it's best just to enter the master password when prompted.  Encrypted sessions are tied to the key3.db file in the user's profile.  If this file is deleted or replaced, then encrypted sessions will be lost so it's a good idea to also back up this file when backing up session files.</p>
+	
+	<p><b>Crash Recovery</b> - By default, if Firefox crashes it asks you if you want to restore the last session when you start it up again.  Session Manager gives you the option to restore not only the current browsing session, but any session you want.  It will also allow you to choose which windows and tabs to restore.  Crash Recovery can be disabled on the SessionStore Option tab.  There are also some advanced setting in the SessionStore options tab which you shouldn't play with unless you know what they do. For more information about Firefox's built in crash manager, SessionStore, see the <a href="http://developer.mozilla.org/en/docs/Session_store_API">SessionStore API documentation</a>.</p>
+	
+	<p><b>Prompting to save session at shutdown</b> - Session Manager <a href="options.html#startup">can be setup</a> to prompt the user to save the current session at shutdown. There are three choices in response to this prompt:</p>
+		<ul>
+			<li><p><b>Save</b> - This will backup the current browsing session to the backup folder.</p>
+			<li><p><b>Save and restore at startup</b> - This will backup the current browsing session to the backup folder and then restore it the next time the browser starts.  Choosing this will temporarily override the current startup options.  This basically works like the Firefox "Save and Quit" prompt. <strong>This option won't display if the user selects the "Save and Quit" option from the Firefox shutdown prompt</strong></p>
+			<li><p><b>Don't Save</b> - This discards the current browsing session.</p>
+		</ul>
+
+	<p><b>Searching for sessions/groups</b> - The users can search for sessions and groups in the Session Management window.  Simply type any regular expression into the search box and Session Manager will search for all sessions and groups that match the regular expression.</p>
+		
+	<img style="margin: 1em; float: right;" src="images/rename.png"/>		
+	<p><b>Renaming a session</b> - A session can either be renamed by clicking on the "Rename Session" menu entry and selecting the session to rename or by right clicking on a session and choosing "Rename Session".  Then type in the new session name and click rename.</p>
+	<div class="clear"></div>
+	
+	<img style="margin: 1em; float: right;" src="images/delete.png"/>		
+	<p><b>Deleting session(s)</b> - Session(s) can be deleted either by clicking on the "Delete Session(s)" menu entry and selecting the session(s) to rename and clicking delete or by right clicking on a session and choosing "Delete Session" and confirming you want to delete the session.  Session can also be deleted using the browser's "Clear Recent History" ("Clear Private Data" in Firefox 3) menu item in the Tools menu.  Simply check the box for "Session Manager Saved Sessions".  In Firefox 3.5 and above, the user can also specify a time range.  <span style="color:red; font-weight: bolder;">WARNING: Checking the check box to clear sessions at shut down will cause Firefox to always clear the sessions when Firefox is exited.</span>.</p>
+
+	<p><b>Deleting tabs/window from an existing session</b> - Tabs and/or windows can be removed from an existing Session by clicking on the "Delete Session(s)" menu entry and then selecting a single session.  The will open the window/tab selection tree where the user can choose which tabs/windows to remove from that session.</p>
+	<div class="clear"></div>
+	
+	<p><b>Importing Sessions created by SessionSaver or Tab Mix Plus</b> - Session Manager can import sessions created by SessionSaver or Tab Mix Plus.  To do so simply click the appropriate button in the General Session Manager options.  Imported sessions will automatically be added to either a SessionSaver or Tab Mix Plus group.  Note that Tab Mix Plus 0.3.7 or greater must be installed to import sessions from Tab Mix Plus.</p>
+	
+	<p><b>Exporting Session Files</b> - To back up session files simply open the sessions folder using the Session Manager menu item and then copy the .session files to a safe location.  To restore simple copy the files back into the sessions folder. <span style="color:red; font-weight: bolder;">Note, that if the session files have been encrypted, they can only be restored to profiles that contain the same exact key3.db file</span>
+	
+	<p><b>Backing up and restoring settings</b> - Session Manager can back up and restore its settings.  This can be done in the general options window.</p>
+</div>
+<div class="return"><p><a href="#contents">Return to contents</a></p></div>
+
+<hr>
+<a name="hidden"></a>
+<h4>Hidden Preferences</h4>
+<div class="paragraph">	
+	<p><b>extensions.{1280606b-2510-4fe0-97ef-9b5a22eafe30}.no_splitmenu</b> - Set this to true to disable using the splitmenu element.  The default is false. If menus aren't showing up correctly try setting this to true and opening a new browser menu.  This has no effect in Firefox 28 and up since the splitmenu element was removed.</p>
+	<p><b>extensions.{1280606b-2510-4fe0-97ef-9b5a22eafe30}.do_not_fix_tabgroups</b> - Set this to true to prevent Session Manager from trying to correct tab groups when restoring sessions.  The default is false.</p>
+	<p><b>extensions.{1280606b-2510-4fe0-97ef-9b5a22eafe30}.max_file_write_size</b> - The block size, in MB, that Session Manager uses to write to disk.  The default is 20.  Try lowering this if you get a memory error in nsIScriptableUnicodeConverter.convertToInputStream when trying to save sessions.</p>
+	<p><b>extensions.{1280606b-2510-4fe0-97ef-9b5a22eafe30}.deleted_sessions_folder_name</b> - If set, Session Manager will use the specified string as the deleted session folder name instead of the default name.</p>
+</div>
+<div class="return"><p><a href="#contents">Return to contents</a></p></div>

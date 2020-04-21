@@ -1,0 +1,42 @@
+<!ENTITY session_open.label "Отвори">
+<!ENTITY session_open.accesskey "О">
+<!ENTITY session_open.tooltip "Отвори ја избраната сесија">
+<!ENTITY session_open_overwrite.label "Отвори (запиши врз)">
+<!ENTITY session_open_overwrite.accesskey "а">
+<!ENTITY session_open_overwrite.tooltip "Отвори ја избраната сесија???">
+<!ENTITY session_open_newwindow.label "Отвори (нов прозорец)">
+<!ENTITY session_open_newwindow.accesskey "н">
+<!ENTITY session_open_newwindow.tooltip "Отвори ја избраната сесија???">
+<!ENTITY session_open_append.label "Отвори (додај)">
+<!ENTITY session_open_append.accesskey "д">
+<!ENTITY session_open_append.tooltip "Отвори ја избраната сесија">
+<!ENTITY session_rename.label "Преименувај...">
+<!ENTITY session_rename.accesskey "П">
+<!ENTITY session_rename.tooltip "Преименувај ја избраната сесија">
+<!ENTITY session_rename_ok.label "Преименувај">
+<!ENTITY session_delete.label "Избриши">
+<!ENTITY session_delete.accesskey "И">
+<!ENTITY session_delete.tooltip "Избриши ја избраната сесија">
+<!ENTITY session_save.label "Зачувај...">
+<!ENTITY session_save.accesskey "З">
+<!ENTITY session_save.tooltip "Зачувај ги моменталните прозорци во нова сесија">
+<!ENTITY session_save_ok.label "Зачувај">
+<!ENTITY session_save_w.label "Зачувај го Прозорецот...">
+<!ENTITY session_save_w.accesskey "П">
+<!ENTITY session_save_w.tooltip "Зачувај го моменталниот прозорец во нова сесија">
+<!ENTITY session_save_w_ok.label "Зачувај го Прозорецот">
+<!ENTITY session_open_folder.label "Отвори Папка">
+<!ENTITY session_open_folder.accesskey "П">
+<!ENTITY session_open_folder.tooltip "Отвори ја папката на Менаџерот на Сесијата">
+<!ENTITY column_autosave.label "А">
+<!ENTITY column_autosave.tooltip "Автоматски зачувај ја Сесијата">
+<!ENTITY column_windows.label "П">
+<!ENTITY column_windows.tooltip "Прозорци">
+<!ENTITY column_tabs.label "Ј">
+<!ENTITY column_tabs.tooltip "Јазичиња">
+<!ENTITY column_time.label "Време">
+<!ENTITY column_time.tooltip "Временска ознака">
+<!ENTITY column_name.label "Име">
+<!ENTITY cancel.label "Откажи">
+<!ENTITY done.label "Завршено">
+<!ENTITY done.tooltip "Затвори го прозорецот на Explorer-от на Сесијата">

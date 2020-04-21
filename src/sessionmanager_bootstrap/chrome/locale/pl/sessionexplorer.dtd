@@ -1,0 +1,44 @@
+<!ENTITY session_open.label "Otwórz">
+<!ENTITY session_open.accesskey "O">
+<!ENTITY session_open.tooltip "Otwiera wybraną sesję">
+<!ENTITY session_open_overwrite.label "Otwórz (nadpisz)">
+<!ENTITY session_open_overwrite.accesskey "T">
+<!ENTITY session_open_overwrite.tooltip "Otworzyć wybraną sesję?">
+<!ENTITY session_open_newwindow.label "Otwórz (w nowym oknie)">
+<!ENTITY session_open_newwindow.accesskey "N">
+<!ENTITY session_open_newwindow.tooltip "Otworzyć wybraną sesję?">
+<!ENTITY session_open_append.label "Otwórz (dołącz)">
+<!ENTITY session_open_append.accesskey "R">
+<!ENTITY session_open_append.tooltip "Otwiera wybraną sesję">
+<!ENTITY session_rename.label "Zmień nazwę">
+<!ENTITY session_rename.accesskey "M">
+<!ENTITY session_rename.tooltip "Zmień nazwę wybranej sesji">
+<!ENTITY session_rename_ok.label "Zmień nazwę">
+<!ENTITY session_delete.label "Usuń">
+<!ENTITY session_delete.accesskey "U">
+<!ENTITY session_delete.tooltip "Usuwa wybraną sesję">
+<!ENTITY session_save.label "Zapisz…">
+<!ENTITY session_save.accesskey "Z">
+<!ENTITY session_save.tooltip "Zapisuje aktywne okno do nowej sesji">
+<!ENTITY session_save_ok.label "Zapisz">
+<!ENTITY session_save_w.label "Zapisz okno…">
+<!ENTITY session_save_w.accesskey "A">
+<!ENTITY session_save_w.tooltip "Zapisuje aktywne okno do nowej sesji">
+<!ENTITY session_save_w_ok.label "Zapisz okno">
+<!ENTITY session_open_folder.label "Otwórz folder">
+<!ENTITY session_open_folder.accesskey "D">
+<!ENTITY session_open_folder.tooltip "Otwiera folder menedżera sesji">
+<!ENTITY column_autosave.label "F">
+<!ENTITY column_autosave.tooltip "Zapisz sesję automatycznie">
+<!ENTITY column_windows.label "O">
+<!ENTITY column_windows.tooltip "Okna">
+<!ENTITY column_tabs.label "K">
+<!ENTITY column_tabs.tooltip "Karty">
+<!ENTITY column_time.label "Czas">
+<!ENTITY column_time.tooltip "Znacznik czasu">
+<!ENTITY column_name.label "Nazwa">
+<!ENTITY cancel.label "Anuluj">
+<!ENTITY done.label "Wykonano">
+<!ENTITY done.tooltip "Zamyka okno eksploratora sesji">
+<!ENTITY session_load.label "Wczytaj">
+<!ENTITY session_load.accesskey "W">

@@ -1,0 +1,105 @@
+<!ENTITY sessionManager "Менеджер Сеансів">
+<!ENTITY toolsmenu.accesskey "М">
+<!ENTITY save.label "Зберегти сеанс...">
+<!ENTITY save.accesskey "З">
+<!ENTITY saveOne.label "Зберегти поточне вікно...">
+<!ENTITY saveOne.accesskey "В">
+<!ENTITY closeSession.label "Зберегти й закрити поточний сеанс">
+<!ENTITY closeSession.accesskey "С">
+<!ENTITY abandonSession.label "Покинути поточний сеанс">
+<!ENTITY abandonSession.accesskey "П">
+<!ENTITY rename.label "Перейменувати сеанс...">
+<!ENTITY rename.accesskey "Р">
+<!ENTITY remove.label "Вилучити сеанс(и)...">
+<!ENTITY remove.accesskey "В">
+<!ENTITY openFolder.label "Відкрити теку сеансу">
+<!ENTITY openFolder.accesskey "Т">
+<!ENTITY options.label "Налаштування Менеджера Сеансів">
+<!ENTITY options.accesskey "Н">
+<!ENTITY undoClosed.label "Перевідкрити закриті...">
+<!ENTITY undoClosed.accesskey "С">
+<!ENTITY closedWindows "Закриті вікна:">
+<!ENTITY closedTabs "Закриті вкладки:">
+<!ENTITY clearList.label "Очистити список закритих...">
+<!ENTITY clearList.accesskey "С">
+<!ENTITY toolbar.tooltip "Зберегти поточний сеанс перегляду...">
+<!ENTITY toolbar.undo.label "Відмінити закриття">
+<!ENTITY toolbar.undo.tooltip "Перевідкрити нещодавно закриті вкладки">
+<!ENTITY prompt.ignore.label "Не показувати цей діалог знову">
+<!ENTITY prompt.autosave.label "Зробити це авто-збереженим сеансом">
+<!ENTITY prompt.tabprompt.label "Запит на вкладки при відновленні">
+<!ENTITY load_replace.label "Завантажити (Замінити поточний сеанс)">
+<!ENTITY load_replace.accesskey "З">
+<!ENTITY load_append.label "Завантажити (Додати до поточного сеансу)">
+<!ENTITY load_append.accesskey "Д">
+<!ENTITY replace_all.label "Замінити сеанс поточним сеансом">
+<!ENTITY replace_all.accesskey "п">
+<!ENTITY replace_window.label "Замінити сеанс поточним вікном">
+<!ENTITY replace_window.accesskey "в">
+<!ENTITY remove_one.label "Вилучити сеанс...">
+<!ENTITY set_startup.label "Встановити як сеанс для старту">
+<!ENTITY set_startup.accesskey "с">
+<!ENTITY openSessionManagerSidebar.commandkey "S">
+<!ENTITY session_name.label "Назва">
+<!ENTITY session_windows.label "Вікна">
+<!ENTITY session_tabs.label "Вкладки">
+<!ENTITY backup_sessions.label "Збережені сеанси">
+<!ENTITY backup_sessions.accesskey "б">
+<!ENTITY remove_item.label "Вилучити запис">
+<!ENTITY remove_item.accesskey "В">
+<!ENTITY session_group.label "Група">
+<!ENTITY rename_group.label "Перейменувати групу...">
+<!ENTITY remove_group.label "Вилучити групу...">
+<!ENTITY change_group.label "Змінити групу...">
+<!ENTITY change_group.accesskey "З">
+<!ENTITY group.label "Група сеансів...">
+<!ENTITY group.accesskey "Г">
+<!ENTITY toolbar.menu.tooltip "Меню керування відкритим сеансом">
+<!ENTITY toolbar.undo.menu.tooltip "Меню відкриття тільки-но закритих вікон і вкладок">
+<!ENTITY prompt.save_every1.label "Зберігати кожні">
+<!ENTITY prompt.save_every2.label "хвилин (вимкнуто якщо пусте)">
+<!ENTITY winTabTree.restoreHeader "Відновити">
+<!ENTITY winTabTree.listHeader "Вікна й вкладки">
+<!ENTITY winTabTree.windowLabel "Вікно &#37;S">
+<!ENTITY load.label "Завантажити сеанс...">
+<!ENTITY load.accesskey "а">
+<!ENTITY prompt.append.label "Додати до сеансу">
+<!ENTITY prompt.replace.label "Замістити сеанс">
+<!ENTITY tab_open_click_note.label "Зауважте: клацання по вкладці з натисненою клавішею ALT відкриє цю вкладку в існуючому вікні">
+<!ENTITY select_all.label "Виділити все">
+<!ENTITY select_none.label "Не виділяти нічого">
+<!ENTITY toggle_selection.label "Перемкнути виділення">
+<!ENTITY winTabTree.urlHeader "Розміщення">
+<!ENTITY prompt.append_window.label "Додати до поточного вікна">
+<!ENTITY session_explorer.label "Переглядач сеансів">
+<!ENTITY session_explorer.accesskey "П">
+<!ENTITY closeWindowSession.label "Зберегти й закрити вікно сеансу">
+<!ENTITY closeWindowSession.accesskey "і">
+<!ENTITY abandonWindowSession.label "Покинути вікно сеансу">
+<!ENTITY abandonWindowSession.accesskey "П">
+<!ENTITY load_append_window.label "Завантажити (Додати до поточного вікна)">
+<!ENTITY load_append_window.accesskey "З">
+<!ENTITY leave_window_open.label "Залишити це вікно відкритим">
+<!ENTITY clearTabList.label "Очистити список 'закритих' вкладок">
+<!ENTITY clearTabList.accesskey "О">
+<!ENTITY clearWindowList.label "Очистити список 'закритих' вікон">
+<!ENTITY clearWindowList.accesskey "в">
+<!ENTITY hidden.label "Приховано">
+<!ENTITY contribute.label "Внески">
+<!ENTITY support.label "Підтримати це розширення:">
+<!ENTITY session_group_verb.label "Група">
+<!ENTITY deleted_sessions.label "Вилучені сеанси">
+<!ENTITY deleted_sessions.accesskey "и">
+<!ENTITY empty_trash.label "Стерти всі вилучені сеанси">
+<!ENTITY empty_trash.accesskey "С">
+<!ENTITY permanently_delete.label "Назавжди стерти сеанс">
+<!ENTITY permanently_delete.accesskey "Н">
+<!ENTITY search.label "Пошук…">
+<!ENTITY edit.label "Редагувати сесію…">
+<!ENTITY edit.accesskey "Р">
+<!ENTITY addtab.label "Додати вкладку до сеансу…">
+<!ENTITY addtab.accesskey "Д">
+<!ENTITY viewcontents.label "Переглянути вміст сеансу">
+<!ENTITY viewcontents.accesskey "П">
+<!ENTITY export_to_html.label "Експортувати вміст сеансу до HTML файлу закладок">
+<!ENTITY export_to_html.accesskey "Е">

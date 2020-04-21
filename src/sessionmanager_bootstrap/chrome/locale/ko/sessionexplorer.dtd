@@ -1,0 +1,34 @@
+<!ENTITY session_open.label "열기">
+<!ENTITY session_open.tooltip "선택한 세션 열기">
+<!ENTITY session_open_overwrite.label "열기 (덮어쓰기)">
+<!ENTITY session_open_overwrite.accesskey "V">
+<!ENTITY session_open_overwrite.tooltip "선택한 세션을 열까요 ???">
+<!ENTITY session_open_newwindow.label "열기 (새 창)">
+<!ENTITY session_open_newwindow.accesskey "N">
+<!ENTITY session_open_newwindow.tooltip "선택한 세션을 열까요 ???">
+<!ENTITY session_open_append.label "열기 (붙여넣기)">
+<!ENTITY session_open_append.accesskey "A">
+<!ENTITY session_open_append.tooltip "선택한 세션 열기">
+<!ENTITY session_rename.label "이름 바꾸기...">
+<!ENTITY session_rename.tooltip "선택한 세션 이름 바꾸기">
+<!ENTITY session_rename_ok.label "이름 바꾸기">
+<!ENTITY session_delete.label "삭제">
+<!ENTITY session_delete.tooltip "선택한 세션 삭제">
+<!ENTITY session_save.label "저장...">
+<!ENTITY session_save.tooltip "새 세션에 현재 창 저장">
+<!ENTITY session_save_ok.label "저장">
+<!ENTITY session_save_w.label "창 저장...">
+<!ENTITY session_save_w.tooltip "현재 창을 새 세션에 저장">
+<!ENTITY session_save_w_ok.label "창 저장">
+<!ENTITY session_open_folder.label "폴더 열기">
+<!ENTITY session_open_folder.tooltip "세션 관리자 폴더 열기">
+<!ENTITY column_autosave.tooltip "세션 자동 저장">
+<!ENTITY column_windows.tooltip "창">
+<!ENTITY column_tabs.tooltip "탭">
+<!ENTITY column_time.label "시간">
+<!ENTITY column_time.tooltip "타임스탬프">
+<!ENTITY column_name.label "이름">
+<!ENTITY cancel.label "취소">
+<!ENTITY done.label "완료">
+<!ENTITY done.tooltip "세션 탐색기 창 닫기">
+<!ENTITY session_load.label "불러오기">

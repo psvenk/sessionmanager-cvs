@@ -1,0 +1,40 @@
+<!ENTITY sessionManager       "Sitzungs-Manager">
+<!ENTITY toolsmenu.accesskey  "M">
+
+<!ENTITY save.label           "Sitzung sichern...">
+<!ENTITY save.accesskey       "S">
+<!ENTITY saveOne.label        "Fenster sichern...">
+<!ENTITY saveOne.accesskey    "F">
+<!ENTITY rename.label         "Sitzung umbenennen...">
+<!ENTITY rename.accesskey     "u">
+<!ENTITY remove.label         "Sitzung(en) löschen...">
+<!ENTITY remove.accesskey     "l">
+<!ENTITY openFolder.label     "Sitzungs-Ordner öffnen">
+<!ENTITY openFolder.accesskey "O">
+
+<!ENTITY options.label        "&sessionManager; Einstellungen">
+<!ENTITY options.accesskey    "E">
+<!ENTITY resume.label         "Momentane Sitzung nach Neustart fortsetzen">
+<!ENTITY resume.accesskey     "M">
+<!ENTITY reload.label         "Alle Fenster neu laden">
+<!ENTITY reload.accesskey     "A">
+<!ENTITY overwrite.label      "Vorhandene Fenster ersetzen">
+<!ENTITY overwrite.accesskey  "V">
+
+<!ENTITY undoClosed.label     "Geschlossene Fenster/Tabs">
+<!ENTITY undoClosed.accesskey "G">
+<!ENTITY closedWindows        "Geschlossene Fenster:">
+<!ENTITY closedTabs           "Geschlossene Tabs:">
+<!ENTITY clearList.label      "'Geschlossene' Liste löschen...">
+<!ENTITY clearList.accesskey  "G">
+
+<!ENTITY toolbar.tooltip      "Sichere die momentane Surf-Sitzung...">
+<!ENTITY toolbar.undo.label   "Tab retten">
+<!ENTITY toolbar.undo.tooltip "Stelle den zuletzt geschlossenen Tab wieder her">
+
+<!ENTITY prompt.ignore.label  "Diesen Dialog nicht wieder anzeigen">
+
+<!ENTITY warningPage.title    "Tab gerettet">
+<!ENTITY warningPage.desc     "Die in diesem Tab geladene Webseite könnte einen Absturz verursacht haben">
+<!ENTITY warningPage.longDesc "Die folgenden Webseiten haben Sie in diesem Tab besucht. Sie können diese Warnung ignorieren, wenn Sie sicher sind, dass keine dieser Seiten den Absturz verursacht hat; gehen Sie andernfalls zu einer bestimmten Seite zurück oder schliessen Sie diesen Tab.">
+<!ENTITY warningPage.ignore   "Warnung ignorieren">

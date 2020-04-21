@@ -1,0 +1,72 @@
+<!ENTITY sessionManager "세션 관리자">
+<!ENTITY save.label "세션 저장하기...">
+<!ENTITY saveOne.label "현재 창만 저장하기...">
+<!ENTITY closeSession.label "현재 세션 저장하고 닫기">
+<!ENTITY abandonSession.label "현재 세션을 삭제하기">
+<!ENTITY rename.label "세션 이름 변경...">
+<!ENTITY remove.label "세션 삭제...">
+<!ENTITY openFolder.label "세션 폴더 열기">
+<!ENTITY options.label "&sessionManager; 옵션">
+<!ENTITY undoClosed.label "닫은 탭 다시 열기...">
+<!ENTITY closedWindows "닫은 창:">
+<!ENTITY closedTabs "닫은 탭:">
+<!ENTITY clearList.label "&apos;닫은&apos; 목록 비우기...">
+<!ENTITY toolbar.tooltip "현재 보고있는 세션을 저장합니다...">
+<!ENTITY toolbar.undo.label "다시 열기">
+<!ENTITY toolbar.undo.tooltip "가장 최근 닫은 탭을 다시 엽니다.">
+<!ENTITY prompt.ignore.label "이 메세지를 다시 표시하지 않기">
+<!ENTITY prompt.autosave.label "자동저장 세션으로 만들기">
+<!ENTITY prompt.tabprompt.label "복원할 탭 프롬프트">
+<!ENTITY load_replace.label "불러오기 (현재 세션 교체)">
+<!ENTITY load_append.label "불러오기 (현재 세션에 붙여넣기)">
+<!ENTITY replace_all.label "세션을 현재 세션으로 교체">
+<!ENTITY replace_window.label "세션을 현재 창으로 교체">
+<!ENTITY remove_one.label "세션 삭제...">
+<!ENTITY set_startup.label "시작 세션으로 설정">
+<!ENTITY session_name.label "이름">
+<!ENTITY session_windows.label "창">
+<!ENTITY session_tabs.label "탭">
+<!ENTITY backup_sessions.label "세션 백업">
+<!ENTITY remove_item.label "항목 삭제">
+<!ENTITY session_group.label "그룹">
+<!ENTITY rename_group.label "그룹 이름 바꾸기...">
+<!ENTITY remove_group.label "그룹 삭제...">
+<!ENTITY change_group.label "그룹 바꾸기...">
+<!ENTITY group.label "세션을 그룹으로 만들기...">
+<!ENTITY toolbar.menu.tooltip "세션 관리 메뉴 열기">
+<!ENTITY toolbar.undo.menu.tooltip "최근에 닫힌 창과 탭 메뉴를 열기">
+<!ENTITY prompt.save_every1.label "모두 저장">
+<!ENTITY prompt.save_every2.label "분 (비어있으면 비활성화)">
+<!ENTITY winTabTree.restoreHeader "복원">
+<!ENTITY winTabTree.listHeader "창과 탭">
+<!ENTITY winTabTree.windowLabel "창 &#37;S">
+<!ENTITY load.label "세션 불러오기...">
+<!ENTITY prompt.append.label "세션에 붙여넣기">
+<!ENTITY prompt.replace.label "세션 교체">
+<!ENTITY tab_open_click_note.label "주의: ALT 키를 누른 상태로 탭 항목을 클릭하면 해당 탭이 현재 창에 열리게 됩니다.">
+<!ENTITY select_all.label "모두 선택">
+<!ENTITY select_none.label "모두 선택해제">
+<!ENTITY toggle_selection.label "선택 반전">
+<!ENTITY winTabTree.urlHeader "위치">
+<!ENTITY prompt.append_window.label "현재 창에 붙여넣기">
+<!ENTITY session_explorer.label "세션 탐색기">
+<!ENTITY closeWindowSession.label "창 세션을 저정하고 닫기">
+<!ENTITY closeWindowSession.accesskey "L">
+<!ENTITY abandonWindowSession.label "창 세션을 버리기">
+<!ENTITY abandonWindowSession.accesskey "B">
+<!ENTITY load_append_window.label "불러오기 (현재 창에 붙여넣기)">
+<!ENTITY leave_window_open.label "이 창을 열린 상태로 두기">
+<!ENTITY clearTabList.label "'닫은' 탭 목록 비우기...">
+<!ENTITY clearWindowList.label "'닫은' 창 목록 비우기...">
+<!ENTITY hidden.label "숨은">
+<!ENTITY contribute.label "기부하기">
+<!ENTITY support.label "이 확장 기능을 지원해주세요:">
+<!ENTITY session_group_verb.label "그룹">
+<!ENTITY deleted_sessions.label "삭제된 세션">
+<!ENTITY empty_trash.label "삭제된 모든 세션 제거">
+<!ENTITY permanently_delete.label "세션 영구 삭제">
+<!ENTITY search.label "찾아보기…">
+<!ENTITY edit.label "세션 편집…">
+<!ENTITY addtab.label "세션에 탭 추가…">
+<!ENTITY viewcontents.label "세션 내용 보기">
+<!ENTITY export_to_html.label "북마크 HTML 파일로 세션 내용 내보내기">

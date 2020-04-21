@@ -1,0 +1,60 @@
+<!ENTITY options.title         "オプション">
+<!ENTITY options.width         "48em">
+
+<!ENTITY general.caption       "一般">
+<!ENTITY startNend.caption     "スタートアップとシャットダウン">
+<!ENTITY resume_sess.label     "起動時に常に次のセッションを読み込む">
+<!ENTITY resume_sess.accesskey "s">
+<!ENTITY backup_sess.label     "シャットダウンの時に">
+<!ENTITY backup_sess.accesskey "h">
+<!ENTITY backup_session.label0 "現在のセッションを削除する">
+<!ENTITY backup_session.label1 "現在のセッションをバックアップする">
+<!ENTITY backup_session.label2 "現在のセッションをバックアップするか確認する">
+
+<!ENTITY restoring.caption     "セッション復元">
+<!ENTITY sessionList.caption   "セッションリスト">
+<!ENTITY orderList.label       "セッションリストをオーダーする">
+<!ENTITY orderList.accesskey   "d">
+<!ENTITY orderList.label1      "アルファベット順">
+<!ENTITY orderList.label2      "新しい順">
+<!ENTITY orderList.label_2     "古い順">
+<!ENTITY max_backup.label      "バックアップする(クラッシュした)セッションの数">
+<!ENTITY max_backup.accesskey  "N">
+
+<!ENTITY undoClose.caption     "開きなおす">
+<!ENTITY windowsNtabs.caption  "閉じたウインドウとタブ">
+<!ENTITY max_closed.label      "記憶する閉じたウインドウの最大数">
+<!ENTITY max_closed.accesskey  "w">
+<!ENTITY max_tabs.label        "記憶する閉じたタブの最大数(ウインドウごとに)">
+<!ENTITY max_tabs.accesskey    "t">
+<!ENTITY submenu.label         "全ての閉じたウインドウとタブをサブメニューに表示する">
+<!ENTITY submenu.accesskey     "c">
+
+<!ENTITY persistence.caption   "保持">
+<!ENTITY closed_tabs.label     "すべてのウインドウの閉じたタブの再開可能リストを復旧する">
+<!ENTITY closed_tabs.accesskey "e">
+<!ENTITY closed_tabs.label0    "しない">
+<!ENTITY closed_tabs.label1    "スタートアップ時">
+<!ENTITY closed_tabs.label2    "いつも">
+<!ENTITY window_list.label     "シャットダウンのときに閉じたウインドウリストをクリアしない">
+<!ENTITY window_list.accesskey "o">
+<!ENTITY clear_list.label      "リストをクリアする">
+<!ENTITY clear_list.accesskey  "r">
+
+<!ENTITY advanced.caption      "上級者設定">
+<!ENTITY name_format.caption   "セッション名">
+<!ENTITY name_format.label     "セッションの提案のため名前をフォーマットしてください">
+<!ENTITY name_format.accesskey "F">
+<!ENTITY name_format.desc      "アクティブなタブのタイトルに&#37;tを使用してください。今日の日付に&#37;d、時間に&#37;mを使用してください。さらに、タイトルの長さを# characters: &#37;#tで制限することができます。">
+
+<!ENTITY service.caption       "クラッシュリカバリ設定">
+<!ENTITY service.description   "何の設定かわからない場合変更しないでください">
+<!ENTITY interval.label        "状態を保存する間隔 (秒)">
+<!ENTITY interval.accesskey    "i">
+<!ENTITY postdata.label        "格納するポストデータの最大量(バイト単位; -1 の場合はすべて)">
+<!ENTITY postdata.accesskey    "x">
+<!ENTITY privacy.label         "機密のデータを保存(フォームデータ、ポストデータ、およびクッキー)">
+<!ENTITY privacy.accesskey     "v">
+<!ENTITY privacy.level0        "すべてのサイト">
+<!ENTITY privacy.level1        "暗号化していないサイトのみ">
+<!ENTITY privacy.level2        "すべてのサイトで保存しない">

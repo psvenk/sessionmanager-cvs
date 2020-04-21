@@ -1,0 +1,34 @@
+<!ENTITY session_open.label "Avaa">
+<!ENTITY session_open.tooltip "Avaa valittu istunto">
+<!ENTITY session_open_overwrite.label "Avaa (ylikirjoita)">
+<!ENTITY session_open_overwrite.accesskey "V">
+<!ENTITY session_open_overwrite.tooltip "Avaa valittu istunto ???">
+<!ENTITY session_open_newwindow.label "Avaa (uusi ikkuna)">
+<!ENTITY session_open_newwindow.accesskey "N">
+<!ENTITY session_open_newwindow.tooltip "Avaa valittu istunto ???">
+<!ENTITY session_open_append.label "Avaa (liitä)">
+<!ENTITY session_open_append.accesskey "A">
+<!ENTITY session_open_append.tooltip "Avaa valittu istunto">
+<!ENTITY session_rename.label "Nimeä uudelleen...">
+<!ENTITY session_rename.tooltip "Nimeä uudelleen valittu istunto">
+<!ENTITY session_rename_ok.label "Nimeä uudelleen">
+<!ENTITY session_delete.label "Poista">
+<!ENTITY session_delete.tooltip "Poista valittu istunto">
+<!ENTITY session_save.label "Tallenna...">
+<!ENTITY session_save.tooltip "Tallenna nykyiset ikkunat uuteen istuntoon">
+<!ENTITY session_save_ok.label "Tallenna">
+<!ENTITY session_save_w.label "Tallenna ikkuna...">
+<!ENTITY session_save_w.tooltip "Tallenna nykyinen ikkuna uuteen istuntoon">
+<!ENTITY session_save_w_ok.label "Tallenna ikkuna">
+<!ENTITY session_open_folder.label "Avaa kansio">
+<!ENTITY session_open_folder.tooltip "Avaa Session Manager -kansio">
+<!ENTITY column_autosave.tooltip "Tallenna istunto automaattisesti">
+<!ENTITY column_windows.tooltip "Ikkunat">
+<!ENTITY column_tabs.tooltip "Välilehdet">
+<!ENTITY column_time.label "Aika">
+<!ENTITY column_time.tooltip "Aikaleima">
+<!ENTITY column_name.label "Nimi">
+<!ENTITY cancel.label "Peru">
+<!ENTITY done.label "Valmis">
+<!ENTITY done.tooltip "Sulje istuntojen selausikkuna">
+<!ENTITY session_load.label "Lataa">

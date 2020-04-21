@@ -1,0 +1,18 @@
+#sessiontree treechildren::-moz-tree-image(autosave) {
+  margin-right: 2px;
+  list-style-image: url("chrome://sessionmanager/skin/autosave.png");
+}
+
+#sessiontree treechildren::-moz-tree-cell-text(latest) {
+  color: blue;
+}
+
+#tb_btn_rename {
+  list-style-image: url("chrome://browser/skin/bookmarks/Bookmarks-toolbar.png");
+  -moz-image-region: rect(0px, 144px, 24px, 120px);
+}
+
+#tb_btn_delete {
+  list-style-image: url("chrome://browser/skin/bookmarks/Bookmarks-toolbar.png");
+  -moz-image-region: rect(0px, 168px, 24px, 144px);
+}

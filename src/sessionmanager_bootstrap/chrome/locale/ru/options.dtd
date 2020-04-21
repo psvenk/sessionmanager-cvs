@@ -1,0 +1,198 @@
+<!ENTITY options.title "Настройки Менеджера сессий">
+<!ENTITY general.caption "Основные">
+<!ENTITY startNend.caption "Запуск/Выход">
+<!ENTITY resume_sess.label "При запуске всегда загружать эту сессию:">
+<!ENTITY resume_sess.accesskey "з">
+<!ENTITY backup_sess.label "При выходе:">
+<!ENTITY backup_sess.accesskey "в">
+<!ENTITY backup_session.label0 "не учитывать текущую сессию">
+<!ENTITY backup_session.label1 "сохранить текущую сессию">
+<!ENTITY backup_session.label2 "спросить, что делать с текущей сессией">
+<!ENTITY crashrecovery.label "Включить защиту от вылетов">
+<!ENTITY crashrecovery.accesskey "В">
+<!ENTITY autosave_session.label "Автоматически сохранять замененную сессию">
+<!ENTITY autosave_session.accesskey "А">
+<!ENTITY restoring.caption "Восстановление сессий">
+<!ENTITY sessionList.caption "Список сессий">
+<!ENTITY orderList.label "Упорядочивать список сессий по:">
+<!ENTITY orderList.accesskey "У">
+<!ENTITY orderList.label1 "алфавиту">
+<!ENTITY orderList.label2 "дате, по возрастанию">
+<!ENTITY orderList.label_2 "дате, по убыванию">
+<!ENTITY max_backup.label "Количество сохраняемых сессий:">
+<!ENTITY max_backup.accesskey "К">
+<!ENTITY undoClose.caption "Отмена закрытия">
+<!ENTITY windowsNtabs.caption "Закрытые Окна и Вкладки">
+<!ENTITY max_closed.label "Максимальное количество сохраняемых закрытых окон:">
+<!ENTITY max_closed.accesskey "о">
+<!ENTITY max_tabs.label "Максимальное количество сохраняемых закрытых вкладок (на 1 окно):">
+<!ENTITY max_tabs.accesskey "в">
+<!ENTITY submenu.label "Показывать список всех закрытых окон и вкладок в подменю">
+<!ENTITY submenu.accesskey "п">
+<!ENTITY persistence.caption "Сопоставление">
+<!ENTITY closed_tabs.label "Восстанавливать список повторно открывающихся закрытых вкладок для всех окон:">
+<!ENTITY closed_tabs.accesskey "с">
+<!ENTITY closed_tabs.label0 "никогда">
+<!ENTITY closed_tabs.label1 "при запуске">
+<!ENTITY closed_tabs.label2 "всегда">
+<!ENTITY window_list.label "Не очищать список закрытых окон при выходе">
+<!ENTITY window_list.accesskey "н">
+<!ENTITY clear_list.label "Очистить список">
+<!ENTITY clear_list.accesskey "ч">
+<!ENTITY advanced.caption "Дополнительно">
+<!ENTITY name_format.caption "Имена Сессий">
+<!ENTITY name_format.label "Формат имён сессий:">
+<!ENTITY name_format.accesskey "Ф">
+<!ENTITY name_format.desc "Используйте &#37;t для заголовка текущей активной вкладки, &#37;d для сегодняшней даты и &#37;m для времени. Длина заголовка вкладки может быть ограничена # символами: &#37;#t.">
+<!ENTITY sessionstore.caption "Хранение сессий">
+<!ENTITY service.caption "Настройка хранения сессий">
+<!ENTITY service.description "Изменяйте эти настройки, только если вы полностью уверены в своих действиях:">
+<!ENTITY interval.label "Минимальный интервал между двумя сохранениями (в секундах):">
+<!ENTITY interval.accesskey "и">
+<!ENTITY postdata.label "Максимальное количество POSTDATA для сохранения (в байтах, -1 для всех):">
+<!ENTITY postdata.accesskey "P">
+<!ENTITY privacy.label "Сохранять важные данные (данные форм, POSTDATA и cookies):">
+<!ENTITY privacy.accesskey "ж">
+<!ENTITY privacy.level0 "для всех сайтов">
+<!ENTITY privacy.level1 "только для незашифрованных сайтов">
+<!ENTITY privacy.level2 "не сохранять">
+<!ENTITY sessiondir.caption "Папка сохраняемых сессий">
+<!ENTITY sessiondir.desc "Папка по умолчанию для сохраняемых сессий может быть указана здесь:">
+<!ENTITY encrypt.caption "Шифрование">
+<!ENTITY encrypt.desc "Внимание: Зашифрованные данные сессий могут быть открыты только в профилях с одинаковыми файлами key3.db. Но если установлен мастер-пароль, данные не могут быть зашифрованы или дешифрованы без его ввода.">
+<!ENTITY encrypt.label "Шифровать сохраненные сессии и закрытые окна">
+<!ENTITY encrypt.accesskey "Ш">
+<!ENTITY change_dir.label "Изменить">
+<!ENTITY change_dir.accesskey "И">
+<!ENTITY default_dir.label "Вернуть по умолчанию">
+<!ENTITY default_dir.accesskey "п">
+<!ENTITY sanitizer.label "Сохраненные сессии Session Manager">
+<!ENTITY sanitizer.accesskey "M">
+<!ENTITY saving.caption "Сохранение сессий">
+<!ENTITY lastpage.label "Показать последнюю загруженную страницу">
+<!ENTITY noSession.label "Новую">
+<!ENTITY noSession.accesskey "Н">
+<!ENTITY promptSession.label "Спрашивать">
+<!ENTITY promptSession.accesskey "С">
+<!ENTITY selectSession.label "Выбрать сессию">
+<!ENTITY selectSession.accesskey "В">
+<!ENTITY cookies.label "Сохранять сессию вместе с cookies">
+<!ENTITY cookies.accesskey "k">
+<!ENTITY sessionImport.caption "Импортировать сессии из…">
+<!ENTITY importSS.label "Session Saver">
+<!ENTITY importSS.accesskey "I">
+<!ENTITY importTMP.label "Tab Mix Plus">
+<!ENTITY importTMP.accesskey "I">
+<!ENTITY apply.label "Применить">
+<!ENTITY save_and_restore.caption "Сохранение/восстановление">
+<!ENTITY display.caption "Отображение">
+<!ENTITY middleclick.label "Средняя кнопка мыши возвращает последнюю закрытую вкладку">
+<!ENTITY middleclick.accesskey "М">
+<!ENTITY max_display.label "Предельное число сессий, показываемых в меню (-1 для показа полного списка):">
+<!ENTITY max_display.accesskey "ч">
+<!ENTITY hide_tools_menu.label "Не показывать меню менеджера сессий в меню «Инструменты»">
+<!ENTITY hide_tools_menu.accesskey "м">
+<!ENTITY disable_cache_fixer.label "Отключить сохранение данных кэша">
+<!ENTITY disable_cache_fixer.accesskey "О">
+<!ENTITY encrypted_only.label "Если процесс шифрования не был успешно завершён, НЕ сохранять незашифрованные данные.">
+<!ENTITY encrypted_only.accesskey "Н">
+<!ENTITY encrypt2.desc "Внимание: Если эта настройка включена, а данные сессии или окна не удастся зашифровать, они будут удалены без возможности восстановления. Шифрование не будет произведено, если мастер-пароль не будет введён по запросу, поэтому следует хорошо подумать, прежде чем включать эту настройку.">
+<!ENTITY closed_window_list.label "Использовать список закрытых окон браузера">
+<!ENTITY closed_window_list.accesskey "о">
+<!ENTITY closed_windows.label "Восстановить список закрытых окон:">
+<!ENTITY closed_windows.accesskey "с">
+<!ENTITY open_as_tabs.label "Открыть как вкладки в текущем окне">
+<!ENTITY open_as_tabs.accesskey "в">
+<!ENTITY last_window_shutdown.label "Считать закрытие последнего открытого окна броузера выходом из него">
+<!ENTITY last_window_shutdown.accesskey "з">
+<!ENTITY preselect_previous_session.label "Выбрать предыдущую сессию">
+<!ENTITY preselect_previous_session.accesskey "п">
+<!ENTITY logging.caption "Запись логов">
+<!ENTITY enable_logging.label "Включить запись">
+<!ENTITY enable_logging.accesskey "В">
+<!ENTITY open_log.label "Открыть файл логов">
+<!ENTITY open_log.accesskey "О">
+<!ENTITY delete_log.label "Удалить файл логов">
+<!ENTITY delete_log.accesskey "У">
+<!ENTITY log_level_state.label "Записывать статус при закрытии">
+<!ENTITY log_level_state.accesskey "с">
+<!ENTITY log_level_trace.label "Записывать данные трассировки">
+<!ENTITY log_level_trace.accesskey "д">
+<!ENTITY log_level_data.label "Записывать переменные">
+<!ENTITY log_level_data.accesskey "п">
+<!ENTITY log_level_info.label "Записывать информационные сообщения">
+<!ENTITY log_level_info.accesskey "и">
+<!ENTITY log_level_extra.label "Записывать дополнительные данные для отладки">
+<!ENTITY log_level_extra.accesskey "д">
+<!ENTITY reload.label "Обновить все восстановленные окна">
+<!ENTITY reload.accesskey "б">
+<!ENTITY overwrite.label "Заменить существующие окна">
+<!ENTITY overwrite.accesskey "З">
+<!ENTITY allow_saving_during_pbm.label "Разрешить сохранение в режиме Приватного просмотра">
+<!ENTITY allow_saving_during_pbm.label2 "Необходимо, чтобы было включено шифрование">
+<!ENTITY allow_saving_during_pbm.accesskey "П">
+<!ENTITY session_name_in_titlebar.label "заголовка окна название активной сессии.">
+<!ENTITY session_name_in_titlebar.accesskey "н">
+<!ENTITY prepend.label "Добавлять в начало">
+<!ENTITY append.label "Добавлять в конец">
+<!ENTITY donotadd.label "Не добавлять у">
+<!ENTITY use_browser_crash_prompt.label "Использовать встроенный в броузер диалог восстановления сессии">
+<!ENTITY use_browser_crash_prompt.accesskey "в">
+<!ENTITY reset_warnings.label "Сбросить предупреждающие запросы">
+<!ENTITY reset_warnings.accesskey "С">
+<!ENTITY export_settings.label "Экспортировать настройки">
+<!ENTITY export_settings.accesskey "Э">
+<!ENTITY import_settings.label "Импортировать настройки">
+<!ENTITY import_settings.accesskey "И">
+<!ENTITY settingsImportExport.caption "Импорт/экспорт настроек">
+<!ENTITY keyboard.caption "Горячие клавиши">
+<!ENTITY keyboard.desc "Задайте горячую клавишу для какого-либо действия, либо оставьте поле пустым. Изменения не будут применены к уже открытым окнам.">
+<!ENTITY clear.label "Очистить">
+<!ENTITY clear.accesskey "О">
+<!ENTITY clear_tab_list.label "Очистить список закрытых вкладок">
+<!ENTITY clear_tab_list.accesskey "в">
+<!ENTITY clear_window_list.label "Очистить список закрытых окон">
+<!ENTITY clear_window_list.accesskey "к">
+<!ENTITY backup_on_restart.label "Сохранять резервную копию при перезапуске броузера">
+<!ENTITY backup_on_restart.accesskey "х">
+<!ENTITY keep_deleted_sessions.label "Число дней для временного хранения удалённых сессий:">
+<!ENTITY keep_deleted_sessions.accesskey "Д">
+<!ENTITY concurrent.label "Число одновременно восстанавливаемых вкладок:">
+<!ENTITY concurrent.accesskey "О">
+<!ENTITY do_not_color_toolbar_button.label "Не подкрашивать кнопку на панели при загрузке сессии">
+<!ENTITY do_not_color_toolbar_button.accesskey "п">
+<!ENTITY preserve_app_tabs.label "Не заменять прикреплённые вкладки">
+<!ENTITY preserve_app_tabs.accesskey "Н">
+<!ENTITY logging_to_console.label "Дублировать вывод в Консоль ошибок">
+<!ENTITY logging_to_console.accesskey "о">
+<!ENTITY update_message.label "Открывать web-страницу с информацией об обновлении">
+<!ENTITY update_message.accesskey "О">
+<!ENTITY double_click_session.label "Двойной щелчок по существующей сессии перезапишет её и">
+<!ENTITY double_click_session.accesskey "в">
+<!ENTITY replace_with_name_replace.label "заменит имя на предлагаемое имя из текстового поля">
+<!ENTITY replace_with_name_keep.label "оставит старое имя">
+<!ENTITY show_icon_in_menu.label "Показывать пиктограмму в меню «Инструменты»">
+<!ENTITY show_icon_in_menu.accesskey "П">
+<!ENTITY set_encryption_password.label "Введите пароль для защиты ключа шифрования сессии:">
+<!ENTITY set_encryption_password.accesskey "В">
+<!ENTITY change_encryption_key_password.label "Изменить пароль ключа шифрования:">
+<!ENTITY change_encryption_key_password.accesskey "И">
+<!ENTITY save_encryption_key.label "Сохранить пароль ключа шифрования в системе управления паролями броузера">
+<!ENTITY save_encryption_key.accesskey "С">
+<!ENTITY restore_hidden_tabs.label "Восстанавливать скрытые вкладки">
+<!ENTITY restore_hidden_tabs.accesskey "В">
+<!ENTITY display_menus_in_submenu.label "Показывать элементы меню Менеджера сессий внутри вложенного меню">
+<!ENTITY display_menus_in_submenu.accesskey "М">
+<!ENTITY use_sql_cache.label "Сохранять базовую информацию о сессиях на диск. Позволяет искать данные внутри сессий">
+<!ENTITY use_sql_cache.accesskey "С">
+<!ENTITY rebuild_cache.label "Перестроить содержимое кэша">
+<!ENTITY rebuild_cache.accesskey "П">
+<!ENTITY log_level_error.label "Вести лог ошибок">
+<!ENTITY log_level_error.accesskey "О">
+<!ENTITY allow_duplicates.label "Разрешить сохранение сессий с одинаковыми именами">
+<!ENTITY allow_duplicates.accesskey "И">
+<!ENTITY backup_every.label "Создавать новую резервную сессию каждые:">
+<!ENTITY backup_every.accesskey "з">
+<!ENTITY minutes "минут">
+<!ENTITY restore_on_demand.label "Восстанавливать вкладки по требованию">
+<!ENTITY restore_on_demand.accesskey "т">

@@ -1,0 +1,105 @@
+<!ENTITY sessionManager "Gestionnaire de session">
+<!ENTITY toolsmenu.accesskey "G">
+<!ENTITY save.label "Enregistrer la session…">
+<!ENTITY save.accesskey "E">
+<!ENTITY saveOne.label "Enregistrer la fenêtre courante…">
+<!ENTITY saveOne.accesskey "f">
+<!ENTITY closeSession.label "Enregistrer et fermer la session courante">
+<!ENTITY closeSession.accesskey "m">
+<!ENTITY abandonSession.label "Abandonner la session courante">
+<!ENTITY abandonSession.accesskey "A">
+<!ENTITY rename.label "Renommer la session…">
+<!ENTITY rename.accesskey "R">
+<!ENTITY remove.label "Supprimer la(les) session(s)…">
+<!ENTITY remove.accesskey "S">
+<!ENTITY openFolder.label "Ouvrir le dossier des sessions">
+<!ENTITY openFolder.accesskey "d">
+<!ENTITY options.label "Options du &sessionManager;">
+<!ENTITY options.accesskey "O">
+<!ENTITY undoClosed.label "Réouvrir…">
+<!ENTITY undoClosed.accesskey "v">
+<!ENTITY closedWindows "Fenêtres fermées :">
+<!ENTITY closedTabs "Onglets fermés :">
+<!ENTITY clearList.label "Effacer la liste des « éléments fermés »…">
+<!ENTITY clearList.accesskey "E">
+<!ENTITY toolbar.tooltip "Enregistrer la session de navigation courante…">
+<!ENTITY toolbar.undo.label "Récupération">
+<!ENTITY toolbar.undo.tooltip "Ouvrir à nouveau le dernier onglet fermé">
+<!ENTITY prompt.ignore.label "Ne plus afficher cette boîte de dialogue à l&apos;avenir">
+<!ENTITY prompt.autosave.label "Faire en sorte que cette session soit enregistrée automatiquement">
+<!ENTITY prompt.tabprompt.label "Demander les onglets à rétablir">
+<!ENTITY load_replace.label "Charger (remplacer la session courante)">
+<!ENTITY load_replace.accesskey "C">
+<!ENTITY load_append.label "Charger (ajouter à la session courante)">
+<!ENTITY load_append.accesskey "A">
+<!ENTITY replace_all.label "Remplacer la session par la session courante">
+<!ENTITY replace_all.accesskey "R">
+<!ENTITY replace_window.label "Remplacer la session par la fenêtre courante">
+<!ENTITY replace_window.accesskey "f">
+<!ENTITY remove_one.label "Supprimer la session…">
+<!ENTITY set_startup.label "Définir comme session de démarrage">
+<!ENTITY set_startup.accesskey "d">
+<!ENTITY openSessionManagerSidebar.commandkey "P">
+<!ENTITY session_name.label "Nom">
+<!ENTITY session_windows.label "Fenêtres">
+<!ENTITY session_tabs.label "Onglets">
+<!ENTITY backup_sessions.label "Sessions sauvegardées">
+<!ENTITY backup_sessions.accesskey "v">
+<!ENTITY remove_item.label "Supprimer l&apos;élément">
+<!ENTITY remove_item.accesskey "u">
+<!ENTITY session_group.label "Groupe">
+<!ENTITY rename_group.label "Renommer le groupe…">
+<!ENTITY remove_group.label "Supprimer le groupe…">
+<!ENTITY change_group.label "Changer le groupe…">
+<!ENTITY change_group.accesskey "C">
+<!ENTITY group.label "Regroupement de session(s)…">
+<!ENTITY group.accesskey "G">
+<!ENTITY toolbar.menu.tooltip "Ouverture du menu se chargeant de la gestion de session">
+<!ENTITY toolbar.undo.menu.tooltip "Ouverture des menus et onglets de menu récemment fermés">
+<!ENTITY prompt.save_every1.label "Enregistrer toutes les">
+<!ENTITY prompt.save_every2.label "minutes (désactivé si vide)">
+<!ENTITY winTabTree.restoreHeader "Rétablir">
+<!ENTITY winTabTree.listHeader "Fenêtres et onglets">
+<!ENTITY winTabTree.windowLabel "Fenêtre &#37;S">
+<!ENTITY load.label "Chargement de la session…">
+<!ENTITY load.accesskey "C">
+<!ENTITY prompt.append.label "Ajouter à la session">
+<!ENTITY prompt.replace.label "Remplacer la session">
+<!ENTITY tab_open_click_note.label "Remarque : En cliquant sur le nom d'un onglet tout en maintenant la touche ALT, vous ouvrirez cet onglet dans la fenêtre existante.">
+<!ENTITY select_all.label "Tout sélectionner">
+<!ENTITY select_none.label "Ne rien sélectionner">
+<!ENTITY toggle_selection.label "Intervertir la sélection">
+<!ENTITY winTabTree.urlHeader "Emplacement">
+<!ENTITY prompt.append_window.label "Ajouter à la fenêtre courante">
+<!ENTITY session_explorer.label "Explorateur de session">
+<!ENTITY session_explorer.accesskey "E">
+<!ENTITY closeWindowSession.label "Enregistrer et fermer la session de la fenêtre">
+<!ENTITY closeWindowSession.accesskey "i">
+<!ENTITY abandonWindowSession.label "Abandonner la session de la fenêtre">
+<!ENTITY abandonWindowSession.accesskey "b">
+<!ENTITY load_append_window.label "Charger (ajouter à la fenêtre courante)">
+<!ENTITY load_append_window.accesskey "t">
+<!ENTITY leave_window_open.label "Laisser cette fenêtre ouverte">
+<!ENTITY clearTabList.label "Effacer la liste des onglets « fermés »…">
+<!ENTITY clearTabList.accesskey "O">
+<!ENTITY clearWindowList.label "Effacer la liste des fenêtres « fermées »…">
+<!ENTITY clearWindowList.accesskey "F">
+<!ENTITY hidden.label "Masqué">
+<!ENTITY contribute.label "Contribuer">
+<!ENTITY support.label "Soutenir cette extension :">
+<!ENTITY session_group_verb.label "Groupe">
+<!ENTITY deleted_sessions.label "Sessions supprimées">
+<!ENTITY deleted_sessions.accesskey "u">
+<!ENTITY empty_trash.label "Supprimer toutes les sessions supprimées">
+<!ENTITY empty_trash.accesskey "S">
+<!ENTITY permanently_delete.label "Supprimer définitivement la session">
+<!ENTITY permanently_delete.accesskey "d">
+<!ENTITY search.label "Rechercher…">
+<!ENTITY edit.label "Modifier la session…">
+<!ENTITY edit.accesskey "M">
+<!ENTITY addtab.label "Ajouter l'onglet à la session…">
+<!ENTITY addtab.accesskey "A">
+<!ENTITY viewcontents.label "Afficher le contenu de session">
+<!ENTITY viewcontents.accesskey "A">
+<!ENTITY export_to_html.label "Exporter le contenu de session vers le fichier HTML des marque-pages">
+<!ENTITY export_to_html.accesskey "E">

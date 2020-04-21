@@ -1,0 +1,202 @@
+<!ENTITY options.title "&sessionManager; オプション">
+<!ENTITY general.caption "一般">
+<!ENTITY startNend.caption "起動 &amp; 終了">
+<!ENTITY resume_sess.label "読み込むセッション:">
+<!ENTITY resume_sess.accesskey "s">
+<!ENTITY backup_sess.label "終了時に">
+<!ENTITY backup_sess.accesskey "h">
+<!ENTITY backup_session.label0 "現在のセッションを破棄">
+<!ENTITY backup_session.label1 "現在のセッションをバックアップ">
+<!ENTITY backup_session.label2 "現在のセッションをバックアップするか確認">
+<!ENTITY crashrecovery.label "クラッシュ回復機能を有効化">
+<!ENTITY crashrecovery.accesskey "e">
+<!ENTITY autosave_session.label "置換されたセッションを自動保存">
+<!ENTITY autosave_session.accesskey "a">
+<!ENTITY restoring.caption "セッション復元">
+<!ENTITY sessionList.caption "セッションリスト">
+<!ENTITY orderList.label "セッションリストの並び:">
+<!ENTITY orderList.accesskey "r">
+<!ENTITY orderList.label1 "アルファベット順">
+<!ENTITY orderList.label2 "旧から新">
+<!ENTITY orderList.label_2 "新から旧">
+<!ENTITY max_backup.label "古い (クラッシュした) セッションのバックアップをいくつ保持するか:">
+<!ENTITY max_backup.accesskey "N">
+<!ENTITY undoClose.caption "元に戻す">
+<!ENTITY windowsNtabs.caption "閉じたウィンドウ &amp; タブ">
+<!ENTITY max_closed.label "閉じたウィンドウをいくつまで記憶しておくか:">
+<!ENTITY max_closed.accesskey "w">
+<!ENTITY max_tabs.label "閉じたタブをウィンドウ毎にいくつまで記憶しておくか:">
+<!ENTITY max_tabs.accesskey "t">
+<!ENTITY submenu.label "サブメニューに閉じたウィンドウやタブをすべてリスト表示">
+<!ENTITY submenu.accesskey "c">
+<!ENTITY persistence.caption "永続性">
+<!ENTITY closed_tabs.label "すべてのウィンドウで閉じたタブのリストを復元:">
+<!ENTITY closed_tabs.accesskey "e">
+<!ENTITY closed_tabs.label0 "しない">
+<!ENTITY closed_tabs.label1 "起動時">
+<!ENTITY closed_tabs.label2 "いつも">
+<!ENTITY window_list.label "終了時に閉じたウィンドウのリストを消去しない">
+<!ENTITY window_list.accesskey "o">
+<!ENTITY clear_list.label "リストを消去">
+<!ENTITY clear_list.accesskey "r">
+<!ENTITY advanced.caption "詳細">
+<!ENTITY name_format.caption "セッション名">
+<!ENTITY name_format.label "セッション名を提案する際の書式:">
+<!ENTITY name_format.accesskey "F">
+<!ENTITY name_format.desc "アクティブなタブのタイトルに &#37;t、今日の日付に &#37;d、時間に &#37;m が利用できます; 加えてタイトル文字数は &#37;文字数t と制限できます。">
+<!ENTITY sessionstore.caption "セッション保存">
+<!ENTITY service.caption "セッション保存設定">
+<!ENTITY service.description "設定の意味がわからない場合は変更しないこと!">
+<!ENTITY interval.label "最短保存間隔 (秒):">
+<!ENTITY interval.accesskey "i">
+<!ENTITY postdata.label "どのくらいまでポストデータを保存するか (バイト単位; -1 で全部保存):">
+<!ENTITY postdata.accesskey "x">
+<!ENTITY privacy.label "プライバシーに関わるデータ (フォームデータ、ポストデータ、クッキー) を">
+<!ENTITY privacy.accesskey "v">
+<!ENTITY privacy.level0 "すべてのサイトで保存">
+<!ENTITY privacy.level1 "暗号化していないサイトでのみ保存">
+<!ENTITY privacy.level2 "どのサイトでも保存しない">
+<!ENTITY sessiondir.caption "セッションの保存場所">
+<!ENTITY sessiondir.desc "セッション保存場所を変更できます。">
+<!ENTITY encrypt.caption "暗号化">
+<!ENTITY encrypt.desc "警告: 暗号化されたセッションデータは key3.db が同じプロファイルでしか開けません。加えてマスターパスワードが設定されている場合、それを入力しない限りセッションの暗号化も復号化もできません。">
+<!ENTITY encrypt.label "保存したセッションや閉じたウィンドウのデータを暗号化">
+<!ENTITY encrypt.accesskey "e">
+<!ENTITY change_dir.label "変更">
+<!ENTITY change_dir.accesskey "C">
+<!ENTITY default_dir.label "規定値">
+<!ENTITY default_dir.accesskey "D">
+<!ENTITY sanitizer.label "Session Manager が保存したセッション">
+<!ENTITY sanitizer.accesskey "M">
+<!ENTITY saving.caption "セッションの保存">
+<!ENTITY lastpage.label "最後に読み込んだページを表示">
+<!ENTITY noSession.label "なし">
+<!ENTITY noSession.accesskey "N">
+<!ENTITY promptSession.label "起動時にプロンプトを表示して選択">
+<!ENTITY promptSession.accesskey "P">
+<!ENTITY selectSession.label "あらかじめ指定しておく">
+<!ENTITY selectSession.accesskey "S">
+<!ENTITY cookies.label "セッション Cookies を保存">
+<!ENTITY cookies.accesskey "C">
+<!ENTITY sessionImport.caption "他のセッションをインポート...">
+<!ENTITY importSS.label "SessionSaver">
+<!ENTITY importSS.accesskey "e">
+<!ENTITY importTMP.label "Tab Mix Plus">
+<!ENTITY importTMP.accesskey "I">
+<!ENTITY apply.label "適用">
+<!ENTITY save_and_restore.caption "保存 &amp; 復元">
+<!ENTITY display.caption "表示">
+<!ENTITY middleclick.label "中クリックで最後に閉じたタブを元に戻す">
+<!ENTITY middleclick.accesskey "M">
+<!ENTITY max_display.label "メニューにセッションをいくつまで表示させるか (-1 で全部表示)">
+<!ENTITY max_display.accesskey "M">
+<!ENTITY hide_tools_menu.label "[ツール] に Session Manager のメニューを表示しない">
+<!ENTITY hide_tools_menu.accesskey "D">
+<!ENTITY disable_cache_fixer.label "キャッシュ修正機能を無効化">
+<!ENTITY disable_cache_fixer.accesskey "D">
+<!ENTITY encrypted_only.label "暗号化に失敗する場合は暗号化されていないデータを保存しない">
+<!ENTITY encrypted_only.accesskey "N">
+<!ENTITY encrypt2.desc "警告: ここをチェックしてセッションやウィンドウのデータが暗号化できないと、そのデータは失われ回復不可能です。マスターパスワード要求時に入力しなくても暗号化に失敗するので、この項目をチェックする前に慎重に考えてください。">
+<!ENTITY closed_window_list.label "ブラウザ内蔵の閉じたウィンドウリストを使う">
+<!ENTITY closed_window_list.accesskey "U">
+<!ENTITY closed_windows.label "閉じたウィンドウのリストを復元:">
+<!ENTITY closed_windows.accesskey "s">
+<!ENTITY open_as_tabs.label "現在のウィンドウでタブとして開く">
+<!ENTITY open_as_tabs.accesskey "p">
+<!ENTITY last_window_shutdown.label "最後に開いていたブラウザウィンドウを閉じることをシャットダウンとして扱う">
+<!ENTITY last_window_shutdown.accesskey "T">
+<!ENTITY preselect_previous_session.label "前のセッションを選択しておく">
+<!ENTITY preselect_previous_session.accesskey "R">
+<!ENTITY logging.caption "ログ">
+<!ENTITY enable_logging.label "ログ機能を有効化">
+<!ENTITY enable_logging.accesskey "e">
+<!ENTITY open_log.label "ログファイルを開く">
+<!ENTITY open_log.accesskey "o">
+<!ENTITY delete_log.label "ログファイルを削除">
+<!ENTITY delete_log.accesskey "d">
+<!ENTITY log_level_state.label "シャットダウン状態を記録">
+<!ENTITY log_level_state.accesskey "s">
+<!ENTITY log_level_trace.label "トレースデータを記録">
+<!ENTITY log_level_trace.accesskey "t">
+<!ENTITY log_level_data.label "変数データを記録">
+<!ENTITY log_level_data.accesskey "v">
+<!ENTITY log_level_info.label "情報メッセージを記録">
+<!ENTITY log_level_info.accesskey "i">
+<!ENTITY log_level_extra.label "デバッグデータを記録">
+<!ENTITY log_level_extra.accesskey "e">
+<!ENTITY reload.label "セッション復元時はキャッシュを無視">
+<!ENTITY reload.accesskey "B">
+<!ENTITY overwrite.label "既存のウィンドウを置換">
+<!ENTITY overwrite.accesskey "R">
+<!ENTITY allow_saving_during_pbm.label "プライベートブラウジングモード中の保存を許可">
+<!ENTITY allow_saving_during_pbm.label2 "暗号化を有効にする必要があります">
+<!ENTITY allow_saving_during_pbm.accesskey "S">
+<!ENTITY session_name_in_titlebar.label ": 現在のセッション名をタイトルバーに...">
+<!ENTITY session_name_in_titlebar.accesskey "n">
+<!ENTITY prepend.label "追加（先頭）">
+<!ENTITY append.label "追加（末尾）">
+<!ENTITY donotadd.label "追加しない">
+<!ENTITY use_browser_crash_prompt.label "ブラウザ内蔵のクラッシュリカバリープロンプトを使う">
+<!ENTITY use_browser_crash_prompt.accesskey "U">
+<!ENTITY reset_warnings.label "警告プロンプトをリセット">
+<!ENTITY reset_warnings.accesskey "R">
+<!ENTITY export_settings.label "設定をエクスポート">
+<!ENTITY export_settings.accesskey "X">
+<!ENTITY import_settings.label "設定をインポート">
+<!ENTITY import_settings.accesskey "I">
+<!ENTITY settingsImportExport.caption "設定をインポート/エクスポート">
+<!ENTITY keyboard.caption "キーボードショートカット">
+<!ENTITY keyboard.desc "キーボードショートカットを入力。使わない場合は空白のままにしてください。既存のウィンドウに変更は適用されません。">
+<!ENTITY clear.label "消去">
+<!ENTITY clear.accesskey "C">
+<!ENTITY clear_tab_list.label "閉じたタブを消去">
+<!ENTITY clear_tab_list.accesskey "a">
+<!ENTITY clear_window_list.label "閉じたウィンドウを消去">
+<!ENTITY clear_window_list.accesskey "i">
+<!ENTITY backup_on_restart.label "ブラウザ再起動時にバックアップを保存">
+<!ENTITY backup_on_restart.accesskey "b">
+<!ENTITY keep_deleted_sessions.label "削除したセッションを一時的に保持する日数:">
+<!ENTITY keep_deleted_sessions.accesskey "d">
+<!ENTITY concurrent.label "一斉に復元するタブ数">
+<!ENTITY concurrent.accesskey "T">
+<!ENTITY do_not_color_toolbar_button.label "セッションが読み込まれた時はツールバーのボタンを着色しない">
+<!ENTITY do_not_color_toolbar_button.accesskey "D">
+<!ENTITY preserve_app_tabs.label "ピン留めされたアプリケーションタブを置換しない">
+<!ENTITY preserve_app_tabs.accesskey "D">
+<!ENTITY logging_to_console.label "エラーコンソールにもログ出力">
+<!ENTITY logging_to_console.accesskey "A">
+<!ENTITY update_message.label "更新後 Web ページを表示">
+<!ENTITY update_message.accesskey "S">
+<!ENTITY double_click_session.label "既存のセッションをダブルクリックしてそのセッションを上書きし">
+<!ENTITY double_click_session.accesskey "D">
+<!ENTITY replace_with_name_replace.label "既存のセッション名をテキストボックスの内容に置換">
+<!ENTITY replace_with_name_keep.label "既存のセッション名を保持">
+<!ENTITY show_icon_in_menu.label "ツールメニューにアイコンを表示">
+<!ENTITY show_icon_in_menu.accesskey "I">
+<!ENTITY set_encryption_password.label "セッション暗号化キーを保護するためのパスワードを入力">
+<!ENTITY set_encryption_password.accesskey "E">
+<!ENTITY change_encryption_key_password.label "暗号化キーのパスワードを変更">
+<!ENTITY change_encryption_key_password.accesskey "C">
+<!ENTITY save_encryption_key.label "暗号化キーのパスワードをブラウザのパスワードマネージャに保存">
+<!ENTITY save_encryption_key.accesskey "S">
+<!ENTITY restore_hidden_tabs.label "隠れているタブを復元">
+<!ENTITY restore_hidden_tabs.accesskey "H">
+<!ENTITY display_menus_in_submenu.label "Session Manager のメニューをサブメニュー化する">
+<!ENTITY display_menus_in_submenu.accesskey "D">
+<!ENTITY use_sql_cache.label "基本的なセッションデータをキャッシュし、セッション内部の検索を有効化">
+<!ENTITY use_sql_cache.accesskey "C">
+<!ENTITY rebuild_cache.label "キャッシュデータを再構築">
+<!ENTITY rebuild_cache.accesskey "R">
+<!ENTITY log_level_error.label "エラーを記録">
+<!ENTITY log_level_error.accesskey "e">
+<!ENTITY allow_duplicates.label "既存のセッションと同名で保存することを許可">
+<!ENTITY allow_duplicates.accesskey "A">
+<!ENTITY backup_every.label "新規のバックアップセッションを作成する間隔">
+<!ENTITY backup_every.accesskey "C">
+<!ENTITY minutes "分">
+<!ENTITY restore_on_demand.label "タブをクリックするまで読み込まない">
+<!ENTITY restore_on_demand.accesskey "R">
+<!ENTITY max_back_history.label "前のページに戻るボタンの履歴をタブ毎にいくつ保存するか (-1 で全部保存)">
+<!ENTITY max_back_history.accesskey "b">
+<!ENTITY max_forward_history.label "次のページに進むボタンの履歴をタブ毎にいくつ保存するか (-1 で全部保存)">
+<!ENTITY max_forward_history.accesskey "f">

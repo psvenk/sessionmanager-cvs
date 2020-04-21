@@ -1,0 +1,124 @@
+<!ENTITY options.title "&sessionManager;-Alternativ">
+<!ENTITY general.caption "Allmänt">
+<!ENTITY startNend.caption "Uppstart &amp; nerstänging">
+<!ENTITY resume_sess.label "Ladda alltid följande session vid uppstart:">
+<!ENTITY backup_sess.label "Vid nerstängning">
+<!ENTITY backup_session.label0 "släng nuvarande session">
+<!ENTITY backup_session.label1 "spara nuvarande session">
+<!ENTITY backup_session.label2 "fråga om sessionen ska sparas">
+<!ENTITY crashrecovery.label "Aktivera Kraschåterställning">
+<!ENTITY autosave_session.label "Spara ersatt session automatiskt">
+<!ENTITY restoring.caption "Sessionsåterställning">
+<!ENTITY sessionList.caption "Sessionslista">
+<!ENTITY orderList.label "Sortera sessionlistan">
+<!ENTITY orderList.accesskey "d">
+<!ENTITY orderList.label1 "alfabetiskt">
+<!ENTITY orderList.label2 "äldsta till nyaste">
+<!ENTITY orderList.label_2 "nyaste till äldsta">
+<!ENTITY max_backup.label "Antal äldre (krashade) sessioner att behålla:">
+<!ENTITY undoClose.caption "Ångra Stäng">
+<!ENTITY windowsNtabs.caption "Stängda fönster &amp; flikar">
+<!ENTITY max_closed.label "Maximalt antal sparade fönster:">
+<!ENTITY max_tabs.label "Maximalt antal ihågkommna stängda flikar (per fönster):">
+<!ENTITY submenu.label "Lista alla stängda fönster i en undermeny">
+<!ENTITY submenu.accesskey "l">
+<!ENTITY persistence.caption "Listan över stängda flikar">
+<!ENTITY closed_tabs.label "Återställ listan över återställningsbara flikar för alla fönster:">
+<!ENTITY closed_tabs.label0 "aldrig">
+<!ENTITY closed_tabs.label1 "vid uppstart">
+<!ENTITY closed_tabs.label2 "alltid">
+<!ENTITY window_list.label "Rensa inte listan över stängda fönster vid nerstängning">
+<!ENTITY clear_list.label "Rensa listan">
+<!ENTITY advanced.caption "Avancerat">
+<!ENTITY name_format.caption "Sessionsnamn">
+<!ENTITY name_format.label "Format för sessionsnamnsförslag:">
+<!ENTITY name_format.desc "Använd &#37;t för den aktiva flikens titel, &#37;d för dagens datum och &#37;m för klockan; dessutom så kan titelns längd begränsas till # antal tecken: &#37;#t.">
+<!ENTITY service.caption "&quot;SessionStore&quot;-inställningar">
+<!ENTITY service.description "Rör inte de här om du inte vet vad du gör!">
+<!ENTITY interval.label "Maximala tiden mellan två statussparningar (i sekunder):">
+<!ENTITY postdata.label "Maximala mängden POSTDATA att spara (i byte; -1 för allt):">
+<!ENTITY privacy.label "Spara känslig data (formulärdata, POSTDATA, kakor) för">
+<!ENTITY privacy.level0 "alla sidor">
+<!ENTITY privacy.level1 "endast okrypterade sidor">
+<!ENTITY privacy.level2 "inga sidor alls">
+<!ENTITY sessiondir.caption "Sparade-sessioner-plats">
+<!ENTITY sessiondir.desc "Platsen för sparade sessioner kan ändras här.">
+<!ENTITY encrypt.caption "Kryptering">
+<!ENTITY encrypt.desc "Varning: Krypterad sessiondata kan bara öppnas i profiler med identiska key3.db- och cert8.db-filer, och om ett huvudlösenord är valt så kan inte sessioner krypteras eller dekrypteras om det inte har angetts.">
+<!ENTITY encrypt.label "Kryptera sparade sessioner och stängda-fönsterdata">
+<!ENTITY change_dir.label "Ändra">
+<!ENTITY default_dir.label "Standard">
+<!ENTITY sanitizer.label "Session Manager Sparade sessioner">
+<!ENTITY saving.caption "Session sparas">
+<!ENTITY lastpage.label "Visa min senast laddade sida">
+<!ENTITY noSession.label "Ingen">
+<!ENTITY promptSession.label "Fråga efter en session">
+<!ENTITY selectSession.label "Välj en session">
+<!ENTITY cookies.label "Spara sessionskakor">
+<!ENTITY sessionImport.caption "Importera Sessioner från...">
+<!ENTITY importSS.accesskey "I">
+<!ENTITY apply.label "Verkställ">
+<!ENTITY save_and_restore.caption "Sparar &amp; återställer">
+<!ENTITY display.caption "Visa">
+<!ENTITY middleclick.label "Mittenklick återställer senast stängda flik">
+<!ENTITY max_display.label "Maximalt antal sessioner att visa i menyn">
+<!ENTITY hide_tools_menu.label "Visa inte Session Manager-meny i Verktyg-menyn">
+<!ENTITY disable_cache_fixer.label "Inaktivera cache-fixar funktionen">
+<!ENTITY encrypted_only.label "Om kryptering misslyckas, spara INTE data okrypterad.">
+<!ENTITY encrypt2.desc "Varning: Om detta är markerat och sessions- elelr fönsterdatan inte kan krypteras så kommer datan att förloras utan någon möjlighet att återställa den. Kryptering kommer att misslyckas om huvudlösenordet krävs men inte skrivs in, så tänk efter noggrant innan du kryssar i den här rutan.">
+<!ENTITY closed_window_list.label "Använd webbläsarens lista över stängda fönster">
+<!ENTITY closed_windows.label "Återställ listan över återöppningsbara fönster:">
+<!ENTITY open_as_tabs.label "Öppna flikar i nuvarande fönster">
+<!ENTITY last_window_shutdown.label "Tolka stängning av sista öppna webbläsarfönstret som nerstängning">
+<!ENTITY preselect_previous_session.label "Förmarkera föregående session">
+<!ENTITY logging.caption "Loggning">
+<!ENTITY enable_logging.label "Aktivera loggning">
+<!ENTITY open_log.label "Öppna loggfil">
+<!ENTITY delete_log.label "Radera loggfil">
+<!ENTITY log_level_state.label "Logga avstängningstillstånd">
+<!ENTITY log_level_trace.label "Logga spårdata">
+<!ENTITY log_level_data.label "Logga variabeldata">
+<!ENTITY log_level_info.label "Logga informationsmeddelanden">
+<!ENTITY log_level_extra.label "Logga extra debuggningsdata">
+<!ENTITY reload.label "Ladda om alla återställda fönster">
+<!ENTITY overwrite.label "Ersätt existerande fönster">
+<!ENTITY overwrite.accesskey "p">
+<!ENTITY allow_saving_during_pbm.label "Tillåt att spara under privat surfläge">
+<!ENTITY allow_saving_during_pbm.label2 "Kräver att kryptering är aktiverad">
+<!ENTITY session_name_in_titlebar.label "namnet på aktiva sessioner till titelraden">
+<!ENTITY prepend.label "Lägg till före">
+<!ENTITY append.label "Lägg till efter">
+<!ENTITY donotadd.label "Lägg inte till">
+<!ENTITY use_browser_crash_prompt.label "Använd webbläsarens kraschåterhämtningsfönster">
+<!ENTITY reset_warnings.label "Återställ varningar">
+<!ENTITY export_settings.label "Exportera inställningar">
+<!ENTITY import_settings.label "Importera inställningar">
+<!ENTITY settingsImportExport.caption "Importera/exportera inställningar">
+<!ENTITY keyboard.caption "Tangentbordsgenvägar">
+<!ENTITY keyboard.desc "Ange en genväg här för att använda det, eller lämna det tomt. Ändringar gäller inte existerande fönster.">
+<!ENTITY clear.label "Töm">
+<!ENTITY clear_tab_list.label "Töm stängda flikar">
+<!ENTITY clear_window_list.label "Töm stängda fönster">
+<!ENTITY backup_on_restart.label "Spara backup vid omstart">
+<!ENTITY keep_deleted_sessions.label "Antal dagar att behålla raderade sessioner:">
+<!ENTITY concurrent.label "Antal flikar att återställa samtidigt">
+<!ENTITY do_not_color_toolbar_button.label "Färga inte verktygsfältsknappen när sessioner laddats">
+<!ENTITY preserve_app_tabs.label "Ersätt inte fastsatta App-flikar">
+<!ENTITY logging_to_console.label "Logga också till felkonsolen">
+<!ENTITY update_message.label "Visa uppdateringssida efter uppdateringar">
+<!ENTITY double_click_session.label "Att dubbelklicka på en existerande session skriver över den och">
+<!ENTITY replace_with_name_replace.label "ersätter existerande sessionsnamnet med det i textrutan">
+<!ENTITY replace_with_name_keep.label "behåller det existerande sessionsnamnet">
+<!ENTITY show_icon_in_menu.label "Visa ikon i verktygsmenyn">
+<!ENTITY set_encryption_password.label "Ange ett lösenord för att skydda sessionskrypteringsnyckeln">
+<!ENTITY change_encryption_key_password.label "Ändra krypteringsnyckelns lösenord">
+<!ENTITY save_encryption_key.label "Spara krypteringsnyckelns lösenord i webbläsarens lösenordshanterare">
+<!ENTITY restore_hidden_tabs.label "Återställ dolda flikar">
+<!ENTITY display_menus_in_submenu.label "Visa Session Manager-alternativ i undermeny">
+<!ENTITY use_sql_cache.label "Cachelagra viss sessionsdata på disk. Möjliggör sökning i sessioner">
+<!ENTITY rebuild_cache.label "Ladda om cachad data">
+<!ENTITY log_level_error.label "Logga fel">
+<!ENTITY allow_duplicates.label "Tillåt att en session sparas med samma namn som en existerande session">
+<!ENTITY backup_every.label "Skapa en ny backupsession var">
+<!ENTITY minutes "minut">
+<!ENTITY restore_on_demand.label "Återställ flikar på begäran">

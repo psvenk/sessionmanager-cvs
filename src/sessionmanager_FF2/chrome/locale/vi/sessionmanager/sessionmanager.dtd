@@ -1,0 +1,61 @@
+<!ENTITY sessionManager "Trình Quản Lý Phiên">
+<!ENTITY save.label "Lưu Phiên...">
+<!ENTITY saveOne.label "Lưu Cửa Sổ Hiện Tại...">
+<!ENTITY closeSession.label "Lưu và Đóng Phiên Hiện Tại">
+<!ENTITY abandonSession.label "Bỏ Qua Phiên Hiện Tại">
+<!ENTITY rename.label "Đổi Tên Phiên...">
+<!ENTITY remove.label "Xóa Phiên...">
+<!ENTITY openFolder.label "Mở Thư Mục Phiên">
+<!ENTITY options.label "Tùy Chọn &sessionManager;">
+<!ENTITY undoClosed.label "Mở Lại Cái Đã Đóng...">
+<!ENTITY closedWindows "Cửa Sổ Đã Đóng:">
+<!ENTITY closedTabs "Thẻ Đã Đóng:">
+<!ENTITY clearList.label "Xóa Sạch Danh Sách &apos;Đã Đóng&apos;...">
+<!ENTITY toolbar.tooltip "Lưu phiên hiện đang xem...">
+<!ENTITY toolbar.undo.label "Hủy Việc Đóng">
+<!ENTITY toolbar.undo.tooltip "Mở lại thẻ đã đóng gần đây nhất">
+<!ENTITY prompt.ignore.label "Đừng hiển thị khung này nữa">
+<!ENTITY prompt.autosave.label "Cho nó thành phiên tự động lưu">
+<!ENTITY prompt.tabprompt.label "Nhắc nhở cho các thẻ để khởi tạo lại">
+<!ENTITY load_replace.label "Tải (Đè Lên Phiên Hiện Tại)">
+<!ENTITY load_append.label "Tải (Thêm Vào Phiên Hiện Tại)">
+<!ENTITY replace_all.label "Đè Lên Phiên Với Phiên Hiện Tại">
+<!ENTITY replace_window.label "Đè Lên Phiên Với Cửa Sổ Hiện Tại">
+<!ENTITY remove_one.label "Xóa Phiên...">
+<!ENTITY set_startup.label "Cho Làm Phiên Khởi Động">
+<!ENTITY session_name.label "Tên">
+<!ENTITY session_windows.label "Cửa Sổ">
+<!ENTITY session_tabs.label "Thẻ">
+<!ENTITY backup_sessions.label "Sao Lưu Các Phiên">
+<!ENTITY remove_item.label "Xóa Mục">
+<!ENTITY session_group.label "Nhóm">
+<!ENTITY rename_group.label "Đổi Tên Nhóm...">
+<!ENTITY remove_group.label "Xóa Nhóm...">
+<!ENTITY change_group.label "Đổi Nhóm...">
+<!ENTITY group.label "Gom nhóm Phiên...">
+<!ENTITY toolbar.menu.tooltip "Mở trình đơn quản lý phiên">
+<!ENTITY toolbar.undo.menu.tooltip "Mở trình đơn cửa sổ và thẻ vừa đóng">
+<!ENTITY prompt.save_every1.label "Lưu sau mỗi">
+<!ENTITY prompt.save_every2.label "phút (xóa rỗng để tắt đi)">
+<!ENTITY winTabTree.restoreHeader "Khởi Tạo Lại">
+<!ENTITY winTabTree.listHeader "Cửa Sổ và Thẻ">
+<!ENTITY winTabTree.windowLabel "Cửa Sổ &#37;S">
+<!ENTITY load.label "Tải Phiên...">
+<!ENTITY prompt.append.label "Thêm Vào Sau Phiên">
+<!ENTITY prompt.replace.label "Đè Lên Phiên">
+<!ENTITY tab_open_click_note.label "Ghi chú: nhấp một mục thẻ trong khi giữ phím ALT, sẽ mở thẻ đó trong cửa sổ hiện có.">
+<!ENTITY select_all.label "Chọn Tất Cả">
+<!ENTITY select_none.label "Bỏ Chọn Hết">
+<!ENTITY toggle_selection.label "Đảo Ngược Lựa Chọn">
+<!ENTITY winTabTree.urlHeader "Địa Chỉ">
+<!ENTITY prompt.append_window.label "Thêm Vào Sau Cửa Sổ Hiện Tại">
+<!ENTITY session_explorer.label "Trình Duyệt Phiên">
+<!ENTITY closeWindowSession.label "Lưu và Đóng Phiên Cửa Sổ">
+<!ENTITY abandonWindowSession.label "Bỏ Qua Phiên Cửa Sổ">
+<!ENTITY load_append_window.label "Tải (Thêm Vào Cửa Sổ Hiện Tại)">
+<!ENTITY leave_window_open.label "Rời cửa sổ mở này">
+<!ENTITY clearTabList.label "Xóa Sạch Danh Sách Thẻ 'Đã Đóng'...">
+<!ENTITY clearWindowList.label "Xóa Sạch Danh Sách Cửa Sổ 'Đã Đóng'...">
+<!ENTITY hidden.label "Ẩn">
+<!ENTITY contribute.label "Đóng Góp">
+<!ENTITY support.label "Hỗ trợ tiện ích này:">

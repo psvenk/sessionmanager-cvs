@@ -1,0 +1,44 @@
+<!ENTITY session_open.label "Deschide">
+<!ENTITY session_open.accesskey "D">
+<!ENTITY session_open.tooltip "Deschide sesiunea selectată">
+<!ENTITY session_open_overwrite.label "Deschide (înlocuiește)">
+<!ENTITY session_open_overwrite.accesskey "l">
+<!ENTITY session_open_overwrite.tooltip "Deschide sesiunea selectată ???">
+<!ENTITY session_open_newwindow.label "Deschide (fereastră nouă)">
+<!ENTITY session_open_newwindow.accesskey "n">
+<!ENTITY session_open_newwindow.tooltip "Deschide sesiunea selectată ???">
+<!ENTITY session_open_append.label "Deschide (adaugă)">
+<!ENTITY session_open_append.accesskey "a">
+<!ENTITY session_open_append.tooltip "Deschide sesiunea selectată">
+<!ENTITY session_rename.label "Redenumește…">
+<!ENTITY session_rename.accesskey "d">
+<!ENTITY session_rename.tooltip "Redenumește sesiunea selectată">
+<!ENTITY session_rename_ok.label "Redenumire">
+<!ENTITY session_delete.label "Ștergere">
+<!ENTITY session_delete.accesskey "t">
+<!ENTITY session_delete.tooltip "Șterge sesiunea selectată">
+<!ENTITY session_save.label "Salvează…">
+<!ENTITY session_save.accesskey "S">
+<!ENTITY session_save.tooltip "Salvează fereastra curentă într-o nouă sesiune">
+<!ENTITY session_save_ok.label "Salvare">
+<!ENTITY session_save_w.label "Salvează fereastra…">
+<!ENTITY session_save_w.accesskey "f">
+<!ENTITY session_save_w.tooltip "Salvează fereastra curentă într-o nouă sesiune">
+<!ENTITY session_save_w_ok.label "Salvează fereastra">
+<!ENTITY session_open_folder.label "Deschide dosarul">
+<!ENTITY session_open_folder.accesskey "c">
+<!ENTITY session_open_folder.tooltip "Deschide dosarul gestionarului de sesiuni">
+<!ENTITY column_autosave.label "A">
+<!ENTITY column_autosave.tooltip "Salvează automat sesiunea">
+<!ENTITY column_windows.label "F">
+<!ENTITY column_windows.tooltip "Fereastră">
+<!ENTITY column_tabs.label "l">
+<!ENTITY column_tabs.tooltip "Filă">
+<!ENTITY column_time.label "Timp">
+<!ENTITY column_time.tooltip "Amprentă temporală">
+<!ENTITY column_name.label "Denumire">
+<!ENTITY cancel.label "Renunță">
+<!ENTITY done.label "Gata">
+<!ENTITY done.tooltip "Închide fereastra gestionarului de sesiuni">
+<!ENTITY session_load.label "Restaurare">
+<!ENTITY session_load.accesskey "R">

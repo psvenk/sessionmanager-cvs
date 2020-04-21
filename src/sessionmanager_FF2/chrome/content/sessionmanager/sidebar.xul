@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+
+<?xml-stylesheet href="chrome://global/skin/" type"text/css" ?>
+<?xml-stylesheet href="chrome://browser/skin/browser.css" type="text/css" ?>
+<?xml-stylesheet href="chrome://sessionmanager/skin/sessionmanager.css" type="text/css"?>
+
+<!DOCTYPE page SYSTEM "chrome://sessionmanager/locale/sessionmanager.dtd">
+<page id="sbSessionManager" title="&sessionManager;"
+      xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul" >
+
+	<script type="application/x-javascript" src="chrome://sessionmanager/content/sidebar.js"/>
+
+	<stringbundleset id="stringbundleset">
+		<stringbundle id="bundle_sessionmanager" src="chrome://sessionmanager/locale/sessionmanager.properties"/>
+	</stringbundleset>
+
+	<popup id="sessionmanager-ContextMenu" onpopupshowing="treeView.session_popupInit(this);">
+		<menuitem label="&load_replace.label;" accesskey="&load_replace.accesskey;" oncommand="treeView.session_load(true);"/>
+		<menuitem label="&load_append.label;" accesskey="&load_append.accesskey;" oncommand="treeView.session_load(false);"/>
+		<menuseparator/>
+		<menuitem _id="replace" label="&replace_all.label;" accesskey="&replace_all.accesskey;" oncommand="treeView.session_replace(false);"/>
+		<menuitem label="&replace_window.label;" accesskey="&replace_window.accesskey;" oncommand="treeView.session_replace(true);"/>
+		<menuseparator/>
+		<menuitem label="&rename.label;" accesskey="&rename.accesskey;" oncommand="treeView.session_rename();"/>
+		<menuitem label="&remove_one.label;" accesskey="&remove.accesskey;" oncommand="treeView.session_remove();"/>
+		<menuseparator/>
+		<menuitem label="&set_startup.label;" accesskey="&set_startup.accesskey;" oncommand="treeView.session_setStartup();"/>
+	</popup>
+		      
+	<tree id="session_tree" flex="1" seltype="single" onkeypress="treeView.handleEvent(event);" 
+	      onclick="treeView.handleEvent(event)" context="sessionmanager-ContextMenu">
+		<treecols>
+			<treecol label="&session_name.label;" flex="1" primary="true" ignoreincolumnpicker="true" persist="width hidden"/>
+			<splitter class="tree-splitter"/>
+			<treecol label="&session_windows.label;" hidden="true"/>
+			<splitter class="tree-splitter"/>
+			<treecol label="&session_tabs.label;" hidden="true"/>
+		</treecols>
+		<treechildren/>
+	</tree>
+</page>

@@ -1,0 +1,44 @@
+<!ENTITY session_open.label "Openen">
+<!ENTITY session_open.accesskey "O">
+<!ENTITY session_open.tooltip "De geselecteerde sessie openen">
+<!ENTITY session_open_overwrite.label "Openen (overschrijven)">
+<!ENTITY session_open_overwrite.accesskey "v">
+<!ENTITY session_open_overwrite.tooltip "Geselecteerde sessie openen?">
+<!ENTITY session_open_newwindow.label "Openen (nieuw venster)">
+<!ENTITY session_open_newwindow.accesskey "n">
+<!ENTITY session_open_newwindow.tooltip "Geselecteerde sessie openen?">
+<!ENTITY session_open_append.label "Openen (toevoegen)">
+<!ENTITY session_open_append.accesskey "t">
+<!ENTITY session_open_append.tooltip "Geselecteerde sessie openen">
+<!ENTITY session_rename.label "Hernoemen…">
+<!ENTITY session_rename.accesskey "n">
+<!ENTITY session_rename.tooltip "De geselecteerde sessie hernoemen">
+<!ENTITY session_rename_ok.label "Hernoemen">
+<!ENTITY session_delete.label "Verwijderen">
+<!ENTITY session_delete.accesskey "d">
+<!ENTITY session_delete.tooltip "Geselecteerde sessie verwijderen">
+<!ENTITY session_save.label "Opslaan…">
+<!ENTITY session_save.accesskey "s">
+<!ENTITY session_save.tooltip "Huidige vensters opslaan naar een nieuwe sessie">
+<!ENTITY session_save_ok.label "Opslaan">
+<!ENTITY session_save_w.label "Venster opslaan…">
+<!ENTITY session_save_w.accesskey "V">
+<!ENTITY session_save_w.tooltip "Huidige venster opslaan naar een nieuwe sessie">
+<!ENTITY session_save_w_ok.label "Venster opslaan">
+<!ENTITY session_open_folder.label "Map openen">
+<!ENTITY session_open_folder.accesskey "M">
+<!ENTITY session_open_folder.tooltip "De map van Session Manager openen">
+<!ENTITY column_autosave.label "a">
+<!ENTITY column_autosave.tooltip "Sessie automatisch opslaan">
+<!ENTITY column_windows.label "V">
+<!ENTITY column_windows.tooltip "Vensters">
+<!ENTITY column_tabs.label "T">
+<!ENTITY column_tabs.tooltip "Tabbladen">
+<!ENTITY column_time.label "Tijd">
+<!ENTITY column_time.tooltip "Tijdstempel">
+<!ENTITY column_name.label "Naam">
+<!ENTITY cancel.label "Annuleren">
+<!ENTITY done.label "Gereed">
+<!ENTITY done.tooltip "Session Explorer-venster sluiten">
+<!ENTITY session_load.label "Laden">
+<!ENTITY session_load.accesskey "L">

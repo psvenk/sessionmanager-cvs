@@ -1,0 +1,44 @@
+<!ENTITY session_open.label "Öppna">
+<!ENTITY session_open.accesskey "O">
+<!ENTITY session_open.tooltip "Öppna vald session">
+<!ENTITY session_open_overwrite.label "Öppna (skriv över)">
+<!ENTITY session_open_overwrite.accesskey "v">
+<!ENTITY session_open_overwrite.tooltip "Öppna vald session ??">
+<!ENTITY session_open_newwindow.label "Öppna (nytt fönster)">
+<!ENTITY session_open_newwindow.accesskey "n">
+<!ENTITY session_open_newwindow.tooltip "Öppna vald session ???">
+<!ENTITY session_open_append.label "Öppna (lägg till)">
+<!ENTITY session_open_append.accesskey "a">
+<!ENTITY session_open_append.tooltip "Öppna vald session">
+<!ENTITY session_rename.label "Byt namn...">
+<!ENTITY session_rename.accesskey "R">
+<!ENTITY session_rename.tooltip "Byt namn på vald session">
+<!ENTITY session_rename_ok.label "Byt namn">
+<!ENTITY session_delete.label "Ta bort">
+<!ENTITY session_delete.accesskey "D">
+<!ENTITY session_delete.tooltip "Ta bort vald session">
+<!ENTITY session_save.label "Spara...">
+<!ENTITY session_save.accesskey "S">
+<!ENTITY session_save.tooltip "Spara alla nuvarande fönster till ny session">
+<!ENTITY session_save_ok.label "Spara">
+<!ENTITY session_save_w.label "Spara fönster...">
+<!ENTITY session_save_w.accesskey "W">
+<!ENTITY session_save_w.tooltip "Spara nuvarande fönstret till ny session">
+<!ENTITY session_save_w_ok.label "Spara fönster">
+<!ENTITY session_open_folder.label "Öppna mapp">
+<!ENTITY session_open_folder.accesskey "F">
+<!ENTITY session_open_folder.tooltip "Öppna Session Manager-mapp">
+<!ENTITY column_autosave.label "A">
+<!ENTITY column_autosave.tooltip "Autospara session">
+<!ENTITY column_windows.label "W">
+<!ENTITY column_windows.tooltip "Fönster">
+<!ENTITY column_tabs.label "T">
+<!ENTITY column_tabs.tooltip "Flikar">
+<!ENTITY column_time.label "Tid">
+<!ENTITY column_time.tooltip "Tidsstämpel">
+<!ENTITY column_name.label "Namn">
+<!ENTITY cancel.label "Avbryt">
+<!ENTITY done.label "Färdig">
+<!ENTITY done.tooltip "Stäng sessionshanterarfönster">
+<!ENTITY session_load.label "Ladda">
+<!ENTITY session_load.accesskey "L">

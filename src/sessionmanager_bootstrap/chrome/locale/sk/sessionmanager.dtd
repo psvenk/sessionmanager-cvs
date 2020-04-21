@@ -1,0 +1,94 @@
+<!ENTITY sessionManager "Správca relácií">
+<!ENTITY toolsmenu.accesskey "r">
+<!ENTITY save.label "Uložiť reláciu...">
+<!ENTITY save.accesskey "U">
+<!ENTITY saveOne.label "Uložiť aktuálne okno...">
+<!ENTITY saveOne.accesskey "a">
+<!ENTITY closeSession.label "Uložiť a zavrieť aktuálnu reláciu">
+<!ENTITY closeSession.accesskey "z">
+<!ENTITY abandonSession.label "Prerušiť aktuálnu reláciu">
+<!ENTITY abandonSession.accesskey "a">
+<!ENTITY rename.label "Premenovať reláciu...">
+<!ENTITY rename.accesskey "r">
+<!ENTITY remove.label "Odstrániť relácie...">
+<!ENTITY remove.accesskey "d">
+<!ENTITY openFolder.label "Otvoriť priečinok relácií">
+<!ENTITY openFolder.accesskey "p">
+<!ENTITY options.label "Nastavenia rozšírenia &sessionManager;">
+<!ENTITY options.accesskey "n">
+<!ENTITY undoClosed.label "Znova otvoriť zatvorené...">
+<!ENTITY undoClosed.accesskey "z">
+<!ENTITY closedWindows "Zatvorené okná:">
+<!ENTITY closedTabs "Zatvorené karty:">
+<!ENTITY clearList.label "Vymazať zoznam &apos;Zatvorené karty&apos;...">
+<!ENTITY clearList.accesskey "V">
+<!ENTITY toolbar.tooltip "Uložiť aktuálnu reláciu prehliadača...">
+<!ENTITY toolbar.undo.label "Znova otvoriť zatvorené">
+<!ENTITY toolbar.undo.tooltip "Znova otvorí naposledy zatvorené karty">
+<!ENTITY prompt.ignore.label "Toto dialógové okno už nezobrazovať">
+<!ENTITY prompt.autosave.label "Nastaviť ako reláciu, ktorá bude ukladaná automaticky">
+<!ENTITY prompt.tabprompt.label "Žiadať o obnovenie kariet">
+<!ENTITY load_replace.label "Načítať (nahradiť aktuálnu reláciu)">
+<!ENTITY load_replace.accesskey "h">
+<!ENTITY load_append.label "Načítať (pripojiť k aktuálnej relácii)">
+<!ENTITY load_append.accesskey "k">
+<!ENTITY replace_all.label "Nahradiť reláciu aktuálnou reláciou">
+<!ENTITY replace_all.accesskey "r">
+<!ENTITY replace_window.label "Nahradiť reláciu aktuálnym oknom">
+<!ENTITY replace_window.accesskey "o">
+<!ENTITY remove_one.label "Odstrániť reláciu...">
+<!ENTITY set_startup.label "Nastaviť ako reláciu pri spustení">
+<!ENTITY set_startup.accesskey "e">
+<!ENTITY session_name.label "Názov">
+<!ENTITY session_windows.label "Okná">
+<!ENTITY session_tabs.label "Karty">
+<!ENTITY backup_sessions.label "Zálohovať relácie">
+<!ENTITY backup_sessions.accesskey "Z">
+<!ENTITY remove_item.label "Odstrániť položku">
+<!ENTITY remove_item.accesskey "d">
+<!ENTITY session_group.label "Skupina">
+<!ENTITY rename_group.label "Premenovať skupinu...">
+<!ENTITY remove_group.label "Odstrániť skupinu...">
+<!ENTITY change_group.label "Zmeniť skupinu...">
+<!ENTITY change_group.accesskey "Z">
+<!ENTITY group.label "Zoskupiť relácie...">
+<!ENTITY group.accesskey "s">
+<!ENTITY toolbar.menu.tooltip "Otvoriť ponuku správy relácie">
+<!ENTITY toolbar.undo.menu.tooltip "Otvoriť ponuku Nedávno zatvorené okná a karty">
+<!ENTITY prompt.save_every1.label "Uložiť každých">
+<!ENTITY prompt.save_every2.label "minút (vypnuté, ak je prázdne)">
+<!ENTITY winTabTree.restoreHeader "Obnoviť">
+<!ENTITY winTabTree.listHeader "Okná a karty">
+<!ENTITY winTabTree.windowLabel "Okno č. &#37;S">
+<!ENTITY load.label "Načítať reláciu...">
+<!ENTITY load.accesskey "N">
+<!ENTITY prompt.append.label "Pripojiť k relácii">
+<!ENTITY prompt.replace.label "Nahradiť reláciu">
+<!ENTITY tab_open_click_note.label "Poznámka: ak kliknete na položku karty a budete pritom držať kláves ALT, daná karta sa otvorí v existujúcom okne.">
+<!ENTITY select_all.label "Vybrať všetko">
+<!ENTITY select_none.label "Nevybrať nič">
+<!ENTITY toggle_selection.label "Prepnúť výber">
+<!ENTITY winTabTree.urlHeader "Umiestnenie">
+<!ENTITY prompt.append_window.label "Pripojiť do aktuálneho okna">
+<!ENTITY session_explorer.label "Prieskumník relácií">
+<!ENTITY session_explorer.accesskey "P">
+<!ENTITY closeWindowSession.label "Uložiť a zavrieť reláciu okna">
+<!ENTITY closeWindowSession.accesskey "v">
+<!ENTITY abandonWindowSession.label "Zrušiť reláciu okna">
+<!ENTITY abandonWindowSession.accesskey "u">
+<!ENTITY load_append_window.label "Načítať (pripojiť do aktuálneho okna)">
+<!ENTITY load_append_window.accesskey "t">
+<!ENTITY leave_window_open.label "Ponechať toto okno prázdne">
+<!ENTITY clearTabList.label "Vymazať zoznam zatvorených kariet...">
+<!ENTITY clearTabList.accesskey "k">
+<!ENTITY clearWindowList.label "Vymazať zoznam zatvorených okien...">
+<!ENTITY clearWindowList.accesskey "o">
+<!ENTITY hidden.label "Skryté">
+<!ENTITY contribute.label "Prispieť">
+<!ENTITY support.label "Podporiť tento doplnok:">
+<!ENTITY session_group_verb.label "Zoskupiť">
+<!ENTITY deleted_sessions.label "Odstránené relácie">
+<!ENTITY empty_trash.label "Odstrániť všetky odstránené relácie">
+<!ENTITY empty_trash.accesskey "d">
+<!ENTITY permanently_delete.label "Natrvalo odstrániť reláciu">
+<!ENTITY permanently_delete.accesskey "N">

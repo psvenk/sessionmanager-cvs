@@ -1,0 +1,105 @@
+<!ENTITY sessionManager "Správce relací">
+<!ENTITY toolsmenu.accesskey "r">
+<!ENTITY save.label "Uložit relaci...">
+<!ENTITY save.accesskey "U">
+<!ENTITY saveOne.label "Uložit aktuální okno...">
+<!ENTITY saveOne.accesskey "o">
+<!ENTITY closeSession.label "Uložit a zavřít aktuální relaci">
+<!ENTITY closeSession.accesskey "z">
+<!ENTITY abandonSession.label "Přerušit aktuální relaci">
+<!ENTITY abandonSession.accesskey "P">
+<!ENTITY rename.label "Přejmenovat relaci...">
+<!ENTITY rename.accesskey "P">
+<!ENTITY remove.label "Smazat relace...">
+<!ENTITY remove.accesskey "m">
+<!ENTITY openFolder.label "Otevřít složku s relacemi">
+<!ENTITY openFolder.accesskey "s">
+<!ENTITY options.label "Možnosti Správce relací">
+<!ENTITY options.accesskey "N">
+<!ENTITY undoClosed.label "Znovu otevřít zavřené...">
+<!ENTITY undoClosed.accesskey "z">
+<!ENTITY closedWindows "Zavřená okna:">
+<!ENTITY closedTabs "Zavřené panely:">
+<!ENTITY clearList.label "Vyčistit seznam zavřených panelů...">
+<!ENTITY clearList.accesskey "y">
+<!ENTITY toolbar.tooltip "Uloží aktuální relaci...">
+<!ENTITY toolbar.undo.label "Znovu otevřít zavřené panely">
+<!ENTITY toolbar.undo.tooltip "Znovu otevře poslední zavřený panel">
+<!ENTITY prompt.ignore.label "Toto dialogové okno již znovu nezobrazovat">
+<!ENTITY prompt.autosave.label "Automatické ukládání této relace">
+<!ENTITY prompt.tabprompt.label "Dotázat se na obnovení panelů">
+<!ENTITY load_replace.label "Načíst (nahradit aktuální relaci)">
+<!ENTITY load_replace.accesskey "N">
+<!ENTITY load_append.label "Načíst (přidat k aktuální relaci)">
+<!ENTITY load_append.accesskey "a">
+<!ENTITY replace_all.label "Nahradit relaci aktuální relací">
+<!ENTITY replace_all.accesskey "r">
+<!ENTITY replace_window.label "Nahradit relaci aktuálním oknem">
+<!ENTITY replace_window.accesskey "o">
+<!ENTITY remove_one.label "Odstranit relaci...">
+<!ENTITY set_startup.label "Nastavit jako relaci při spuštění">
+<!ENTITY set_startup.accesskey "s">
+<!ENTITY openSessionManagerSidebar.commandkey "s">
+<!ENTITY session_name.label "Název">
+<!ENTITY session_windows.label "Okna">
+<!ENTITY session_tabs.label "Panely">
+<!ENTITY backup_sessions.label "Zálohované relace">
+<!ENTITY backup_sessions.accesskey "Z">
+<!ENTITY remove_item.label "Odstranit položku">
+<!ENTITY remove_item.accesskey "d">
+<!ENTITY session_group.label "Skupina">
+<!ENTITY rename_group.label "Přejmenovat skupinu...">
+<!ENTITY remove_group.label "Odstranit skupinu...">
+<!ENTITY change_group.label "Změnit skupinu...">
+<!ENTITY change_group.accesskey "Z">
+<!ENTITY group.label "Skupiny relací...">
+<!ENTITY group.accesskey "S">
+<!ENTITY toolbar.menu.tooltip "Otevře nabídku správy relací">
+<!ENTITY toolbar.undo.menu.tooltip "Otevře nabídku posledních zavřených oken a panelů">
+<!ENTITY prompt.save_every1.label "Uložit každých">
+<!ENTITY prompt.save_every2.label "minut (prázdné pole vypne funkci)">
+<!ENTITY winTabTree.restoreHeader "Obnovit">
+<!ENTITY winTabTree.listHeader "Okna a panely">
+<!ENTITY winTabTree.windowLabel "Okno č. &#37;S">
+<!ENTITY load.label "Načíst relaci...">
+<!ENTITY load.accesskey "l">
+<!ENTITY prompt.append.label "Připojit k relaci">
+<!ENTITY prompt.replace.label "Nahradit relaci">
+<!ENTITY tab_open_click_note.label "Poznámka: klepnutí na panel za současného držení klávesy Alt otevře tento panel v existujícím okně.">
+<!ENTITY select_all.label "Vybrat vše">
+<!ENTITY select_none.label "Zrušit výběr">
+<!ENTITY toggle_selection.label "Invertovat výběr">
+<!ENTITY winTabTree.urlHeader "Umístění">
+<!ENTITY prompt.append_window.label "Přiřadit k aktuálnímu oknu">
+<!ENTITY session_explorer.label "Průzkumník relací">
+<!ENTITY session_explorer.accesskey "P">
+<!ENTITY closeWindowSession.label "Uložit a zavřít okno relace">
+<!ENTITY closeWindowSession.accesskey "l">
+<!ENTITY abandonWindowSession.label "Přerušit relaci v okně">
+<!ENTITY abandonWindowSession.accesskey "k">
+<!ENTITY load_append_window.label "Načíst (přidat k aktuálnímu oknu)">
+<!ENTITY load_append_window.accesskey "i">
+<!ENTITY leave_window_open.label "Ponechat toto okno otevřené">
+<!ENTITY clearTabList.label "Vyčistit seznam 'zavřených' panelů...">
+<!ENTITY clearTabList.accesskey "t">
+<!ENTITY clearWindowList.label "Vyčistit seznam 'zavřených' oken...">
+<!ENTITY clearWindowList.accesskey "v">
+<!ENTITY hidden.label "Skrytý">
+<!ENTITY contribute.label "Přispět">
+<!ENTITY support.label "Podpořte tento doplněk:">
+<!ENTITY session_group_verb.label "Skupina">
+<!ENTITY deleted_sessions.label "Smazané relace">
+<!ENTITY deleted_sessions.accesskey "e">
+<!ENTITY empty_trash.label "Odstranit všechny smazané relace">
+<!ENTITY empty_trash.accesskey "r">
+<!ENTITY permanently_delete.label "Trvale odstranit relaci">
+<!ENTITY permanently_delete.accesskey "T">
+<!ENTITY search.label "Hledat...">
+<!ENTITY edit.label "Upravit relaci...">
+<!ENTITY edit.accesskey "e">
+<!ENTITY addtab.label "Přidat do relace panel...">
+<!ENTITY addtab.accesskey "a">
+<!ENTITY viewcontents.label "Zobrazit obsah relace">
+<!ENTITY viewcontents.accesskey "h">
+<!ENTITY export_to_html.label "Exportovat obsah relace jako záložku ve formátu HTML">
+<!ENTITY export_to_html.accesskey "E">

@@ -1,0 +1,44 @@
+<!ENTITY session_open.label "Abrir">
+<!ENTITY session_open.accesskey "A">
+<!ENTITY session_open.tooltip "Abre la sesión seleccionada">
+<!ENTITY session_open_overwrite.label "Abrir (sobreescribir)">
+<!ENTITY session_open_overwrite.accesskey "s">
+<!ENTITY session_open_overwrite.tooltip "Abre la sesión seleccionada ???">
+<!ENTITY session_open_newwindow.label "Abrir (nueva ventana)">
+<!ENTITY session_open_newwindow.accesskey "n">
+<!ENTITY session_open_newwindow.tooltip "Abre la sesión seleccionada ???">
+<!ENTITY session_open_append.label "Abrir (añadir)">
+<!ENTITY session_open_append.accesskey "d">
+<!ENTITY session_open_append.tooltip "Abre la sesión seleccionada">
+<!ENTITY session_rename.label "Renombrar...">
+<!ENTITY session_rename.accesskey "R">
+<!ENTITY session_rename.tooltip "Renombra la sesión seleccionada">
+<!ENTITY session_rename_ok.label "Renombrar">
+<!ENTITY session_delete.label "Borrar">
+<!ENTITY session_delete.accesskey "B">
+<!ENTITY session_delete.tooltip "Borra la sesión seleccionada">
+<!ENTITY session_save.label "Guardar...">
+<!ENTITY session_save.accesskey "G">
+<!ENTITY session_save.tooltip "Guarda las ventanas actuales en una nueva sesión">
+<!ENTITY session_save_ok.label "Guardar">
+<!ENTITY session_save_w.label "Guardar ventana...">
+<!ENTITY session_save_w.accesskey "v">
+<!ENTITY session_save_w.tooltip "Guarda la ventana actual en una nueva sesión">
+<!ENTITY session_save_w_ok.label "Guardar ventana">
+<!ENTITY session_open_folder.label "Abrir carpeta">
+<!ENTITY session_open_folder.accesskey "c">
+<!ENTITY session_open_folder.tooltip "Abre la carpeta de Session Manager (administrador de sesiones)">
+<!ENTITY column_autosave.label "A">
+<!ENTITY column_autosave.tooltip "Sesión guardada automáticamente">
+<!ENTITY column_windows.label "V">
+<!ENTITY column_windows.tooltip "Ventanas">
+<!ENTITY column_tabs.label "P">
+<!ENTITY column_tabs.tooltip "Pestañas">
+<!ENTITY column_time.label "Tiempo">
+<!ENTITY column_time.tooltip "Marca de tiempo">
+<!ENTITY column_name.label "Nombre">
+<!ENTITY cancel.label "Cancelar">
+<!ENTITY done.label "Hecho">
+<!ENTITY done.tooltip "Cierra la sesión del explorador de sesiones">
+<!ENTITY session_load.label "Cargar">
+<!ENTITY session_load.accesskey "C">

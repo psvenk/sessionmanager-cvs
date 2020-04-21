@@ -1,0 +1,44 @@
+<!ENTITY session_open.label "Ouvrir">
+<!ENTITY session_open.accesskey "O">
+<!ENTITY session_open.tooltip "Ouvrir la session sélectionnée">
+<!ENTITY session_open_overwrite.label "Ouvrir (remplacer)">
+<!ENTITY session_open_overwrite.accesskey "m">
+<!ENTITY session_open_overwrite.tooltip "Ouvrir la session sélectionnée ???">
+<!ENTITY session_open_newwindow.label "Ouvrir (nouvelle fenêtre)">
+<!ENTITY session_open_newwindow.accesskey "n">
+<!ENTITY session_open_newwindow.tooltip "Ouvrir la session sélectionnée ???">
+<!ENTITY session_open_append.label "Ouvrir (ajouter)">
+<!ENTITY session_open_append.accesskey "a">
+<!ENTITY session_open_append.tooltip "Ouvrir la session sélectionnée">
+<!ENTITY session_rename.label "Renommer…">
+<!ENTITY session_rename.accesskey "R">
+<!ENTITY session_rename.tooltip "Renommer la session sélectionnée">
+<!ENTITY session_rename_ok.label "Renommer">
+<!ENTITY session_delete.label "Supprimer">
+<!ENTITY session_delete.accesskey "S">
+<!ENTITY session_delete.tooltip "Supprimer la session sélectionnée">
+<!ENTITY session_save.label "Enregistrer…">
+<!ENTITY session_save.accesskey "E">
+<!ENTITY session_save.tooltip "Enregistrer les fenêtres courantes dans une nouvelle session">
+<!ENTITY session_save_ok.label "Enregistrer">
+<!ENTITY session_save_w.label "Enregistrer la fenêtre">
+<!ENTITY session_save_w.accesskey "f">
+<!ENTITY session_save_w.tooltip "Enregistrer la fenêtre courante dans une nouvelle session">
+<!ENTITY session_save_w_ok.label "Enregistrer la fenêtre">
+<!ENTITY session_open_folder.label "Ouvrir le dossier">
+<!ENTITY session_open_folder.accesskey "d">
+<!ENTITY session_open_folder.tooltip "Ouvrir le dossier contenant les sessions du gestionnaire de session">
+<!ENTITY column_autosave.label "A">
+<!ENTITY column_autosave.tooltip "Enregistrer automatiquement la session">
+<!ENTITY column_windows.label "f">
+<!ENTITY column_windows.tooltip "Fenêtres">
+<!ENTITY column_tabs.label "O">
+<!ENTITY column_tabs.tooltip "Onglets">
+<!ENTITY column_time.label "H">
+<!ENTITY column_time.tooltip "Horodatage">
+<!ENTITY column_name.label "Nom">
+<!ENTITY cancel.label "Annuler">
+<!ENTITY done.label "Valider">
+<!ENTITY done.tooltip "Fermer l'explorateur de sessions">
+<!ENTITY session_load.label "Charger">
+<!ENTITY session_load.accesskey "C">

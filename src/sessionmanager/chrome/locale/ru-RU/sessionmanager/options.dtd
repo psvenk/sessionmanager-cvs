@@ -1,0 +1,60 @@
+<!ENTITY options.title         "Настройки">
+<!ENTITY options.width         "57em">
+
+<!ENTITY general.caption       "Основные">
+<!ENTITY startNend.caption     "Запуск и Завершение">
+<!ENTITY resume_sess.label     "При запуске всегда загружать эту сессию:">
+<!ENTITY resume_sess.accesskey "з">
+<!ENTITY backup_sess.label     "При завершении">
+<!ENTITY backup_sess.accesskey "а">
+<!ENTITY backup_session.label0 "отменить текущую сессию">
+<!ENTITY backup_session.label1 "сохранить текущую сессию">
+<!ENTITY backup_session.label2 "спрашивать, что делать с текущей сессией">
+
+<!ENTITY restoring.caption     "Восстановление сессий">
+<!ENTITY sessionList.caption   "Список сессий">
+<!ENTITY orderList.label       "Упорядочить список сессий по">
+<!ENTITY orderList.accesskey   "У">
+<!ENTITY orderList.label1      "алфавиту">
+<!ENTITY orderList.label2      "дате, по возрастанию">
+<!ENTITY orderList.label_2     "дате, по убыванию">
+<!ENTITY max_backup.label      "Количество сессий для хранения:">
+<!ENTITY max_backup.accesskey  "К">
+
+<!ENTITY undoClose.caption     "Отмена закрытия">
+<!ENTITY windowsNtabs.caption  "Закрытые Окна и Вкладки">
+<!ENTITY max_closed.label      "Максимальное количество сохраняемых закрытых окон:">
+<!ENTITY max_closed.accesskey  "о">
+<!ENTITY max_tabs.label        "Максимальное количество сохраняемых закрытых вкладок (на 1 окно):">
+<!ENTITY max_tabs.accesskey    "в">
+<!ENTITY submenu.label         "Показывать список всех закрытых окон и вкладок в подменю">
+<!ENTITY submenu.accesskey     "п">
+
+<!ENTITY persistence.caption   "Сопоставление">
+<!ENTITY closed_tabs.label     "Восстанавливать список повторно открывающихся закрытых вкладок для всех окон:">
+<!ENTITY closed_tabs.accesskey "с">
+<!ENTITY closed_tabs.label0    "никогда">
+<!ENTITY closed_tabs.label1    "при запуске">
+<!ENTITY closed_tabs.label2    "всегда">
+<!ENTITY window_list.label     "Восстанавливать список повторно открывающихся закрытых окон и вкладок">
+<!ENTITY window_list.accesskey "н">
+<!ENTITY clear_list.label      "Очистить спиок">
+<!ENTITY clear_list.accesskey  "ч">
+
+<!ENTITY advanced.caption      "Дополнительно">
+<!ENTITY name_format.caption   "Имена Сессий">
+<!ENTITY name_format.label     "Формат для составления имен сессий:">
+<!ENTITY name_format.accesskey "Ф">
+<!ENTITY name_format.desc      "Используйте &#37;t для вставки заголовка текущей активной вкладки, &#37;d для вставки сегодняшней даты и &#37;m для времени; также длина заголовка может быть ограничена # символами: &#37;#t.">
+
+<!ENTITY service.caption       "Настройки Восстановления при крахе">
+<!ENTITY service.description   "Не изменяйте эти опции, если понятия не имеете, что делаете:">
+<!ENTITY interval.label        "Минимальный интервал между двумя сохранениями (в секундах):">
+<!ENTITY interval.accesskey    "и">
+<!ENTITY postdata.label        "Максимальное количество POSTDATA для сохранения (в байтах, -1 для 'все')">
+<!ENTITY postdata.accesskey    "P">
+<!ENTITY privacy.label         "Сохранять чувствительные данные (данные форм, POSTDATA и cookies) для">
+<!ENTITY privacy.accesskey     "у">
+<!ENTITY privacy.level0        "всех сайтов">
+<!ENTITY privacy.level1        "только незашифрованных сайтов">
+<!ENTITY privacy.level2        "не сохранять">

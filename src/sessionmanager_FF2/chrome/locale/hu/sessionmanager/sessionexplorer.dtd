@@ -1,0 +1,44 @@
+<!ENTITY session_open.label "Megnyitás">
+<!ENTITY session_open.accesskey "M">
+<!ENTITY session_open.tooltip "Kiválasztott munkamenet megnyitása">
+<!ENTITY session_open_overwrite.label "Megnyitás (felülírás)">
+<!ENTITY session_open_overwrite.accesskey "f">
+<!ENTITY session_open_overwrite.tooltip "Kiválasztott munkamenet megnyitása ???">
+<!ENTITY session_open_newwindow.label "Megnyitás (új ablak)">
+<!ENTITY session_open_newwindow.accesskey "a">
+<!ENTITY session_open_newwindow.tooltip "Kiválasztott munkamenet megnyitása ???">
+<!ENTITY session_open_append.label "Megnyitás (hozzáfűzés)">
+<!ENTITY session_open_append.accesskey "h">
+<!ENTITY session_open_append.tooltip "Kiválasztott munkamenet megnyitása">
+<!ENTITY session_rename.label "Átnevezés...">
+<!ENTITY session_rename.accesskey "n">
+<!ENTITY session_rename.tooltip "Kiválasztott munkamenet átnevezése">
+<!ENTITY session_rename_ok.label "Átnevezés">
+<!ENTITY session_delete.label "Törlés">
+<!ENTITY session_delete.accesskey "T">
+<!ENTITY session_delete.tooltip "Kiválasztott munkamenet törlése">
+<!ENTITY session_save.label "Mentés...">
+<!ENTITY session_save.accesskey "e">
+<!ENTITY session_save.tooltip "Jelenlegi ablakok mentése új munkamenetként">
+<!ENTITY session_save_ok.label "Mentés">
+<!ENTITY session_save_w.label "Ablak mentése...">
+<!ENTITY session_save_w.accesskey "b">
+<!ENTITY session_save_w.tooltip "Jelenlegi ablak mentése új munkamenetként">
+<!ENTITY session_save_w_ok.label "Ablak mentése">
+<!ENTITY session_open_folder.label "Mappa megnyitása">
+<!ENTITY session_open_folder.accesskey "p">
+<!ENTITY session_open_folder.tooltip "A Session Manager mappájának megnyitása">
+<!ENTITY column_autosave.label "S">
+<!ENTITY column_autosave.tooltip "Munkamenet automatikus mentése">
+<!ENTITY column_windows.label "k">
+<!ENTITY column_windows.tooltip "Ablakok">
+<!ENTITY column_tabs.label "l">
+<!ENTITY column_tabs.tooltip "Lapok">
+<!ENTITY column_time.label "Idő">
+<!ENTITY column_time.tooltip "Időbélyeg">
+<!ENTITY column_name.label "Név">
+<!ENTITY cancel.label "Mégse">
+<!ENTITY done.label "Kész">
+<!ENTITY done.tooltip "A munkamenet-intéző ablak bezárása">
+<!ENTITY session_load.label "Betöltés">
+<!ENTITY session_load.accesskey "B">

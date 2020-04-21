@@ -1,0 +1,56 @@
+/* Window and Tab tree - Firefox and SeaMonkey */
+#sessionmanager_tabTree > treechildren::-moz-tree-image(icon),
+#sessionmanager_tabTree > treechildren::-moz-tree-image(noicon),
+#sessionmanager_tabTree > treechildren::-moz-tree-image(window),
+#sessionmanager-tabTreePanel > treechildren::-moz-tree-image(icon),
+#sessionmanager-tabTreePanel > treechildren::-moz-tree-image(noicon),
+#sessionmanager-tabTreePanel > treechildren::-moz-tree-image(window) {
+  padding-right: 2px !important;
+  margin: 0px 2px !important;
+  width: 16px !important;
+  height: 16px !important;
+}
+
+#sessionmanager_tabTree > treechildren::-moz-tree-image(window),
+#sessionmanager-tabTreePanel > treechildren::-moz-tree-image(window) {
+  list-style-image: url("chrome://sessionmanager/skin/aboutSessionRestore-window-icon.png") !important;
+}
+
+/* SeaMonkey style overrides the following rule */
+#sessionmanager_tabTree > treechildren::-moz-tree-image(noicon),
+#sessionmanager-tabTreePanel > treechildren::-moz-tree-image(noicon) {
+  list-style-image: url("chrome://sessionmanager/skin/defaultFavicon.png") !important;
+}
+
+#sessionmanager_tabTree > treechildren::-moz-tree-checkbox(checked) {
+  list-style-image: url("chrome://sessionmanager/skin/cbox-check.gif") !important;
+}
+
+#sessionmanager_tabTree > treechildren::-moz-tree-checkbox(checked, selected, focus) {
+  list-style-image: url("chrome://sessionmanager/skin/cbox-check-hl.gif") !important;
+}
+
+#sessionmanager_tabTree > treechildren::-moz-tree-checkbox(partial) {
+  list-style-image: url("chrome://sessionmanager/skin/cbox-check-dis.gif") !important;
+}
+
+#sessionmanager_tabTree > treechildren::-moz-tree-checkbox(partial, selected, focus) {
+  list-style-image: url("chrome://sessionmanager/skin/cbox-check-dis-hl.gif") !important;
+}
+
+#sessionmanager_tabTree > treechildren::-moz-tree-cell-text(sessionName) {
+  font-weight: bold;
+  font-style: oblique;
+}
+
+#sessionmanager_tabTree > treechildren::-moz-tree-cell-text(selectedTab) {
+  font-weight: bolder;
+}
+
+#sessionmanager_tabTree > treechildren::-moz-tree-cell-text(private) {
+	color: purple !important;
+}
+
+#sessionmanager_tabTree > treechildren::-moz-tree-cell-text(private, selected, focus) {
+	color: #D9B2D9 !important;
+}

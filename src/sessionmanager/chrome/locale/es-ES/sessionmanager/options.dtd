@@ -1,0 +1,60 @@
+<!ENTITY options.title         "Opciones">
+<!ENTITY options.width         "50em">
+
+<!ENTITY general.caption       "General">
+<!ENTITY startNend.caption     "Inicio &amp; Cierre">
+<!ENTITY resume_sess.label     "Cargar siempre la siguiente sesión al iniciar:">
+<!ENTITY resume_sess.accesskey "g">
+<!ENTITY backup_sess.label     "Al cerrar">
+<!ENTITY backup_sess.accesskey "c">
+<!ENTITY backup_session.label0 "descartar la sesión actual">
+<!ENTITY backup_session.label1 "hacer una copia de seguridad de la sesión actual">
+<!ENTITY backup_session.label2 "preguntar si hacer una copia de seguridad de la sesión actual">
+
+<!ENTITY restoring.caption     "Restaurar sesiones">
+<!ENTITY sessionList.caption   "Lista de sesiones">
+<!ENTITY orderList.label       "Ordenar la lista de sesiones">
+<!ENTITY orderList.accesskey   "O">
+<!ENTITY orderList.label1      "alfabéticamente">
+<!ENTITY orderList.label2      "de la más vieja a la más nueva">
+<!ENTITY orderList.label_2     "de la más nueva a la más vieja">
+<!ENTITY max_backup.label      "Número de sesiones antiguas (con fallo) a mantener:">
+<!ENTITY max_backup.accesskey  "m">
+
+<!ENTITY undoClose.caption     "Deshacer cerrar">
+<!ENTITY windowsNtabs.caption  "Ventanas &amp; pestañas cerradas">
+<!ENTITY max_closed.label      "Número máximo de ventanas cerradas a guardar:">
+<!ENTITY max_closed.accesskey  "v">
+<!ENTITY max_tabs.label        "Número máximo de pestañas cerradas a guardar (en cada ventana):">
+<!ENTITY max_tabs.accesskey    "p">
+<!ENTITY submenu.label         "Mostrar una lista con todas las ventanas y pestañas cerradas en un submenú">
+<!ENTITY submenu.accesskey     "l">
+
+<!ENTITY persistence.caption   "Persistencia">
+<!ENTITY closed_tabs.label     "Restaurar la lista de las pestañas que pueden volver a abrirse:">
+<!ENTITY closed_tabs.accesskey "e">
+<!ENTITY closed_tabs.label0    "nunca">
+<!ENTITY closed_tabs.label1    "al iniciar">
+<!ENTITY closed_tabs.label2    "siempre">
+<!ENTITY window_list.label     "Restaurar al iniciar la lista de las ventanas que pueden volver a abrirse">
+<!ENTITY window_list.accesskey "a">
+<!ENTITY clear_list.label      "Borrar lista">
+<!ENTITY clear_list.accesskey  "b">
+
+<!ENTITY advanced.caption      "Avanzadas">
+<!ENTITY name_format.caption   "Nombres de las sesiones">
+<!ENTITY name_format.label     "Formato para las sugerencias de los nombres de las sesiones:">
+<!ENTITY name_format.accesskey "F">
+<!ENTITY name_format.desc      "Use &#037;t para el título de la pestaña activa, &#037;d para la fecha de hoy y &#037;m para la hora; además la longitud del título puede limitarse a # caracteres: &#037;#t.">
+
+<!ENTITY service.caption       "Opciones de &quot;Crash Recovery&quot;">
+<!ENTITY service.description   "No cambie estas opciones, a menos que sepa lo que está haciendo:">
+<!ENTITY interval.label        "Intervalo de tiempo mínimo para guardar dos estados (en segundos):">
+<!ENTITY interval.accesskey    "t">
+<!ENTITY postdata.label        "Máxima cantidad de POSTDATA que se guardarán (en bytes; -1 para guardar todos):">
+<!ENTITY postdata.accesskey    "x">
+<!ENTITY privacy.label         "Guardar información privada (datos de formularios, POSTDATA y cookies) en">
+<!ENTITY privacy.accesskey     "u">
+<!ENTITY privacy.level0        "todos los sitios">
+<!ENTITY privacy.level1        "sólo sitios no cifrados">
+<!ENTITY privacy.level2        "ningún sitio">

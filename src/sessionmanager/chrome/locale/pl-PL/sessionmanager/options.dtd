@@ -1,0 +1,60 @@
+<!ENTITY options.title         "- opcje">
+<!ENTITY options.width         "47em">
+
+<!ENTITY general.caption       "Ogólne">
+<!ENTITY startNend.caption     "Otwieranie i zamykanie">
+<!ENTITY resume_sess.label     "Podczas uruchamiania zawsze wczytuj następującą sesję:">
+<!ENTITY resume_sess.accesskey "P">
+<!ENTITY backup_sess.label     "Podczas zamykania">
+<!ENTITY backup_sess.accesskey "z">
+<!ENTITY backup_session.label0 "nie zapisuj aktualnej sesji">
+<!ENTITY backup_session.label1 "utwórz kopię zapasową aktualnej sesji">
+<!ENTITY backup_session.label2 "pytaj gdzie zapisać kopię aktualnej sesji">
+
+<!ENTITY restoring.caption     "Odtwarzanie sesji">
+<!ENTITY sessionList.caption   "Lista sesji">
+<!ENTITY orderList.label       "Sortuj listę sesji">
+<!ENTITY orderList.accesskey   "S">
+<!ENTITY orderList.label1      "alfabetycznie">
+<!ENTITY orderList.label2      "od najstarszych">
+<!ENTITY orderList.label_2     "od najnowszych">
+<!ENTITY max_backup.label      "Ilość utrzymywanych kopii zapasowych sesji, które uległy awarii:">
+<!ENTITY max_backup.accesskey  "u">
+
+<!ENTITY undoClose.caption     "Odzyskiwanie">
+<!ENTITY windowsNtabs.caption  "Zamykanie okien i kart">
+<!ENTITY max_closed.label      "Maksymalna ilość zapamiętanych zamkniętych okien:">
+<!ENTITY max_closed.accesskey  "M">
+<!ENTITY max_tabs.label        "Maksymalna ilość zapamiętanych zamkniętych kart (w jednym oknie):">
+<!ENTITY max_tabs.accesskey    "r">
+<!ENTITY submenu.label         "Wyświetl listę zamkniętych okien i kart w menu podręcznym">
+<!ENTITY submenu.accesskey     "y">
+
+<!ENTITY persistence.caption   "Podtrzymywanie">
+<!ENTITY closed_tabs.label     "Odtwarzaj listę powtórnie otwieranych kart:">
+<!ENTITY closed_tabs.accesskey "e">
+<!ENTITY closed_tabs.label0    "nigdy">
+<!ENTITY closed_tabs.label1    "podczas uruchamiania">
+<!ENTITY closed_tabs.label2    "zawsze">
+<!ENTITY window_list.label     "Odtwórz listę powtórnie otwieranych okien podczas uruchamiania">
+<!ENTITY window_list.accesskey "o">
+<!ENTITY clear_list.label      "Wyczyść listę">
+<!ENTITY clear_list.accesskey  "l">
+
+<!ENTITY advanced.caption      "Zaawansowane">
+<!ENTITY name_format.caption   "Nazwy sesji">
+<!ENTITY name_format.label     "Sugerowany format nazwy sesji:">
+<!ENTITY name_format.accesskey "F">
+<!ENTITY name_format.desc      "Użyj &#37;t dla nazw aktywnych kart, &#37;d dla dzisiejszej daty i &#37;m dla czasu. Można także ograniczyć długość nazwy do # znaków: &#37;#t.">
+
+<!ENTITY service.caption       "Odzyskiwanie sesji - ustawienia">
+<!ENTITY service.description   "Nie zmieniaj tych ustawień jeżeli nie wiesz o co chodzi">
+<!ENTITY interval.label        "Minimalna przerwa pomiędzy kolejnymi zapisami (sek.):">
+<!ENTITY interval.accesskey    "n">
+<!ENTITY postdata.label        "Maksymalna ilość przetrzymywanych danych POSTDATA (bajty; -1 wszystkie):">
+<!ENTITY postdata.accesskey    "k">
+<!ENTITY privacy.label         "Zapisz istotne dane (z danych, POSTDATA i ciasteczek) dla:">
+<!ENTITY privacy.accesskey     "d">
+<!ENTITY privacy.level0        "wszystkich witryn">
+<!ENTITY privacy.level1        "tylko nieszyfrowanych witryn">
+<!ENTITY privacy.level2        "(nie zapisuj)">

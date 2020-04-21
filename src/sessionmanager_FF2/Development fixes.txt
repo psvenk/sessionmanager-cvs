@@ -1,0 +1,24 @@
+0.9.2.5pre130111:
+1. Don't pop up error message if sessionstore.js data file cannot be parsed (i.e. is corrupted) at browser startup.
+2. Fixed issue where auto-session name was showing up in windows when user set setting to not show name.
+
+0.9.2.5pre130110:
+1. Fixed: When private browsing is set to start automatically in Firefox 20 and up, disable the save button since no windows can be saved anyway.
+2. Fixed: When private browsing is set to start automatically in Firefox 20 and up, Session Manager would never initialize in the first window opened so its menus and toolbar buttons wouldn't appear, nor would the prompt window display.
+3. Fixed: Fix error with trying to get width and height of closed windows when opening browser window after closing last window without exiting the browser (only if Session Manager is handling closed window list).
+4. Fixed: When displaying error prompt, show error stack trace.
+5. Fixed: Issue with counting restored windows in newer branches of Firefox.  This could cause window sessions to not be restored on startup.
+6. Changed: Since close window event won't fire if menu bar is hidden (Firefox bug 827880), don't bother using it since we only really care about the last closed window.
+7. Changed: When restoring from a backup or crash and user doesn't restore all the tabs in a window session, don't make the resulting loaded window a window session to prevent overwriting the original window session.
+
+Translations added but unused:
+Options:
+1. Enter password to protect session encryption.
+2. Change encryption key
+3. Save encryption key.
+Windows:
+1. Enter encryption key 
+2. Backup encryption key
+sessionmanager.dtd:
+1. viewcontents (not used)
+2. export_to_html (not used)

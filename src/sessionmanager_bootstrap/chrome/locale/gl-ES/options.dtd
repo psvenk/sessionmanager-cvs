@@ -1,0 +1,202 @@
+<!ENTITY options.title "Opcións do Xestor de Sesións">
+<!ENTITY general.caption "Xeral">
+<!ENTITY startNend.caption "Inicio e Peche">
+<!ENTITY resume_sess.label "Cargar sempre a seguinte sesión ó inicio:">
+<!ENTITY resume_sess.accesskey "s">
+<!ENTITY backup_sess.label "Ó pechar">
+<!ENTITY backup_sess.accesskey "h">
+<!ENTITY backup_session.label0 "descartar a sesión">
+<!ENTITY backup_session.label1 "gardar a sesión">
+<!ENTITY backup_session.label2 "preguntar se gardar ou non a sesión">
+<!ENTITY crashrecovery.label "Recuperar sesións escachadas">
+<!ENTITY crashrecovery.accesskey "e">
+<!ENTITY autosave_session.label "Gardar automáticamente a sesión reemprazada">
+<!ENTITY autosave_session.accesskey "a">
+<!ENTITY restoring.caption "Restaurar Sesión">
+<!ENTITY sessionList.caption "Lista de Sesións">
+<!ENTITY orderList.label "Ordear a lista de sesións">
+<!ENTITY orderList.accesskey "r">
+<!ENTITY orderList.label1 "alfabéticamente">
+<!ENTITY orderList.label2 "da máis vella á máis nova">
+<!ENTITY orderList.label_2 "da máis nova á máis vella">
+<!ENTITY max_backup.label "Número de copias de sesións (escachadas) a manter:">
+<!ENTITY max_backup.accesskey "N">
+<!ENTITY undoClose.caption "Desfacer o Peche">
+<!ENTITY windowsNtabs.caption "Lapelas e Xanelas Pechadas">
+<!ENTITY max_closed.label "Número máximo de xanelas pechadas a lembrar:">
+<!ENTITY max_closed.accesskey "m">
+<!ENTITY max_tabs.label "Número máximo de lapelas pechadas a lembrar (por xanela):">
+<!ENTITY max_tabs.accesskey "l">
+<!ENTITY submenu.label "Listar tódalas xanelas e lapelas pechadas nun submenú">
+<!ENTITY submenu.accesskey "c">
+<!ENTITY persistence.caption "Persistencia">
+<!ENTITY closed_tabs.label "Restaurar a lista de lapelas re-abribles en tódalas xanelas:">
+<!ENTITY closed_tabs.accesskey "e">
+<!ENTITY closed_tabs.label0 "endexamais">
+<!ENTITY closed_tabs.label1 "no inicio">
+<!ENTITY closed_tabs.label2 "sempre">
+<!ENTITY window_list.label "Non borrar a lista de xanelas pechadas ó peche">
+<!ENTITY window_list.accesskey "o">
+<!ENTITY clear_list.label "Borrar a lista">
+<!ENTITY clear_list.accesskey "r">
+<!ENTITY advanced.caption "Experto">
+<!ENTITY name_format.caption "Nomes das sesións">
+<!ENTITY name_format.label "Formato para a suxestión dos nomes de sesión:">
+<!ENTITY name_format.accesskey "F">
+<!ENTITY name_format.desc "Emprega o símbolo &#37;t para o título da lapela activa, &#37;d para a data actual &#37;m para a hora; ademais, podes limitar a lonxitude do título a # caracteres: &#37;#t.">
+<!ENTITY sessionstore.caption "Gardado de Sesións">
+<!ENTITY service.caption "Opcións do Gardado de Sesións">
+<!ENTITY service.description "Ollo ó dato, non tocar se non estás seguro do que andas a facer!">
+<!ENTITY interval.label "Intervalo mínimo de tempo entre dous estados gardados (en segundos):">
+<!ENTITY interval.accesskey "i">
+<!ENTITY postdata.label "Cantidade máxima de POSTDATA a gardar (en bytes; -1 indica todo):">
+<!ENTITY postdata.accesskey "x">
+<!ENTITY privacy.label "Gardar datos sensibles (form data, POSTDATA e cookies) en">
+<!ENTITY privacy.accesskey "G">
+<!ENTITY privacy.level0 "tódalas páxinas">
+<!ENTITY privacy.level1 "só páxinas cifradas">
+<!ENTITY privacy.level2 "ningures">
+<!ENTITY sessiondir.caption "Localización das Sesións Gardadas">
+<!ENTITY sessiondir.desc "A localicación por defecto na que se gardan as túas sesións pode ser modificada aquí.">
+<!ENTITY encrypt.caption "Cifrado">
+<!ENTITY encrypt.desc "Ollo ó dato: Os datos cifrados da sesión só poden ser abertos en perfís con arquivos key3.db idénticos.  Ademáis se unha clave mestra (master password) é fixada, as sesións non poderán ser cifradas ou descifradas se a clave mestra non é introducida.">
+<!ENTITY encrypt.label "Cifrar a sesión gardada e os datos das xanelas pechadas">
+<!ENTITY encrypt.accesskey "e">
+<!ENTITY change_dir.label "Cambiar">
+<!ENTITY change_dir.accesskey "C">
+<!ENTITY default_dir.label "Por defecto">
+<!ENTITY default_dir.accesskey "d">
+<!ENTITY sanitizer.label "Sesións Gardadas no Xestor de Sesións">
+<!ENTITY sanitizer.accesskey "M">
+<!ENTITY saving.caption "Gardado de Sesión">
+<!ENTITY lastpage.label "Amosar a última páxina que carguei">
+<!ENTITY noSession.label "Ningunha">
+<!ENTITY noSession.accesskey "N">
+<!ENTITY promptSession.label "Preguntar por unha sesión">
+<!ENTITY promptSession.accesskey "P">
+<!ENTITY selectSession.label "Seleccionar sesión">
+<!ENTITY selectSession.accesskey "S">
+<!ENTITY cookies.label "Gardar as Galletiñas (cookies) da Sesión">
+<!ENTITY cookies.accesskey "C">
+<!ENTITY sessionImport.caption "Importar Sesións dende...">
+<!ENTITY importSS.label "SessionSaver">
+<!ENTITY importSS.accesskey "e">
+<!ENTITY importTMP.label "Tab Mix Plus">
+<!ENTITY importTMP.accesskey "T">
+<!ENTITY apply.label "Aplicar">
+<!ENTITY save_and_restore.caption "Gardando e Restaurando">
+<!ENTITY display.caption "Apariencia">
+<!ENTITY middleclick.label "O click no medio re-abre a última lapela que se pechou">
+<!ENTITY middleclick.accesskey "k">
+<!ENTITY max_display.label "Número máximo de sesións a amosar no menú (-1 para todas)">
+<!ENTITY max_display.accesskey "N">
+<!ENTITY hide_tools_menu.label "Non amosar o menú do Xestor de Sesións no menú Ferramentas">
+<!ENTITY hide_tools_menu.accesskey "F">
+<!ENTITY disable_cache_fixer.label "Desactivar a función de fixado de caché">
+<!ENTITY disable_cache_fixer.accesskey "D">
+<!ENTITY encrypted_only.label "Se o cifrado falla, NON gardar datos sen cifrar.">
+<!ENTITY encrypted_only.accesskey "N">
+<!ENTITY encrypt2.desc "Ollo ó dato: Se isto é activado e a sesión ou os datos da xanela non puidesen ser cifrados, estes datos perderánse e non haberá xeito de recuperalos. O cifrado fallará se a clave mestra é solicitada e non inserida, polo que pénsao ben antes de activar esta opción">
+<!ENTITY closed_window_list.label "Empregar a lista de xanelas pechadas propia do navegador">
+<!ENTITY closed_window_list.accesskey "x">
+<!ENTITY closed_windows.label "Restaurar a lista de xanelas pechadas re-abribles:">
+<!ENTITY closed_windows.accesskey "s">
+<!ENTITY open_as_tabs.label "Abrir como lapelas na xanela actual">
+<!ENTITY open_as_tabs.accesskey "p">
+<!ENTITY last_window_shutdown.label "Interpretar o peche da última xanela aberta do buscador como peche do programa">
+<!ENTITY last_window_shutdown.accesskey "I">
+<!ENTITY preselect_previous_session.label "Preseleccionar sesión anterior">
+<!ENTITY preselect_previous_session.accesskey "P">
+<!ENTITY logging.caption "Rexistro">
+<!ENTITY enable_logging.label "Activar o Rexistro">
+<!ENTITY enable_logging.accesskey "e">
+<!ENTITY open_log.label "Abrir o Arquivo de Rexistro">
+<!ENTITY open_log.accesskey "o">
+<!ENTITY delete_log.label "Borrar o Arquivo de Rexistro">
+<!ENTITY delete_log.accesskey "d">
+<!ENTITY log_level_state.label "Rexistrar Estado ó Peche">
+<!ENTITY log_level_state.accesskey "s">
+<!ENTITY log_level_trace.label "Rexistrar Datos de Traza">
+<!ENTITY log_level_trace.accesskey "t">
+<!ENTITY log_level_data.label "Rexistrar Datos Variables">
+<!ENTITY log_level_data.accesskey "V">
+<!ENTITY log_level_info.label "Rexistrar Mensaxes Informativos">
+<!ENTITY log_level_info.accesskey "i">
+<!ENTITY log_level_extra.label "Rexistrar Datos Extra de Depurado">
+<!ENTITY log_level_extra.accesskey "e">
+<!ENTITY reload.label "Non empregar o caché ó restaurar a sesión">
+<!ENTITY reload.accesskey "c">
+<!ENTITY overwrite.label "Substituir Xanelas Abertas">
+<!ENTITY overwrite.accesskey "X">
+<!ENTITY allow_saving_during_pbm.label "Permitir o gardado se estiver no modo de navegación privada">
+<!ENTITY allow_saving_during_pbm.label2 "Precisa de cifrado para ser activado">
+<!ENTITY allow_saving_during_pbm.accesskey "s">
+<!ENTITY session_name_in_titlebar.label "o nome das sesións activas na barra do título">
+<!ENTITY session_name_in_titlebar.accesskey "n">
+<!ENTITY prepend.label "Poñer denantes">
+<!ENTITY append.label "Engadir">
+<!ENTITY donotadd.label "Non engadir">
+<!ENTITY use_browser_crash_prompt.label "Empregar o aviso de recuperación de erros do navegador">
+<!ENTITY use_browser_crash_prompt.accesskey "E">
+<!ENTITY reset_warnings.label "Reiniciar os avisos">
+<!ENTITY reset_warnings.accesskey "R">
+<!ENTITY export_settings.label "Exportar a configuración">
+<!ENTITY export_settings.accesskey "x">
+<!ENTITY import_settings.label "Importar a configuración">
+<!ENTITY import_settings.accesskey "I">
+<!ENTITY settingsImportExport.caption "Importar/Exportar Configuración">
+<!ENTITY keyboard.caption "Atallos do Teclado">
+<!ENTITY keyboard.desc "Se queres usar un atallo do teclado para algunha acción, escríbeo aquí, senón déixao en branco. Os cambios non seran aplicados ás xanelas actuais.">
+<!ENTITY clear.label "Borrar">
+<!ENTITY clear.accesskey "B">
+<!ENTITY clear_tab_list.label "Borrar as Lapelas Pechadas">
+<!ENTITY clear_tab_list.accesskey "a">
+<!ENTITY clear_window_list.label "Borrar Xanelas Pechadas">
+<!ENTITY clear_window_list.accesskey "h">
+<!ENTITY backup_on_restart.label "Gardar unha copia de seguridade ó reiniciar o navegador">
+<!ENTITY backup_on_restart.accesskey "n">
+<!ENTITY keep_deleted_sessions.label "Número de días a manter gardadas as sesións pechadas:">
+<!ENTITY keep_deleted_sessions.accesskey "d">
+<!ENTITY concurrent.label "Número de lapelas a restaurar simultáneamente">
+<!ENTITY concurrent.accesskey "l">
+<!ENTITY do_not_color_toolbar_button.label "Non colorear o botón da barra do título ó cargar as sesións">
+<!ENTITY do_not_color_toolbar_button.accesskey "o">
+<!ENTITY preserve_app_tabs.label "Non restaurar as lapelas fixas">
+<!ENTITY preserve_app_tabs.accesskey "N">
+<!ENTITY logging_to_console.label "Rexistrar tamén na consola de erros">
+<!ENTITY logging_to_console.accesskey "R">
+<!ENTITY update_message.label "Mostrar páxina web actualizada despois de darlle a actualizar">
+<!ENTITY update_message.accesskey "M">
+<!ENTITY double_click_session.label "Doble click nunha sesión xa existente sobreescribe dita sesión e">
+<!ENTITY double_click_session.accesskey "D">
+<!ENTITY replace_with_name_replace.label "substitúe o anterior nome de sesión polo nome no cadro de texto">
+<!ENTITY replace_with_name_keep.label "mantén o nome de sesión">
+<!ENTITY show_icon_in_menu.label "Mostrar o icono no menú Ferramentas">
+<!ENTITY show_icon_in_menu.accesskey "i">
+<!ENTITY set_encryption_password.label "Insire un contrasinal para protexer a túa clave de cifrado de sesión">
+<!ENTITY set_encryption_password.accesskey "I">
+<!ENTITY change_encryption_key_password.label "Cambiar a clave de cifrado">
+<!ENTITY change_encryption_key_password.accesskey "C">
+<!ENTITY save_encryption_key.label "Cambiar a clave de cifrado no administrador de contrasinais do navegador">
+<!ENTITY save_encryption_key.accesskey "s">
+<!ENTITY restore_hidden_tabs.label "Restaurar lapelas agochadas">
+<!ENTITY restore_hidden_tabs.accesskey "h">
+<!ENTITY display_menus_in_submenu.label "Amosar elementos do menú do Xestor de Sesións nun submenú">
+<!ENTITY display_menus_in_submenu.accesskey "d">
+<!ENTITY use_sql_cache.label "Gardar no caché os datos básicos da sesión. Isto permitirache buscar nas sesións">
+<!ENTITY use_sql_cache.accesskey "c">
+<!ENTITY rebuild_cache.label "Rexerar a caché">
+<!ENTITY rebuild_cache.accesskey "R">
+<!ENTITY log_level_error.label "Rexistro de Erros">
+<!ENTITY log_level_error.accesskey "E">
+<!ENTITY allow_duplicates.label "Permitir o gardar a sesión actual co mesmo nome dunha sesión anterior">
+<!ENTITY allow_duplicates.accesskey "a">
+<!ENTITY backup_every.label "Crea unha nova copia de seguridade da sesión cada">
+<!ENTITY backup_every.accesskey "C">
+<!ENTITY minutes "minutos">
+<!ENTITY restore_on_demand.label "Restaurar lapelas a petición">
+<!ENTITY restore_on_demand.accesskey "R">
+<!ENTITY max_back_history.label "Número máximo de rexistros do botón de atrás a gardar (-1 para todos)">
+<!ENTITY max_back_history.accesskey "a">
+<!ENTITY max_forward_history.label "Número máximo de rexistros do botón de adiante a gardar (-1 para todos)">
+<!ENTITY max_forward_history.accesskey "x">

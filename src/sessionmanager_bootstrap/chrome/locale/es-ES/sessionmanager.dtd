@@ -1,0 +1,105 @@
+<!ENTITY sessionManager "Administrador de sesiones (Session Manager)">
+<!ENTITY toolsmenu.accesskey "A">
+<!ENTITY save.label "Guardar sesión...">
+<!ENTITY save.accesskey "G">
+<!ENTITY saveOne.label "Guardar ventana actual...">
+<!ENTITY saveOne.accesskey "v">
+<!ENTITY closeSession.label "Guardar y cerrar sesión actual">
+<!ENTITY closeSession.accesskey "s">
+<!ENTITY abandonSession.label "Abandonar sesión actual">
+<!ENTITY abandonSession.accesskey "A">
+<!ENTITY rename.label "Renombrar sesión...">
+<!ENTITY rename.accesskey "R">
+<!ENTITY remove.label "Borrar sesiones...">
+<!ENTITY remove.accesskey "B">
+<!ENTITY openFolder.label "Abrir carpeta de la sesión">
+<!ENTITY openFolder.accesskey "c">
+<!ENTITY options.label "Opciones de &sessionManager;">
+<!ENTITY options.accesskey "O">
+<!ENTITY undoClosed.label "Reabrir cerradas...">
+<!ENTITY undoClosed.accesskey "c">
+<!ENTITY closedWindows "Ventanas cerradas:">
+<!ENTITY closedTabs "Pestañas cerradas:">
+<!ENTITY clearList.label "Vacia la lista de 'cerradas'...">
+<!ENTITY clearList.accesskey "V">
+<!ENTITY toolbar.tooltip "Guarda la sesión actual de navegación...">
+<!ENTITY toolbar.undo.label "Deshacer cierre">
+<!ENTITY toolbar.undo.tooltip "Vuelve a abrir la pestaña cerrada más recientemente">
+<!ENTITY prompt.ignore.label "No volver a mostrar este mensaje">
+<!ENTITY prompt.autosave.label "Guardado automático para esta sesión">
+<!ENTITY prompt.tabprompt.label "Preguntar por las pestañas a restaurar">
+<!ENTITY load_replace.label "Cargar (Reemplazar sesión actual)">
+<!ENTITY load_replace.accesskey "C">
+<!ENTITY load_append.label "Cargar (Añadir a la sesión actual)">
+<!ENTITY load_append.accesskey "A">
+<!ENTITY replace_all.label "Reemplazar sesión con la sesión actual">
+<!ENTITY replace_all.accesskey "s">
+<!ENTITY replace_window.label "Reemplazar sesión con la ventana actual">
+<!ENTITY replace_window.accesskey "v">
+<!ENTITY remove_one.label "Borrar sesión...">
+<!ENTITY set_startup.label "Establecer como sesión de inicio">
+<!ENTITY set_startup.accesskey "E">
+<!ENTITY openSessionManagerSidebar.commandkey "S">
+<!ENTITY session_name.label "Nombre">
+<!ENTITY session_windows.label "Ventanas">
+<!ENTITY session_tabs.label "Pestañas">
+<!ENTITY backup_sessions.label "Hacer copia de seguridad de las sesiones">
+<!ENTITY backup_sessions.accesskey "H">
+<!ENTITY remove_item.label "Borrar elemento">
+<!ENTITY remove_item.accesskey "B">
+<!ENTITY session_group.label "Grupo">
+<!ENTITY rename_group.label "Renombrar grupo...">
+<!ENTITY remove_group.label "Borrar grupo...">
+<!ENTITY change_group.label "Cambiar grupo...">
+<!ENTITY change_group.accesskey "C">
+<!ENTITY group.label "Agrupar sesión(es)...">
+<!ENTITY group.accesskey "A">
+<!ENTITY toolbar.menu.tooltip "Abre el menú de administración de sesiones">
+<!ENTITY toolbar.undo.menu.tooltip "Abre el menú de pestañas y ventanas cerradas recientemente">
+<!ENTITY prompt.save_every1.label "Guardar cada">
+<!ENTITY prompt.save_every2.label "minutos (en blanco para deshabilitar)">
+<!ENTITY winTabTree.restoreHeader "Restaurar">
+<!ENTITY winTabTree.listHeader "Ventanas y pestañas">
+<!ENTITY winTabTree.windowLabel "Ventana &#37;S">
+<!ENTITY load.label "Cargar sesión...">
+<!ENTITY load.accesskey "C">
+<!ENTITY prompt.append.label "Añadir a la sesión">
+<!ENTITY prompt.replace.label "Reemplazar sesión">
+<!ENTITY tab_open_click_note.label "Nota: Al hacer clic sobre la entrada de una pestaña a la vez que pulsa la tecla ALT, abrirá la pestaña en la ventana existente.">
+<!ENTITY select_all.label "Seleccionar todas">
+<!ENTITY select_none.label "No seleccionar ninguna">
+<!ENTITY toggle_selection.label "Cambiar selección">
+<!ENTITY winTabTree.urlHeader "Ubicación">
+<!ENTITY prompt.append_window.label "Añadir a la ventana actual">
+<!ENTITY session_explorer.label "Explorador de sesiones">
+<!ENTITY session_explorer.accesskey "E">
+<!ENTITY closeWindowSession.label "Guardar y cerrar sesión de ventana">
+<!ENTITY closeWindowSession.accesskey "c">
+<!ENTITY abandonWindowSession.label "Abandonar sesión de ventana">
+<!ENTITY abandonWindowSession.accesskey "b">
+<!ENTITY load_append_window.label "Cargar (Añadir a la ventana actual)">
+<!ENTITY load_append_window.accesskey "ñ">
+<!ENTITY leave_window_open.label "Dejar esta ventana abierta">
+<!ENTITY clearTabList.label "Limpiar lista de las pestañas 'cerradas'...">
+<!ENTITY clearTabList.accesskey "p">
+<!ENTITY clearWindowList.label "Limpiar lista de ventanas 'cerradas'...">
+<!ENTITY clearWindowList.accesskey "v">
+<!ENTITY hidden.label "Oculta">
+<!ENTITY contribute.label "Contribuir">
+<!ENTITY support.label "Apoye este complemento:">
+<!ENTITY session_group_verb.label "Grupo">
+<!ENTITY deleted_sessions.label "Sesiones borradas">
+<!ENTITY deleted_sessions.accesskey "b">
+<!ENTITY empty_trash.label "Eliminar todas las sesiones borradas">
+<!ENTITY empty_trash.accesskey "E">
+<!ENTITY permanently_delete.label "Borrar sesión permanentemente">
+<!ENTITY permanently_delete.accesskey "p">
+<!ENTITY search.label "Buscar...">
+<!ENTITY edit.label "Editar sesión...">
+<!ENTITY edit.accesskey "E">
+<!ENTITY addtab.label "Añadir pestaña a la sesión...">
+<!ENTITY addtab.accesskey "A">
+<!ENTITY viewcontents.label "Ver contenido de la sesión">
+<!ENTITY viewcontents.accesskey "V">
+<!ENTITY export_to_html.label "Exportar contenido de la sesión a un fichero de marcadores HTML">
+<!ENTITY export_to_html.accesskey "E">

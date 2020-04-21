@@ -1,0 +1,68 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE html [
+	<!ENTITY % htmlDTD PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "DTD/xhtml1-strict.dtd">
+	%htmlDTD;
+	<!ENTITY % sessionmanagerDTD SYSTEM "chrome://sessionmanager/locale/sessionmanager.dtd">
+	%sessionmanagerDTD;
+]>
+
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:xul="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+<head>
+	<title>&warningPage.title;</title>
+	
+	<link rel="stylesheet" href="chrome://global/skin/netError.css" type="text/css" media="all" />
+	<link rel="icon" type="image/png" href="chrome://sessionmanager/skin/warnicon.png" />
+	
+	<script type="application/x-javascript"><![CDATA[
+		function onLoad()
+		{
+			var list = document.getElementById("historyURLs");
+			for (var i = 0; i < history.length - 1; i++)
+			{
+				var item = document.createElement("li");
+				var link = document.createElement("a");
+				
+				link.textContent = link.href = history[i];
+				link.setAttribute("offset", history.length - i - 1);
+				link.onclick = function() { history.go(-parseInt(this.getAttribute("offset"))); };
+				
+				item.appendChild(link);
+				list.appendChild(item);
+			}
+			document.getElementById("errorTryAgain").focus();
+		}
+		
+		function retryThis()
+		{
+			var index = parseInt(location.hash.substr(1) || 0);
+			if (index)
+			{
+				history.go(index - history.length);
+			}
+			else
+			{
+				history.back();
+			}
+		}
+	]]></script>
+</head>
+
+<body onload="onLoad();">
+	<div id="errorPageContainer">
+		<div id="errorTitle">
+			<h1 id="errorTitleText">&warningPage.title;</h1>
+		</div>
+		<div id="errorLongContent">
+			<div id="errorShortDesc">
+				<p id="errorShortDescText">&warningPage.desc;</p>
+			</div>
+			<div id="errorLongDesc">
+				<p>&warningPage.longDesc;</p>
+				<ul id="historyURLs"/>
+			</div>
+		</div>
+		<xul:button id="errorTryAgain" label="&warningPage.ignore;" oncommand="retryThis();" />
+	</div>
+</body>
+</html>

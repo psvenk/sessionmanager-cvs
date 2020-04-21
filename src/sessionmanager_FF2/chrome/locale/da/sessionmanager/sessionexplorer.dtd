@@ -1,0 +1,40 @@
+<!ENTITY session_open.label "Åbn">
+<!ENTITY session_open.accesskey "b">
+<!ENTITY session_open.tooltip "Åbn valgte session">
+<!ENTITY session_open_overwrite.label "Åbn (overskriv)">
+<!ENTITY session_open_overwrite.tooltip "Åbn valgte session ???">
+<!ENTITY session_open_newwindow.label "Åbn (nyt vindue)">
+<!ENTITY session_open_newwindow.tooltip "Åbn valgte session ???">
+<!ENTITY session_open_append.label "Åbn (tilføj)">
+<!ENTITY session_open_append.accesskey "t">
+<!ENTITY session_open_append.tooltip "Åbn valgte session">
+<!ENTITY session_rename.label "Omdøb...">
+<!ENTITY session_rename.accesskey "m">
+<!ENTITY session_rename.tooltip "Omdøb valgte session">
+<!ENTITY session_rename_ok.label "Omdøb">
+<!ENTITY session_delete.label "Slet">
+<!ENTITY session_delete.accesskey "S">
+<!ENTITY session_delete.tooltip "Slet valgte session">
+<!ENTITY session_save.label "Gem...">
+<!ENTITY session_save.accesskey "G">
+<!ENTITY session_save.tooltip "Gem nuværende vinduer i en ny session">
+<!ENTITY session_save_ok.label "Gem">
+<!ENTITY session_save_w.label "Gem vindue...">
+<!ENTITY session_save_w.accesskey "v">
+<!ENTITY session_save_w.tooltip "Gem nuværende vindue i en ny session">
+<!ENTITY session_save_w_ok.label "Gem vindue">
+<!ENTITY session_open_folder.label "Åbn mappe">
+<!ENTITY session_open_folder.accesskey "p">
+<!ENTITY session_open_folder.tooltip "Åbn Session Manager mappe">
+<!ENTITY column_autosave.label "a">
+<!ENTITY column_autosave.tooltip "Autogem session">
+<!ENTITY column_windows.label "V">
+<!ENTITY column_windows.tooltip "Vinduer">
+<!ENTITY column_tabs.label "F">
+<!ENTITY column_tabs.tooltip "Faneblade">
+<!ENTITY column_time.label "Tid">
+<!ENTITY column_time.tooltip "Tidsstempel">
+<!ENTITY column_name.label "Navn">
+<!ENTITY cancel.label "Annuller">
+<!ENTITY done.label "Færdig">
+<!ENTITY done.tooltip "Luk Sessions-stifinder vindue">

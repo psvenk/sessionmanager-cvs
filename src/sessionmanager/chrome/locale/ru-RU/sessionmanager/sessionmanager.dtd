@@ -1,0 +1,35 @@
+<!ENTITY sessionManager       "Менеджер сессий">
+<!ENTITY toolsmenu.accesskey  "М">
+
+<!ENTITY save.label           "Сохранить сессию...">
+<!ENTITY save.accesskey       "С">
+<!ENTITY saveOne.label        "Сохранить текущее окно...">
+<!ENTITY saveOne.accesskey    "о">
+<!ENTITY rename.label         "Переименовать сессию">
+<!ENTITY rename.accesskey     "П">
+<!ENTITY remove.label         "Удалить сессию(и)...">
+<!ENTITY remove.accesskey     "У">
+<!ENTITY openFolder.label     "Открыть папку сессий">
+<!ENTITY openFolder.accesskey "т">
+
+<!ENTITY options.label        "Настройки &sessionManager;">
+<!ENTITY options.accesskey    "O">
+<!ENTITY resume.label         "Восстановить текущую сессию при загрузке">
+<!ENTITY resume.accesskey     "В">
+<!ENTITY reload.label         "Обновить все Восстановленные окна">
+<!ENTITY reload.accesskey     "б">
+<!ENTITY overwrite.label      "Заменить существующие окна">
+<!ENTITY overwrite.accesskey  "З">
+
+<!ENTITY undoClosed.label     "Открыть закрытое...">
+<!ENTITY undoClosed.accesskey "к">
+<!ENTITY closedWindows        "Закрытые окна:">
+<!ENTITY closedTabs           "Закрытые вкладки:">
+<!ENTITY clearList.label      "Очистить спиок 'Закрытые'...">
+<!ENTITY clearList.accesskey  "ч">
+
+<!ENTITY toolbar.tooltip      "Сохранить текущую сессию...">
+<!ENTITY toolbar.undo.label   "Отмена Закрытого">
+<!ENTITY toolbar.undo.tooltip "Открыть наиболее закрываемые вкладки">
+
+<!ENTITY prompt.ignore.label  "Не показывать это сообщение в дальнейшем">

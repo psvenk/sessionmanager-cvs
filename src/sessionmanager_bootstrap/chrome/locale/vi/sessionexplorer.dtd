@@ -1,0 +1,31 @@
+<!ENTITY session_open.label "Mở">
+<!ENTITY session_open.tooltip "Mở phiên đã chọn">
+<!ENTITY session_open_overwrite.label "Mở (đè lên)">
+<!ENTITY session_open_overwrite.tooltip "Mở phiên đã chọn ???">
+<!ENTITY session_open_newwindow.label "Mở (cửa sổ mới)">
+<!ENTITY session_open_newwindow.tooltip "Mở phiên đã chọn ???">
+<!ENTITY session_open_append.label "Mở (thêm vào)">
+<!ENTITY session_open_append.tooltip "Mở phiên đã chọn">
+<!ENTITY session_rename.label "Đổi tên...">
+<!ENTITY session_rename.tooltip "Đổi tên phiên đã chọn">
+<!ENTITY session_rename_ok.label "Đổi tên">
+<!ENTITY session_delete.label "Xóa">
+<!ENTITY session_delete.tooltip "Xóa phiên đã chọn">
+<!ENTITY session_save.label "Lưu...">
+<!ENTITY session_save.tooltip "Lưu các cửa sổ hiện tại vào một phiên mới">
+<!ENTITY session_save_ok.label "Lưu">
+<!ENTITY session_save_w.label "Lưu Cửa Sổ...">
+<!ENTITY session_save_w.tooltip "Lưu cửa sổ hiện tại vào một phiên mới">
+<!ENTITY session_save_w_ok.label "Lưu Cửa Sổ">
+<!ENTITY session_open_folder.label "Mở Thư Mục">
+<!ENTITY session_open_folder.tooltip "Mở thư mục Trình Quản Lý Phiên">
+<!ENTITY column_autosave.tooltip "Phiên Tự Động Lưu">
+<!ENTITY column_windows.tooltip "Các Cửa sổ">
+<!ENTITY column_tabs.tooltip "Các Thẻ">
+<!ENTITY column_time.label "Thời Gian">
+<!ENTITY column_time.tooltip "Mốc Thời Gian">
+<!ENTITY column_name.label "Tên">
+<!ENTITY cancel.label "Hủy Bỏ">
+<!ENTITY done.label "Xong">
+<!ENTITY done.tooltip "Đóng Cửa Sổ Duyệt Phiên">
+<!ENTITY session_load.label "Tải">

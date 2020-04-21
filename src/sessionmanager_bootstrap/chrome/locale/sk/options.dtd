@@ -1,0 +1,141 @@
+<!ENTITY options.title "&sessionManager; - Nastavenia">
+<!ENTITY general.caption "Všeobecné">
+<!ENTITY startNend.caption "Spustenie a ukončenie">
+<!ENTITY resume_sess.label "Pri spustení vždy načítať nasledujúce reláciu:">
+<!ENTITY backup_sess.label "Pri ukončení">
+<!ENTITY backup_sess.accesskey "u">
+<!ENTITY backup_session.label0 "zrušiť aktuálnu reláciu">
+<!ENTITY backup_session.label1 "vytvoriť zálohu aktuálnej relácie">
+<!ENTITY backup_session.label2 "opýtať sa, či vytvoriť zálohu aktuálnej relácie">
+<!ENTITY crashrecovery.label "Povoliť obnovenie po páde">
+<!ENTITY autosave_session.label "Automaticky uložiť nahradenú reláciu">
+<!ENTITY restoring.caption "Obnova relácií">
+<!ENTITY sessionList.caption "Zoznam relácií">
+<!ENTITY orderList.label "Usporiadať zoznam relácií">
+<!ENTITY orderList.accesskey "s">
+<!ENTITY orderList.label1 "abecedne">
+<!ENTITY orderList.label2 "od najstaršej po najnovšiu">
+<!ENTITY orderList.label_2 "od najnovšej po najstaršiu">
+<!ENTITY max_backup.label "Počet uchovávaných záloh starších relácií:">
+<!ENTITY max_backup.accesskey "P">
+<!ENTITY undoClose.caption "Znova otvoriť zatvorené">
+<!ENTITY windowsNtabs.caption "Zatvorené okná &amp; karty">
+<!ENTITY max_closed.label "Maximálne množstvo zapamätaných zatvorených okien:">
+<!ENTITY max_closed.accesskey "m">
+<!ENTITY max_tabs.label "Maximálne množstvo zapamätaných kariet (pre každé okno)">
+<!ENTITY max_tabs.accesskey "k">
+<!ENTITY submenu.label "Zobraziť zoznam všetkých zatvorených okien a kariet v podponuke">
+<!ENTITY submenu.accesskey "Z">
+<!ENTITY persistence.caption "Trvanie">
+<!ENTITY closed_tabs.label "Obnoviť zoznam kariet, ktoré je možné znova otvoriť, pre všetky okná:">
+<!ENTITY closed_tabs.label0 "nikdy">
+<!ENTITY closed_tabs.label1 "pri spustení">
+<!ENTITY closed_tabs.label2 "vždy">
+<!ENTITY window_list.label "Pri ukončení nemazať zoznam zatvorených okien">
+<!ENTITY clear_list.label "Vymazať zoznam">
+<!ENTITY clear_list.accesskey "v">
+<!ENTITY advanced.caption "Rozšírené">
+<!ENTITY name_format.caption "Názvy relácii">
+<!ENTITY name_format.label "Formát návrhov názvov relácií:">
+<!ENTITY name_format.desc "Môžete použiť &#37;t ako skratku pre titulok aktívnej karty, &#37;d dnešný dátum a &#37;m pre čas. Titulok môžete bude obmedzený na počet # znakov: &#37;#t.">
+<!ENTITY service.caption "Nastavenia pre &quot;SessionStore&quot;">
+<!ENTITY service.description "Nemeňte tieto nastavenia, ak neviete čo robíte.">
+<!ENTITY interval.label "Minimálny časový interval medzi ukladaním stavu (v sekundách):">
+<!ENTITY postdata.label "Maximálne množstvo uložených údajov POSTDATA (v bytoch; -1 pre všetkých):">
+<!ENTITY privacy.label "Uložiť citlivé údaje (údaje formulárov, POSTDATA a cookies) pre">
+<!ENTITY privacy.accesskey "c">
+<!ENTITY privacy.level0 "všetky stránky">
+<!ENTITY privacy.level1 "len nezabezpečené stránky">
+<!ENTITY privacy.level2 "žiadne stránky">
+<!ENTITY sessiondir.caption "Umiestnenie pre uložené relácie">
+<!ENTITY sessiondir.desc "Predvolené umiestnenie pre uložené relácie môže byť zmenené.">
+<!ENTITY encrypt.caption "Zašifrovanie">
+<!ENTITY encrypt.desc "Upozornenie: Zašifrované údaje relácií je možné otvoriť len v profiloch s identickými súbormi key3.db a cert8.db. Ak je nastavené aj hlavné heslo, relácie nemôžu byť zašifrované alebo dešifrované bez jeho zadania.">
+<!ENTITY encrypt.label "Zašifrovať údaje o uložených reláciách a zatvorených oknách">
+<!ENTITY change_dir.label "Zmeniť">
+<!ENTITY change_dir.accesskey "Z">
+<!ENTITY default_dir.label "Obnoviť predvolené">
+<!ENTITY default_dir.accesskey "b">
+<!ENTITY sanitizer.label "Uložené relácie rozšírenia Session Manager">
+<!ENTITY saving.caption "Ukladanie relácie">
+<!ENTITY lastpage.label "Zobraziť naposledy načítanú stránku">
+<!ENTITY noSession.label "Žiadna">
+<!ENTITY noSession.accesskey "a">
+<!ENTITY promptSession.label "Opýtať sa na reláciu">
+<!ENTITY promptSession.accesskey "O">
+<!ENTITY selectSession.label "Vybrať reláciu">
+<!ENTITY selectSession.accesskey "V">
+<!ENTITY cookies.label "Uložiť cookies relácie">
+<!ENTITY cookies.accesskey "U">
+<!ENTITY sessionImport.caption "Importovať relácie z...">
+<!ENTITY importSS.accesskey "S">
+<!ENTITY importTMP.accesskey "T">
+<!ENTITY apply.label "Použiť">
+<!ENTITY save_and_restore.caption "Uloženie a obnova">
+<!ENTITY display.caption "Zobrazenie">
+<!ENTITY middleclick.label "Kliknutím stredným tlačidlom myši znova otvoriť naposledy zatvorenú kartu">
+<!ENTITY middleclick.accesskey "u">
+<!ENTITY max_display.label "Maximálny počet relácií zobrazených v ponuke">
+<!ENTITY hide_tools_menu.label "Nezobrazovať ponuku Správca relácií v ponuke Nástroje">
+<!ENTITY hide_tools_menu.accesskey "e">
+<!ENTITY disable_cache_fixer.label "Vypnúť funkciu opravy vyrovnávacej pamäte">
+<!ENTITY disable_cache_fixer.accesskey "V">
+<!ENTITY encrypted_only.label "Ak zašifrovanie zlyhá, neukladať údaje nezašifrované">
+<!ENTITY encrypted_only.accesskey "z">
+<!ENTITY encrypt2.desc "Upozornenie: Ak je táto voľba označená a údaje o relácii alebo okne nemohli byť zašifrované, tieto sa stratia bez možnosti ich obnovy. Zašifrovanie zlyhá, ak je nastavené Hlavné heslo a nie je zadané, takže buďte pri nastavení tejto voľby opatrný.">
+<!ENTITY closed_window_list.label "Použiť v prehliadači zabudovaný zoznam zatvorených okien">
+<!ENTITY closed_window_list.accesskey "u">
+<!ENTITY closed_windows.label "Obnoviť zoznam otvoriteľných naposledy zatvorených okien">
+<!ENTITY closed_windows.accesskey "b">
+<!ENTITY open_as_tabs.label "Otvoriť ako karty v aktuálnom okne">
+<!ENTITY open_as_tabs.accesskey "a">
+<!ENTITY last_window_shutdown.label "Považovať zatvorenie posledného otvoreného okna prehliadača za ukončenie">
+<!ENTITY last_window_shutdown.accesskey "z">
+<!ENTITY preselect_previous_session.label "Predvybrať predchádzajúcu reláciu">
+<!ENTITY preselect_previous_session.accesskey "d">
+<!ENTITY logging.caption "Zaznamenávanie">
+<!ENTITY enable_logging.label "Povoliť zaznamenávanie">
+<!ENTITY enable_logging.accesskey "z">
+<!ENTITY open_log.label "Otvoriť súbor so záznamom">
+<!ENTITY open_log.accesskey "b">
+<!ENTITY delete_log.label "Odstrániť súbor so záznamom">
+<!ENTITY log_level_state.label "Zaznamenať stav pri ukončení">
+<!ENTITY log_level_state.accesskey "a">
+<!ENTITY log_level_trace.label "Zaznamenávať údaje o trasovaní">
+<!ENTITY log_level_data.label "Zaznamenávať údaje o premenných">
+<!ENTITY log_level_data.accesskey "m">
+<!ENTITY log_level_info.label "Zaznamenávať informačné správy">
+<!ENTITY log_level_extra.label "Zaznamenávať extra údaje ladenia">
+<!ENTITY log_level_extra.accesskey "d">
+<!ENTITY reload.label "Obnoviť obsah všetkých obnovených okien">
+<!ENTITY reload.accesskey "i">
+<!ENTITY overwrite.label "Nahradiť existujúce okná">
+<!ENTITY overwrite.accesskey "h">
+<!ENTITY allow_saving_during_pbm.label "Povoliť ukladanie počas práce v režime Súkromné prehlaidanie">
+<!ENTITY allow_saving_during_pbm.label2 "Vyžaduje povolenie šifrovania">
+<!ENTITY allow_saving_during_pbm.accesskey "f">
+<!ENTITY session_name_in_titlebar.label "názov aktívnej relácie do titulku">
+<!ENTITY prepend.label "Pridať">
+<!ENTITY append.label "Pripojiť">
+<!ENTITY donotadd.label "Nepridávať">
+<!ENTITY use_browser_crash_prompt.label "Použiť hlásenie obnovenia zabudované v prehliadači">
+<!ENTITY use_browser_crash_prompt.accesskey "P">
+<!ENTITY reset_warnings.label "Vynulovať upozornenia">
+<!ENTITY reset_warnings.accesskey "u">
+<!ENTITY export_settings.label "Exportovať nastavenia">
+<!ENTITY export_settings.accesskey "x">
+<!ENTITY import_settings.label "Importovať nastavenia">
+<!ENTITY settingsImportExport.caption "Import/export nastavení">
+<!ENTITY keyboard.caption "Klávesové skratky">
+<!ENTITY keyboard.desc "Ak chcete pre akciu používať klávesovú skratku, zadajte ju sem. Inak nechajte pole prázdne. Zmeny sa neprejavia v existujúcich oknách.">
+<!ENTITY clear.label "Vymazať">
+<!ENTITY clear.accesskey "V">
+<!ENTITY clear_tab_list.label "Vymazať zoznam zatvorených kariet">
+<!ENTITY clear_tab_list.accesskey "k">
+<!ENTITY clear_window_list.label "Vymazať zoznam zatvorených okien">
+<!ENTITY clear_window_list.accesskey "o">
+<!ENTITY backup_on_restart.label "Uložiť zálohu pri reštarte prehliadača">
+<!ENTITY backup_on_restart.accesskey "U">
+<!ENTITY keep_deleted_sessions.label "Počet dní, počas ktorých dočasne uchovávať odstránené relácie:">
+<!ENTITY concurrent.label "Počet kariet, ktoré obnovovať súčasne">
+<!ENTITY concurrent.accesskey "k">

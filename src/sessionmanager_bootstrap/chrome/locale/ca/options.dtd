@@ -1,0 +1,80 @@
+<!ENTITY options.title "Opcions del &sessionManager;">
+<!ENTITY startNend.caption "Inici i sortida">
+<!ENTITY resume_sess.label "En iniciar, carrega sempre la sessió següent:">
+<!ENTITY backup_sess.label "En sortir">
+<!ENTITY backup_session.label0 "descarta la sessió actual">
+<!ENTITY backup_session.label1 "fes una còpia de seguretat de la sessió actual">
+<!ENTITY backup_session.label2 "demana'm si s'ha de fer una còpia de seguretat de la sessió actual">
+<!ENTITY crashrecovery.label "Habilita la recuperació de fallades">
+<!ENTITY autosave_session.label "Desa automàticament la sessió reemplaçada">
+<!ENTITY restoring.caption "Restauració de la sessió">
+<!ENTITY sessionList.caption "Llista de sessions">
+<!ENTITY orderList.label "Ordena la llista de sessions">
+<!ENTITY orderList.label1 "alfabèticament">
+<!ENTITY orderList.label2 "de més antiga a més nova">
+<!ENTITY orderList.label_2 "de més nova a més antiga">
+<!ENTITY max_backup.label "Nombre de còpies de seguretat antigues (fallades) a mantenir:">
+<!ENTITY undoClose.caption "Desfés el tancament">
+<!ENTITY windowsNtabs.caption "Finestres i pestanyes tancades">
+<!ENTITY max_closed.label "Nombre màxim de finestres tancades a recordar:">
+<!ENTITY max_tabs.label "Nombre màxim de pestanyes tancades a recordar (per finestra):">
+<!ENTITY submenu.label "Mostra una llista de totes les finestres i pestanyes en un submenú">
+<!ENTITY persistence.caption "Persistència">
+<!ENTITY closed_tabs.label "Restaura la llista de pestanyes tancades que es puguin tornar a obrir per a totes les finestres:">
+<!ENTITY closed_tabs.label0 "mai">
+<!ENTITY closed_tabs.label1 "en iniciar">
+<!ENTITY closed_tabs.label2 "sempre">
+<!ENTITY window_list.label "No netegis la llista de finestres tancades en sortir">
+<!ENTITY clear_list.label "Neteja la llista">
+<!ENTITY advanced.caption "Avançat">
+<!ENTITY name_format.caption "Noms de les sessions">
+<!ENTITY name_format.label "Format per als suggeriments dels noms de les sessions:">
+<!ENTITY service.caption "Paràmetres del «SessionStore»">
+<!ENTITY service.description "No ho modifiqueu a menys que sapigueu què esteu fent">
+<!ENTITY interval.label "Interval mínim entre dos desaments d'estat (en segons)">
+<!ENTITY privacy.level0 "tots els llocs">
+<!ENTITY privacy.level1 "només els llocs no encriptats">
+<!ENTITY privacy.level2 "cap lloc">
+<!ENTITY sessiondir.caption "Ubicació de les sessions desades">
+<!ENTITY sessiondir.desc "La ubicació predeterminada de les sessions desades es pot sobreescriure aquí.">
+<!ENTITY encrypt.caption "Encriptació">
+<!ENTITY encrypt.label "Encripta les dades de la sessió desada i les finestres tancades">
+<!ENTITY change_dir.label "Canvia">
+<!ENTITY default_dir.label "Predeterminat">
+<!ENTITY sanitizer.label "Sessions desades del gestor de sessions">
+<!ENTITY saving.caption "Desament de sessions">
+<!ENTITY lastpage.label "Mostra la darrera pàgina que he carregat">
+<!ENTITY noSession.label "Cap">
+<!ENTITY promptSession.label "Demana per carregar una sessió">
+<!ENTITY selectSession.label "Seleccioneu la sessió">
+<!ENTITY cookies.label "Desa les galetes de la sessió">
+<!ENTITY sessionImport.caption "Importa sessions de...">
+<!ENTITY apply.label "Aplica">
+<!ENTITY save_and_restore.caption "Desament i restauració">
+<!ENTITY display.caption "Mostra">
+<!ENTITY middleclick.label "En fer clic amb el botó del mig s'obrirà la darrera pestanya tancada">
+<!ENTITY max_display.label "Nombre màxim de sessions a mostrar en el menú (-1 significa totes)">
+<!ENTITY hide_tools_menu.label "No mostris el menú del gestor de sessions al menú Eines">
+<!ENTITY disable_cache_fixer.label "Inhabilita la funció de reparació de la memòria cau">
+<!ENTITY encrypted_only.label "Si falla l'encriptació, NO desis les dades sense encriptar.">
+<!ENTITY closed_window_list.label "Utilitza la llista interna de finestres tancades del navegador">
+<!ENTITY closed_windows.label "Restaura la llista de finestres tancades que es puguin tornar a obrir:">
+<!ENTITY open_as_tabs.label "Obre com a pestanyes a la finestra actual">
+<!ENTITY preselect_previous_session.label "Pre-selecciona la sessió anterior">
+<!ENTITY logging.caption "Registre">
+<!ENTITY enable_logging.label "Habilita el registre">
+<!ENTITY open_log.label "Obre el fitxer de registre">
+<!ENTITY delete_log.label "Suprimeix el fitxer de registre">
+<!ENTITY log_level_state.label "Registra l'estat de sortida">
+<!ENTITY log_level_trace.label "Registra les dades de traça">
+<!ENTITY log_level_data.label "Registra les dades de les variables">
+<!ENTITY log_level_info.label "Resgistra els missatges informatius">
+<!ENTITY log_level_extra.label "Registra la informació addicional de depuració">
+<!ENTITY reload.label "Torna a carregar totes les finestres recuperades">
+<!ENTITY overwrite.label "Reemplaça les finestres existents">
+<!ENTITY allow_saving_during_pbm.label "Permet desar en el mode de navegació privada">
+<!ENTITY allow_saving_during_pbm.label2 "Cal habilitar l'encriptatge">
+<!ENTITY session_name_in_titlebar.label "el nom de les sessions actives a la barra de títol">
+<!ENTITY prepend.label "Afegeix a l'inici">
+<!ENTITY append.label "Afegeix">
+<!ENTITY donotadd.label "No l'afegeixis">

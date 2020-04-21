@@ -1,0 +1,202 @@
+<!ENTITY options.title "&sessionManager; – ustawienia">
+<!ENTITY general.caption "Ogólne">
+<!ENTITY startNend.caption "Otwieranie/zamykanie przeglądarki">
+<!ENTITY resume_sess.label "Podczas uruchamiania wczytuj następującą sesję:">
+<!ENTITY resume_sess.accesskey "U">
+<!ENTITY backup_sess.label "Podczas zamykania">
+<!ENTITY backup_sess.accesskey "c">
+<!ENTITY backup_session.label0 "nie zapisuj sesji">
+<!ENTITY backup_session.label1 "utwórz kopię zapasową sesji">
+<!ENTITY backup_session.label2 "pytaj gdzie zapisać kopię zapasową sesji">
+<!ENTITY crashrecovery.label "Włącz odzyskiwanie sesji">
+<!ENTITY crashrecovery.accesskey "k">
+<!ENTITY autosave_session.label "Zapisuj automatycznie zastąpioną sesję">
+<!ENTITY autosave_session.accesskey "Z">
+<!ENTITY restoring.caption "Odtwarzanie sesji">
+<!ENTITY sessionList.caption "Lista sesji">
+<!ENTITY orderList.label "Sortuj listę sesji">
+<!ENTITY orderList.accesskey "R">
+<!ENTITY orderList.label1 "alfabetycznie">
+<!ENTITY orderList.label2 "od najstarszych">
+<!ENTITY orderList.label_2 "od najnowszych">
+<!ENTITY max_backup.label "Liczba utrzymywanych kopii zapasowych uszkodzonych sesji:">
+<!ENTITY max_backup.accesskey "u">
+<!ENTITY undoClose.caption "Odzyskiwanie">
+<!ENTITY windowsNtabs.caption "Zamykanie okien i kart">
+<!ENTITY max_closed.label "Liczba zapamiętanych zamkniętych okien:">
+<!ENTITY max_closed.accesskey "b">
+<!ENTITY max_tabs.label "Liczba zapamiętanych zamkniętych kart (w jednym oknie):">
+<!ENTITY max_tabs.accesskey "r">
+<!ENTITY submenu.label "Wyświetlaj listę zamkniętych okien i kart w menu podręcznym">
+<!ENTITY submenu.accesskey "w">
+<!ENTITY persistence.caption "Podtrzymywanie">
+<!ENTITY closed_tabs.label "Odtwarzaj listę zamkniętych kart dla wszystkich okien">
+<!ENTITY closed_tabs.accesskey "d">
+<!ENTITY closed_tabs.label0 "nigdy">
+<!ENTITY closed_tabs.label1 "podczas uruchamiania">
+<!ENTITY closed_tabs.label2 "zawsze">
+<!ENTITY window_list.label "Nie czyść listy zamkniętych okien podczas uruchamiania">
+<!ENTITY window_list.accesskey "e">
+<!ENTITY clear_list.label "Wyczyść listę">
+<!ENTITY clear_list.accesskey "C">
+<!ENTITY advanced.caption "Zaawansowane">
+<!ENTITY name_format.caption "Nazwy sesji">
+<!ENTITY name_format.label "Sugerowany format nazwy sesji:">
+<!ENTITY name_format.accesskey "f">
+<!ENTITY name_format.desc "Użyj &#37;t dla nazw aktywnych kart, &#37;d dla dzisiejszej daty i &#37;m dla czasu. Można także ograniczyć długość nazwy do określonej liczby znaków: &#37;#t.">
+<!ENTITY sessionstore.caption "Przechowywanie">
+<!ENTITY service.caption "Przechowywanie sesji – ustawienia">
+<!ENTITY service.description "Nie zmieniaj tych ustawień jeżeli nie masz o nich odpowiedniej wiedzy!">
+<!ENTITY interval.label "Minimalna przerwa pomiędzy kolejnymi zapisami (s):">
+<!ENTITY interval.accesskey "M">
+<!ENTITY postdata.label "Liczba przetrzymywanych danych POSTDATA (w bajtach; -1 = wszystko):">
+<!ENTITY postdata.accesskey "L">
+<!ENTITY privacy.label "Zapisuj prywatne dane (dane formularzy, POSTDATA i ciasteczka) dla:">
+<!ENTITY privacy.accesskey "Z">
+<!ENTITY privacy.level0 "wszystkich witryn">
+<!ENTITY privacy.level1 "tylko witryn nieszyfrowanych">
+<!ENTITY privacy.level2 "– nie zapisuj –">
+<!ENTITY sessiondir.caption "Lokalizacja zapisanych sesji">
+<!ENTITY sessiondir.desc "Tutaj można zmienić domyślną lokalizację zapisanych sesji">
+<!ENTITY encrypt.caption "Szyfrowanie">
+<!ENTITY encrypt.desc "Ostrzeżenie! Dane zaszyfrowanej sesji mogą być otwarte tylko w profilu, w którym znajdują się identyczne pliki key3.db i cert8.db. Ponadto sesja nie może być zaszyfrowana/odszyfrowana, gdy jest ustanowione hasło główne, a nie zostało wprowadzone.">
+<!ENTITY encrypt.label "Szyfruj zapisaną sesję i dane zamkniętych okien">
+<!ENTITY encrypt.accesskey "s">
+<!ENTITY change_dir.label "Zmień">
+<!ENTITY change_dir.accesskey "Z">
+<!ENTITY default_dir.label "Domyślna">
+<!ENTITY default_dir.accesskey "D">
+<!ENTITY sanitizer.label "Zapisane sesje Menedżera sesji">
+<!ENTITY sanitizer.accesskey "M">
+<!ENTITY saving.caption "Zapis sesji">
+<!ENTITY lastpage.label "wyświetl ostatnio wczytaną stronę">
+<!ENTITY noSession.label "brak">
+<!ENTITY noSession.accesskey "B">
+<!ENTITY promptSession.label "pytaj o sesję">
+<!ENTITY promptSession.accesskey "e">
+<!ENTITY selectSession.label "wybierz sesję">
+<!ENTITY selectSession.accesskey "z">
+<!ENTITY cookies.label "Zapisuj ciasteczka sesji">
+<!ENTITY cookies.accesskey "C">
+<!ENTITY sessionImport.caption "Importuj sesje z…">
+<!ENTITY importSS.label "SessionSavera">
+<!ENTITY importSS.accesskey "S">
+<!ENTITY importTMP.label "Tab Mix Plusa">
+<!ENTITY importTMP.accesskey "T">
+<!ENTITY apply.label "Zastosuj">
+<!ENTITY save_and_restore.caption "Zapis/Odtwarzanie">
+<!ENTITY display.caption "Wyświetlanie">
+<!ENTITY middleclick.label "Kliknięcie ś.p.m. otwiera ponownie ostatnio zamkniętą kartę">
+<!ENTITY middleclick.accesskey "K">
+<!ENTITY max_display.label "Maksymalna liczba sesji wyświetlanych w menu (-1 wszystkie)">
+<!ENTITY max_display.accesskey "M">
+<!ENTITY hide_tools_menu.label "Nie wyświetlaj menu menedżera sesji w menu Narzędzia">
+<!ENTITY hide_tools_menu.accesskey "U">
+<!ENTITY disable_cache_fixer.label "Wyłącz funkcję naprawiania bufora">
+<!ENTITY disable_cache_fixer.accesskey "F">
+<!ENTITY encrypted_only.label "Jeśli szyfrowanie uległo awarii, nie zapisuj niezaszyfrowanych danych">
+<!ENTITY encrypted_only.accesskey "N">
+<!ENTITY encrypt2.desc "Ostrzeżenie! Włączenie tej funkcji spowoduje, że jeśli sesja lub dane okna nie mogą być zaszyfrowane, wszystkie dane zostaną utracone bezpowrotnie. Szyfrowanie nie będzie działało jeżeli hasło główne jest wymagane, a nie zostało wprowadzone. Proszę rozważnie i ostrożnie włączać tę funkcję.">
+<!ENTITY closed_window_list.label "Użyj listy zamkniętych okien przeglądarki">
+<!ENTITY closed_window_list.accesskey "Z">
+<!ENTITY closed_windows.label "Odtwarzaj listę ponownie otwieranych okien:">
+<!ENTITY closed_windows.accesskey "t">
+<!ENTITY open_as_tabs.label "Otwieraj jako karty w aktywnym oknie">
+<!ENTITY open_as_tabs.accesskey "W">
+<!ENTITY last_window_shutdown.label "Odzyskuj ostatnio otwarte okno w momencie zamknięcia przeglądarki">
+<!ENTITY last_window_shutdown.accesskey "D">
+<!ENTITY preselect_previous_session.label "Zaznacz wstępnie poprzednią sesję">
+<!ENTITY preselect_previous_session.accesskey "W">
+<!ENTITY logging.caption "Dziennik zdarzeń">
+<!ENTITY enable_logging.label "Włącz dziennik zdarzeń">
+<!ENTITY enable_logging.accesskey "D">
+<!ENTITY open_log.label "Otwórz plik dziennika">
+<!ENTITY open_log.accesskey "O">
+<!ENTITY delete_log.label "Usuń plik dziennika">
+<!ENTITY delete_log.accesskey "U">
+<!ENTITY log_level_state.label "Zapisuj stan zamknięcia">
+<!ENTITY log_level_state.accesskey "K">
+<!ENTITY log_level_trace.label "Zapisuj dane śledzenia">
+<!ENTITY log_level_trace.accesskey "N">
+<!ENTITY log_level_data.label "Zapisuj dane zmienne">
+<!ENTITY log_level_data.accesskey "M">
+<!ENTITY log_level_info.label "Zapisuj wiadomości informacyjne">
+<!ENTITY log_level_info.accesskey "W">
+<!ENTITY log_level_extra.label "Zapisuj dodatkowe dane debugowania">
+<!ENTITY log_level_extra.accesskey "B">
+<!ENTITY reload.label "Odświeżaj wszystkie odtworzone okna">
+<!ENTITY reload.accesskey "r">
+<!ENTITY overwrite.label "Zamieniaj istniejące okna">
+<!ENTITY overwrite.accesskey "a">
+<!ENTITY allow_saving_during_pbm.label "Zezwalaj na zapis w trakcie korzystania z trybu prywatnego">
+<!ENTITY allow_saving_during_pbm.label2 "Wymaga włączenia kodowania">
+<!ENTITY allow_saving_during_pbm.accesskey "K">
+<!ENTITY session_name_in_titlebar.label "nazwę aktywnej sesji do paska tytułu">
+<!ENTITY session_name_in_titlebar.accesskey "z">
+<!ENTITY prepend.label "Dodawaj na początku">
+<!ENTITY append.label "Dodawaj na końcu">
+<!ENTITY donotadd.label "Nie dodawaj">
+<!ENTITY use_browser_crash_prompt.label "Używaj powiadomień odzyskiwania sesji przeglądarki">
+<!ENTITY use_browser_crash_prompt.accesskey "U">
+<!ENTITY reset_warnings.label "Resetuj ostrzeżenia">
+<!ENTITY reset_warnings.accesskey "R">
+<!ENTITY export_settings.label "Eksportuj">
+<!ENTITY export_settings.accesskey "K">
+<!ENTITY import_settings.label "Importuj">
+<!ENTITY import_settings.accesskey "I">
+<!ENTITY settingsImportExport.caption "Import/Eksport ustawień">
+<!ENTITY keyboard.caption "Skróty klawiszowe">
+<!ENTITY keyboard.desc "Aby używać skrótów klawiszowych dla danej czynności, wprowadź je tutaj. Jeśli nie chcesz używać skrótów – pozostaw pole puste. Zmiany dokonane tutaj nie będą stosowane do bieżących okien.">
+<!ENTITY clear.label "Wyczyść">
+<!ENTITY clear.accesskey "W">
+<!ENTITY clear_tab_list.label "Wyczyść zamknięte karty">
+<!ENTITY clear_tab_list.accesskey "M">
+<!ENTITY clear_window_list.label "Wyczyść zamknięte okna">
+<!ENTITY clear_window_list.accesskey "N">
+<!ENTITY backup_on_restart.label "Zapisz kopię zapasową podczas ponownego uruchamiania przeglądarki">
+<!ENTITY backup_on_restart.accesskey "A">
+<!ENTITY keep_deleted_sessions.label "Liczba dni przechowywania usuniętych sesji:">
+<!ENTITY keep_deleted_sessions.accesskey "b">
+<!ENTITY concurrent.label "Liczba kart jednocześnie odtwarzanych">
+<!ENTITY concurrent.accesskey "n">
+<!ENTITY do_not_color_toolbar_button.label "Nie koloruj przycisku narzędziowego podczas wczytywania sesji">
+<!ENTITY do_not_color_toolbar_button.accesskey "o">
+<!ENTITY preserve_app_tabs.label "Nie zmieniaj miejsca przypiętych kart aplikacji">
+<!ENTITY preserve_app_tabs.accesskey "m">
+<!ENTITY logging_to_console.label "Zapisuj także w konsoli błędów">
+<!ENTITY logging_to_console.accesskey "a">
+<!ENTITY update_message.label "Po aktualizacji wyświetlaj stronę aktualizacji">
+<!ENTITY update_message.accesskey "t">
+<!ENTITY double_click_session.label "Dwukrotne kliknięcie aktualnej sesji zastępuje sesję i">
+<!ENTITY double_click_session.accesskey "D">
+<!ENTITY replace_with_name_replace.label "zmienia jej nazwę na nazwę z pola tekstowego">
+<!ENTITY replace_with_name_keep.label "pozostawia nazwę sesji">
+<!ENTITY show_icon_in_menu.label "Wyświetlaj ikonę w menu Narzędzia">
+<!ENTITY show_icon_in_menu.accesskey "n">
+<!ENTITY set_encryption_password.label "Podaj hasło, by zabezpieczyć klucz szyfrowania sesji">
+<!ENTITY set_encryption_password.accesskey "e">
+<!ENTITY change_encryption_key_password.label "Zmień hasło klucza szyfrowania sesji">
+<!ENTITY change_encryption_key_password.accesskey "m">
+<!ENTITY save_encryption_key.label "Zapisuj hasło klucza szyfrowania sesji w menedżerze haseł przeglądarki">
+<!ENTITY save_encryption_key.accesskey "s">
+<!ENTITY restore_hidden_tabs.label "Odtwarzaj ukryte karty">
+<!ENTITY restore_hidden_tabs.accesskey "U">
+<!ENTITY display_menus_in_submenu.label "Wyświetlaj elementy menu Session Managera w submenu">
+<!ENTITY display_menus_in_submenu.accesskey "E">
+<!ENTITY use_sql_cache.label "Buforuj na dysku podstawowe dane sesji. Włącza wyszukiwanie wewnątrz sesji.">
+<!ENTITY use_sql_cache.accesskey "B">
+<!ENTITY rebuild_cache.label "Przebuduj dane buforu">
+<!ENTITY rebuild_cache.accesskey "B">
+<!ENTITY log_level_error.label "Zapisuj błędy w dzienniku zdarzeń">
+<!ENTITY log_level_error.accesskey "D">
+<!ENTITY allow_duplicates.label "Zezwalaj na zapisywanie sesji z taką samą nazwą, jak istniejąca sesja">
+<!ENTITY allow_duplicates.accesskey "M">
+<!ENTITY backup_every.label "Twórz kopię zapasową sesji co">
+<!ENTITY backup_every.accesskey "T">
+<!ENTITY minutes "min">
+<!ENTITY restore_on_demand.label "Odtwarzaj karty na żądanie">
+<!ENTITY restore_on_demand.accesskey "W">
+<!ENTITY max_back_history.label "Liczba zapisywanych wpisów w historii przycisku Wstecz dla każdej karty (-1 wszystkie)">
+<!ENTITY max_back_history.accesskey "L">
+<!ENTITY max_forward_history.label "Liczba zapisywanych wpisów w historii przycisku Do przodu dla każdej karty (-1 wszystkie)">
+<!ENTITY max_forward_history.accesskey "B">

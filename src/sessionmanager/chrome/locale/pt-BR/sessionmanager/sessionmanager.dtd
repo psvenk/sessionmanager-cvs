@@ -1,0 +1,35 @@
+<!ENTITY sessionManager       "Gerenciador se Seções">
+<!ENTITY toolsmenu.accesskey  "G">
+
+<!ENTITY save.label           "Salvar Seção...">
+<!ENTITY save.accesskey       "S">
+<!ENTITY saveOne.label        "Salvar Janela Atual...">
+<!ENTITY saveOne.accesskey    "J">
+<!ENTITY rename.label         "Renomear Seção...">
+<!ENTITY rename.accesskey     "R">
+<!ENTITY remove.label         "Excluir Seção(ões)...">
+<!ENTITY remove.accesskey     "E">
+<!ENTITY openFolder.label     "Abrir Pasta da Seção">
+<!ENTITY openFolder.accesskey "A">
+
+<!ENTITY options.label        "&sessionManager; Opções">
+<!ENTITY options.accesskey    "O">
+<!ENTITY resume.label         "Continuar a Seção Atual Quando Iniciar">
+<!ENTITY resume.accesskey     "C">
+<!ENTITY reload.label         "Recarregar Todas as Janelas Restauradas">
+<!ENTITY reload.accesskey     "T">
+<!ENTITY overwrite.label      "Substituir Janelas Existentes">
+<!ENTITY overwrite.accesskey  "u">
+
+<!ENTITY undoClosed.label     "Reabrir Fechadas ...">
+<!ENTITY undoClosed.accesskey "F">
+<!ENTITY closedWindows        "Janelas Fechadas:">
+<!ENTITY closedTabs           "Abas Fechadas:">
+<!ENTITY clearList.label      "Limpar lista de 'Fechadas'...">
+<!ENTITY clearList.accesskey  "L">
+
+<!ENTITY toolbar.tooltip      "Salva a seção de navegação atual...">
+<!ENTITY toolbar.undo.label   "Desfazer Fechar">
+<!ENTITY toolbar.undo.tooltip "Reabre a aba fechada mais recentemente">
+
+<!ENTITY prompt.ignore.label  "Não mostrar este diálogo novamente">

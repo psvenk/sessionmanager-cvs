@@ -1,0 +1,60 @@
+<!ENTITY options.title         "Opções">
+<!ENTITY options.width         "47em">
+
+<!ENTITY general.caption       "Geral">
+<!ENTITY startNend.caption     "Iníciar &amp; Sair">
+<!ENTITY resume_sess.label     "Quando iniciar sempre carregar a seção a seguir:">
+<!ENTITY resume_sess.accesskey "s">
+<!ENTITY backup_sess.label     "Ao Sair">
+<!ENTITY backup_sess.accesskey "o">
+<!ENTITY backup_session.label0 "descartar a seção atual">
+<!ENTITY backup_session.label1 "salvar a seção atual">
+<!ENTITY backup_session.label2 "perguntar se a seção atual deve ser salva">
+
+<!ENTITY restoring.caption     "Restaurar Seção">
+<!ENTITY sessionList.caption   "Lista de Sessões">
+<!ENTITY orderList.label       "Ordenar a lista de seções">
+<!ENTITY orderList.accesskey   "d">
+<!ENTITY orderList.label1      "alfabeticamente">
+<!ENTITY orderList.label2      "mais antiga para mais nova">
+<!ENTITY orderList.label_2     "mais nova para mais antiga">
+<!ENTITY max_backup.label      "Número de backups de seções mais antigas (falhadas) a guardar:">
+<!ENTITY max_backup.accesskey  "N">
+
+<!ENTITY undoClose.caption     "Desfazer Fechar">
+<!ENTITY windowsNtabs.caption  "Janelas &amp; Abas Fechadas">
+<!ENTITY max_closed.label      "Número máximo de janelas fechadas a lembrar:">
+<!ENTITY max_closed.accesskey  "j">
+<!ENTITY max_tabs.label        "Número máximo de abas fechadas a lembrar (por janela):">
+<!ENTITY max_tabs.accesskey    "a">
+<!ENTITY submenu.label         "Listar todas as janelas e abas fechadas em um sub-menu">
+<!ENTITY submenu.accesskey     "L">
+
+<!ENTITY persistence.caption   "Persistência">
+<!ENTITY closed_tabs.label     "Restaurar a lista de abas fechadas reabríveis para todas as janelas:">
+<!ENTITY closed_tabs.accesskey "e">
+<!ENTITY closed_tabs.label0    "nunca">
+<!ENTITY closed_tabs.label1    "ao iniciar">
+<!ENTITY closed_tabs.label2    "sempre">
+<!ENTITY window_list.label     "Não limpar a lista de janelas fechadas quando sair">
+<!ENTITY window_list.accesskey "q">
+<!ENTITY clear_list.label      "Limpar Lista">
+<!ENTITY clear_list.accesskey  "r">
+
+<!ENTITY advanced.caption      "Avançado">
+<!ENTITY name_format.caption   "Nomes das Seções">
+<!ENTITY name_format.label     "Formato para as sugestões de nomes de seções:">
+<!ENTITY name_format.accesskey "F">
+<!ENTITY name_format.desc      "Use &#37;t para o título da aba ativa, &#37;d para a data de hoje e &#37;m para a hora; além disso o tamanho do título pode ser limitado com caracteres # : &#37;#t.">
+
+<!ENTITY service.caption       "Configurações de &quot;Crash Recovery&quot;">
+<!ENTITY service.description   "Não toque nisso, a menos que saiba o que está fazendo:">
+<!ENTITY interval.label        "Intervalo de tempo mínimo entre dois salvamentos de estado (em segundos):">
+<!ENTITY interval.accesskey    "i">
+<!ENTITY postdata.label        "Quantidade máxima de POSTDATA a armazenar (em bytes; -1 para tudo):">
+<!ENTITY postdata.accesskey    "m">
+<!ENTITY privacy.label         "Salvar dados sensíveis (de dados, POSTDATA e cookies) para">
+<!ENTITY privacy.accesskey     "v">
+<!ENTITY privacy.level0        "todos os sites">
+<!ENTITY privacy.level1        "sites não encriptados">
+<!ENTITY privacy.level2        "nenhum site">

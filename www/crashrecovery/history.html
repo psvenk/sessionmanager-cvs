@@ -1,0 +1,125 @@
+<!-- MAIN CONTENT -->
+<h5 class="page-header">Revision History</h5>
+
+<p id="latest">Current version: <b><a href="http://www.haslo.ch/zeniko/software/crashrecovery.xpi">0.6.10</a></b> (included in Session Manager 0.4.2.3+)</p>
+<ul>
+<li>The Crash Recovery dialog is now only displayed on repeated crashes
+<li>Minor speed up for text data saving
+<li>Removed the check for LiveHTTPHeaders (which disabled POSTDATA saving)
+<li>Added a Hebrew locale
+</ul>
+
+<hr>
+
+<p id="v0.6.9">Version: <a href="http://www.haslo.ch/zeniko/software/crashrecovery.xpi">0.6.9</a> (SM 0.4.2)</p>
+<ul>
+<li>Improved error reporting in the JavaScript/error console (includes line numbers)
+<li>Bug fix: after cleaning the browser history the crash recovery data file was missing for a few seconds
+<li>Bug fix: downloads are only resumed after a crash
+<li>Added a Japanese and a Slovak locale
+<li>Adapted for <a href="https://bugzilla.mozilla.org/show_bug.cgi?id=326273">bug 326273</a> on Trunk
+</ul>
+
+<hr>
+
+<p id="v0.6.8">Version: <a href="http://downloads.mozdev.org/sessionmanager/crash_recovery-0.6.8-fx+fl+mz+zm.xpi">0.6.8</a> (SM 0.4.1)</p>
+<ul>
+<li>Added the application name to the Recover dialog ("Crash Recovery - Mozilla Firefox")
+<li>Option to disable Firefox Preloader compatibility (.allow_empty_session)
+<li>Minor code improvements
+<li>Fixed errors introduced with <a href="https://bugzilla.mozilla.org/show_bug.cgi?id=268590">bug 268590</a>
+</ul>
+
+<hr>
+
+<p id="v0.6.7">Version: <a href="http://downloads.mozdev.org/sessionmanager/crash_recovery-0.6.7-fx+fl+mz+zm.xpi">0.6.7</a> (SM 0.4)</p>
+<ul>
+<li>Support for <a href="http://sourceforge.net/projects/ffpreloader/">Firefox Preloader</a>
+<li>Bug fix: couldn't cancel the recovering of a crashed session
+<li>Bug fix: a new thread was created every 10 seconds
+<li>Bug fix: closing a non-browser window last erased all session data
+<li>Bug fix: cookies for secure sites might have been saved even if that was only allowed for non-encrypted sites
+</ul>
+
+<hr>
+
+<p id="v0.6.6">Version: <a href="http://downloads.mozdev.org/sessionmanager/crash_recovery-0.6.6-fx+fl+mz+zm.xpi">0.6.6</a> (SM 0.3.9)</p>
+<ul>
+<li>Improved (sequential) tab reloading
+<li>Always load documents from the cache (if available)
+<li>Minor code clean-up
+<li>Added a Russian locale
+<li>Bug fix: Save intervals below 2 seconds might have prevented saving
+</ul>
+
+<hr>
+
+<dl>
+<dt>0.6.5.* (SM 0.3.7.*)
+<dd>Minor code clean-up (nit-picking and keeping in sync with <a href="/">Session Manager</a> and <a href="https://bugzilla.mozilla.org/show_bug.cgi?id=328159">SessionStore</a>)
+<dt><a href="http://downloads.mozdev.org/sessionmanager/crash_recovery-0.6.5-fx+mz.xpi">0.6.5</a> (SM 0.3.7)
+<dd>Minor code clean-up
+<dt>0.6.4.3 (SM 0.3.6.4)
+<dd>Slightly improved performance for tab closing and saving of many cookies
+<dt>0.6.4.2 (SM 0.3.6.2)
+<dd>Bug fix: Files with Mac style line-endings weren't correctly read
+<dt>0.6.4.1 (SM 0.3.6.1)
+<dd>Major internal code refactoring (updated to comments in <a href="https://bugzilla.mozilla.org/show_bug.cgi?id=328159">bug 328159</a>)
+<dt>0.6.3.1 (SM 0.3.5.2)
+<dd>Added a new hidden pref (.resume_session_once) to enable other extensions to trigger a one-time restoration
+<dt><a href="http://downloads.mozdev.org/sessionmanager/crash_recovery-0.6.3-fx+mz.xpi">0.6.3</a> (SM 0.3.5)
+<dd>Now also saving WYSIWYG text data
+<dt>0.6.2.1 (SM 0.3.3/0.3.4)
+<dd>Minor performance updates and bug fix
+<dt>0.6.1.1 (SM 0.3.2.1)
+<dd>Fixes for SeaMonkey (and MultiZilla) compatibility
+<dd>Semi-official Flock support (less extensively tested)
+<dt><a href="http://downloads.mozdev.org/sessionmanager/crash_recovery-0.6-fx+mz.xpi">0.6.0.3</a> (SM 0.3/0.3.1)
+<dd>Replaced the custom file format with a standard .INI format (similar to the one used by Opera)
+<dd>Removed the <i>about:crashrecovery?</i> hack (use the pref extensions.crashrecovery.resume_session instead)
+
+<dt>0.5.11.1 (SM 0.2.13.1)
+<dd>Improved window dimension (re)storing
+<dd>Added a Portuguese and a Chinese (Traditional) locale
+<dd>Internal clean-up
+<dt>0.5.10.1 (SM 0.2.12.1)
+<dd>Much improved handling of frames (back/forward and POSTDATA preserving)
+<dt>0.5.9 (SM 0.2.11)
+<dd>Sidebar state is remembered
+<dt>0.5.8 (SM 0.2.10)
+<dd>Minor performance update and bug fix
+<dt>0.5.7 (SM 0.2.9)
+<dd>Security update
+<dt>0.5.6 (SM 0.2.8)
+<dd>Minor performance improvements and bug fix
+<dt>0.5.5 (SM 0.2.7)
+<dd>Added a pref for restricting the saving of sensitive data on encrypted sites (.privacy_level)
+<dd>Added a Turkish locale
+
+<dt>0.5.4 (SM 0.2.4)
+<dd>Clearing private data now clears Crash Recovery's data store as well
+<dd>Added a Czech locale
+<dt>0.5.3.3 (included in Session Manager 0.2.2)
+<dd>Minor bug fix
+<dt>0.5.3.2
+<dd>Crash Recovery now restores into multiple windows
+<dd>Some more tab properties are restored
+<dt>0.5.3.1
+<dd>Added French, Polish, Italian and Spanish locales
+<dd>Minor bug fix
+<dt><a href="http://downloads.mozdev.org/sessionmanager/crash_recovery-0.5.3-fx+mz.xpi">0.5.3</a>
+<dd>Crash Recovery's state is now accessible through XPCOM (<a href="http://forums.mozillazine.org/viewtopic.php?p=2047291#2047291">sample code</a>)
+<dd>Minor bug fix
+<dt>0.5.2
+<dd>CR now always creates a backup of the last session at startup (not only after crashes)
+<dd>Added a hidden pref to limit POSTDATA restoration
+<dt>0.5.1.1
+<dd>Added SeaMonkey compatibility (the Recover? dialog is missing, though)
+<dd>Minor bug fix
+<dt>0.5
+<dd>Initial release 2006-01-23
+<dt>0.4.5
+<dd>Released on 2005-01-22 (discontinued on 2005-05-30)
+<dt>0.3
+<dd>Initial release 2004-11-16
+</dl>

@@ -1,0 +1,44 @@
+<!ENTITY session_open.label "Otevřít">
+<!ENTITY session_open.accesskey "O">
+<!ENTITY session_open.tooltip "Otevře vybranou relaci">
+<!ENTITY session_open_overwrite.label "Otevřít (přepsat)">
+<!ENTITY session_open_overwrite.accesskey "p">
+<!ENTITY session_open_overwrite.tooltip "Otevře vybranou relaci ???">
+<!ENTITY session_open_newwindow.label "Otevřít (v novém okně)">
+<!ENTITY session_open_newwindow.accesskey "n">
+<!ENTITY session_open_newwindow.tooltip "Otevře vybranou relaci ???">
+<!ENTITY session_open_append.label "Otevřít (přidat)">
+<!ENTITY session_open_append.accesskey "a">
+<!ENTITY session_open_append.tooltip "Otevře vybranou relaci">
+<!ENTITY session_rename.label "Přejmenovat...">
+<!ENTITY session_rename.accesskey "ř">
+<!ENTITY session_rename.tooltip "Přejmenuje vybrané relace">
+<!ENTITY session_rename_ok.label "Přejmenovat">
+<!ENTITY session_delete.label "Odstranit">
+<!ENTITY session_delete.accesskey "d">
+<!ENTITY session_delete.tooltip "Odstraní vybrané relace">
+<!ENTITY session_save.label "Uložit...">
+<!ENTITY session_save.accesskey "l">
+<!ENTITY session_save.tooltip "Uloží aktuální okna jako novou relaci">
+<!ENTITY session_save_ok.label "Uložit">
+<!ENTITY session_save_w.label "Uložit okno....">
+<!ENTITY session_save_w.accesskey "k">
+<!ENTITY session_save_w.tooltip "Uloží aktuální okno jako novou relaci">
+<!ENTITY session_save_w_ok.label "Uložit okno">
+<!ENTITY session_open_folder.label "Otevřít složku">
+<!ENTITY session_open_folder.accesskey "s">
+<!ENTITY session_open_folder.tooltip "Otevřít složku Správce relací">
+<!ENTITY column_autosave.label "A">
+<!ENTITY column_autosave.tooltip "Automaticky ukládaná relace">
+<!ENTITY column_windows.label "O">
+<!ENTITY column_windows.tooltip "Okna">
+<!ENTITY column_tabs.label "P">
+<!ENTITY column_tabs.tooltip "Panely">
+<!ENTITY column_time.label "Čas">
+<!ENTITY column_time.tooltip "Časová známka">
+<!ENTITY column_name.label "Název">
+<!ENTITY cancel.label "Zrušit">
+<!ENTITY done.label "Dokončit">
+<!ENTITY done.tooltip "Zavře okno Průzkumníka relací">
+<!ENTITY session_load.label "Načíst">
+<!ENTITY session_load.accesskey "N">

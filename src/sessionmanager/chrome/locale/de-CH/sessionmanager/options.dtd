@@ -1,0 +1,60 @@
+<!ENTITY options.title         "Einstellungen">
+<!ENTITY options.width         "45em">
+
+<!ENTITY general.caption       "Allgemein">
+<!ENTITY startNend.caption     "Start &amp; Beenden">
+<!ENTITY resume_sess.label     "Beim Start immer die folgende Sitzung laden:">
+<!ENTITY resume_sess.accesskey "s">
+<!ENTITY backup_sess.label     "Beim Beenden">
+<!ENTITY backup_sess.accesskey "B">
+<!ENTITY backup_session.label0 "die momentane Sitzung löschen">
+<!ENTITY backup_session.label1 "die momentane Sitzung sichern">
+<!ENTITY backup_session.label2 "nachfragen, was mit der momentanen Sitzung geschehen soll">
+
+<!ENTITY restoring.caption     "Sitzungs-Wiederherstellung">
+<!ENTITY sessionList.caption   "Sitzungs-Liste">
+<!ENTITY orderList.label       "Die Sitzungen folgendermassen ordnen:">
+<!ENTITY orderList.accesskey   "D">
+<!ENTITY orderList.label1      "alphabetisch">
+<!ENTITY orderList.label2      "älteste bis neuste">
+<!ENTITY orderList.label_2     "neuste bis älteste">
+<!ENTITY max_backup.label      "Anzahl zusätzlicher Kopien vorhergehender (abgestürzter) Sitzungen:">
+<!ENTITY max_backup.accesskey  "K">
+
+<!ENTITY undoClose.caption     "Retten">
+<!ENTITY windowsNtabs.caption  "Geschlossene Fenster &amp; Tabs">
+<!ENTITY max_closed.label      "Maximale Anzahl wiederherstellbarer geschlossener Fenster:">
+<!ENTITY max_closed.accesskey  "F">
+<!ENTITY max_tabs.label        "Maximale Anzahl wiederherstellbarer Tabs (pro Fenster):">
+<!ENTITY max_tabs.accesskey    "T">
+<!ENTITY submenu.label         "Alle geschlossenen Fenster und Tabs im Untermenü anzeigen">
+<!ENTITY submenu.accesskey     "U">
+
+<!ENTITY persistence.caption   "Beständigkeit der Liste">
+<!ENTITY closed_tabs.label     "Stelle die Liste der geschlossenen Tabs für alle Fenster wieder her:">
+<!ENTITY closed_tabs.accesskey "g">
+<!ENTITY closed_tabs.label0    "nie">
+<!ENTITY closed_tabs.label1    "beim Start">
+<!ENTITY closed_tabs.label2    "immer">
+<!ENTITY window_list.label     "Die Liste der geschlossenen Fenster beim Beenden nicht löschen">
+<!ENTITY window_list.accesskey "L">
+<!ENTITY clear_list.label      "Liste löschen">
+<!ENTITY clear_list.accesskey  "e">
+
+<!ENTITY advanced.caption      "Fortgeschritten">
+<!ENTITY name_format.caption   "Sitzungs-Namen">
+<!ENTITY name_format.label     "Format für die vorgeschlagenen Sitzungs-Namen:">
+<!ENTITY name_format.accesskey "o">
+<!ENTITY name_format.desc      "Dabei steht &#37;t für den aktuellen Seitentitel, &#37;d für das Datum und &#37;m für die Zeit; die Länge des Titels kann zudem auf # Zeichen beschränkt werden: &#37;#t.">
+
+<!ENTITY service.caption       "&quot;Crash Recovery&quot; Einstellungen">
+<!ENTITY service.description   "Diese Einstellungen sollten nach Möglichkeit nicht verändert werden:">
+<!ENTITY interval.label        "Minimales Zeitintervall zwischen zwei Speichervorgängen (in Sekunden):">
+<!ENTITY interval.accesskey    "i">
+<!ENTITY postdata.label        "Maximale Anzahl Bytes an gesicherten POST-Daten (-1 = alle):">
+<!ENTITY postdata.accesskey    "x">
+<!ENTITY privacy.label         "Heikle Daten (Text, POST-Daten und Cookies) sichern für folgende Sites sichern:">
+<!ENTITY privacy.accesskey     "H">
+<!ENTITY privacy.level0        "Alle">
+<!ENTITY privacy.level1        "Unverschlüsselte">
+<!ENTITY privacy.level2        "Keine">

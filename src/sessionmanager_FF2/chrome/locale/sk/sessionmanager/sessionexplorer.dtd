@@ -1,0 +1,41 @@
+<!ENTITY session_open.label "Otvoriť">
+<!ENTITY session_open.tooltip "Otvoriť označenú reláciu">
+<!ENTITY session_open_overwrite.label "Otvoriť (prepísať)">
+<!ENTITY session_open_overwrite.tooltip "Otvoriť označenú reláciu?">
+<!ENTITY session_open_newwindow.label "Otvoriť (nové okno)">
+<!ENTITY session_open_newwindow.tooltip "Otvoriť označenú reláciu?">
+<!ENTITY session_open_append.label "Otvoriť (pripojiť)">
+<!ENTITY session_open_append.accesskey "r">
+<!ENTITY session_open_append.tooltip "Otvoriť označenú reláciu">
+<!ENTITY session_rename.label "Premenovať...">
+<!ENTITY session_rename.accesskey "m">
+<!ENTITY session_rename.tooltip "Premenovať označenú reláciu">
+<!ENTITY session_rename_ok.label "Premenovať">
+<!ENTITY session_delete.label "Odstrániť">
+<!ENTITY session_delete.accesskey "d">
+<!ENTITY session_delete.tooltip "Odstrániť označenú reláciu">
+<!ENTITY session_save.label "Uložiť...">
+<!ENTITY session_save.accesskey "U">
+<!ENTITY session_save.tooltip "Uložiť aktuálne okná do novej relácie">
+<!ENTITY session_save_ok.label "Uložiť">
+<!ENTITY session_save_w.label "Uložiť okno...">
+<!ENTITY session_save_w.accesskey "k">
+<!ENTITY session_save_w.tooltip "Uložiť aktuálne okno do novej relácie">
+<!ENTITY session_save_w_ok.label "Uložiť okno">
+<!ENTITY session_open_folder.label "Otvoriť priečinok">
+<!ENTITY session_open_folder.accesskey "t">
+<!ENTITY session_open_folder.tooltip "Otvoriť priečinok Správcu relácií">
+<!ENTITY column_autosave.label "e">
+<!ENTITY column_autosave.tooltip "Automaticky uložiť reláciu">
+<!ENTITY column_windows.label "O">
+<!ENTITY column_windows.tooltip "Okná">
+<!ENTITY column_tabs.label "K">
+<!ENTITY column_tabs.tooltip "Karty">
+<!ENTITY column_time.label "Čas">
+<!ENTITY column_time.tooltip "Časová známka">
+<!ENTITY column_name.label "Názov">
+<!ENTITY cancel.label "Zrušiť">
+<!ENTITY done.label "Hotovo">
+<!ENTITY done.tooltip "Zavrieť okno Prieskumníka relácií">
+<!ENTITY session_load.label "Načítať">
+<!ENTITY session_load.accesskey "N">

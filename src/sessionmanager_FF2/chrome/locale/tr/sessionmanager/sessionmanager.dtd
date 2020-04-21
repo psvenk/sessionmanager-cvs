@@ -1,0 +1,105 @@
+<!ENTITY sessionManager "Oturum Yöneticisi">
+<!ENTITY toolsmenu.accesskey "M">
+<!ENTITY save.label "Oturumu Kaydet...">
+<!ENTITY save.accesskey "S">
+<!ENTITY saveOne.label "Geçerli Pencereyi Kaydet...">
+<!ENTITY saveOne.accesskey "W">
+<!ENTITY closeSession.label "Kaydet ve Oturumu kapat">
+<!ENTITY closeSession.accesskey "C">
+<!ENTITY abandonSession.label "Oturumu iptal et">
+<!ENTITY abandonSession.accesskey "A">
+<!ENTITY rename.label "Otutumu yeniden adlandır...">
+<!ENTITY rename.accesskey "R">
+<!ENTITY remove.label "Oturum(ları) Sil...">
+<!ENTITY remove.accesskey "D">
+<!ENTITY openFolder.label "Oturum Klasötünü Aç">
+<!ENTITY openFolder.accesskey "F">
+<!ENTITY options.label "&sessionManager; Seçenekleri">
+<!ENTITY options.accesskey "O">
+<!ENTITY undoClosed.label "Kapatılanı Tekrar Aç...">
+<!ENTITY undoClosed.accesskey "C">
+<!ENTITY closedWindows "Kapatılmış Pencereler:">
+<!ENTITY closedTabs "Kapatılmış Sekmeler:">
+<!ENTITY clearList.label "&apos;Kapatılan&apos; Listesini Temizle...">
+<!ENTITY clearList.accesskey "C">
+<!ENTITY toolbar.tooltip "Geçerli gezinti oturumunu kaydet...">
+<!ENTITY toolbar.undo.label "Kapatmayı Geri Al">
+<!ENTITY toolbar.undo.tooltip "Önceki kapatılmış sekmeleri yeniden aç">
+<!ENTITY prompt.ignore.label "Bu uyarıyı artık gösterme">
+<!ENTITY prompt.autosave.label "Otomatik kayıt yap">
+<!ENTITY prompt.tabprompt.label "Sekmeleri geri yüklemek için sor">
+<!ENTITY load_replace.label "Yükle (Şimdiki oturumla değiştir)">
+<!ENTITY load_replace.accesskey "L">
+<!ENTITY load_append.label "Yükle (Şimdiki Oturuma Ekle)">
+<!ENTITY load_append.accesskey "A">
+<!ENTITY replace_all.label "Oturumu Şimdikiyle Değiştir">
+<!ENTITY replace_all.accesskey "R">
+<!ENTITY replace_window.label "Oturumu Şimdiki Pencerede değiştir">
+<!ENTITY replace_window.accesskey "W">
+<!ENTITY remove_one.label "Oturum Sil..">
+<!ENTITY set_startup.label "Açılış Oturumu olarak ayarla">
+<!ENTITY set_startup.accesskey "S">
+<!ENTITY openSessionManagerSidebar.commandkey "S">
+<!ENTITY session_name.label "İsim">
+<!ENTITY session_windows.label "Pencereler">
+<!ENTITY session_tabs.label "Sekmeler">
+<!ENTITY backup_sessions.label "Oturum Yedekleri">
+<!ENTITY backup_sessions.accesskey "B">
+<!ENTITY remove_item.label "Sil">
+<!ENTITY remove_item.accesskey "D">
+<!ENTITY session_group.label "Gurup">
+<!ENTITY rename_group.label "Gurup Adlandır">
+<!ENTITY remove_group.label "Gurup Sil..">
+<!ENTITY change_group.label "Gurup Değiştir..">
+<!ENTITY change_group.accesskey "C">
+<!ENTITY group.label "Gurup Oturum(ları)..">
+<!ENTITY group.accesskey "G">
+<!ENTITY toolbar.menu.tooltip "Oturum Yöneticisi menüsünü aç">
+<!ENTITY toolbar.undo.menu.tooltip "Kapatılmış pencere ve sekmeler menüsünü aç">
+<!ENTITY prompt.save_every1.label "Herbirini kaydet">
+<!ENTITY prompt.save_every2.label "dakika (boş ise devre dışıdır)">
+<!ENTITY winTabTree.restoreHeader "Geri yükle">
+<!ENTITY winTabTree.listHeader "Pencereler ve Sekmeler">
+<!ENTITY winTabTree.windowLabel "Pencere &#37;S">
+<!ENTITY load.label "Oturum Yükle...">
+<!ENTITY load.accesskey "L">
+<!ENTITY prompt.append.label "Oturuma Ekle">
+<!ENTITY prompt.replace.label "Oturum Değiştir">
+<!ENTITY tab_open_click_note.label "Not:Bir sekmeye tıklayıp ALT tuşu basılı olduğu halde aşağı sürüklerseniz, o sekme hali hazırdaki pencerede açılır.">
+<!ENTITY select_all.label "Tümünü Seç">
+<!ENTITY select_none.label "Seçim Yok">
+<!ENTITY toggle_selection.label "Seçimi değiştir">
+<!ENTITY winTabTree.urlHeader "Lokasyon">
+<!ENTITY prompt.append_window.label "Şimdiki pencereye ekle">
+<!ENTITY session_explorer.label "Oturum Gezgini">
+<!ENTITY session_explorer.accesskey "E">
+<!ENTITY closeWindowSession.label "Pencere Oturumunu Kaydet ve Kapat">
+<!ENTITY closeWindowSession.accesskey "I">
+<!ENTITY abandonWindowSession.label "Pencere Oturumunu iptal et">
+<!ENTITY abandonWindowSession.accesskey "b">
+<!ENTITY load_append_window.label "Yükle(Şimdiki Pencereye Ekle)">
+<!ENTITY load_append_window.accesskey "i">
+<!ENTITY leave_window_open.label "Bu pencereyi açmaya dön">
+<!ENTITY clearTabList.label "Kapatılan 'Sekme Listesini' Temizle...">
+<!ENTITY clearTabList.accesskey "T">
+<!ENTITY clearWindowList.label "Kapatılan 'Pencere Listesini' Temizle..">
+<!ENTITY clearWindowList.accesskey "W">
+<!ENTITY hidden.label "Gizli">
+<!ENTITY contribute.label "Katkıda bulunanlar">
+<!ENTITY support.label "Bu eklentiyi destekle">
+<!ENTITY session_group_verb.label "Gurup">
+<!ENTITY deleted_sessions.label "Silinmiş Oturumlar">
+<!ENTITY deleted_sessions.accesskey "e">
+<!ENTITY empty_trash.label "Silinen tüm oturumları kaldır">
+<!ENTITY empty_trash.accesskey "R">
+<!ENTITY permanently_delete.label "Oturumu kalıcı olarak sil">
+<!ENTITY permanently_delete.accesskey "P">
+<!ENTITY search.label "Ara..">
+<!ENTITY edit.label "Oturum Düzenle..">
+<!ENTITY edit.accesskey "E">
+<!ENTITY addtab.label "Oturuma sekme ekle">
+<!ENTITY addtab.accesskey "A">
+<!ENTITY viewcontents.label "Oturum içeriğini göster">
+<!ENTITY viewcontents.accesskey "V">
+<!ENTITY export_to_html.label "Oturum içeriğini bir HTML dosyasına çıkar">
+<!ENTITY export_to_html.accesskey "E">

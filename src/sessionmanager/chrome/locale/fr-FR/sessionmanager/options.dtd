@@ -1,0 +1,60 @@
+<!ENTITY options.title         "Options">
+<!ENTITY options.width         "46em">
+
+<!ENTITY general.caption       "Général">
+<!ENTITY startNend.caption     "Démarrage et Fermeture">
+<!ENTITY resume_sess.label     "Au démarrage, toujours charger la session suivante :">
+<!ENTITY resume_sess.accesskey "s">
+<!ENTITY backup_sess.label     "À la fermeture">
+<!ENTITY backup_sess.accesskey "m">
+<!ENTITY backup_session.label0 "fermer la session courante">
+<!ENTITY backup_session.label1 "sauvegarder la session courante">
+<!ENTITY backup_session.label2 "demander s'il faut sauvegarder la session courante">
+
+<!ENTITY restoring.caption     "Restauration de session">
+<!ENTITY sessionList.caption   "Liste des sessions">
+<!ENTITY orderList.label       "Trier la liste des sessions">
+<!ENTITY orderList.accesskey   "T">
+<!ENTITY orderList.label1      "dans l'ordre alphabétique">
+<!ENTITY orderList.label2      "de la plus ancienne à la plus récente">
+<!ENTITY orderList.label_2     "de la plus récente à la plus ancienne">
+<!ENTITY max_backup.label      "Nombre de sauvegardes d'anciennes sessions (plantées) à conserver :">
+<!ENTITY max_backup.accesskey  "v">
+
+<!ENTITY undoClose.caption     "Récupération">
+<!ENTITY windowsNtabs.caption  "Fenêtres et onglets fermés">
+<!ENTITY max_closed.label      "Nombre maximal de fenêtres fermées mémorisées :">
+<!ENTITY max_closed.accesskey  "n">
+<!ENTITY max_tabs.label        "Nombre maximal d'onglets fermés mémorisés (par fenêtre) :">
+<!ENTITY max_tabs.accesskey    "o">
+<!ENTITY submenu.label         "Lister toutes les fenêtres et tous les onglets fermés dans un sous-menu">
+<!ENTITY submenu.accesskey     "L">
+
+<!ENTITY persistence.caption   "Persistance">
+<!ENTITY closed_tabs.label     "Restaurer la liste d'onglets fermés réouvrables :">
+<!ENTITY closed_tabs.accesskey "R">
+<!ENTITY closed_tabs.label0    "jamais">
+<!ENTITY closed_tabs.label1    "au démarrage">
+<!ENTITY closed_tabs.label2    "toujours">
+<!ENTITY window_list.label     "Ne pas effacer la liste des fenêtres fermées à la fermeture">
+<!ENTITY window_list.accesskey "a">
+<!ENTITY clear_list.label      "Effacer la liste">
+<!ENTITY clear_list.accesskey  "f">
+
+<!ENTITY advanced.caption      "Avancé">
+<!ENTITY name_format.caption   "Noms de session">
+<!ENTITY name_format.label     "Format pour le nom de session suggéré :">
+<!ENTITY name_format.accesskey "e">
+<!ENTITY name_format.desc      "Utiliser &#37;t pour le titre de l'onglet actif, &#37;d pour la date du jour et &#37;m pour l'horaire ; de plus, la longueur du titre peut être limitée à # caractères : &#37;#t.">
+
+<!ENTITY service.caption       "Paramètres de restauration pour &quot;Crash Recovery&quot;">
+<!ENTITY service.description   "Ne modifiez rien, tant que vous ne savez pas ce que vous faites :">
+<!ENTITY interval.label        "Intervalle mimimum entre deux sauvegardes d'état (en secondes) :">
+<!ENTITY interval.accesskey    "i">
+<!ENTITY postdata.label        "Nombre maximum de POSTDATA stockés (en bytes ; -1 pour tous) :">
+<!ENTITY postdata.accesskey    "y">
+<!ENTITY privacy.label         "Enregistrer les données sensibles (données de formulaires, POSTDATA et cookies) pour">
+<!ENTITY privacy.accesskey     "b">
+<!ENTITY privacy.level0        "tous les sites">
+<!ENTITY privacy.level1        "les sites non chiffrés uniquement">
+<!ENTITY privacy.level2        "aucun site">

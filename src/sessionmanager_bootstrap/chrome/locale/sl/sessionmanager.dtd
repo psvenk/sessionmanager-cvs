@@ -1,0 +1,105 @@
+<!ENTITY sessionManager "Upravljalnik sej">
+<!ENTITY toolsmenu.accesskey "U">
+<!ENTITY save.label "Shrani sejo...">
+<!ENTITY save.accesskey "S">
+<!ENTITY saveOne.label "Shrani trenutno okno...">
+<!ENTITY saveOne.accesskey "t">
+<!ENTITY closeSession.label "Shrani in zapri trenutno sejo">
+<!ENTITY closeSession.accesskey "z">
+<!ENTITY abandonSession.label "Zavrži trenutno sejo">
+<!ENTITY abandonSession.accesskey "Z">
+<!ENTITY rename.label "Preimenuj sejo...">
+<!ENTITY rename.accesskey "r">
+<!ENTITY remove.label "Zbriši sej(e)...">
+<!ENTITY remove.accesskey "b">
+<!ENTITY openFolder.label "Odpri mapo sej">
+<!ENTITY openFolder.accesskey "m">
+<!ENTITY options.label "&sessionManager; možnosti">
+<!ENTITY options.accesskey "n">
+<!ENTITY undoClosed.label "Ponovno odpri zaprto ...">
+<!ENTITY undoClosed.accesskey "P">
+<!ENTITY closedWindows "Zaprta okna:">
+<!ENTITY closedTabs "Zaprti zavihki:">
+<!ENTITY clearList.label "Izprazni seznam 'zaprtih'...">
+<!ENTITY clearList.accesskey "I">
+<!ENTITY toolbar.tooltip "Shrani trenutno sejo...">
+<!ENTITY toolbar.undo.label "Rezveljavi zapiranje">
+<!ENTITY toolbar.undo.tooltip "Ponovno odpri zadnji zavihek">
+<!ENTITY prompt.ignore.label "Tega ne kaži več">
+<!ENTITY prompt.autosave.label "Naredi shranjevanje te seje avtomatsko">
+<!ENTITY prompt.tabprompt.label "Vprašaj za zavihke, ki naj se restavrirajo">
+<!ENTITY load_replace.label "Naloži (zamenjaj trenutno sejo)">
+<!ENTITY load_replace.accesskey "l">
+<!ENTITY load_append.label "Naloži (dodaj k trenutni seji)">
+<!ENTITY load_append.accesskey "d">
+<!ENTITY replace_all.label "Zamenjaj sejo s trenutno sejo">
+<!ENTITY replace_all.accesskey "Z">
+<!ENTITY replace_window.label "Zamenjaj sejo s trenutnim oknom">
+<!ENTITY replace_window.accesskey "o">
+<!ENTITY remove_one.label "Izbriši sejo...">
+<!ENTITY set_startup.label "Nastavi kot začetno sejo">
+<!ENTITY set_startup.accesskey "s">
+<!ENTITY openSessionManagerSidebar.commandkey "z">
+<!ENTITY session_name.label "Ime">
+<!ENTITY session_windows.label "Okna">
+<!ENTITY session_tabs.label "Zavihki">
+<!ENTITY backup_sessions.label "Shranjene seje">
+<!ENTITY backup_sessions.accesskey "S">
+<!ENTITY remove_item.label "Izbriši element">
+<!ENTITY remove_item.accesskey "z">
+<!ENTITY session_group.label "Skupina">
+<!ENTITY rename_group.label "Preimenuj skupino...">
+<!ENTITY remove_group.label "Izbriši skupino...">
+<!ENTITY change_group.label "Spremeni skupino...">
+<!ENTITY change_group.accesskey "p">
+<!ENTITY group.label "Skupina sej(e)...">
+<!ENTITY group.accesskey "s">
+<!ENTITY toolbar.menu.tooltip "Odpri meni upravljanja sej">
+<!ENTITY toolbar.undo.menu.tooltip "Odpri meni zadnjih zaprtih oken in zavihkov">
+<!ENTITY prompt.save_every1.label "Shrani vse">
+<!ENTITY prompt.save_every2.label "minute (onemogočeno, če je prazno)">
+<!ENTITY winTabTree.restoreHeader "Restavriraj">
+<!ENTITY winTabTree.listHeader "Okna in Zavihki">
+<!ENTITY winTabTree.windowLabel "Okno &#37;S">
+<!ENTITY load.label "Naloži sejo...">
+<!ENTITY load.accesskey "l">
+<!ENTITY prompt.append.label "Dodaj seji">
+<!ENTITY prompt.replace.label "Zamenjaj sejo">
+<!ENTITY tab_open_click_note.label "Opomba: pritisk na zavihek med držanjem tipke ALT odpre ta zavihek v obstoječem oknu.">
+<!ENTITY select_all.label "Izberi vse">
+<!ENTITY select_none.label "Ne izberi ničesar">
+<!ENTITY toggle_selection.label "Obrni izbiro">
+<!ENTITY winTabTree.urlHeader "Položaj">
+<!ENTITY prompt.append_window.label "Dodaj k trenutemu oknu">
+<!ENTITY session_explorer.label "Raziskovalec sej">
+<!ENTITY session_explorer.accesskey "R">
+<!ENTITY closeWindowSession.label "Shrani in zapri sejo">
+<!ENTITY closeWindowSession.accesskey "h">
+<!ENTITY abandonWindowSession.label "Opusti sejo">
+<!ENTITY abandonWindowSession.accesskey "p">
+<!ENTITY load_append_window.label "Naloži (dodaj k trenutnemu oknu)">
+<!ENTITY load_append_window.accesskey "d">
+<!ENTITY leave_window_open.label "Pusti to okno odprto">
+<!ENTITY clearTabList.label "Izprazni seznam zaprtih zavihkov...">
+<!ENTITY clearTabList.accesskey "z">
+<!ENTITY clearWindowList.label "Izprazni seznam zaprtih oken...">
+<!ENTITY clearWindowList.accesskey "o">
+<!ENTITY hidden.label "Skrito">
+<!ENTITY contribute.label "Prispevaj">
+<!ENTITY support.label "Podpiraj ta dodatek:">
+<!ENTITY session_group_verb.label "Skupina">
+<!ENTITY deleted_sessions.label "Izbrisane seje">
+<!ENTITY deleted_sessions.accesskey "I">
+<!ENTITY empty_trash.label "Odstrani vse izbrisane seje">
+<!ENTITY empty_trash.accesskey "t">
+<!ENTITY permanently_delete.label "Trajno izbriši sejo">
+<!ENTITY permanently_delete.accesskey "T">
+<!ENTITY search.label "Išči...">
+<!ENTITY edit.label "Uredi sejo...">
+<!ENTITY edit.accesskey "U">
+<!ENTITY addtab.label "Dodaj zavihek k seji...">
+<!ENTITY addtab.accesskey "D">
+<!ENTITY viewcontents.label "Poglej vsebino seje">
+<!ENTITY viewcontents.accesskey "v">
+<!ENTITY export_to_html.label "Izvozi vsebino seje v HTML datoteko z zaznamki.">
+<!ENTITY export_to_html.accesskey "z">

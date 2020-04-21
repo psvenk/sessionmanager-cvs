@@ -1,0 +1,60 @@
+<!ENTITY options.title         "选项">
+<!ENTITY options.width         "42em">
+
+<!ENTITY general.caption       "常规选项">
+<!ENTITY startNend.caption     "开启和关闭">
+<!ENTITY resume_sess.label     "开启浏览器时总是打开如下会话：">
+<!ENTITY resume_sess.accesskey "s">
+<!ENTITY backup_sess.label     "关闭浏览器时">
+<!ENTITY backup_sess.accesskey "h">
+<!ENTITY backup_session.label0 "舍弃当前会话">
+<!ENTITY backup_session.label1 "备份当前会话">
+<!ENTITY backup_session.label2 "询问是否备份当前会话">
+
+<!ENTITY restoring.caption     "会话恢复">
+<!ENTITY sessionList.caption   "会话列表">
+<!ENTITY orderList.label       "排序会话列表">
+<!ENTITY orderList.accesskey   "d">
+<!ENTITY orderList.label1      "按字母顺序">
+<!ENTITY orderList.label2      "按时间顺序从旧到新">
+<!ENTITY orderList.label_2     "按时间顺序从新到旧">
+<!ENTITY max_backup.label      "最大可备份较早(已崩溃)会话数量：">
+<!ENTITY max_backup.accesskey  "N">
+
+<!ENTITY undoClose.caption     "撤销关闭">
+<!ENTITY windowsNtabs.caption  "已关闭的窗口和标签页">
+<!ENTITY max_closed.label      "最大可恢复已关闭窗口数量：">
+<!ENTITY max_closed.accesskey  "w">
+<!ENTITY max_tabs.label        "最大可恢复每个窗口中已关闭标签页数量：">
+<!ENTITY max_tabs.accesskey    "t">
+<!ENTITY submenu.label         "在子菜单中列出全部已关闭窗口和标签页">
+<!ENTITY submenu.accesskey     "c">
+
+<!ENTITY persistence.caption   "保持">
+<!ENTITY closed_tabs.label     "恢复全部窗口的已关闭标签列表">
+<!ENTITY closed_tabs.accesskey "e">
+<!ENTITY closed_tabs.label0    "从不">
+<!ENTITY closed_tabs.label1    "开启浏览器时">
+<!ENTITY closed_tabs.label2    "总是">
+<!ENTITY window_list.label     "关闭浏览器时不清除已关闭窗口列表">
+<!ENTITY window_list.accesskey "o">
+<!ENTITY clear_list.label      "清空列表">
+<!ENTITY clear_list.accesskey  "r">
+
+<!ENTITY advanced.caption      "高级选项">
+<!ENTITY name_format.caption   "会话名称">
+<!ENTITY name_format.label     "按照会话名称建议规范化为：">
+<!ENTITY name_format.accesskey "F">
+<!ENTITY name_format.desc      "&#37;t 表示活动的标签标题， &#37;d 表示今天的日期， &#37;m表示时间， &#37;#t表示标题长度被限制为 # 个字符。">
+
+<!ENTITY service.caption       "崩溃还原">
+<!ENTITY service.description   "不要修改下列选项，除非您知道自己在做什么">
+<!ENTITY interval.label        "两次状态保存之间的最小时间间隔 (单位：秒)：">
+<!ENTITY interval.accesskey    "i">
+<!ENTITY postdata.label        "最大可保存的 POSTDATA 数量 (单位：字节，设为 -1 表示全部)：">
+<!ENTITY postdata.accesskey    "P">
+<!ENTITY privacy.label         "保存敏感数据 (表格数据， POSTDATA 及 cookies) 来自：">
+<!ENTITY privacy.accesskey     "v">
+<!ENTITY privacy.level0        "全部网站">
+<!ENTITY privacy.level1        "仅未加密网站">
+<!ENTITY privacy.level2        "全都不保存">

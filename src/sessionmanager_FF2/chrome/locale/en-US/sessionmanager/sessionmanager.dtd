@@ -1,0 +1,106 @@
+<!ENTITY sessionManager "Session Manager">
+<!ENTITY toolsmenu.accesskey "M">
+<!ENTITY save.label "Save Session...">
+<!ENTITY save.accesskey "S">
+<!ENTITY saveOne.label "Save Current Window...">
+<!ENTITY saveOne.accesskey "W">
+<!ENTITY closeSession.label "Save and Close Current Session">
+<!ENTITY closeSession.accesskey "C">
+<!ENTITY abandonSession.label "Abandon Current Session">
+<!ENTITY abandonSession.accesskey "A">
+<!ENTITY rename.label "Rename Session...">
+<!ENTITY rename.accesskey "R">
+<!ENTITY remove.label "Delete Session(s)...">
+<!ENTITY remove.accesskey "D">
+<!ENTITY openFolder.label "Open Session Folder">
+<!ENTITY openFolder.accesskey "F">
+<!ENTITY options.label "&sessionManager; Options">
+<!ENTITY options.accesskey "O">
+<!ENTITY undoClosed.label "Reopen Closed ...">
+<!ENTITY undoClosed.accesskey "C">
+<!ENTITY closedWindows "Closed Windows:">
+<!ENTITY closedTabs "Closed Tabs:">
+<!ENTITY clearList.label "Clear 'Closed' List...">
+<!ENTITY clearList.accesskey "C">
+<!ENTITY toolbar.tooltip "Save the current browsing session...">
+<!ENTITY toolbar.undo.label "Undo Close">
+<!ENTITY toolbar.undo.tooltip "Reopen the most recently closed tab">
+<!ENTITY prompt.ignore.label "Don't show this dialog again">
+<!ENTITY prompt.autosave.label "Make this an auto-save session">
+<!ENTITY prompt.tabprompt.label "Prompt for tabs to restore">
+<!ENTITY load_replace.label "Load (Replace Current Session)">
+<!ENTITY load_replace.accesskey "L">
+<!ENTITY load_append.label "Load (Append To Current Session)">
+<!ENTITY load_append.accesskey "A">
+<!ENTITY replace_all.label "Replace Session With Current Session">
+<!ENTITY replace_all.accesskey "R">
+<!ENTITY replace_window.label "Replace Session With Current Window">
+<!ENTITY replace_window.accesskey "W">
+<!ENTITY remove_one.label "Delete Session...">
+<!ENTITY set_startup.label "Set As Startup Session">
+<!ENTITY set_startup.accesskey "S">
+<!ENTITY openSessionManagerSidebar.commandkey "S">
+<!ENTITY session_name.label "Name">
+<!ENTITY session_windows.label "Windows">
+<!ENTITY session_tabs.label "Tabs">
+<!ENTITY backup_sessions.label "Backup Sessions">
+<!ENTITY backup_sessions.accesskey "B">
+<!ENTITY remove_item.label "Delete Item">
+<!ENTITY remove_item.accesskey "D">
+<!ENTITY session_group.label "Group">
+<!ENTITY rename_group.label "Rename Group...">
+<!ENTITY remove_group.label "Delete Group...">
+<!ENTITY change_group.label "Change Group...">
+<!ENTITY change_group.accesskey "C">
+<!ENTITY group.label "Group Session(s)...">
+<!ENTITY group.accesskey "G">
+<!ENTITY toolbar.menu.tooltip "Open session management menu">
+<!ENTITY toolbar.undo.menu.tooltip "Open recently closed windows and tabs menu">
+<!ENTITY prompt.save_every1.label "Save every">
+<!ENTITY prompt.save_every2.label "minutes (disabled if blank)">
+<!ENTITY winTabTree.restoreHeader "Restore">
+<!ENTITY winTabTree.listHeader "Windows and Tabs">
+<!-- LOCALIZATION NOTE: &#37;S will be replaced with a number. -->
+<!ENTITY winTabTree.windowLabel "Window &#37;S">
+<!ENTITY load.label "Load Session...">
+<!ENTITY load.accesskey "L">
+<!ENTITY prompt.append.label "Append to Session">
+<!ENTITY prompt.replace.label "Replace Session">
+<!ENTITY tab_open_click_note.label "Note: clicking a tab entry while holding down the ALT key, will open that tab in the existing window.">
+<!ENTITY select_all.label "Select All">
+<!ENTITY select_none.label "Select None">
+<!ENTITY toggle_selection.label "Toggle Selection">
+<!ENTITY winTabTree.urlHeader "Location">
+<!ENTITY prompt.append_window.label "Append to Current Window">
+<!ENTITY session_explorer.label "Session Explorer">
+<!ENTITY session_explorer.accesskey "E">
+<!ENTITY closeWindowSession.label "Save and Close Window Session">
+<!ENTITY closeWindowSession.accesskey "l">
+<!ENTITY abandonWindowSession.label "Abandon Window Session">
+<!ENTITY abandonWindowSession.accesskey "b">
+<!ENTITY load_append_window.label "Load (Append To Current Window)">
+<!ENTITY load_append_window.accesskey "i">
+<!ENTITY leave_window_open.label "Leave this window open">
+<!ENTITY clearTabList.label "Clear 'Closed' Tab List...">
+<!ENTITY clearTabList.accesskey "T">
+<!ENTITY clearWindowList.label "Clear 'Closed' Window List...">
+<!ENTITY clearWindowList.accesskey "W">
+<!ENTITY hidden.label "Hidden">
+<!ENTITY contribute.label "Contribute">
+<!ENTITY support.label "Support this add-on:">
+<!ENTITY session_group_verb.label "Group">
+<!ENTITY deleted_sessions.label "Deleted Sessions">
+<!ENTITY deleted_sessions.accesskey "e">
+<!ENTITY empty_trash.label "Remove all deleted sessions">
+<!ENTITY empty_trash.accesskey "R">
+<!ENTITY permanently_delete.label "Permanently delete session">
+<!ENTITY permanently_delete.accesskey "P">
+<!ENTITY search.label "Search...">
+<!ENTITY edit.label "Edit Session...">
+<!ENTITY edit.accesskey "E">
+<!ENTITY addtab.label "Add tab to session...">
+<!ENTITY addtab.accesskey "A">
+<!ENTITY viewcontents.label "View contents of session">
+<!ENTITY viewcontents.accesskey "V">
+<!ENTITY export_to_html.label "Export contents of session to bookmark HTML file">
+<!ENTITY export_to_html.accesskey "E">

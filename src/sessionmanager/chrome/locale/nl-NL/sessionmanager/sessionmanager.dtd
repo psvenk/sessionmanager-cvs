@@ -1,0 +1,35 @@
+<!ENTITY sessionManager       "Session Manager">
+<!ENTITY toolsmenu.accesskey  "M">
+
+<!ENTITY save.label           "Sessie opslaan...">
+<!ENTITY save.accesskey       "S">
+<!ENTITY saveOne.label        "Huidig venster opslaan...">
+<!ENTITY saveOne.accesskey    "v">
+<!ENTITY rename.label         "Sessie hernoemen...">
+<!ENTITY rename.accesskey     "r">
+<!ENTITY remove.label         "Sessie(s) verwijderen...">
+<!ENTITY remove.accesskey     "d">
+<!ENTITY openFolder.label     "Sessiemap openen">
+<!ENTITY openFolder.accesskey "m">
+
+<!ENTITY options.label        "&sessionManager; opties">
+<!ENTITY options.accesskey    "o">
+<!ENTITY resume.label         "Huidige sessie hernemen bij opstarten">
+<!ENTITY resume.accesskey     "h">
+<!ENTITY reload.label         "Alle herstelde vensters vernieuwen">
+<!ENTITY reload.accesskey     "w">
+<!ENTITY overwrite.label      "Bestaande vensters vervangen">
+<!ENTITY overwrite.accesskey  "e">
+
+<!ENTITY undoClosed.label     "Heropen gesloten ...">
+<!ENTITY undoClosed.accesskey "l">
+<!ENTITY closedWindows        "Gesloten vensters:">
+<!ENTITY closedTabs           "Gesloten tabs:">
+<!ENTITY clearList.label      "&apos;Gesloten&apos;-lijst leegmaken...">
+<!ENTITY clearList.accesskey  "l">
+
+<!ENTITY toolbar.tooltip      "De huidige browsersessie opslaan...">
+<!ENTITY toolbar.undo.label   "Sluiten ongedaan maken">
+<!ENTITY toolbar.undo.tooltip "Heropen de laatst gesloten tab">
+
+<!ENTITY prompt.ignore.label  "Toon dit dialoogvenster niet meer">

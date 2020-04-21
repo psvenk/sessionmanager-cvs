@@ -1,0 +1,35 @@
+<!ENTITY sessionManager       "Gestione sessioni">
+<!ENTITY toolsmenu.accesskey  "G">
+
+<!ENTITY save.label           "Salva sessione...">
+<!ENTITY save.accesskey       "S">
+<!ENTITY saveOne.label        "Salva finestra corrente...">
+<!ENTITY saveOne.accesskey    "f">
+<!ENTITY rename.label         "Rinominare sessione...">
+<!ENTITY rename.accesskey     "R">
+<!ENTITY remove.label         "Eliminare sessione...">
+<!ENTITY remove.accesskey     "E">
+<!ENTITY openFolder.label     "Aprire la cartella delle sessioni">
+<!ENTITY openFolder.accesskey "A">
+
+<!ENTITY options.label        "Opzioni &sessionManager;">
+<!ENTITY options.accesskey    "O">
+<!ENTITY resume.label         "Ripristinare la sessione corrente al riavvio">
+<!ENTITY resume.accesskey     "p">
+<!ENTITY reload.label         "Ricaricare tutte le finestre ripristinate">
+<!ENTITY reload.accesskey     "i">
+<!ENTITY overwrite.label      "Sostituire le finestre esistenti">
+<!ENTITY overwrite.accesskey  "o">
+
+<!ENTITY undoClosed.label     "Riapri chiuse ...">
+<!ENTITY undoClosed.accesskey "c">
+<!ENTITY closedWindows        "Finestre chiuse:">
+<!ENTITY closedTabs           "Schede chiuse:">
+<!ENTITY clearList.label      "Svuota lista 'Chiuse'...">
+<!ENTITY clearList.accesskey  "C">
+
+<!ENTITY toolbar.tooltip      "Salvare la sessione di navigazione corrente...">
+<!ENTITY toolbar.undo.label   "Riapri scheda">
+<!ENTITY toolbar.undo.tooltip "Riapri la scheda chiusa più recentemente">
+
+<!ENTITY prompt.ignore.label  "Non mostrare nuovamente questa finestra di dialogo">

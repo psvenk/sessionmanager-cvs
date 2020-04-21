@@ -1,0 +1,44 @@
+<!ENTITY session_open.label "Odpri">
+<!ENTITY session_open.accesskey "O">
+<!ENTITY session_open.tooltip "Odpri izbrano sejo">
+<!ENTITY session_open_overwrite.label "Odpri (prepiši)">
+<!ENTITY session_open_overwrite.accesskey "p">
+<!ENTITY session_open_overwrite.tooltip "Odpri izbrano sejo ???">
+<!ENTITY session_open_newwindow.label "Odpri (novo okno)">
+<!ENTITY session_open_newwindow.accesskey "n">
+<!ENTITY session_open_newwindow.tooltip "Odpri izbrano sejo ???">
+<!ENTITY session_open_append.label "Odpri (dodaj)">
+<!ENTITY session_open_append.accesskey "d">
+<!ENTITY session_open_append.tooltip "Odpri izbrano sejo">
+<!ENTITY session_rename.label "Preimenuj...">
+<!ENTITY session_rename.accesskey "r">
+<!ENTITY session_rename.tooltip "Preimenuj izbrano sejo">
+<!ENTITY session_rename_ok.label "Preimenuj">
+<!ENTITY session_delete.label "Izbriši">
+<!ENTITY session_delete.accesskey "z">
+<!ENTITY session_delete.tooltip "Izbriši izbrano sejo">
+<!ENTITY session_save.label "Shrani...">
+<!ENTITY session_save.accesskey "S">
+<!ENTITY session_save.tooltip "Shrani trenutna okna v novo sejo">
+<!ENTITY session_save_ok.label "Shrani">
+<!ENTITY session_save_w.label "Shrani okno...">
+<!ENTITY session_save_w.accesskey "o">
+<!ENTITY session_save_w.tooltip "Shrani trenutno okno v novo sejo">
+<!ENTITY session_save_w_ok.label "Shrani okno">
+<!ENTITY session_open_folder.label "Odpri mapo">
+<!ENTITY session_open_folder.accesskey "m">
+<!ENTITY session_open_folder.tooltip "Odpri mapo upravljalnika sej">
+<!ENTITY column_autosave.label "a">
+<!ENTITY column_autosave.tooltip "Samodejno shranjevanje seje">
+<!ENTITY column_windows.label "O">
+<!ENTITY column_windows.tooltip "Okna">
+<!ENTITY column_tabs.label "Z">
+<!ENTITY column_tabs.tooltip "Zavihki">
+<!ENTITY column_time.label "Čas">
+<!ENTITY column_time.tooltip "Časovni žig">
+<!ENTITY column_name.label "Ime">
+<!ENTITY cancel.label "Prekliči">
+<!ENTITY done.label "Narejeno">
+<!ENTITY done.tooltip "Zapri pregledovalnik sej">
+<!ENTITY session_load.label "Naloži">
+<!ENTITY session_load.accesskey "l">

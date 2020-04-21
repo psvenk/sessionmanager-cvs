@@ -1,0 +1,280 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://sessionmanager/skin/sessionmanager.css" type="text/css"?>
+
+<!DOCTYPE overlay [
+  <!ENTITY % sessionmanagerDTD SYSTEM "chrome://sessionmanager/locale/sessionmanager.dtd">
+  %sessionmanagerDTD;
+  <!ENTITY % optionsDTD SYSTEM "chrome://sessionmanager/locale/options.dtd">
+  %optionsDTD;
+]>
+
+<overlay id="sessionmanagerOverlay" xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+	
+	<!-- oncommand elements needed for bug 371900 or commands for keyset won't fire -->
+	<commandset id="SessionManagerCommandset">
+		<command id="cmd_session_manager_delete" oncommand="void(0);"/>
+		<command id="cmd_session_manager_group" oncommand="void(0);"/>
+		<command id="cmd_session_manager_load" oncommand="void(0);"/>
+		<command id="cmd_session_manager_openFolder" oncommand="void(0);"/>
+		<command id="cmd_session_manager_options" oncommand="void(0);"/>
+		<command id="cmd_session_manager_rename" oncommand="void(0);"/>
+		<command id="cmd_session_manager_save" oncommand="void(0);"/>
+		<command id="cmd_session_manager_saveButton" oncommand="void(0);"/>
+		<command id="cmd_session_manager_saveKBShortcut" oncommand="void(0);"/>
+		<command id="cmd_session_manager_save_window" oncommand="void(0);"/>
+		<command id="cmd_session_manager_menu"/>
+		<!--command id="cmd_session_manager_explorer"/-->
+		<command id="cmd_session_manager_close"/>
+		<command id="cmd_session_manager_abandon"/>
+		<command id="cmd_session_manager_emptyTrash"/>
+		<command id="cmd_session_manager_clear"/>
+		<command id="cmd_session_manager_undoToolbar"/>
+		<command id="cmd_session_manager_sessionLoad"/>
+		<command id="cmd_session_manager_sessionReplace"/>
+		<command id="cmd_session_manager_sessionClose"/>
+		<command id="cmd_session_manager_sessionRename"/>
+		<command id="cmd_session_manager_sessionRemove"/>
+		<command id="cmd_session_manager_groupRename"/>
+		<command id="cmd_session_manager_groupRemove"/>
+		<command id="cmd_session_manager_setStartup"/>
+		<command id="cmd_session_manager_removeUndoMenuItem"/>
+		<command id="cmd_session_manager_deleteSession"/>
+		<!--command id="cmd_session_manager_toggleSidebar" oncommand="toggleSidebar('viewSessionManagerSidebar');"/-->
+	</commandset>
+	
+	<keyset id="SessionManagerKeyset">
+		<key id="key_session_manager_delete" modifiers="" key="" command="cmd_session_manager_delete"/>
+		<key id="key_session_manager_group" modifiers="" key="" command="cmd_session_manager_group"/>
+		<key id="key_session_manager_load" modifiers="" key="" command="cmd_session_manager_load"/>
+		<key id="key_session_manager_openFolder" modifiers="" key="" command="cmd_session_manager_openFolder"/>
+		<key id="key_session_manager_options" modifiers="" key="" command="cmd_session_manager_options"/>
+		<key id="key_session_manager_rename" modifiers="" key="" command="cmd_session_manager_rename"/>
+		<key id="key_session_manager_save" modifiers="" key="" command="cmd_session_manager_saveKBShortcut"/>
+		<key id="key_session_manager_save_window" modifiers="" key="" command="cmd_session_manager_save_window"/>
+	</keyset>
+
+	<popupset id="mainPopupSet">
+		<tooltip id="sessionmanager-button-tooltip"/>
+		<tooltip id="sessionmanager-undo-button-tooltip"/>
+		<menupopup id="sessionmanager-ContextMenu"/>
+		<menupopup id="sessionmanager-deleted-ContextMenu"/>
+		<menupopup id="sessionmanager-groupContextMenu"/>
+		<menupopup id="sessionmanager-undo-ContextMenu"/>
+	</popupset>
+	
+	<tooltip id="sessionmanager-button-tooltip" orient="vertical">
+		<label header="true" value="&toolbar.tooltip;"/>
+		<label hidden="true" value=""/>
+		<label hidden="true" value=""/>
+	</tooltip>
+
+	<tooltip id="sessionmanager-undo-button-tooltip" onpopuphidden="event.view.XULBrowserWindow.setOverLink('');" orient="vertical">
+		<label header="true" value="&toolbar.undo.tooltip;"/>
+		<label hidden="true" value=""/>
+		<label hidden="true" value=""/>
+	</tooltip>
+	
+	<!-- Menu in toolbar -->
+	<toolbarpalette id="BrowserToolbarPalette"> <!-- Firefox/SeaMonkey (toolbar) -->
+		<toolbarbutton id="sessionmanager-toolbar" type="menu-button" class="toolbarbutton-1 chromeclass-toolbar-additional" label="&sessionManager;"
+		               command="cmd_session_manager_saveButton" tooltiptext="&toolbar.menu.tooltip;" contextmenu="">
+			<menupopup id="sessionmanager-toolbar-popup">
+				<!--menuitem label="&session_explorer.label;" accesskey="&session_explorer.accesskey;" command="cmd_session_manager_explorer"/-->
+				<menu id="sessionmanager-toolbar-menu" label="&sessionManager;">
+					<menupopup _id="_sessionmanager-management-menu-popup" onpopupshowing="event.stopPropagation();">
+						<menuitem _id="load" label="&load.label;" accesskey="&load.accesskey;" key="key_session_manager_load" command="cmd_session_manager_load"/>
+						<menuitem _id="save" label="&save.label;" accesskey="&save.accesskey;" key="key_session_manager_save" command="cmd_session_manager_save"/>
+						<menuitem _id="saveWin" label="&saveOne.label;" accesskey="&saveOne.accesskey;" key="key_session_manager_save_window" command="cmd_session_manager_save_window"/>
+						<menuitem _id="rename" label="&rename.label;" accesskey="&rename.accesskey;" key="key_session_manager_rename" command="cmd_session_manager_rename"/>
+						<menuitem _id="remove" label="&remove.label;" accesskey="&remove.accesskey;" key="key_session_manager_delete" command="cmd_session_manager_delete"/>
+						<menuitem _id="group" label="&group.label;" accesskey="&group.accesskey;" key="key_session_manager_group" command="cmd_session_manager_group"/>
+						<menuseparator _id="openFolder_separator"/>
+						<menuitem _id="openFolder" label="&openFolder.label;" accesskey="&openFolder.accesskey;" key="key_session_manager_openFolder" command="cmd_session_manager_openFolder"/>
+						<menuseparator _id="options_separator"/>
+						<menuitem _id="options" label="&options.label;" accesskey="&options.accesskey;" key="key_session_manager_options" command="cmd_session_manager_options"/>
+					</menupopup>
+				</menu>
+				<splitmenu id="sessionmanager-toolbar-splitmenu" label="&sessionManager;" hidden="true" command="cmd_session_manager_load"/>
+				<menuseparator _id="autosave-separator"/>
+				<menuitem _id="closer" label="&closeSession.label;" accesskey="&closeSession.accesskey;" command="cmd_session_manager_close"/>
+				<menuitem _id="abandon" label="&abandonSession.label;" accesskey="&abandonSession.accesskey;" command="cmd_session_manager_abandon"/>
+				<menuitem _id="closer_window" label="&closeWindowSession.label;" accesskey="&closeWindowSession.accesskey;" command="cmd_session_manager_close"/>
+				<menuitem _id="abandon_window" label="&abandonWindowSession.label;" accesskey="&abandonWindowSession.accesskey;" command="cmd_session_manager_abandon"/>
+				<menuseparator _id="backup-separator"/>
+				<menu _id="backup-menu" label="&backup_sessions.label;" accesskey="&backup_sessions.accesskey;">
+					<menupopup onpopupshowing="event.stopPropagation();">
+					</menupopup>
+				</menu>
+				<menu _id="deleted-menu" label="&deleted_sessions.label;" accesskey="&deleted_sessions.accesskey;">
+					<menupopup onpopupshowing="event.stopPropagation();">
+						<menuitem _id="empty_trash" label="&empty_trash.label;" accesskey="&empty_trash.accesskey;" command="cmd_session_manager_emptyTrash"/>
+						<menuseparator _id="deletedPopup-separator"/>
+					</menupopup>
+				</menu>
+				<menuseparator _id="start-separator"/>
+				<menuseparator _id="separator"/>
+				<menu _id="undo-menu" label="&undoClosed.label;" accesskey="&undoClosed.accesskey;">
+					<menupopup onpopupshowing="event.stopPropagation();">
+						<menuitem _id="windows" label="&closedWindows;" disabled="true"/>
+						<menuseparator _id="closed-separator"/>
+						<menuitem _id="tabs" label="&closedTabs;" disabled="true"/>
+						<menuseparator _id="end-separator"/>
+						<menuitem _id="clear_windows" label="&clearWindowList.label;" accesskey="&clearWindowList.accesskey;" command="cmd_session_manager_clear"/>
+						<menuitem _id="clear_tabs" label="&clearTabList.label;" accesskey="&clearTabList.accesskey;" command="cmd_session_manager_clear"/>
+						<menuitem _id="clear_all" label="&clearList.label;" accesskey="&clearList.accesskey;" command="cmd_session_manager_clear"/>
+					</menupopup>
+				</menu>
+			</menupopup>
+		</toolbarbutton>
+		
+		<toolbarbutton id="sessionmanager-undo" type="menu-button" class="toolbarbutton-1 chromeclass-toolbar-additional" label="&toolbar.undo.label;"
+		               command="cmd_session_manager_undoToolbar" tooltiptext="&toolbar.undo.menu.tooltip;" contextmenu="">
+			<menupopup id="sessionmanager-undo-popup">
+				<menuitem _id="windows" label="&closedWindows;" disabled="true"/>
+				<menuseparator _id="closed-separator"/>
+				<menuitem _id="tabs" label="&closedTabs;" disabled="true"/>
+				<menuseparator _id="end-separator"/>
+				<menuitem _id="clear_windows" label="&clearWindowList.label;" accesskey="&clearWindowList.accesskey;" command="cmd_session_manager_clear"/>
+				<menuitem _id="clear_tabs" label="&clearTabList.label;" accesskey="&clearTabList.accesskey;" command="cmd_session_manager_clear"/>
+				<menuitem _id="clear_all" label="&clearList.label;" accesskey="&clearList.accesskey;" command="cmd_session_manager_clear"/>
+			</menupopup>
+		</toolbarbutton>
+	</toolbarpalette>
+
+	<!-- Menu in Firefox 4.0+ App Menu -->
+	<vbox id="appmenuPrimaryPane"> 
+		<menu id="sessionmanager-appmenu" class="menu-iconic" label="&sessionManager;" accesskey="&toolsmenu.accesskey;" insertbefore="appmenu_fullScreen"/>
+	</vbox>
+	<!--vbox id="appmenuSecondaryPane"> 
+        <spacer flex="1"/>
+		<menu id="sessionmanager-appmenu" class="menu-iconic" label="&sessionManager;" accesskey="&toolsmenu.accesskey;"/>
+	</vbox-->
+	
+	<!-- Menu in Tools Menu -->
+	<menupopup id="menu_ToolsPopup"> <!-- Firefox -->
+		<!--menuitem id="sessionexplorer-item" label="&session_explorer.label;" accesskey="&session_explorer.accesskey;"
+		          command="cmd_session_manager_explorer" insertbefore="devToolsSeparator"/-->
+		<menu id="sessionmanager-menu" class="menu-iconic" label="&sessionManager;" accesskey="&toolsmenu.accesskey;" insertbefore="devToolsSeparator">
+				<menupopup id="sessionmanager-menu-popup"/>
+		</menu>
+	</menupopup>
+	
+	<menupopup id="taskPopup"> <!-- SeaMonkey -->
+		<!--menuitem id="sessionexplorer-item" label="&session_explorer.label;" accesskey="&session_explorer.accesskey;"
+		          command="cmd_session_manager_explorer" insertbefore="navBeginGlobalItems"/-->
+		<menu id="sessionmanager-menu" class="menu-iconic" label="&sessionManager;" accesskey="&toolsmenu.accesskey;" insertbefore="navBeginGlobalItems">
+				<menupopup id="sessionmanager-menu-popup"/>
+		</menu>
+	</menupopup>
+	
+	<menupopup id="sessionmanager-menu-popup">
+		<menu _id="sessionmanager-tools-menu" label="&sessionManager;">
+			<menupopup _id="_sessionmanager-management-menu-popup" onpopupshowing="event.stopPropagation();">
+				<menuitem _id="load" label="&load.label;" accesskey="&load.accesskey;" key="key_session_manager_load" command="cmd_session_manager_load"/>
+				<menuitem _id="save" label="&save.label;" accesskey="&save.accesskey;" key="key_session_manager_save" command="cmd_session_manager_save"/>
+				<menuitem _id="saveWin" label="&saveOne.label;" accesskey="&saveOne.accesskey;" key="key_session_manager_save_window" command="cmd_session_manager_save_window"/>
+				<menuitem _id="rename" label="&rename.label;" accesskey="&rename.accesskey;" key="key_session_manager_rename" command="cmd_session_manager_rename"/>
+				<menuitem _id="remove" label="&remove.label;" accesskey="&remove.accesskey;" key="key_session_manager_delete" command="cmd_session_manager_delete"/>
+				<menuitem _id="group" label="&group.label;" accesskey="&group.accesskey;" key="key_session_manager_group" command="cmd_session_manager_group"/>
+				<menuseparator _id="openFolder_separator"/>
+				<menuitem _id="openFolder" label="&openFolder.label;" accesskey="&openFolder.accesskey;" key="key_session_manager_openFolder" command="cmd_session_manager_openFolder"/>
+				<menuseparator _id="options_separator"/>
+				<menuitem _id="options" label="&options.label;" accesskey="&options.accesskey;" key="key_session_manager_options" command="cmd_session_manager_options"/>
+			</menupopup>
+		</menu>
+		<splitmenu _id="sessionmanager-tools-splitmenu" label="&sessionManager;" hidden="true" command="cmd_session_manager_load"/>
+		<menuseparator _id="autosave-separator"/>
+		<menuitem _id="closer" label="&closeSession.label;" accesskey="&closeSession.accesskey;" command="cmd_session_manager_close"/>
+		<menuitem _id="abandon" label="&abandonSession.label;" accesskey="&abandonSession.accesskey;" command="cmd_session_manager_abandon"/>
+		<menuitem _id="closer_window" label="&closeWindowSession.label;" accesskey="&closeWindowSession.accesskey;" command="cmd_session_manager_close"/>
+		<menuitem _id="abandon_window" label="&abandonWindowSession.label;" accesskey="&abandonWindowSession.accesskey;" command="cmd_session_manager_abandon"/>
+		<menuseparator _id="backup-separator"/>
+		<menu _id="backup-menu" label="&backup_sessions.label;" accesskey="&backup_sessions.accesskey;">
+			<menupopup onpopupshowing="event.stopPropagation();">
+			</menupopup>
+		</menu>
+		<menu _id="deleted-menu" label="&deleted_sessions.label;" accesskey="&deleted_sessions.accesskey;">
+			<menupopup onpopupshowing="event.stopPropagation();">
+				<menuitem _id="empty_trash" label="&empty_trash.label;" accesskey="&empty_trash.accesskey;" command="cmd_session_manager_emptyTrash"/>
+				<menuseparator _id="deletedPopup-separator"/>
+			</menupopup>
+		</menu>
+		<menuseparator _id="start-separator"/>
+		<menuseparator _id="separator"/>
+		<menu _id="undo-menu" label="&undoClosed.label;" accesskey="&undoClosed.accesskey;">
+			<menupopup onpopupshowing="event.stopPropagation();">
+				<menuitem _id="windows" label="&closedWindows;" disabled="true"/>
+				<menuseparator _id="closed-separator"/>
+				<menuitem _id="tabs" label="&closedTabs;" disabled="true"/>
+				<menuseparator _id="end-separator"/>
+				<menuitem _id="clear_windows" label="&clearWindowList.label;" accesskey="&clearWindowList.accesskey;" command="cmd_session_manager_clear"/>
+				<menuitem _id="clear_tabs" label="&clearTabList.label;" accesskey="&clearTabList.accesskey;" command="cmd_session_manager_clear"/>
+				<menuitem _id="clear_all" label="&clearList.label;" accesskey="&clearList.accesskey;" command="cmd_session_manager_clear"/>
+			</menupopup>
+		</menu>
+	</menupopup>
+
+	<menupopup id="sessionmanager-ContextMenu">
+		<menuitem _id="load_replace" label="&load_replace.label;" accesskey="&load_replace.accesskey;" command="cmd_session_manager_sessionLoad"/>
+		<menuitem _id="load_append" label="&load_append.label;" accesskey="&load_append.accesskey;" command="cmd_session_manager_sessionLoad"/>
+		<menuitem _id="load_append_window" label="&load_append_window.label;" accesskey="&load_append_window.accesskey;" command="cmd_session_manager_sessionLoad"/>
+		<menuseparator/>
+		<menuitem _id="replace" label="&replace_all.label;" accesskey="&replace_all.accesskey;" command="cmd_session_manager_sessionReplace"/>
+		<menuitem _id="replace_window" label="&replace_window.label;" accesskey="&replace_window.accesskey;" command="cmd_session_manager_sessionReplace"/>
+		<menuseparator/>
+		<menuitem _id="closer" label="&closeSession.label;" accesskey="&closeSession.accesskey;" command="cmd_session_manager_sessionClose"/>
+		<menuitem _id="abandon" label="&abandonSession.label;" accesskey="&abandonSession.accesskey;" command="cmd_session_manager_sessionClose"/>
+		<menuitem _id="closer_window" label="&closeWindowSession.label;" accesskey="&closeWindowSession.accesskey;" command="cmd_session_manager_sessionClose"/>
+		<menuitem _id="abandon_window" label="&abandonWindowSession.label;" accesskey="&abandonWindowSession.accesskey;" command="cmd_session_manager_sessionClose"/>
+		<menuseparator _id="close_separator"/>
+		<menuitem label="&rename.label;" accesskey="&rename.accesskey;" command="cmd_session_manager_sessionRename"/>
+		<menuitem label="&remove_one.label;" accesskey="&remove.accesskey;" command="cmd_session_manager_sessionRemove"/>
+		<menuitem _id="changegroup" label="&change_group.label;" accesskey="&change_group.accesskey;" command="cmd_session_manager_groupRename"/>
+		<menuseparator/>
+		<menuitem _id="startup" label="&set_startup.label;" accesskey="&set_startup.accesskey;" command="cmd_session_manager_setStartup"/>
+	</menupopup>
+
+	<menupopup id="sessionmanager-groupContextMenu">
+		<menuitem label="&rename_group.label;" accesskey="&rename.accesskey;" command="cmd_session_manager_groupRename"/>
+		<menuitem label="&remove_group.label;" accesskey="&remove.accesskey;" command="cmd_session_manager_groupRemove"/>
+	</menupopup>
+		
+	<menupopup id="sessionmanager-undo-ContextMenu">
+		<menuitem label="&remove_item.label;" accesskey="&remove_item.accesskey;" command="cmd_session_manager_removeUndoMenuItem"/>
+	</menupopup>
+	
+	<menupopup id="sessionmanager-deleted-ContextMenu">
+		<menuitem label="&permanently_delete.label;" accesskey="&permanently_delete.accesskey;" command="cmd_session_manager_deleteSession"/>
+	</menupopup>
+	
+	<!-- Titlebar session status text for when titles do not show in titlebar -->
+	<hbox id="titlebar-content">
+		<label id="sessionmanager-titlebar-label"  insertbefore="titlebar-spacer"/>
+	</hbox>
+	
+	<!-- Used for Sanitize overlay, not main overlay -->
+	<label id="sessionmanager-sanitize-label" label="&sanitizer.label;" accesskey="&sanitizer.accesskey;"/>
+
+	<!-- Sidebar Menu --><!--
+	<menupopup id="viewSidebarMenu">
+		<menuitem key="openSessionManagerSidebarKb" observes="viewSessionManagerSidebar"/>
+	</menupopup>
+
+	<keyset id="mainKeyset">
+		<key id="openSessionManagerSidebarKb" command="viewSessionManagerSidebar"
+			key="&openSessionManagerSidebar.commandkey;" 
+			modifiers="accel,shift"/>
+	</keyset>
+
+	<broadcasterset id="mainBroadcasterSet"> 
+		<broadcaster id="viewSessionManagerSidebar" 
+			label="&sessionManager;"
+			autoCheck="false"
+			type="checkbox"
+			group="sidebar"
+			sidebarurl="chrome://sessionmanager/content/sidebar.xul"
+			sidebarTitle="&sessionManager;"
+			command="cmd_session_manager_toggleSidebar"/>
+	</broadcasterset>
+-->
+</overlay>

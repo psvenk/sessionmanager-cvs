@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+
+<RDF:RDF xmlns:RDF="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.mozilla.org/2004/em-rdf#">
+	<RDF:Description about="urn:mozilla:install-manifest">
+		<id>{1280606b-2510-4fe0-97ef-9b5a22eafe30}</id>
+		
+		<name>Session Manager</name>
+		<version>0.4.3</version>
+		
+		<description>Saves and restores the state of all windows.</description>
+		<optionsURL>chrome://sessionmanager/content/options.xul</optionsURL>
+		<iconURL>chrome://sessionmanager/skin/icon.png</iconURL>
+		
+		<homepageURL>http://sessionmanager.mozdev.org/</homepageURL>
+		<updateURL>http://www.haslo.ch/zeniko/software/update.xml</updateURL>
+		
+		<creator>zeniko</creator>
+		<contributor>Danil Ivanov (Cache Fixer)</contributor>
+		<contributor>dougeeebear (Session Manager icon)</contributor>
+		<contributor>&amp;</contributor>
+		<contributor>BabelZilla translators:</contributor>
+		<contributor>Andrea (Italian)</contributor>
+		<contributor>Rick Cart (Chinese [zh-CN])</contributor>
+		<contributor>Teboga (Portuguese)</contributor>
+		<contributor>jojaba (French)</contributor>
+		<contributor>Edgaras Janušauskas (Lithuanian)</contributor>
+		<contributor>Proyecto Nave (Spanish)</contributor>
+		<contributor>Leszek (teo) Życzkowski (Polish)</contributor>
+		<contributor>Haebaru (Japanese)</contributor>
+		<contributor>stoneflash (Russian)</contributor>
+		<contributor>JW_00000 (Dutch)</contributor>
+		
+		<targetApplication><!-- Firefox -->
+			<RDF:Description>
+				<id>{ec8030f7-c20a-464f-9b0e-13a3a9e97384}</id>
+				<minVersion>1.5</minVersion>
+				<maxVersion>2.0.*</maxVersion>
+			</RDF:Description>
+		</targetApplication>
+		
+		<targetApplication><!-- SeaMonkey -->
+			<RDF:Description>
+				<id>{92650c4d-4b8e-4d2a-b7eb-24ecf4f6b63a}</id>
+				<minVersion>1.0</minVersion>
+				<maxVersion>1.0.*</maxVersion>
+			</RDF:Description>
+		</targetApplication>
+		
+		<targetApplication><!-- Flock -->
+			<RDF:Description>
+				<id>{a463f10c-3994-11da-9945-000d60ca027b}</id>
+				<minVersion>0.5</minVersion>
+				<maxVersion>0.*</maxVersion> <!-- don't take my word for it! -->
+			</RDF:Description>
+		</targetApplication>
+	</RDF:Description>
+</RDF:RDF>

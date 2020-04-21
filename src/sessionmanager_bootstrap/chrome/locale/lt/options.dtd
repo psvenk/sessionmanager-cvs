@@ -1,0 +1,74 @@
+<!ENTITY options.title "&sessionManager; Nustatymai">
+<!ENTITY general.caption "Bendra">
+<!ENTITY startNend.caption "Paleistis ir uždarymas">
+<!ENTITY resume_sess.label "Paleidžiant visada įkelti šią sesiją:">
+<!ENTITY resume_sess.accesskey "v">
+<!ENTITY backup_sess.label "Uždarant">
+<!ENTITY backup_sess.accesskey "u">
+<!ENTITY backup_session.label0 "nesaugoti šios sesijos">
+<!ENTITY backup_session.label1 "saugoti šią sesiją">
+<!ENTITY backup_session.label2 "klausti, ar saugoti šią sesiją">
+<!ENTITY crashrecovery.label "Įjungti Nulūžimo atstatymą">
+<!ENTITY crashrecovery.accesskey "a">
+<!ENTITY autosave_session.label "Automatiškai išsaugoti pakeistą sesiją">
+<!ENTITY autosave_session.accesskey "p">
+<!ENTITY restoring.caption "Sesijų atkūrimas">
+<!ENTITY sessionList.caption "Sesijų sąrašas">
+<!ENTITY orderList.label "Rikiuoti sesijų sąrašą">
+<!ENTITY orderList.accesskey "i">
+<!ENTITY orderList.label1 "abėcėlės tvarka">
+<!ENTITY orderList.label2 "nuo seniausios iki naujausios">
+<!ENTITY orderList.label_2 "nuo naujausios iki seniausios">
+<!ENTITY max_backup.label "Senesnių (nulūžusių) sesijų skaičius, kurį saugoti:">
+<!ENTITY max_backup.accesskey "S">
+<!ENTITY undoClose.caption "Atšaukti užvėrimą">
+<!ENTITY windowsNtabs.caption "Užverti langai ir skirtukai">
+<!ENTITY max_closed.label "Didžiausias atsimenamų užvertų Langų skaičius:">
+<!ENTITY max_closed.accesskey "L">
+<!ENTITY max_tabs.label "Maksimalus atsimenamų užvertų Skirtukų skaičius (kiekviename lange):">
+<!ENTITY max_tabs.accesskey "a">
+<!ENTITY submenu.label "Rodyti užvertų langų ir skirtukų sąrašą submeniu">
+<!ENTITY submenu.accesskey "R">
+<!ENTITY persistence.caption "Kiekvienąkart">
+<!ENTITY closed_tabs.label "Atkurti iš naujo atveriamų užvertų skirtukų sąrašą visiems langams:">
+<!ENTITY closed_tabs.accesskey "t">
+<!ENTITY closed_tabs.label0 "niekada">
+<!ENTITY closed_tabs.label1 "paleidžiant">
+<!ENTITY closed_tabs.label2 "visada">
+<!ENTITY window_list.label "Nevalyti užvertų langų sąrašo išjungiant">
+<!ENTITY window_list.accesskey "n">
+<!ENTITY clear_list.label "Valyti sąrašą">
+<!ENTITY clear_list.accesskey "y">
+<!ENTITY advanced.caption "Išsamiau">
+<!ENTITY name_format.caption "Sesijų vardai">
+<!ENTITY name_format.label "Siūlomas sesijų vardų formatas:">
+<!ENTITY name_format.accesskey "f">
+<!ENTITY name_format.desc "Naudokite &#37;t aktyvaus skirtuko pavadinimui, &#37;d šiandienos datai ir &#37;m laikui; papildomai pavadinimo ilgis gali būti trumpinamas iki # simbolių: &#37;#t.">
+<!ENTITY sessionstore.caption "Sesijų Saugykla">
+<!ENTITY service.caption "&quot;Sesijų Saugyklos&quot; nustatymai">
+<!ENTITY service.description "Nekeiskite nieko, nebent žinote, ką darote:">
+<!ENTITY interval.label "Mažiausias laiko intervalas tarp būsenos išsaugojimų (sekundėmis):">
+<!ENTITY interval.accesskey "M">
+<!ENTITY postdata.label "Didžiausias POSTDATA kiekis išsaugojimui (baitais; -1 visiems):">
+<!ENTITY postdata.accesskey "P">
+<!ENTITY privacy.label "Saugoti svarbius duomenis (formų duomenis, POSTDATA ir slapukus)">
+<!ENTITY privacy.accesskey "g">
+<!ENTITY privacy.level0 "visoms svetainėms">
+<!ENTITY privacy.level1 "tik nešifruotoms svetainėms">
+<!ENTITY privacy.level2 "jokioms svetainėms">
+<!ENTITY sessiondir.caption "Saugomų sesijų vieta">
+<!ENTITY sessiondir.desc "Numatytoji saugomų sesijų vieta čia gali būti pakeista.">
+<!ENTITY encrypt.caption "Užkodavimas">
+<!ENTITY encrypt.desc "Įspėjimas: Užkoduoti sesijos duomenys gali būti atverti tik profiliuose su identiškais key3.db ir cert8.db failais. Taip pat, jei pagrindinis slaptažodis yra nustatytas, sesijos negali būti užkoduotos ar atkoduotos, jei pagrindinis slaptažodis neįvestas.">
+<!ENTITY encrypt.label "Užkoduotos išsaugotos sesijos ir užvertų langų duomenys">
+<!ENTITY encrypt.accesskey "k">
+<!ENTITY change_dir.label "Keisti">
+<!ENTITY change_dir.accesskey "K">
+<!ENTITY default_dir.label "Atstatyti numatytąją">
+<!ENTITY default_dir.accesskey "A">
+<!ENTITY sanitizer.label "Sesijų tvarkytojo išsaugotos sesijos">
+<!ENTITY sanitizer.accesskey "i">
+<!ENTITY reload.label "Perkrauti visus atkurtus langus">
+<!ENTITY reload.accesskey "e">
+<!ENTITY overwrite.label "Pakeisti egzistuojančius langus">
+<!ENTITY overwrite.accesskey "k">

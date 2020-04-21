@@ -1,0 +1,54 @@
+
+<!-- ***************** INFO/NEWS *************** -->
+<div id="infoTabs">
+<div class="infoTab" id="quick-start">
+<h5 class="infoHeader">Quick-Start</h5>
+<ul>
+<li><a href="http://downloads.mozdev.org/sessionmanager/crash_recovery-0.6.10-fx+fl+mz+zm.xpi">Install Crash Recovery</a>
+<li>Restart Firefox
+<li>Relax
+</ul>
+</div>
+
+<div class="infoTab" id="whats-new">
+<h5 class="infoHeader">What's New</h5>
+<ul>
+<li>2006-10-24: discontinued
+<li>2006-07-30: version 0.6.10
+<li>2006-06-16: version 0.6.9
+<li>2006-05-06: version 0.6.8
+<li>2006-05-06: Code <a href="https://bugzilla.mozilla.org/show_bug.cgi?id=328159#c48">included</a> into Firefox 2.0
+<li>2006-04-17: Crash Recovery 0.6.7 released
+<li>2006-04-17: New homepage for Crash Recovery
+</ul>
+</div>
+
+<div class="infoTab" id="developers">
+<h5 class="infoHeader">Developer</h5>
+<ul>
+<li><a href="mailto:z&#101;ni&#107;&#111;&#64;gmai&#108;.co&#109;">zeniko</a>
+</ul>
+</div>
+</div>
+<!-- ***************** INFO/NEWS *************** -->
+
+<!-- MAIN CONTENT -->
+<p><strong>Crash Recovery</strong> recovers all tabs and windows after a crash.</p>
+
+<div style="float: left; margin: 0px 10px;"><img src="images/recover.png" width="340" height="120" alt="Dialog to recover a crashed session."></div>
+
+<p>Crash Recovery is active from the moment of its installation - no configuration is needed. Should your browser ever crash, it will offer you to restore all tabs from before that crash, including history and text data. If you want to use it also for session resuming, simply toggle the hidden pref <i>extensions.crashrecovery.resume_session</i>.</p>
+
+<p>Crash Recovery has been included in Firefox 2.0 (see the relevant <a href="https://bugzilla.mozilla.org/show_bug.cgi?id=328159">bug 328159</a>). If you're interested in getting this also for SeaMonkey, have a look at <a href="https://bugzilla.mozilla.org/show_bug.cgi?id=19454">bug 19454</a> (and think about contributing to it).</p>
+
+<p>If you miss session saving functionality, you could try <a href="/">Session Manager</a> which enhances Crash Recovery with a simple interface for saving and restoring browsing states.</p>
+
+<h5 id="installation">Installation</h5>
+<p>Latest release: <strong><a href="http://downloads.mozdev.org/sessionmanager/crash_recovery-0.6.10-fx+fl+mz+zm.xpi">Crash Recovery 0.6.10</a></strong> (<a href="history.html">changelog</a>, <a href="contributors.html">contributors</a>)<p>
+<p>This release works for <b>Firefox 1.5</b>, <b>SeaMonkey 1.0</b> and <b>Flock 0.5</b>.
+
+<h5 id="more-info">Further Information</h5>
+
+<p>For Crash Recovery specific issues, please add your feedback to <a href="http://forums.mozillazine.org/viewtopic.php?t=164513">this MozillaZine thread</a>.</p>
+
+<p>For experts, there are currently three more hidden prefs: <i>extensions.crashrecovery.interval</i> is the minimal delay between two disk writes in milliseconds (default is 10000, i.e. 10 seconds), <i>extensions.crashrecovery.postdata</i> indicates up to how many bytes of POSTDATA should be restored (0 for none, -1 for everything) and <i>extensions.crashrecovery.privacy_level</i> specifies for which sites sensitive data - i.e. form data, POSTDATA and cookies - should be stored (0 for all, 1 for non-encrypted sites only and 2 for none). The states are written to the file crashrecovery.dat in your profile folder (a backup is always created at startup). Finally CrashRecovery tries to restore your cache as well (functionality adapted from <a href="http://imglikeopera.mozdev.org/cache_fixer.html">Cache Fixer</a>).</p>

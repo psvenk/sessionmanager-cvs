@@ -1,0 +1,153 @@
+<!ENTITY options.title "&sessionManager; 옵션">
+<!ENTITY general.caption "일반">
+<!ENTITY startNend.caption "시작하고 종료할 때">
+<!ENTITY resume_sess.label "시작할 때 항상 다음의 세션을 읽어들이기:">
+<!ENTITY resume_sess.accesskey "S">
+<!ENTITY backup_sess.label "종료할 때">
+<!ENTITY backup_sess.accesskey "H">
+<!ENTITY backup_session.label0 "현재 세션을 삭제하기">
+<!ENTITY backup_session.label1 "현재 세션을 백업하기">
+<!ENTITY backup_session.label2 "현재 세션을 백업하는지 물어보기">
+<!ENTITY crashrecovery.label "충돌 복구 활성화">
+<!ENTITY crashrecovery.accesskey "E">
+<!ENTITY autosave_session.label "자동으로 바뀐 세션을 저장하기">
+<!ENTITY autosave_session.accesskey "A">
+<!ENTITY restoring.caption "세션 복원">
+<!ENTITY sessionList.caption "세션 목록">
+<!ENTITY orderList.label "세션 목록 정렬 방법">
+<!ENTITY orderList.accesskey "D">
+<!ENTITY orderList.label1 "알파벳 순으로">
+<!ENTITY orderList.label2 "새로운 순으로">
+<!ENTITY orderList.label_2 "오래된 순으로">
+<!ENTITY max_backup.label "백업하는(충돌한) 세션의 수:">
+<!ENTITY undoClose.caption "다시 열기">
+<!ENTITY windowsNtabs.caption "닫은 창과 탭">
+<!ENTITY max_closed.label "기억할 닫은 창의 최대 수:">
+<!ENTITY max_closed.accesskey "W">
+<!ENTITY max_tabs.label "기억할 닫은 탭의 최대 수 (창 마다):">
+<!ENTITY max_tabs.accesskey "T">
+<!ENTITY submenu.label "모든 닫은 창과 탭을 부메뉴에 표시하기">
+<!ENTITY submenu.accesskey "C">
+<!ENTITY persistence.caption "보관 유지">
+<!ENTITY closed_tabs.label "모든 창을 닫은 탭 목록으로 복원하기:">
+<!ENTITY closed_tabs.accesskey "E">
+<!ENTITY closed_tabs.label0 "안함">
+<!ENTITY closed_tabs.label1 "시작할 때">
+<!ENTITY closed_tabs.label2 "항상">
+<!ENTITY window_list.label "종료할 때 닫은 창 목록을 삭제 안하기">
+<!ENTITY window_list.accesskey "O">
+<!ENTITY clear_list.label "목록 지우기">
+<!ENTITY clear_list.accesskey "R">
+<!ENTITY advanced.caption "고급">
+<!ENTITY name_format.caption "세션 이름">
+<!ENTITY name_format.label "세션 이름 생성 형식:">
+<!ENTITY name_format.desc "활성화 된 탭의 제목엔 &#37;t, 오늘의 날짜엔 &#37;d 시간엔 &#37;m을 사용; 덧붙여, 제목의 길이는 #자로 제한 할 수 있습니다: &#37;#t.">
+<!ENTITY service.caption "&quot;SessionStore&quot; 설정">
+<!ENTITY service.description "당신이 하고있는 일이 뭔지 모른다면 손대지 마십시오!">
+<!ENTITY interval.label "두 상태 저장 간 최소 시간 간격 (초 단위):">
+<!ENTITY interval.accesskey "I">
+<!ENTITY postdata.label "저장할 POSTDATA 최대 크기 (바이트 단위; -1은 전부):">
+<!ENTITY postdata.accesskey "X">
+<!ENTITY privacy.label "다음 지정한 영역에서 개인 정보(폼 데이터, POSTDATA, 쿠키) 저장:">
+<!ENTITY privacy.accesskey "V">
+<!ENTITY privacy.level0 "모든 사이트에서">
+<!ENTITY privacy.level1 "암호화되지 않은 사이트만">
+<!ENTITY privacy.level2 "저장 안 함">
+<!ENTITY sessiondir.caption "저장된 세션 위치">
+<!ENTITY sessiondir.desc "저장된 세션 위치를 여기로 변경할 수 있습니다.">
+<!ENTITY encrypt.caption "암호화">
+<!ENTITY encrypt.desc "경고: 암호화된 세션의 데이터는 일치하는 key3.db 파일을 가진 프로필에서만 열어볼 수 있습니다. 덧붙여서 기본 암호가 설정되어 있는 경우, 기본 암호가 입력되지 않으면 세션은 암호화나 복호화될 수 없습니다.">
+<!ENTITY encrypt.label "저장된 세션과 닫은 창의 데이터를 암호화 하기">
+<!ENTITY encrypt.accesskey "E">
+<!ENTITY change_dir.label "변경">
+<!ENTITY default_dir.label "기본값">
+<!ENTITY sanitizer.label "세션 관리자가 저장한 세션">
+<!ENTITY saving.caption "세션 저장 중">
+<!ENTITY lastpage.label "내가 마지막에 열어본 페이지 보여주기">
+<!ENTITY noSession.label "없음">
+<!ENTITY promptSession.label "세션 프롬프트">
+<!ENTITY selectSession.label "세션 선택">
+<!ENTITY cookies.label "세션 쿠키 저장">
+<!ENTITY sessionImport.caption "세션 가져오기...">
+<!ENTITY importSS.label "SessionSaver(E)">
+<!ENTITY importSS.accesskey "E">
+<!ENTITY importTMP.label "Tab Mix Plus(I)">
+<!ENTITY apply.label "적용">
+<!ENTITY save_and_restore.caption "저장하고 복원하기">
+<!ENTITY display.caption "표시">
+<!ENTITY middleclick.label "가운데 클릭으로 마지막에 닫은 탭 다시 열기">
+<!ENTITY max_display.label "메뉴에 표시할 세션의 최대 갯수 (-1는 전부)">
+<!ENTITY hide_tools_menu.label "도구 메뉴에 세션 관리자 메뉴 표시하지 않기">
+<!ENTITY disable_cache_fixer.label "캐쉬 수리 기능 끄기">
+<!ENTITY encrypted_only.label "암호화가 실패하면 암호화되지 않은 데이터를 저장하지 *않습니다*.">
+<!ENTITY encrypt2.desc "경고: 만약 이 옵션이 체크된 상태에서 세션 또는 창 데이터가 암호화될 수 없으면, 데이터를 잃게되고 복원할 수 없게됩니다. 암호화는 기본 암호가 요청되었을 때 입력되지 않으면 실패하게되므로, 이 옵션을 체크 표시하기 전에 잘 생각해보시기 바랍니다. ">
+<!ENTITY closed_window_list.label "브라우저에 내장된 닫은 창 목록 사용">
+<!ENTITY closed_windows.label "다시 열 수 있는 닫은 창의 목록을 복원:">
+<!ENTITY closed_windows.accesskey "S">
+<!ENTITY open_as_tabs.label "현재 창에 탭으로 열기">
+<!ENTITY open_as_tabs.accesskey "P">
+<!ENTITY last_window_shutdown.label "마지막에 열려있는 브라우저 창 닫기를 종료로 취급">
+<!ENTITY preselect_previous_session.label "미리 선택한 이전 세션">
+<!ENTITY logging.caption "기록하기">
+<!ENTITY enable_logging.label "기록하기 활성화">
+<!ENTITY enable_logging.accesskey "E">
+<!ENTITY open_log.label "기록 파일 열기">
+<!ENTITY open_log.accesskey "O">
+<!ENTITY delete_log.label "기록 파일 삭제">
+<!ENTITY delete_log.accesskey "D">
+<!ENTITY log_level_state.label "종료 상태 기록">
+<!ENTITY log_level_state.accesskey "S">
+<!ENTITY log_level_trace.label "추적 데이터 기록">
+<!ENTITY log_level_trace.accesskey "T">
+<!ENTITY log_level_data.label "여러 가지 데이터 기록">
+<!ENTITY log_level_data.accesskey "V">
+<!ENTITY log_level_info.label "참고가 될만한 메시지 기록">
+<!ENTITY log_level_info.accesskey "I">
+<!ENTITY log_level_extra.label "추가 디버깅 데이터 기록">
+<!ENTITY log_level_extra.accesskey "E">
+<!ENTITY reload.label "모든 복원된 창을 새로 고침">
+<!ENTITY reload.accesskey "L">
+<!ENTITY overwrite.label "기존의 창에 덮어쓰기">
+<!ENTITY overwrite.accesskey "P">
+<!ENTITY allow_saving_during_pbm.label "사생활 보호 모드 중에 저장 허용">
+<!ENTITY allow_saving_during_pbm.label2 "활성화되려면 암호화가 필요">
+<!ENTITY session_name_in_titlebar.label "활성 세션 이름을 제목 표시줄에 표시">
+<!ENTITY prepend.label "앞에 붙이기">
+<!ENTITY append.label "뒤에 붙이기">
+<!ENTITY donotadd.label "추가하지 않음">
+<!ENTITY use_browser_crash_prompt.label "브라우저에 내장된 충돌 복원 프롬프트 사용">
+<!ENTITY reset_warnings.label "경고 프롬프트 초기화">
+<!ENTITY export_settings.label "설정 내보내기">
+<!ENTITY import_settings.label "설정 가져오기">
+<!ENTITY settingsImportExport.caption "설정 가져오기/내보내기">
+<!ENTITY keyboard.caption "키보드 바로가기">
+<!ENTITY keyboard.desc "동작을 키보드 바로가기로 사용하려면 여기에 해당 동작을 입력하거나 빈 칸으로 남겨두십시오. 현재 창들에 대해서는 적용되지 않습니다.">
+<!ENTITY clear.label "초기화">
+<!ENTITY clear_tab_list.label "닫은 탭 비우기">
+<!ENTITY clear_tab_list.accesskey "A">
+<!ENTITY clear_window_list.label "닫은 창 비우기">
+<!ENTITY clear_window_list.accesskey "I">
+<!ENTITY backup_on_restart.label "브라우저 다시 시작시 백업 저장">
+<!ENTITY backup_on_restart.accesskey "B">
+<!ENTITY keep_deleted_sessions.label "삭제된 세션을 임시 보관 기간(일):">
+<!ENTITY concurrent.label "동시에 복원할 탭 갯수">
+<!ENTITY do_not_color_toolbar_button.label "세션이 로드될 때 툴바 색을 바꾸지 않음">
+<!ENTITY preserve_app_tabs.label "고정된 앱 탭을 바꾸지 않음">
+<!ENTITY logging_to_console.label "에러 콘솔에 로그도 기록">
+<!ENTITY update_message.label "업데이트 후 업데이트 된 웹 페이지 보여주기">
+<!ENTITY double_click_session.label "더블 클릭하면 존재하는 세션으로 세션을 덮어쓰고">
+<!ENTITY replace_with_name_replace.label "존재하는 세션 이름을 텍스트 박스에 있는 하나로 바꾸기">
+<!ENTITY replace_with_name_keep.label "존재하는 세션 이름을 유지">
+<!ENTITY show_icon_in_menu.label "도구 메뉴에 아이콘 보여주기">
+<!ENTITY set_encryption_password.label "세션 암호화 키를 보호하기 위한 암호 입력">
+<!ENTITY change_encryption_key_password.label "암호화 키 암호 변경">
+<!ENTITY save_encryption_key.label "브라우저 암호 관리자에 암호화 키 암호 저장">
+<!ENTITY restore_hidden_tabs.label "숨겨진 탭 복원">
+<!ENTITY display_menus_in_submenu.label "하위 메뉴에 Session Manager 메뉴 항목 표시">
+<!ENTITY use_sql_cache.label "디스크에 기초 세션 데이터를 캐쉬. 세션 안 검색 활성화">
+<!ENTITY rebuild_cache.label "캐쉬 데이터 다시 만들기">
+<!ENTITY log_level_error.label "에러 로그">
+<!ENTITY allow_duplicates.label "존재하는 세션과 같은 이름으로 저장 허용">
+<!ENTITY backup_every.label "다음 기간마다 새 백업 세션 생성:">
+<!ENTITY minutes "분">
+<!ENTITY restore_on_demand.label "요청 시 탭 복원">
